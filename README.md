@@ -1,17 +1,19 @@
-# Human-MME
+<p align="center">
+  <img src="./imgs/human-mme-logo.png" alt="LOGO" width="20%">
+</p>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2509.26165-b31b1b.svg)](https://www.arxiv.org/abs/2509.26165)
 [![HuggingFace Datasets](https://img.shields.io/badge/HuggingFace-Yuanhou%2FHuman--MME-yellow.svg?logo=huggingface)](https://huggingface.co/datasets/Yuanhou/Human-MME)
 
 Official repository for "Human-MME: A Holistic Evaluation Benchmark for Human-Centric Multimodal Large Language Models"
 
-## Overview
+# Overview
 
 Human-MME is a comprehensive evaluation benchmark designed to assess the capabilities of Multimodal Large Language Models (MLLMs) in human-centric scenarios. It encompasses a wide range of tasks.
 
 ![Overview](./imgs/overview.png)
 
-## Running the Benchmark
+# Running the Benchmark
 
 To run the benchmark, follow these steps:
 
@@ -64,13 +66,13 @@ After the evaluation is complete, the answers are saved in the `results/` direct
 python benchmark.py --calc_metrics results/result_YourModelName.json
 ```
 
-## Leaderboard
+# Leaderboard
 
 To upload your results, please create a pull request with your result file in the `results/` directory. The results will be verified before being added to the leaderboard.
 
 Bold indicates the best. Italics indicates the second place.
 
-### Open-Source MLLMs
+## Open-Source MLLMs
 
 | Model              |       FU |       BU |       HU |      MIU |      MPR |       ID |       CD |       ED |     Avg. | 
 | :----------------- | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: |
@@ -90,7 +92,7 @@ Bold indicates the best. Italics indicates the second place.
 | MiniCPM-V-4.5      |     38.9 |     62.6 |     62.4 |     73.5 |     52.1 |     81.5 |     67.8 |     63.3 |     62.8 | 
 | Phi-4              |     29.5 |     48.1 |     48.6 |     39.6 |     29.6 |     62.9 |     38.1 |     46.4 |     42.9 | 
 
-### Proprietary MLLMs
+## Proprietary MLLMs
 
 | Model              |       FU |       BU |       HU |      MIU |      MPR |       ID |       CD |       ED |     Avg. | 
 | :----------------- | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: |
