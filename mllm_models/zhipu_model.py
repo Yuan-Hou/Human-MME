@@ -8,17 +8,17 @@ import sys
 from functools import wraps
 import requests
 from io import BytesIO
-from zai import ZhipuAiClient
+from zhipuai import ZhipuAI
 from mllm_models.base import timeout_retry_decorator
 import dotenv
 import regex as re
 
-ZHIPU_API_KEY = dotenv.get_key(dotenv.find_dotenv(), "ZHIPU_API_KEY")
 
 class ZhipuModel(BaseModel):
     def __init__(self, model_name):
         super().__init__(model_name)
-        self.client = ZhipuAiClient(api_key=ZHIPU_API_KEY) 
+        ZHIPU_API_KEY = dotenv.get_key(dotenv.find_dotenv(), "ZHIPU_API_KEY")
+        self.client = ZhipuAI(api_key=ZHIPU_API_KEY)
 
     @timeout_retry_decorator(max_retries=10)
     def predict(self, image: Image, question: str):

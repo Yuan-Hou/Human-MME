@@ -8,6 +8,7 @@ from mllm_models.base import BaseModel
 from mllm_models.vllm_api_model import VllmApiModel
 from mllm_models.zhipu_model import ZhipuModel
 from mllm_models.intern_api_multikey_model import InternApiMultiKeyModel
+from mllm_models.model_test import DummyModel
 
 from rich import print
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeElapsedColumn, TimeRemainingColumn
@@ -36,6 +37,7 @@ MODEL_NAME_MAP = {
     "internvl3-78b": VllmApiModel,
     "llama4": VllmApiModel,
     "llama3.2": VllmApiModel,
+    "model_test": DummyModel,
 }
 
 FORMAT_INSTRUCTIONS = {
