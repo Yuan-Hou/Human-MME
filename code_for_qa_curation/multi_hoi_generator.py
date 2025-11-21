@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer, util
 
 
 class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
-    """多图人-物交互特征题型生成器"""
+    """...-.........."""
     def __init__(self, dataset_pictures):
         super().__init__(dataset_pictures)
         self.synonym_dict = {}
@@ -124,7 +124,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
                     diff_act = find_hoi_match(objs=hoi.get_object_names(), positions=include_positions, exclude_actions=exclude_acts, exclude_picture=picture)
                     diff_obj = find_hoi_match(actions=act, positions=include_positions, exclude_objs=hoi.get_object_names(), exclude_picture=picture)
                     if len(diff_pos)  + len(diff_obj) > 2 and len(diff_pos) > 0 and len(diff_obj) > 0:
-                        # 图片出现次数少的排前面
+                        # ...........
                         diff_pos.sort(key=lambda x: self.picture_occurrence.get(x, 0))
                         diff_obj.sort(key=lambda x: self.picture_occurrence.get(x, 0))
                         
@@ -167,7 +167,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
                             q["extra_diff"] = [h.get_object_name() for h in diff_ext.full_hoi()]
                             q["diff_extra"] = diff_ext.image_path()
 
-                        # 取出最小的一组作为题目
+                        # ...........
                         questions.append(q)
                         print(f"Found {len(questions)} multi-image HOI feature questions so far. {idx}/{len(self.dataset_pictures)}")
                         self.picture_occurrence[picture] = self.picture_occurrence.get(picture, 0) + 1
@@ -179,7 +179,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
         return questions
 
     def _construct_infos(self):
-        """构建同义词字典"""
+        """......."""
         self.synonym_dict = {}
         action_set = set()
         object_set = set()
@@ -208,10 +208,10 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
         self._construct_synonym_dict(object_set, action_set)
 
     def filter_pictures(self):
-        """过滤符合条件的图片"""
+        """........."""
         filtered_pictures = []
         for picture in self.dataset_pictures:
-            # 需要至少有一人有一个HOI
+            # ..........HOI
             if any(len(person.hois) > 0 for person in picture.persons):
                 filtered_pictures.append(picture)
         print(f"Filtered down to {len(filtered_pictures)} records for multi-person clothing feature questions.")
@@ -220,12 +220,12 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
         return filtered_pictures
     
     def _construct_synonym_dict(self, name_list, action_list):
-        """构建同义词词典，使用16个并发线程，支持增量更新"""
-        # 创建线程锁保护共享资源
+        """.......，..16.....，......"""
+        # ...........
         lock = threading.Lock()
         cnt = 0
         
-        # 读取已有的同义词字典文件
+        # ............
         existing_synonyms = {}
         if os.path.exists("hoi_synonym_dict.json"):
             try:
@@ -236,7 +236,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
             except (json.JSONDecodeError, FileNotFoundError):
                 print("Could not load existing synonym dictionary, starting fresh.")
         
-        # 合并已有数据到当前实例
+        # ...........
         self.synonym_dict.update(existing_synonyms)
         
         def process_name_combination(combo):
@@ -274,13 +274,13 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
             return (action1, action2, yes_idx < no_idx)
         
         def combination_already_processed(item1, item2):
-            """检查组合是否已经处理过"""
-            # 检查是否在同义词字典中
+            """..........."""
+            # ...........
             if item1 in existing_synonyms and item2 in existing_synonyms:
                 return True
             return False
         
-        # 初始化字典
+        # .....
         for name in name_list:
             if name not in self.synonym_dict:
                 self.synonym_dict[name] = []
@@ -289,7 +289,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
             if action not in self.synonym_dict:
                 self.synonym_dict[action] = []
 
-        # 处理名称组合，跳过已处理的组合
+        # ......，........
         name_combinations = [combo for combo in itertools.combinations(name_list, 2) 
                            if not combination_already_processed(combo[0], combo[1])]
         total_name_combinations = len(name_combinations)
@@ -317,7 +317,7 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
                                     "synonyms": self.synonym_dict,
                                 }, f)
         
-        # 处理动作组合，跳过已处理的组合
+        # ......，........
         action_combinations = [combo for combo in itertools.combinations(action_list, 2) 
                             if not combination_already_processed(combo[0], combo[1])]
         total_action_combinations = len(action_combinations)
@@ -338,14 +338,14 @@ class MultiImageHoiFeatureQuestionGenerator(QuestionGenerator):
                             self.synonym_dict[action2].append(action1)
 
                         processed_actions += 1
-                        if processed_actions % 100 == 0:  # 更频繁地保存，避免丢失进度
+                        if processed_actions % 100 == 0:  # ......，......
                             print(f"Processed {processed_actions}/{total_action_combinations} action combinations so far.")
                             with open("hoi_synonym_dict.json", "w") as f:
                                 json.dump({
                                     "synonyms": self.synonym_dict
                                 }, f)
         
-        # 最终保存
+        # ....
         with open("hoi_synonym_dict.json", "w") as f:
             json.dump({
                 "synonyms": self.synonym_dict,

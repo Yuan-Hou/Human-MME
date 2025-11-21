@@ -43,18 +43,18 @@ keywords = {
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# 缓存 BERTScore 计算结果，最多缓存 1000 个结果
+# .. BERTScore ....，.... 1000 ...
 @lru_cache(maxsize=1000)
 def cached_bert_score(candidate_text, gt_text):
     """
-    缓存 BERTScore 计算结果
+    .. BERTScore ....
     """
     P, R, F1 = score([candidate_text], [gt_text], lang='en', model_type='roberta-large', verbose=False)
     return F1.item()
 
 def semantic_mapping(prediction, candidate_text):
     """
-    返回每个类别的匹配概率（soft score）和预测类别
+    ...........（soft score）.....
     """
     pred_emb = model.encode(prediction, convert_to_tensor=True)
     scores = []
@@ -77,10 +77,10 @@ def composite_score(candidate_text, ground_truth,
                     w_bert=0.5, w_cos=0.3, w_kw=0.2):
     if candidate_text is None or candidate_text.strip() == "":
         return 0.0, 0.0, 0.0, 0.0
-    # 将 ground truth 转成文本
+    # . ground truth ....
     gt_text = ground_truth
     
-    # BERTScore (使用缓存)
+    # BERTScore (....)
     bert_f1 = cached_bert_score(candidate_text, gt_text)
     
     # Sentence embedding cosine
@@ -94,7 +94,7 @@ def composite_score(candidate_text, ground_truth,
     matched = sum(1 for tok in gt_tokens if tok in cand_tokens)
     kw_coverage = matched / len(gt_tokens)
     
-    # 加权融合
+    # ....
     final_score = w_bert * bert_f1 + w_cos * cos_sim + w_kw * kw_coverage
     return bert_f1, cos_sim, kw_coverage, final_score
 
@@ -115,16 +115,16 @@ def bounding_box_iou(box1, box2):
 def max_guess_format_iou(guess, norm_gt_box, W, H):
     if guess is None or len(guess) != 4 or any(k is None for k in guess):
         return 0.0
-    # 浮点归一化
+    # .....
     if all(0 <= k <= 1 for k in guess):
         return bounding_box_iou(guess, norm_gt_box)
-    # 绝对坐标
+    # ....
     candidates = [bounding_box_iou((guess[0] / W, guess[1] / H, guess[2] / W, guess[3] / H), norm_gt_box)]
-    # 大图缩放1080p坐标
+    # ....1080p..
     if max([W, H]) > 1920 or min([W, H]) > 1080:
         scale = min(1920 / max(W, H), 1080 / min(W, H))
         candidates.append(bounding_box_iou((guess[0] / (W * scale), guess[1] / (H * scale), guess[2] / (W * scale), guess[3] / (H * scale)), norm_gt_box))
-    # 1000归一化
+    # 1000...
     if all(0 <= k <= 1000 for k in guess):
         candidates.append(bounding_box_iou([k / 1000 for k in guess], norm_gt_box))
     return max(candidates)
@@ -135,25 +135,25 @@ import numpy as np
 def evaluate_ranking(pred, gt):
     if pred is None:
         return 0.0, 0.0, 0.0
-    # 创建元素到位置的映射
+    # ..........
     gt_pos = {item: i for i, item in enumerate(gt)}
     pred_pos = {item: i for i, item in enumerate(pred)}
 
-    # 转换为排名列表
+    # .......
     gt_ranks = [gt_pos[item] for item in gt]
     pred_ranks = [pred_pos[item] for item in gt]
 
     # 1. Kendall's tau
     tau, _ = kendalltau(gt_ranks, pred_ranks)
-    tau_score = (tau + 1) / 2  # 映射到 [0,1]
+    tau_score = (tau + 1) / 2  # ... [0,1]
 
     # 2. Spearman's rho
     rho, _ = spearmanr(gt_ranks, pred_ranks)
-    rho_score = (rho + 1) / 2  # 映射到 [0,1]
+    rho_score = (rho + 1) / 2  # ... [0,1]
 
     # 3. nDCG@4
     n = len(gt)
-    # 相关性分数：越靠前越高，这里设 relevance = n - rank
+    # .....：.....，... relevance = n - rank
     rel = {item: n - i for i, item in enumerate(gt)}
 
     def dcg(order):

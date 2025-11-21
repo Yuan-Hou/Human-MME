@@ -38,7 +38,7 @@ class ZhipuModel(BaseModel):
             timeout=1000
         )
         content = response.choices[0].message.content
-        # 去除所有<|*|>(里面是任意内容)
+        # ....<|*|>(.......)
         content = re.sub(r'<\|.*?\|>', '', content)
         return content
 

@@ -1,4 +1,4 @@
-# 用多个API Key蹭免费额度跑完benchmark
+# ...API Key.......benchmark
 
 from mllm_models.base import BaseModel
 import base64
@@ -15,7 +15,7 @@ class InternApiMultiKeyModel(BaseModel):
         dot = dotenv.find_dotenv()
         self.api_keys = [dotenv.get_key(dot ,f"INTERN_API_KEY_{i}") for i in range(1, 8)]
         self.clients = [OpenAI(base_url="https://chat.intern-ai.org.cn/api/v1", api_key=key) for key in self.api_keys]
-        self.current_client_index = 0 # 只是为了大概保证轮流用不同的key，不专门用锁
+        self.current_client_index = 0 # ..............key，.....
 
     @timeout_retry_decorator(max_retries=10)
     def predict(self, image: Image, question: str):

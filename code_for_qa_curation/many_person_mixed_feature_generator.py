@@ -27,7 +27,7 @@ def load_synonym_dicts() -> Dict[str, Dict[str, List[str]]]:
     }
 
 class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
-    """多人物多特征混合题型生成器"""
+    """............."""
     def __init__(self, dataset_pictures):
         super().__init__(dataset_pictures)
         
@@ -50,7 +50,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
         results = []
         num = 0
         for picture in self.dataset_pictures:
-            # 求每个人的独特特征
+            # .........
             unique_cond_feat_map = {}
             unique_ans_feat_map = {}
             unity_feat_list = None
@@ -88,7 +88,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                 
                   
             unity_feat_list, _ = self.purify_features(unity_feat_list, exclude_facial=False)
-            # 对每个人随机构造六个问题：一个纯粹grounding，一个纯粹填空，一个纯粹选择，一个假问题判断实际上是真问题（填空或grounding），一个假问题判断实际上是假问题（填空或grounding），一个开放grounding
+            # ............：....grounding，......，......，..............（...grounding），..............（...grounding），....grounding
             for person in picture.persons:
                 true_cond_feats = unique_cond_feat_map[person]
                 ans_feats = unique_ans_feat_map[person]
@@ -97,14 +97,14 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                     if other != person:
                         false_cond_feats.extend(unique_cond_feat_map[other])
                 
-                # 收集带bbox的feats
+                # ...bbox.feats
                 bbox_ans_feats = [feat for feat in ans_feats if feat["attr_type"] == "bbox"]
 
-                # 纯粹grounding问题
+                # ..grounding..
                 if bbox_ans_feats:
                     selected_ans = random.choice(bbox_ans_feats)
                     selected_cond = None
-                    # 找一个和selected_feat不同的unique_cond
+                    # ....selected_feat...unique_cond
                     different_cond_feats = [feat for feat in true_cond_feats if feat != selected_ans]
                     if different_cond_feats:
                         selected_cond = random.choice(different_cond_feats)
@@ -117,8 +117,8 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                             "distinct": [f"identify-grounding-{self.feat_to_distinct_str(selected_cond)}-{self.feat_to_distinct_str(selected_ans)}"],
                         })
 
-                # 纯粹填空问题
-                # 适合作为答案的：
+                # ......
+                # .......：
                 # "attr_type":"facial", "attr_name": "pitch"
                 # "attr_type":"facial", "attr_name": "yaw"
                 # "attr_type":"overall", "attr_name": "gender"
@@ -127,7 +127,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                 # "attr_type":"overall", "attr_name": "emotion"
                 # "attr_type":"clothing"
                 # "attr_type":"hoi"
-                # 筛选出所有适合作为填空题答案的feat
+                # ...............feat
                 suitable_fill_mask_feats = []
                 for feat in ans_feats:
                     if feat["attr_type"] in ["facial", "overall", "clothing", "hoi"]:
@@ -150,8 +150,8 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                             "distinct": [f"identify-blank-{self.feat_to_distinct_str(selected_cond)}-{self.feat_to_distinct_str(selected_blank)}"],
                         })
 
-                # 纯粹选择题
-                # 挑选一个true_cond_feats作为筛选条件，另一个true_cond_feats作为正确答案，三个false_cond_feats作为错误答案
+                # .....
+                # ....true_cond_feats......，...true_cond_feats......，..false_cond_feats......
                 try:
                     selected_cond = random.choice(true_cond_feats)
                     possible_ans = [feat for feat in true_cond_feats if (feat != selected_cond and (feat["attr_type"] != "bbox"))]
@@ -169,7 +169,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                     # print(e)
                     pass
 
-                # 一个假问题判断实际上是真问题（填空或grounding）
+                # ..............（...grounding）
                 try:
                     cond_1 = random.choice([feat for feat in true_cond_feats if feat not in unity_feat_list and (feat["attr_type"] != "bbox")])
                     if len([feat for feat in unity_feat_list if (feat != cond_1 and (feat["attr_type"] != "bbox"))]) > 0:
@@ -191,7 +191,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                     # print(e)
                     pass
 
-                # 一个假问题判断实际上是假问题（填空或grounding）
+                # ..............（...grounding）
                 try:
                     cond_1 = random.choice([feat for feat in true_cond_feats if feat not in unity_feat_list and (feat["attr_type"] != "bbox" or feat["attr_name"] in ["face", "body"])])
                     cond_2 = random.choice([feat for feat in self.remove_same_place_features(false_cond_feats, [cond_1]) if feat != cond_1 and (feat["attr_type"] != "bbox" or feat["attr_name"] in ["face", "body"])])
@@ -200,7 +200,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                         "type": "identify-tf_grounding" if ans in bbox_ans_feats else "identify-tf_blank",
                         "condition_1": cond_1,
                         "condition_2": cond_2,
-                        "fake_answer": ans, # 只是为了方便出题而产生的占位符
+                        "fake_answer": ans, # ...............
                         "image": picture.image_path(),
                         "distinct": [f"identify-f_{'grounding' if ans in bbox_ans_feats else 'blank'}-{self.feat_to_distinct_str(cond_1)}-{self.feat_to_distinct_str(ans)}"]
                     })
@@ -208,13 +208,13 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                     # print(e)
                     pass
 
-                # 基于HOI的开放grounding
-                # 先确定true_cond_feats中有HOI
+                # ..HOI...grounding
+                # ...true_cond_feats..HOI
                 try:
                     if any(feat for feat in true_cond_feats if feat["attr_type"] == "hoi"):
-                        # 随机选一个HOI作为答案
+                        # .....HOI....
                         ans = random.choice([feat for feat in true_cond_feats if feat["attr_type"] == "hoi"])
-                        # 随机选一个非HOI的true_cond_feats作为条件
+                        # ......HOI.true_cond_feats....
                         cond = random.choice([feat for feat in true_cond_feats if feat != ans and (feat["attr_type"] != "bbox" or feat["attr_name"] in ["face", "body"])])
                         
                         results.append({
@@ -228,7 +228,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                 except Exception as e:
                     pass
 
-            # 如果有共同特征，构造一个共同特征问题（选择题）
+            # .......，..........（...）
             try:
                 answer = random.choice(unity_feat_list)
 
@@ -247,10 +247,10 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
         return results
 
     def filter_pictures(self):
-        """过滤符合条件的图片"""
+        """........."""
         filtered_pictures = []
         for picture in self.dataset_pictures:
-            # 需要有多于一个人，并且所有人都有身体
+            # ........，.........
             if len(picture.persons) > 1 and all(person.body_box is not None for person in picture.persons):
                 filtered_pictures.append(picture)
         print(f"Filtered down to {len(filtered_pictures)} records for multi-person cross feature questions.")
@@ -259,30 +259,30 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
         return filtered_pictures
     
     def _construct_synonym_dict(self):
-        """加载同义词词典"""
+        """......."""
         load_synonym_dicts()
         self.clothing_synonyms = CLOTHING_SYNONYMS
         self.hoi_synonyms = HOI_SYNONYMS
 
     def feature_set_substract(self, a, b):
-        # 减去别人相同或者不明确的特征
+        # ..............
         c = []
         for feat_a in a:
-            # 寻找feat_b中具有相同attr_type和attr_name的项
+            # ..feat_b.....attr_type.attr_name..
             sub_b = []
             for feat_b in b:
                 if feat_a["attr_type"] == feat_b["attr_type"] and feat_a["attr_name"] == feat_b["attr_name"]:
                     sub_b.append(feat_b)
-            # 各种属性如此做减法
+            # .........
             if feat_a["attr_type"] in ["facial", "overall"]:
-                # 布尔值或枚举值，直接比较
+                # .......，....
                 assert len(sub_b) <= 1
                 if len(sub_b) == 1:
                     if feat_a["attr_value"] != sub_b[0]["attr_value"] and sub_b[0]["attr_value"] is not None:
                         c.append(feat_a)
                 else:
                     c.append(feat_a)
-            # 同类型bounding box的iou大于0.5视为重叠
+            # ...bounding box.iou..0.5....
             if feat_a["attr_type"] == "bbox":
                 assert len(sub_b) <= 1
                 if len(sub_b) == 1:
@@ -291,7 +291,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                         c.append(feat_a)
                 else:
                     c.append(feat_a)
-            # clothing就是b里面找不到服饰类型是同义词并且两组颜色包含同义词的
+            # clothing..b.........................
             if feat_a["attr_type"] == "clothing":
                 found = False
                 for feat_b in sub_b:
@@ -309,7 +309,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                         break
                 if not found:
                     c.append(feat_a)
-            # hoi就是b里面找不到动作是同义词并且部位在a的部位对应的exclude里面并且obj名称同义的
+            # hoi..b................a......exclude....obj.....
             if feat_a["attr_type"] == "hoi":
                 found = False
                 for feat_b in sub_b:
@@ -329,7 +329,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                         break
                 if not found:
                      c.append(feat_a)
-            # 文本需要匹配度小于0.8
+            # .........0.8
             if feat_a["attr_type"] == "text":
                 found = False
                 for feat_b in sub_b:
@@ -340,24 +340,24 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
         return c
     
     def feature_set_intersect(self, a, b):
-        # 取两者共有的特征
+        # ........
         c = []
         for feat_a in a:
-            # 寻找feat_b中具有相同attr_type和attr_name的项
+            # ..feat_b.....attr_type.attr_name..
             sub_b = []
             for feat_b in b:
                 if feat_a["attr_type"] == feat_b["attr_type"] and feat_a["attr_name"] == feat_b["attr_name"]:
                     sub_b.append(feat_b)
-            # 各种属性如此做交集
+            # .........
             if feat_a["attr_type"] in ["facial", "overall"]:
-                # 布尔值或枚举值，直接比较
+                # .......，....
                 assert len(sub_b) <= 1
                 if len(sub_b) == 1:
                     if feat_a["attr_value"] == sub_b[0]["attr_value"]:
                         c.append(feat_a)
-            # 各种bounding box都不可能是共有特征
+            # ..bounding box.........
             
-            # clothing就是b里面找得到服饰类型是同义词并且两组颜色全部包含彼此同义词的
+            # clothing..b.............................
             if feat_a["attr_type"] == "clothing":
                 found = False
                 for feat_b in sub_b:
@@ -387,7 +387,7 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
                         break
                 if found:
                     c.append(feat_a)
-            # hoi就是b里面找得到动作是同义词并且部位在a的部位对应的include里面并且obj名称同义的，bbox相同的话保留，bbox不同的话，复制一份，去掉bbox
+            # hoi..b................a......include....obj.....，bbox......，bbox....，....，..bbox
             if feat_a["attr_type"] == "hoi":
                 for feat_b in sub_b:
                     action_match = False
@@ -413,16 +413,16 @@ class ManyPersonMixedFeatureQuestionGenerator(QuestionGenerator):
     def person_ignore_face(self, person:Person):
         return person.detailing_property("face_seen", True)
     def purify_features(self, features, exclude_facial=False):
-        """去除不必要的特征"""
+        """........"""
         whole = [feat for feat in features if feat["attr_value"] is not None]
         if exclude_facial:
             whole = [feat for feat in whole if (feat["attr_type"] != "facial")]
             whole = [feat for feat in whole if (feat["attr_type"] != "bbox" or (feat["attr_type"] == "bbox" and feat["attr_value"] in ["body", "face"]))]
-        # bbox里只有两种可以作为input
+        # bbox.........input
         can_input = [feat for feat in whole if not (feat["attr_type"] == "bbox" and feat["attr_name"] not in ["face", "body"])]
         return whole, can_input
     def remove_same_place_features(self, features, provided):
-        """去除在同一位置的重复特征"""
+        """............"""
         seen_positions = set()
         seen_bbox = set()
         overall_attr = set()

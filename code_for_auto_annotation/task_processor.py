@@ -1,6 +1,6 @@
 """
-通用任务处理器框架
-支持不同任务的自定义处理逻辑
+.........
+..............
 """
 
 from abc import ABC, abstractmethod
@@ -37,7 +37,7 @@ from PIL import Image
 console = Console()
 
 class BaseTask(ABC):
-    """任务基类，定义任务接口"""
+    """....，......"""
     
     def __init__(self, task_name: str, data_dir: str, progress_file_prefix: str):
         self.task_name = task_name
@@ -46,46 +46,46 @@ class BaseTask(ABC):
     
     @abstractmethod
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """获取当前任务的进度文件名"""
+        """............"""
         pass
     
     @abstractmethod
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经处理过"""
+        """..........."""
         pass
     
     @abstractmethod
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理JSON数据的核心逻辑"""
+        """..JSON......."""
         pass
     
     def get_task_description(self) -> str:
-        """获取任务描述"""
-        return f"处理 {self.task_name} 任务"
+        """......"""
+        return f".. {self.task_name} .."
     
 
 class HoiDetectTask(BaseTask):
-    """人物交互检测任务"""
+    """........"""
     def __init__(self):
         super().__init__(task_name="hoi_detect", data_dir="./person_labeling", progress_file_prefix="hoi_detect_progress")
         self.sam2_model = build_sam2('configs/sam2.1/sam2.1_hiera_l.yaml', './repos/sam2/checkpoints/sam2.1_hiera_large.pt')
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经包含hoi信息"""
+        """..........hoi.."""
         return data.get('hoi_processed', False)
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
         # Process each person detected in the image
         image_path = os.path.join(self.data_dir, data['image_path'])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         H, W, C = image.shape
 
         sam2_predictor = SAM2ImagePredictor(self.sam2_model, mask_threshold=0.3)
@@ -190,7 +190,7 @@ Please provide information about the relationship between the "{obj_info['name']
         return data
 
 class ObjectDetectTask(BaseTask):
-    """对象检测任务"""
+    """......"""
     def __init__(self):
         super().__init__(task_name="object_detect", data_dir="./person_labeling", progress_file_prefix="object_detect_progress")
         self.dino_model = load_model("repos/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py", "repos/GroundingDINO/weights/groundingdino_swint_ogc.pth")
@@ -200,13 +200,13 @@ class ObjectDetectTask(BaseTask):
             local_files_only=True
         )
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经包含object_detect信息"""
+        """..........object_detect.."""
         objects = data.get('objects', [])
         if not objects:
             return False
@@ -215,10 +215,10 @@ class ObjectDetectTask(BaseTask):
         # Process each person detected in the image
         image_path = os.path.join(self.data_dir, data['image_path'])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         H, W, C = image.shape
 
         obj_names = []
@@ -364,7 +364,7 @@ give the result in following JSON format:
         return data
 
 class FacexTask(BaseTask):
-    """Facexformer提取面部特征任务"""
+    """Facexformer........"""
     
     def __init__(self):
         super().__init__(
@@ -386,36 +386,36 @@ class FacexTask(BaseTask):
 
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经包含facex信息"""
+        """..........facex.."""
         return False
         persons = data.get('persons', [])
         if not persons:
-            return True  # 没有persons的文件认为已处理
+            return True  # ..persons........
         
-        # 检查是否所有person都有facex
+        # ......person..facex
         for person in persons:
             if person.get('face_box') is not None and ('facex_detailing' not in person or not person['facex_detailing']):
                 return False
         return True
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理Facexformer详细信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """..Facexformer......"""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         body_boxes = data['detect_results']['body_boxes']
         image_path = os.path.join(self.data_dir, data['image_path'].split("/")[-1])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = Image.open(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
 
         W, H = image.size
         # cv_image = cv.imread(image_path)
@@ -423,10 +423,10 @@ class FacexTask(BaseTask):
         face_boxes = data['detect_results']['face_boxes']
         for person_idx, person in enumerate(data.get('persons', [])):
             if person['face_box'] is None:
-                console.print(f"[dim]⏭️  跳过第{person_idx+1}个人 (无面部框)[/dim]")
+                console.print(f"[dim]⏭️  ...{person_idx+1}.. (....)[/dim]")
                 continue
             
-            console.print(f"[dim]👤 处理第{person_idx+1}个人 (face_box索引: {person['face_box']})[/dim]")
+            console.print(f"[dim]👤 ...{person_idx+1}.. (face_box..: {person['face_box']})[/dim]")
                 
             # Create annotated image with person bounding box
             face_box = face_boxes[person['face_box']]
@@ -546,14 +546,14 @@ class FacexTask(BaseTask):
             #         max_hoi = hoi
             #         person["deepface_detailing"] = analyze
             # if len(analyzes) > 1:
-            #     console.print(f"[dim]⚠️  注意: DeepFace检测到多张人脸，已选择与facex_box重合度最高的一张 (重合度: {max_hoi:.2f})[/dim]")
+            #     console.print(f"[dim]⚠️  ..: DeepFace.......，....facex_box........ (...: {max_hoi:.2f})[/dim]")
             # elif len(analyzes) == 0:
-            #     console.print(f"[dim]⚠️  注意: DeepFace未检测到人脸，可能是因为人脸框不准确或人脸质量较差[/dim]")
+            #     console.print(f"[dim]⚠️  ..: DeepFace......，..................[/dim]")
         return data
 
 
 class ColorRemovalTask(BaseTask):
-    """Qwen详细信息提取任务"""
+    """Qwen........"""
     
     def __init__(self):
         super().__init__(
@@ -562,33 +562,33 @@ class ColorRemovalTask(BaseTask):
             progress_file_prefix="color_removal_progress"
         )
         self.color_words = set()
-        for ws in "dark blue, black, blue, dark gray, gray, red, white, yellow, green, light pink, pink, light gray, brown, light beige, maroon, dark red, purple, dark brown, light blue, dark, gold, beige, dark green, orange, mustard yellow, clear, lavender, light yellow, silver, cream, soft cream, light-colored, light brown, off-white, light pastel, pearl, golden, metallic, teal, translucent, patterned, checkered, floral, grey, olive green, olive-green, light orange, peach, light green, light olive-green, light, neutral, bright pink, colorful, light purple, dark purple, denim, various, tie-dye, plaid, none, bare skin, multicolor, stained, camouflage, dark olive, dark olive green, tan, floral pattern, light peach, rainbow, various colors, light olive green, light olive, soft gray, dark polka dots, light cream, navy blue, rust, dark maroon, mauve, neon green, neon yellow-green, silver-grey, pale pink, khaki, transparent, muted brown, skin tone, dark navy blue, dark navy, mustard, light color, burgundy, dark teal, bright blue, deep purple, turquoise, bright green, tinted, light teal, teardrop, embroidered, glittery, pastel, diamond, deep red, lime green, multicolored, coral, neon yellow, grayish, pale, metallic gray, nude, pale blue, unknown, sheer, pale yellow, striped, emerald green, white gold, straw, mint green, light mint green, iridescent, reflective, blonde, tortoiseshell, orange-red, glossy, shiny, magenta, terracotta orange, burnt orange, reddish, soft pink, soft brown, semi-sheer, neon pink, dirty, pastel pink, light grayish-green, pinkish, floral patterns, pinkish-brown, soft white, pearl white, decorative, dark grey, leopard print, muted purple, bright turquoise, dusty pink, denim blue, bright red, metallic silver, grayish blue, red-brown, sparkling, amber, pinkish-red, camel, bright yellow-green, pastel purple, pastel blue, pastel green, light grey, olive, vibrant, yellow-green, gradient, dark stains, bright yellow, dark accent colors, wet, patterned with dark and light shades, polka dot, dark color, crimson, black and white, dark pattern, 白色, 彩色, greyish-green, navy, cyan, greenish-brown, multi, checkered pattern of blue and white, blue denim, light tan, light salmon, multi-colored, dark-colored, dark spots, metal, teal blue, greenish-blue, dark stripes, faded, red-orange, light red, light khaki, pastel colors, plaid pattern, light floral pattern, lemon, various (seems to have beads of different colors), multi-color, semi-transparent, red and white, blue and white striped, various colors from the graphic, white stripes, multi-colored pattern, neon blue, faded blue, hunter green, animal print, dark colors, plaid with grey, white, and black, camouflage pattern, multicolored (rainbow pattern), plaid with blue, red, yellow, and white stripes, light shades, salmon pink, graphic print, dark-grey, stained with multiple colors, light color, possibly white or gray, light yellow-green, shiny metallic, greenish-gray, plaid with white, black, red and yellow, gray-green, skin, plaid with beige, black, and white, blond".split(","):
+        for ws in "dark blue, black, blue, dark gray, gray, red, white, yellow, green, light pink, pink, light gray, brown, light beige, maroon, dark red, purple, dark brown, light blue, dark, gold, beige, dark green, orange, mustard yellow, clear, lavender, light yellow, silver, cream, soft cream, light-colored, light brown, off-white, light pastel, pearl, golden, metallic, teal, translucent, patterned, checkered, floral, grey, olive green, olive-green, light orange, peach, light green, light olive-green, light, neutral, bright pink, colorful, light purple, dark purple, denim, various, tie-dye, plaid, none, bare skin, multicolor, stained, camouflage, dark olive, dark olive green, tan, floral pattern, light peach, rainbow, various colors, light olive green, light olive, soft gray, dark polka dots, light cream, navy blue, rust, dark maroon, mauve, neon green, neon yellow-green, silver-grey, pale pink, khaki, transparent, muted brown, skin tone, dark navy blue, dark navy, mustard, light color, burgundy, dark teal, bright blue, deep purple, turquoise, bright green, tinted, light teal, teardrop, embroidered, glittery, pastel, diamond, deep red, lime green, multicolored, coral, neon yellow, grayish, pale, metallic gray, nude, pale blue, unknown, sheer, pale yellow, striped, emerald green, white gold, straw, mint green, light mint green, iridescent, reflective, blonde, tortoiseshell, orange-red, glossy, shiny, magenta, terracotta orange, burnt orange, reddish, soft pink, soft brown, semi-sheer, neon pink, dirty, pastel pink, light grayish-green, pinkish, floral patterns, pinkish-brown, soft white, pearl white, decorative, dark grey, leopard print, muted purple, bright turquoise, dusty pink, denim blue, bright red, metallic silver, grayish blue, red-brown, sparkling, amber, pinkish-red, camel, bright yellow-green, pastel purple, pastel blue, pastel green, light grey, olive, vibrant, yellow-green, gradient, dark stains, bright yellow, dark accent colors, wet, patterned with dark and light shades, polka dot, dark color, crimson, black and white, dark pattern, .., .., greyish-green, navy, cyan, greenish-brown, multi, checkered pattern of blue and white, blue denim, light tan, light salmon, multi-colored, dark-colored, dark spots, metal, teal blue, greenish-blue, dark stripes, faded, red-orange, light red, light khaki, pastel colors, plaid pattern, light floral pattern, lemon, various (seems to have beads of different colors), multi-color, semi-transparent, red and white, blue and white striped, various colors from the graphic, white stripes, multi-colored pattern, neon blue, faded blue, hunter green, animal print, dark colors, plaid with grey, white, and black, camouflage pattern, multicolored (rainbow pattern), plaid with blue, red, yellow, and white stripes, light shades, salmon pink, graphic print, dark-grey, stained with multiple colors, light color, possibly white or gray, light yellow-green, shiny metallic, greenish-gray, plaid with white, black, red and yellow, gray-green, skin, plaid with beige, black, and white, blond".split(","):
             for w in ws.strip().split(" "):
                 self.color_words.add(w)
 
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经包含qwen_detailing信息"""
+        """..........qwen_detailing.."""
         return False
         persons = data.get('persons', [])
         if not persons:
-            return True  # 没有persons的文件认为已处理
+            return True  # ..persons........
         
-        # 检查是否所有person都有qwen_detailing
+        # ......person..qwen_detailing
         for person in persons:
             if person.get('body_box') is not None and ('qwen_detailing' not in person or not person['qwen_detailing']):
                 return False
         return True
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理Qwen详细信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """..Qwen......"""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         
         processed_count = 0
@@ -604,15 +604,15 @@ class ColorRemovalTask(BaseTask):
                 if not need_check:
                     continue
 
-                console.print(f"[dim]👗 处理第{person_idx+1}个人的服装信息: {cloth['name']}[/dim]")
+                console.print(f"[dim]👗 ...{person_idx+1}.......: {cloth['name']}[/dim]")
                 cloth['name'] = (await asyncio.to_thread(ask_question, f"{cloth['name']}\nPlease remove any color related information from the expression above. Give the original word if no color is mentioned. One single answer should be given with only lower case characters and space directly.")).strip()
 
-        console.print(f"[dim]🎉 文件处理完成: {os.path.basename(file_path)}, 共处理 {processed_count} 个人[/dim]")
+        console.print(f"[dim]🎉 ......: {os.path.basename(file_path)}, ... {processed_count} ..[/dim]")
         return data
 
 
 class ClothingCorrectionTask(BaseTask):
-    """Qwen详细信息提取任务"""
+    """Qwen........"""
     
     def __init__(self):
         super().__init__(
@@ -630,61 +630,61 @@ class ClothingCorrectionTask(BaseTask):
                         self.filename_set.add(filename)
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经包含qwen_detailing信息"""
+        """..........qwen_detailing.."""
         return file_path.split("/")[-1] in self.filename_set
         return False
         persons = data.get('persons', [])
         if not persons:
-            return True  # 没有persons的文件认为已处理
+            return True  # ..persons........
         
-        # 检查是否所有person都有qwen_detailing
+        # ......person..qwen_detailing
         for person in persons:
             if person.get('body_box') is not None and ('qwen_detailing' not in person or not person['qwen_detailing']):
                 return False
         return True
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理Qwen详细信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """..Qwen......"""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         body_boxes = data['detect_results']['body_boxes']
         face_boxes = data['detect_results']['face_boxes']
         image_path = os.path.join(self.data_dir, data['image_path'].split("/")[-1])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         
         H, W, C = image.shape
-        console.print(f"[dim]📐 图像尺寸: {W}x{H}, 通道数: {C}[/dim]")
+        console.print(f"[dim]📐 ....: {W}x{H}, ...: {C}[/dim]")
         
         persons_count = len(data.get('persons', []))
         persons_with_body_box = len([p for p in data.get('persons', []) if p.get('body_box') is not None])
-        console.print(f"[dim]👥 总人数: {persons_count}, 有身体框的人数: {persons_with_body_box}[/dim]")
+        console.print(f"[dim]👥 ...: {persons_count}, .......: {persons_with_body_box}[/dim]")
         
         processed_count = 0
         for person_idx, person in enumerate(data.get('persons', [])):
             if person.get("deleted") is True:
                 continue
             if person['body_box'] is None:
-                console.print(f"[dim]⏭️  跳过第{person_idx+1}个人 (无身体框)[/dim]")
+                console.print(f"[dim]⏭️  ...{person_idx+1}.. (....)[/dim]")
                 continue
             
-            console.print(f"[dim]👤 处理第{person_idx+1}个人 (body_box索引: {person['body_box']})[/dim]")
+            console.print(f"[dim]👤 ...{person_idx+1}.. (body_box..: {person['body_box']})[/dim]")
                 
             # Create annotated image with person bounding box
             info_img = image.copy()
             body_box = body_boxes[person['body_box']]
             x1, y1, x2, y2 = (body_box[0] * W, body_box[1] * H, body_box[2] * W, body_box[3] * H)
-            console.print(f"[dim]📦 身体框坐标: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
+            console.print(f"[dim]📦 .....: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
             if max(H, W) > 1000:
                 cv.rectangle(info_img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
             else:
@@ -717,39 +717,39 @@ class ClothingCorrectionTask(BaseTask):
 ```
 
 BE AWARE! Don't describe any wearings that are not visible in the image. You are not allowed to imagine possibilities."""
-            console.print(f"[dim]🤖 准备调用AI模型分析第{person_idx+1}个人...[/dim]")
+            console.print(f"[dim]🤖 ....AI.....{person_idx+1}.....[/dim]")
             
             try:
                 response = await asyncio.to_thread(ask_about_image, info_img, question, json_format=True)
-                console.print(f"[dim]✅ AI模型响应完成 (响应长度: {len(response)} 字符)[/dim]")
+                console.print(f"[dim]✅ AI...... (....: {len(response)} ..)[/dim]")
                 
-                # 截断显示响应内容（避免过长）
+                # ........（....）
                 response_preview = response[:200] + "..." if len(response) > 200 else response
-                console.print(f"[dim]📝 响应预览: {response_preview}[/dim]")
+                console.print(f"[dim]📝 ....: {response_preview}[/dim]")
                 
             except Exception as api_error:
-                console.print(f"[red]❌ AI模型调用失败 (第{person_idx+1}个人): {api_error}[/red]")
-                raise Exception(f"AI模型调用失败: {api_error}")
+                console.print(f"[red]❌ AI...... (.{person_idx+1}..): {api_error}[/red]")
+                raise Exception(f"AI......: {api_error}")
             
             try:
-                console.print(f"[dim]🔧 开始解析JSON响应...[/dim]")
+                console.print(f"[dim]🔧 ....JSON.....[/dim]")
                 clothing_info = json.loads(response)
                 person["qwen_detailing"]["clothing"] = clothing_info
                 
             except json.JSONDecodeError as e:
-                console.print(f"[red]❌ JSON解析失败 (第{person_idx+1}个人): {e}[/red]")
-                console.print(f"[red]原始响应: {response}[/red]")
-                raise Exception(f"JSON解析失败: {e}")
+                console.print(f"[red]❌ JSON.... (.{person_idx+1}..): {e}[/red]")
+                console.print(f"[red]....: {response}[/red]")
+                raise Exception(f"JSON....: {e}")
                 
 
             processed_count += 1
-            console.print(f"[dim]✅ 第{person_idx+1}个人处理完成[/dim]")
+            console.print(f"[dim]✅ .{person_idx+1}......[/dim]")
         
-        console.print(f"[dim]🎉 文件处理完成: {os.path.basename(file_path)}, 共处理 {processed_count} 个人[/dim]")
+        console.print(f"[dim]🎉 ......: {os.path.basename(file_path)}, ... {processed_count} ..[/dim]")
         return data
     
 class HoiUnifyTask(BaseTask):
-    """Qwen详细信息提取任务"""
+    """Qwen........"""
     
     def __init__(self):
         super().__init__(
@@ -759,7 +759,7 @@ class HoiUnifyTask(BaseTask):
         )
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
@@ -770,17 +770,17 @@ class HoiUnifyTask(BaseTask):
         return False
         persons = data.get('persons', [])
         if not persons:
-            return True  # 没有persons的文件认为已处理
+            return True  # ..persons........
         
-        # 检查是否所有person都有qwen_detailing
+        # ......person..qwen_detailing
         for person in persons:
             if person.get('body_box') is not None and ('qwen_detailing' not in person or not person['qwen_detailing']):
                 return False
         return True
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理Qwen详细信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """..Qwen......"""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         body_boxes = data['detect_results']['body_boxes']
         face_boxes = data['detect_results']['face_boxes']
@@ -788,7 +788,7 @@ class HoiUnifyTask(BaseTask):
         
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         
         H, W, C = image.shape
         
@@ -797,7 +797,7 @@ class HoiUnifyTask(BaseTask):
             if person.get("deleted") is True:
                 continue
             # if person['body_box'] is None:
-            #     console.print(f"[dim]⏭️  跳过第{person_idx+1}个人 (无身体框)[/dim]")
+            #     console.print(f"[dim]⏭️  ...{person_idx+1}.. (....)[/dim]")
             #     continue
 
             info_img = image.copy()
@@ -880,7 +880,7 @@ class HoiUnifyTask(BaseTask):
 
 
 class WoXunSiTask(BaseTask):
-    """WoXunSi详细信息提取任务"""
+    """WoXunSi........"""
 
     def __init__(self):
         super().__init__(
@@ -890,7 +890,7 @@ class WoXunSiTask(BaseTask):
         )
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
@@ -919,24 +919,24 @@ class WoXunSiTask(BaseTask):
 
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理乱七八糟信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """.........."""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         body_boxes = data['detect_results']['body_boxes']
         face_boxes = data['detect_results']['face_boxes']
         image_path = os.path.join(self.data_dir, data['image_path'].split("/")[-1])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         
         H, W, C = image.shape
-        console.print(f"[dim]📐 图像尺寸: {W}x{H}, 通道数: {C}[/dim]")
+        console.print(f"[dim]📐 ....: {W}x{H}, ...: {C}[/dim]")
         
         persons_count = len(data.get('persons', []))
         persons_with_body_box = len([p for p in data.get('persons', []) if p.get('body_box') is not None])
-        console.print(f"[dim]👥 总人数: {persons_count}, 有身体框的人数: {persons_with_body_box}[/dim]")
+        console.print(f"[dim]👥 ...: {persons_count}, .......: {persons_with_body_box}[/dim]")
         model_name = "internvl"
         scene = await asyncio.to_thread(ask_about_image, image, "Please give a short description of the scene, you can describe about cultural background, enviroment, overall color, style, any notable objects or anything else. But do not give any description about the people in the image. Give your answer within one sentence without any punctuation.", model_name=model_name, json_format=False)
         data["scene"] = scene
@@ -944,18 +944,18 @@ class WoXunSiTask(BaseTask):
         processed_count = 0
         for person_idx, person in enumerate(data.get('persons', [])):
             if person['body_box'] is None:
-                console.print(f"[dim]⏭️  跳过第{person_idx+1}个人 (无身体框)[/dim]")
+                console.print(f"[dim]⏭️  ...{person_idx+1}.. (....)[/dim]")
                 continue
             if person.get("deleted") is True:
                 continue
             
-            console.print(f"[dim]👤 处理第{person_idx+1}个人 (body_box索引: {person['body_box']})[/dim]")
+            console.print(f"[dim]👤 ...{person_idx+1}.. (body_box..: {person['body_box']})[/dim]")
                 
             # Create annotated image with person bounding box
             info_img = image.copy()
             body_box = body_boxes[person['body_box']]
             x1, y1, x2, y2 = (body_box[0] * W, body_box[1] * H, body_box[2] * W, body_box[3] * H)
-            console.print(f"[dim]📦 身体框坐标: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
+            console.print(f"[dim]📦 .....: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
             if max(H, W) > 1000:
                 cv.rectangle(info_img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
             else:
@@ -978,7 +978,7 @@ class WoXunSiTask(BaseTask):
             ans = (await asyncio.to_thread(ask_about_image, image, f"Is the person in the green bounding box likely to have following intentions or motivations: \n\n{person[f'{model_name}_detailing']['intention']}\n\nPlease give your analysis and provide 'yes' or 'no' in the last line of your answer.", model_name=model_name, json_format=False)).strip().lower()
             person[f"{model_name}_detailing"]["intention_ok"] = yes_or_no(ans)
             processed_count += 1
-            console.print(f"[dim]✅ 第{person_idx+1}个人处理完成[/dim]")
+            console.print(f"[dim]✅ .{person_idx+1}......[/dim]")
 
         persons_desc = ""
         for person_idx, person in enumerate(data.get('persons', [])):
@@ -1003,12 +1003,12 @@ class WoXunSiTask(BaseTask):
         data[f"{model_name}_future_scene_ok"] = yes_or_no(ans)
 
         if data[f"{model_name}_past_scene_ok"] and data[f"{model_name}_future_scene_ok"]:
-            print(f"[dim]🔍 可能的场景推测: {data[f'{model_name}_overall_past_clean']} -> {data[f'{model_name}_overall_future_clean']}[/dim]")
-        console.print(f"[dim]🎉 文件处理完成: {os.path.basename(file_path)}, 共处理 {processed_count} 个人[/dim]")
+            print(f"[dim]🔍 .......: {data[f'{model_name}_overall_past_clean']} -> {data[f'{model_name}_overall_future_clean']}[/dim]")
+        console.print(f"[dim]🎉 ......: {os.path.basename(file_path)}, ... {processed_count} ..[/dim]")
         return data
 
 class QwenDetailingTask(BaseTask):
-    """Qwen详细信息提取任务"""
+    """Qwen........"""
     
     def __init__(self):
         super().__init__(
@@ -1018,7 +1018,7 @@ class QwenDetailingTask(BaseTask):
         )
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
@@ -1035,47 +1035,47 @@ class QwenDetailingTask(BaseTask):
 
         persons = data.get('persons', [])
         if not persons:
-            return True  # 没有persons的文件认为已处理
+            return True  # ..persons........
         
-        # 检查是否所有person都有qwen_detailing
+        # ......person..qwen_detailing
         for person in persons:
             if person.get('body_box') is not None and ('qwen_detailing' not in person or not person['qwen_detailing']):
                 return False
         return True
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理Qwen详细信息提取"""
-        console.print(f"[dim]🔍 开始处理文件: {os.path.basename(file_path)}[/dim]")
+        """..Qwen......"""
+        console.print(f"[dim]🔍 ......: {os.path.basename(file_path)}[/dim]")
         
         body_boxes = data['detect_results']['body_boxes']
         face_boxes = data['detect_results']['face_boxes']
         image_path = os.path.join(self.data_dir, data['image_path'].split("/")[-1])
         
-        console.print(f"[dim]📷 读取图像: {data['image_path']}[/dim]")
+        console.print(f"[dim]📷 ....: {data['image_path']}[/dim]")
         image = cv.imread(image_path)
         if image is None:
-            raise Exception(f"无法读取图像文件: {image_path}")
+            raise Exception(f"........: {image_path}")
         
         H, W, C = image.shape
-        console.print(f"[dim]📐 图像尺寸: {W}x{H}, 通道数: {C}[/dim]")
+        console.print(f"[dim]📐 ....: {W}x{H}, ...: {C}[/dim]")
         
         persons_count = len(data.get('persons', []))
         persons_with_body_box = len([p for p in data.get('persons', []) if p.get('body_box') is not None])
-        console.print(f"[dim]👥 总人数: {persons_count}, 有身体框的人数: {persons_with_body_box}[/dim]")
+        console.print(f"[dim]👥 ...: {persons_count}, .......: {persons_with_body_box}[/dim]")
         
         processed_count = 0
         for person_idx, person in enumerate(data.get('persons', [])):
             if person['body_box'] is None:
-                console.print(f"[dim]⏭️  跳过第{person_idx+1}个人 (无身体框)[/dim]")
+                console.print(f"[dim]⏭️  ...{person_idx+1}.. (....)[/dim]")
                 continue
             
-            console.print(f"[dim]👤 处理第{person_idx+1}个人 (body_box索引: {person['body_box']})[/dim]")
+            console.print(f"[dim]👤 ...{person_idx+1}.. (body_box..: {person['body_box']})[/dim]")
                 
             # Create annotated image with person bounding box
             info_img = image.copy()
             body_box = body_boxes[person['body_box']]
             x1, y1, x2, y2 = (body_box[0] * W, body_box[1] * H, body_box[2] * W, body_box[3] * H)
-            console.print(f"[dim]📦 身体框坐标: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
+            console.print(f"[dim]📦 .....: ({int(x1)}, {int(y1)}) -> ({int(x2)}, {int(y2)})[/dim]")
             if max(H, W) > 1000:
                 cv.rectangle(info_img, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
             else:
@@ -1137,39 +1137,39 @@ class QwenDetailingTask(BaseTask):
     "text_relationship": "describe the relationship between the text and the person, including any relevant context or meaning. Give 'no_text' if there is none."
 }
 ```"""
-            console.print(f"[dim]🤖 准备调用AI模型分析第{person_idx+1}个人...[/dim]")
+            console.print(f"[dim]🤖 ....AI.....{person_idx+1}.....[/dim]")
             
             try:
                 response = await asyncio.to_thread(ask_about_image, info_img, question, json_format=True)
-                console.print(f"[dim]✅ AI模型响应完成 (响应长度: {len(response)} 字符)[/dim]")
+                console.print(f"[dim]✅ AI...... (....: {len(response)} ..)[/dim]")
                 
-                # 截断显示响应内容（避免过长）
+                # ........（....）
                 response_preview = response[:200] + "..." if len(response) > 200 else response
-                console.print(f"[dim]📝 响应预览: {response_preview}[/dim]")
+                console.print(f"[dim]📝 ....: {response_preview}[/dim]")
                 
             except Exception as api_error:
-                console.print(f"[red]❌ AI模型调用失败 (第{person_idx+1}个人): {api_error}[/red]")
-                raise Exception(f"AI模型调用失败: {api_error}")
+                console.print(f"[red]❌ AI...... (.{person_idx+1}..): {api_error}[/red]")
+                raise Exception(f"AI......: {api_error}")
             
             try:
-                console.print(f"[dim]🔧 开始解析JSON响应...[/dim]")
+                console.print(f"[dim]🔧 ....JSON.....[/dim]")
                 person_info = json.loads(response)
                 if person_info.get("no_person", False):
-                    console.print(f"[yellow]⚠️  未检测到人脸信息[/yellow]")
+                    console.print(f"[yellow]⚠️  ........[/yellow]")
                     person["deleted"] = True
                     continue
-                # 验证返回的JSON结构
+                # .....JSON..
                 required_fields = ["blurry", "face_seen", "age", "gender", "emotion", "emotion_description", "meaningful", "story", "race", "text", "text_relationship"]
                 missing_fields = [field for field in required_fields if field not in person_info]
                 if missing_fields:
-                    console.print(f"[yellow]⚠️  JSON响应缺少字段: {missing_fields}[/yellow]")
+                    console.print(f"[yellow]⚠️  JSON......: {missing_fields}[/yellow]")
                 
-                console.print(f"[dim]✅ JSON解析成功 (包含 {len(person_info)} 个字段)[/dim]")
+                console.print(f"[dim]✅ JSON.... (.. {len(person_info)} ...)[/dim]")
                 
             except json.JSONDecodeError as e:
-                console.print(f"[red]❌ JSON解析失败 (第{person_idx+1}个人): {e}[/red]")
-                console.print(f"[red]原始响应: {response}[/red]")
-                raise Exception(f"JSON解析失败: {e}")
+                console.print(f"[red]❌ JSON.... (.{person_idx+1}..): {e}[/red]")
+                console.print(f"[red]....: {response}[/red]")
+                raise Exception(f"JSON....: {e}")
                 
             person["qwen_detailing"]["blurry"] = person_info["blurry"]
             person["qwen_detailing"]["face_seen"] = person_info["face_seen"]
@@ -1184,14 +1184,14 @@ class QwenDetailingTask(BaseTask):
             person["qwen_detailing"]["text_relationship"] = person_info["text_relationship"]
 
             processed_count += 1
-            console.print(f"[dim]✅ 第{person_idx+1}个人处理完成[/dim]")
+            console.print(f"[dim]✅ .{person_idx+1}......[/dim]")
         
-        console.print(f"[dim]🎉 文件处理完成: {os.path.basename(file_path)}, 共处理 {processed_count} 个人[/dim]")
+        console.print(f"[dim]🎉 ......: {os.path.basename(file_path)}, ... {processed_count} ..[/dim]")
         return data
 
 
 class ExampleTask(BaseTask):
-    """示例任务 - 演示如何创建新任务"""
+    """.... - ........."""
     
     def __init__(self):
         super().__init__(
@@ -1201,33 +1201,33 @@ class ExampleTask(BaseTask):
         )
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
-        """根据分片信息生成进度文件名"""
+        """............."""
         if shard_count > 1:
             return f"{self.progress_file_prefix}_shard_{shard_index}_of_{shard_count}.json"
         else:
             return f"{self.progress_file_prefix}.json"
     
     def is_file_processed(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """检查文件是否已经处理过 - 示例逻辑"""
-        # 示例：检查是否存在某个字段
+        """........... - ...."""
+        # ..：..........
         return 'example_field' in data and data['example_field'] is not None
     
     async def process_json_data(self, file_path: str, data: Dict[str, Any]) -> Dict[str, Any]:
-        """处理JSON数据 - 示例逻辑"""
-        console.print(f"[dim]🔍 示例任务处理文件: {os.path.basename(file_path)}[/dim]")
+        """..JSON.. - ...."""
+        console.print(f"[dim]🔍 ........: {os.path.basename(file_path)}[/dim]")
         
-        # 示例：添加一个处理时间戳
+        # ..：.........
         import time
         data['example_field'] = {
             'processed_at': time.time(),
             'file_name': os.path.basename(file_path)
         }
         
-        console.print(f"[dim]✅ 示例任务处理完成: {os.path.basename(file_path)}[/dim]")
+        console.print(f"[dim]✅ ........: {os.path.basename(file_path)}[/dim]")
         return data
 
 
-# 任务注册表
+# .....
 AVAILABLE_TASKS = {
     'qwen_detailing': QwenDetailingTask,
     'object_detect': ObjectDetectTask,
@@ -1241,13 +1241,13 @@ AVAILABLE_TASKS = {
 }
 
 def get_task(task_name: str) -> BaseTask:
-    """根据任务名称获取任务实例"""
+    """............"""
     if task_name not in AVAILABLE_TASKS:
         available = ', '.join(AVAILABLE_TASKS.keys())
-        raise ValueError(f"未知任务: {task_name}. 可用任务: {available}")
+        raise ValueError(f"....: {task_name}. ....: {available}")
     
     return AVAILABLE_TASKS[task_name]()
 
 def list_available_tasks() -> List[str]:
-    """列出所有可用任务"""
+    """........"""
     return list(AVAILABLE_TASKS.keys())

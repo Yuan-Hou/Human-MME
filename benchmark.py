@@ -57,7 +57,7 @@ REG_BBOX = re.compile(r'Answer:\s*\[?\[\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\
 REG_CHOICE = re.compile(r'Answer:\s*([A-D])', re.IGNORECASE)
 REG_BLANK = re.compile(r'Answer:\s*(.+)', re.IGNORECASE)
 REG_HOI_NAME = re.compile(r'Name:\s*(.*?)\s*Box:', re.IGNORECASE | re.DOTALL)
-# 允许[]嵌套两层出现，支持整数和小数
+# ..[]......，.......
 REG_HOI_BOX = re.compile(r'Box:\s*\[?\[\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\s*\]\]?', re.IGNORECASE)
 REG_SEQ_FIRST = re.compile(r'First:\s*([A-D])', re.IGNORECASE)
 REG_SEQ_SECOND = re.compile(r'Second:\s*([A-D])', re.IGNORECASE)
@@ -118,7 +118,7 @@ class Question():
             image_B = Image.open(self.q_img_msg['image_B']).convert('RGB')
             image_C = Image.open(self.q_img_msg['image_C']).convert('RGB')
             image_D = Image.open(self.q_img_msg['image_D']).convert('RGB')
-            # 四张图片全部缩放并黑边pad到1024*1024，左上角标注相应字母
+            # ...........pad.1024*1024，.........
             def resize_and_pad(image, size=(1024, 1024), label=None):
                 ratio = min(size[0] / image.width, size[1] / image.height)
                 new_size = (int(image.width * ratio), int(image.height * ratio))
@@ -134,13 +134,13 @@ class Question():
             image_B = resize_and_pad(image_B, label="B")
             image_C = resize_and_pad(image_C, label="C")
             image_D = resize_and_pad(image_D, label="D")
-            # 四张图片横向拼接
+            # ........
             new_image = Image.new("RGB", (image_A.width + image_B.width + image_C.width + image_D.width, 1024), (255, 255, 255))
             new_image.paste(image_A, (0, 0))
             new_image.paste(image_B, (image_A.width, 0))
             new_image.paste(image_C, (image_A.width + image_B.width, 0))
             new_image.paste(image_D, (image_A.width + image_B.width + image_C.width, 0))
-            # 画分割线
+            # ....
             draw = ImageDraw.Draw(new_image)
             draw.line((image_A.width, 0, image_A.width, 1024), fill=(255,255,255), width=3)
             draw.line((image_A.width + image_B.width, 0, image_A.width + image_B.width, 1024), fill=(255,255,255), width=3)
@@ -152,7 +152,7 @@ class Question():
         result = model.predict(self.get_image(), self.q_text)
         result_dict = {}
         if self.a_type == 'bbox':
-            # 去除result中"```"开头的行
+            # ..result."```"....
             result_prue = "\n".join([line for line in result.split("\n") if not line.strip().startswith("```")])
             match = REG_BBOX.search(result_prue)
             if match:
@@ -184,7 +184,7 @@ class Question():
             match = REG_BLANK.search(result_pure)
             if match:
                 result_dict['answer'] = match.group(1).strip()
-                # 去除answer中的多余*号
+                # ..answer....*.
                 result_dict['answer'] = result_dict['answer'].replace('*', '').strip()
             else:
                 result_dict['answer'] = None
@@ -340,7 +340,7 @@ class Question():
 class Benchmark:
     def __init__(self, qa_dir):
         self.qa_dir = qa_dir
-        # 遍历qa_dir下的所有子目录，找到一个qa.json就初始化一个Question对象
+        # ..qa_dir.......，....qa.json......Question..
         self.questions = []
         self.path_to_question = {}
         with Progress(
@@ -368,7 +368,7 @@ class Benchmark:
         if existing_results:
             results.update(existing_results)
             
-            # 从self.path_to_question中移除已经存在于existing_results中且不为None的问题
+            # .self.path_to_question........existing_results....None...
             for path in existing_results.keys():
                 if path in self.path_to_question and (existing_results[path] is not None and (len(existing_results[path]['response'].get("raw", "")) > 0)):
                     del self.path_to_question[path]
@@ -494,7 +494,7 @@ class Benchmark:
                     cate_metric_avg[cate][k] = v / cate_metric_count[cate][k]
                 else:
                     cate_metric_avg[cate][k] = None
-        # avg导出txt
+        # avg..txt
         save_path = result_json_path.replace('.json', '_metrics.txt')
         with open(save_path, 'w') as f:
             for cate, metrics in cate_metric_avg.items():
@@ -503,7 +503,7 @@ class Benchmark:
                     f.write(f"  {k}: {v}\n")
                 f.write("\n")
         print(f"Metrics saved to {save_path}")
-        # scores导出json
+        # scores..json
         save_path = result_json_path.replace('.json', '_detailed_metrics.json')
         with open(save_path, 'w') as f:
             json.dump(cate_scores, f, indent=4)

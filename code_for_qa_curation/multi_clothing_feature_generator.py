@@ -8,7 +8,7 @@ from test_framework import QuestionGenerator
 from utils import ask_question
 
 class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
-    """多图人体服装特征题型生成器"""
+    """............."""
     def __init__(self, dataset_pictures):
         super().__init__(dataset_pictures)
         self.clothing_color_name_2_picture_dict: Dict[str, Dict[str, List]] = {}
@@ -42,12 +42,12 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
         self._construct_synonym_dict(list(self.clothing_name_color_2_picture_dict.keys()), list(self.clothing_color_name_2_picture_dict.keys()))
 
     def _construct_synonym_dict(self, name_list, color_list):
-        """构建同义词词典，使用16个并发线程，支持增量更新"""
-        # 创建线程锁保护共享资源
+        """.......，..16.....，......"""
+        # ...........
         lock = threading.Lock()
         cnt = 0
         
-        # 读取已有的同义词字典文件
+        # ............
         existing_synonyms = {}
         existing_distinguishable = {}
         if os.path.exists("clothing_synonym_dict.json"):
@@ -60,7 +60,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
             except (json.JSONDecodeError, FileNotFoundError):
                 print("Could not load existing synonym dictionary, starting fresh.")
         
-        # 合并已有数据到当前实例
+        # ...........
         self.synonym_dict.update(existing_synonyms)
         self.distinguishable_dict.update(existing_distinguishable)
         
@@ -116,15 +116,15 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
             return (color1, color2, yes_idx < no_idx)
         
         def combination_already_processed(item1, item2):
-            """检查组合是否已经处理过"""
-            # 检查是否在同义词字典中
+            """..........."""
+            # ...........
             if item1 in existing_synonyms and item2 in existing_synonyms:
                 return True
             if item1 in existing_distinguishable and item2 in existing_distinguishable:
                 return True
             return False
         
-        # 初始化字典
+        # .....
         for name in name_list:
             if name not in self.synonym_dict:
                 self.synonym_dict[name] = []
@@ -137,7 +137,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
             if color not in self.distinguishable_dict:
                 self.distinguishable_dict[color] = []
         
-        # 处理名称组合，跳过已处理的组合
+        # ......，........
         name_combinations = [combo for combo in itertools.combinations(name_list, 2) 
                            if not combination_already_processed(combo[0], combo[1])]
         total_name_combinations = len(name_combinations)
@@ -168,7 +168,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
                                     "distinguishable": self.distinguishable_dict
                                 }, f)
         
-        # 处理颜色组合，跳过已处理的组合
+        # ......，........
         color_combinations = [combo for combo in itertools.combinations(color_list, 2) 
                             if not combination_already_processed(combo[0], combo[1])]
         total_color_combinations = len(color_combinations)
@@ -192,7 +192,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
                             self.distinguishable_dict[color2].append(color1)
                         
                         processed_colors += 1
-                        if processed_colors % 100 == 0:  # 更频繁地保存，避免丢失进度
+                        if processed_colors % 100 == 0:  # ......，......
                             print(f"Processed {processed_colors}/{total_color_combinations} color combinations so far.")
                             with open("clothing_synonym_dict.json", "w") as f:
                                 json.dump({
@@ -200,7 +200,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
                                     "distinguishable": self.distinguishable_dict
                                 }, f)
         
-        # 最终保存
+        # ....
         with open("clothing_synonym_dict.json", "w") as f:
             json.dump({
                 "synonyms": self.synonym_dict,
@@ -215,11 +215,11 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
     
 
     def generate_questions(self):
-        """生成多图片多人物服饰特征相关的问题"""
+        """................."""
         questions = []
 
         def find_image_partial_clothing(clothing_list, fit_count):
-            """找出恰好满足clothing_list中fit_count个服饰的图片-服饰对"""
+            """......clothing_list.fit_count......-..."""
             clothing_word_buckets = [set(self.synonym_dict.get(clothing['name'], []) + [clothing['name']]) for clothing in clothing_list]
             color_word_buckets = []
             for clothing in clothing_list:
@@ -240,7 +240,7 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
                     if len(matched_clothing) >= fit_count:
                         matched_clothing_results.append(matched_clothing)
                 
-                # 只有一人刚好达到fit_count
+                # ........fit_count
                 if len(matched_clothing_results) == 1 and len(matched_clothing_results[0]) == fit_count:
                     image_clothing_list.append((picture, matched_clothing_results[0]))
                     self.picture_occurrence[picture] = self.picture_occurrence.get(picture, 0) + 1
@@ -260,14 +260,14 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
         third_image_clothing_list_list = []
         fourth_image_clothing_list_list = []
         
-        # 先确定第一张图片：有占比超过20%的人物，且有超过三件服饰
+        # ........：.....20%...，........
         total_pictures = len(self.dataset_pictures)
         processed_pictures = 0
-        print(f"开始处理 {total_pictures} 张图片，寻找符合条件的服装组合...")
+        print(f".... {total_pictures} ...，..............")
         
         for picture in self.dataset_pictures:
             for person in picture.persons:
-                # 对于每一个穿着超过三件服饰的人物，记录下他们穿着的最独特的三件服饰，并配合图片
+                # ................，................，.....
                 if person.body_area() > 0.2 and len(person.get_clothing_list(only_confident=True)) > 3:
                     top_clothings = sorted(person.get_clothing_list(only_confident=True), key=lambda x: self.clothing_freq_dict[x['name']])[:3]
                     first_image_clothing_list.append((picture, top_clothings))
@@ -276,16 +276,16 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
                         for color in clothing.get('color', []):
                             color_appeared.update(self.synonym_dict.get(color, []) + [color])
                     self.picture_occurrence[picture] = self.picture_occurrence.get(picture, 0) + 1
-                    # 再找出部分符合的图片
+                    # ..........
                     partial_clothing = find_image_partial_clothing(top_clothings, fit_count=2)
                     if len(partial_clothing) > 10:
-                        # 太多的话，先找颜色最符合的图片
+                        # ....，..........
                         partial_clothing = sorted(partial_clothing, key=lambda x: -clothing_color_match_score(x[0], color_appeared))[:10]
-                    # 以及更欠符合的图片
+                    # .........
                     less_fitting_clothing = find_image_partial_clothing(top_clothings, fit_count=1)
                     if len(less_fitting_clothing) > 10:
                         less_fitting_clothing = sorted(less_fitting_clothing, key=lambda x: -clothing_color_match_score(x[0], color_appeared))[:10]
-                    # 以及最不符合的图片
+                    # .........
                     least_fitting_clothing = find_image_partial_clothing(top_clothings, fit_count=0)
                     if len(least_fitting_clothing) > 10:
                         least_fitting_clothing = sorted(least_fitting_clothing, key=lambda x: -clothing_color_match_score(x[0], color_appeared))[:10]
@@ -295,15 +295,15 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
             
             processed_pictures += 1
             if processed_pictures % 100 == 0 or processed_pictures == total_pictures:
-                print(f"已处理 {processed_pictures}/{total_pictures} 张图片，找到 {len(first_image_clothing_list)} 个符合条件的服装组合")
+                print(f"... {processed_pictures}/{total_pictures} ...，.. {len(first_image_clothing_list)} ..........")
 
-        print(f"图片处理完成！共找到 {len(first_image_clothing_list)} 个符合条件的服装组合")
-        print("开始生成问题...")
+        print(f"......！... {len(first_image_clothing_list)} ..........")
+        print(".........")
         
         questions = []
         total_combinations = len(first_image_clothing_list)
         for idx, (first_image, second_image_list, third_image_list, fourth_image_list) in enumerate(zip(first_image_clothing_list, second_image_clothing_list_list, third_image_clothing_list_list, fourth_image_clothing_list_list)):
-            # 找self.clothing_freq_dict出现频率最少的图片
+            # .self.clothing_freq_dict.........
             second_image = min(second_image_list, key=lambda x: self.clothing_freq_dict.get(x[0], 0), default=None)
             third_image = min(third_image_list, key=lambda x: self.clothing_freq_dict.get(x[0], 0), default=None)
             fourth_image = min(fourth_image_list, key=lambda x: self.clothing_freq_dict.get(x[0], 0), default=None)
@@ -328,18 +328,18 @@ class MultiPersonClothingFeatureQuestionGenerator(QuestionGenerator):
             )
             
             if (idx + 1) % 50 == 0 or (idx + 1) == total_combinations:
-                print(f"已生成 {idx + 1}/{total_combinations} 个问题")
+                print(f"... {idx + 1}/{total_combinations} ...")
 
-        print(f"问题生成完成！共生成 {len(questions)} 个多图服装特征问题")
+        print(f"......！... {len(questions)} .........")
         return questions
 
     def filter_pictures(self):
-        """过滤符合条件的图片"""
+        """........."""
         filtered_pictures = []
         for picture in self.dataset_pictures:
-            # 需要人体占比超过20%
+            # ........20%
             body_area_sum = sum(person.body_area() for person in picture.persons)
-            # 需要至少有一人有一件服饰
+            # ............
             has_clothing = any(len(person.get_clothing_list()) > 0 for person in picture.persons)
             if body_area_sum > 0.2 and has_clothing:
                 filtered_pictures.append(picture)

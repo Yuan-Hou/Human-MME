@@ -28,7 +28,7 @@ def load_synonym_dicts() -> Dict[str, Dict[str, List[str]]]:
     }
 
 class SinglePersonQuestions(QuestionGenerator):
-    """单人物单特征题型生成器"""
+    """..........."""
     def __init__(self, dataset_pictures):
         super().__init__(dataset_pictures)
         
@@ -39,15 +39,15 @@ class SinglePersonQuestions(QuestionGenerator):
         results = []
         
         for picture in self.dataset_pictures:
-            person = picture.persons[0]  # 这里只有一个人
+            person = picture.persons[0]  # .......
             feats = person.full_feature_set(body_boxes=True)
             facial_admit_set = person.get_face_attr_admit_list()
             facial_deny_set = person.get_face_attr_deny_list()
             clothes = person.get_clothing_list(only_confident=True)
 
-            # 选择（判断）题系列
+            # ..（..）...
 
-            ## 面部特征
+            ## ....
             try:
                 # count = random.choice([1,2,3][:min(len(facial_admit_set), 3)])
                 count = 1
@@ -63,7 +63,7 @@ class SinglePersonQuestions(QuestionGenerator):
             except Exception as e:
                 pass
 
-            ## 衣着特征
+            ## ....
             if len(clothes) > 0:
                 count = random.choice([1,2,3][:min(len(clothes), 3)])
                 true_answers = random.sample(clothes, count)
@@ -109,7 +109,7 @@ class SinglePersonQuestions(QuestionGenerator):
                     })
         
 
-            ## HOI特征
+            ## HOI..
             if len(person.hois) > 0:
                 # count = random.choice([1,2,3][:min(len(person.hois), 3)])
                 count = 1
@@ -177,8 +177,8 @@ class SinglePersonQuestions(QuestionGenerator):
                     "distinct": list(set(distinct))
                 })
 
-            # bounding box系列
-            ## 面部bounding box
+            # bounding box..
+            ## ..bounding box
             try:
                 face_boxes = [f for f in feats if f["attr_type"] == "bbox" and f["attr_name"] in ["nose", "mouth", "left_eye", "right_eye", "left_eyebrow", "right_eyebrow", "face"]]
                 if face_boxes:
@@ -191,7 +191,7 @@ class SinglePersonQuestions(QuestionGenerator):
                     })
             except Exception as e:
                 pass
-            ## 身体bounding box
+            ## ..bounding box
             try:
                 body_boxes = [f for f in feats if f["attr_type"] == "bbox" and f["attr_name"] in ["body", "left_hand", "right_hand", "left_foot", "right_foot"]]
                 
@@ -223,8 +223,8 @@ class SinglePersonQuestions(QuestionGenerator):
             except Exception as e:
                 pass
 
-            # 开放问答系列
-            ## 挑件衣服问
+            # ......
+            ## .....
             try:
                 clothing_item = random.choice([f for f in feats if f["attr_type"] == "clothing"])
                 results.append({
@@ -235,7 +235,7 @@ class SinglePersonQuestions(QuestionGenerator):
                 })
             except Exception as e:
                 pass
-            ## 挑个hoi问
+            ## ..hoi.
             if len(person.hois) > 0:
                 hoi_item = random.choice([f for f in feats if f["attr_type"] == "hoi"])
                 distinct = []
@@ -253,10 +253,10 @@ class SinglePersonQuestions(QuestionGenerator):
         return results
 
     def filter_pictures(self):
-        """过滤符合条件的图片"""
+        """........."""
         filtered_pictures = []
         for picture in self.dataset_pictures:
-            # 需要只有一个人
+            # .......
             if len(picture.persons) == 1:
                 filtered_pictures.append(picture)
         print(f"Filtered down to {len(filtered_pictures)} records for single-person questions.")
@@ -265,7 +265,7 @@ class SinglePersonQuestions(QuestionGenerator):
         return filtered_pictures
     
     def _construct_synonym_dict(self):
-        """加载同义词词典"""
+        """......."""
         load_synonym_dicts()
         self.clothing_synonyms = CLOTHING_SYNONYMS
         self.hoi_synonyms = HOI_SYNONYMS
@@ -293,7 +293,7 @@ class SinglePersonQuestions(QuestionGenerator):
         self.all_colors = all_colors
 
     def generate_qa(self, question_list):
-        """生成问答对"""
+        """....."""
         qa_list = []
         for q in question_list:
             question_msgs = []

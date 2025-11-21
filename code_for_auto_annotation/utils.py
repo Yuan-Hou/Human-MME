@@ -13,7 +13,7 @@ import re
 import random
 
 class RetryController:
-    """重试控制器，用于手动触发重试"""
+    """.....，........"""
     def __init__(self):
         self.force_retry = False
         self.retry_signal = threading.Event()
@@ -21,45 +21,45 @@ class RetryController:
         self.current_function = None
         
     def trigger_retry(self):
-        """手动触发重试"""
-        print("手动触发重试...")
+        """......"""
+        print(".........")
         self.force_retry = True
         self.retry_signal.set()
         
     def reset(self):
-        """重置重试状态"""
+        """......"""
         self.force_retry = False
         self.retry_signal.clear()
         self.current_attempt = 0
         self.current_function = None
 
-# 全局重试控制器实例
+# .........
 retry_controller = RetryController()
 
 def manual_retry():
-    """手动触发重试的便捷函数"""
+    """..........."""
     retry_controller.trigger_retry()
     
 def check_retry_status():
-    """检查当前重试状态"""
+    """........"""
     if retry_controller.current_function:
-        print(f"当前正在执行: {retry_controller.current_function}")
-        print(f"当前重试次数: {retry_controller.current_attempt}")
+        print(f"......: {retry_controller.current_function}")
+        print(f"......: {retry_controller.current_attempt}")
     else:
-        print("当前没有正在执行的API调用")
+        print(".........API..")
 
 class ManualRetryException(Exception):
-    """手动重试异常"""
+    """......"""
     pass
 
 def retry_api_call(max_retries=5, base_delay=2, max_delay=60):
     """
-    重试装饰器，用于自动重试API调用，支持手动触发重试
+    .....，......API..，........
     
     Args:
-        max_retries: 最大重试次数
-        base_delay: 基础延迟时间（秒）
-        max_delay: 最大延迟时间（秒）
+        max_retries: ......
+        base_delay: ......（.）
+        max_delay: ......（.）
     """
     def decorator(func):
         def wrapper(*args, **kwargs):
@@ -70,62 +70,62 @@ def retry_api_call(max_retries=5, base_delay=2, max_delay=60):
                 retry_controller.current_attempt = attempt
                 
                 try:
-                    # 检查是否有手动重试信号
+                    # ...........
                     if retry_controller.force_retry:
                         retry_controller.reset()
-                        print("检测到手动重试信号，重新开始API调用...")
-                        raise ManualRetryException("手动触发重试")
+                        print(".........，....API.....")
+                        raise ManualRetryException("......")
                     
                     result = func(*args, **kwargs)
                     retry_controller.reset()
                     return result
                     
                 except ManualRetryException:
-                    # 手动重试，重置计数器
-                    attempt = -1  # 下次循环会变成0
+                    # ....，.....
+                    attempt = -1  # .......0
                     continue
                     
                 except (ConnectionError, Timeout, RequestException) as e:
                     if attempt == max_retries:
-                        print(f"API调用失败，已达到最大重试次数 {max_retries}")
+                        print(f"API....，......... {max_retries}")
                         retry_controller.reset()
                         raise e
                     
                     delay = min(base_delay * (2 ** attempt), max_delay)
-                    print(f"API调用失败 (尝试 {attempt + 1}/{max_retries + 1}): {str(e)}")
-                    print(f"等待 {delay} 秒后重试... (您可以调用 manual_retry() 立即重试)")
+                    print(f"API.... (.. {attempt + 1}/{max_retries + 1}): {str(e)}")
+                    print(f".. {delay} ....... (..... manual_retry() ....)")
                     
-                    # 可中断的等待，支持手动重试
+                    # ......，......
                     start_time = time.time()
                     while time.time() - start_time < delay:
                         if retry_controller.force_retry:
-                            print("检测到手动重试信号，立即重试...")
+                            print(".........，.......")
                             retry_controller.reset()
                             break
-                        time.sleep(0.1)  # 短暂睡眠，避免CPU占用过高
+                        time.sleep(0.1)  # ....，..CPU....
                     
                 except Exception as e:
-                    # 对于OpenAI库的异常，也进行重试
+                    # ..OpenAI....，.....
                     if "Connection" in str(e) or "timeout" in str(e).lower() or "failed" in str(e).lower():
                         if attempt == max_retries:
-                            print(f"API调用失败，已达到最大重试次数 {max_retries}")
+                            print(f"API....，......... {max_retries}")
                             retry_controller.reset()
                             raise e
                         
                         delay = min(base_delay * (2 ** attempt), max_delay)
-                        print(f"API调用失败 (尝试 {attempt + 1}/{max_retries + 1}): {str(e)}")
-                        print(f"等待 {delay} 秒后重试... (您可以调用 manual_retry() 立即重试)")
+                        print(f"API.... (.. {attempt + 1}/{max_retries + 1}): {str(e)}")
+                        print(f".. {delay} ....... (..... manual_retry() ....)")
                         
-                        # 可中断的等待，支持手动重试
+                        # ......，......
                         start_time = time.time()
                         while time.time() - start_time < delay:
                             if retry_controller.force_retry:
-                                print("检测到手动重试信号，立即重试...")
+                                print(".........，.......")
                                 retry_controller.reset()
                                 break
                             time.sleep(0.1)
                     else:
-                        # 其他异常直接抛出
+                        # ........
                         retry_controller.reset()
                         raise e
             
@@ -234,20 +234,20 @@ def ask_about_image(image: np.ndarray, question: str, model_name: str, json_form
                 ]}
             ],
             # response_format={"type": "json_object" if json_format else "text"},
-            timeout=1000,  # 设置超时时间为1000秒
+            timeout=1000,  # .......1000.
             temperature=0
         )
         content = chat_response.choices[0].message.content
-        # 去除<think>和</think>之间的内容
+        # ..<think>.</think>.....
         content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL)
-        # 去除<|begin_of_box|>和<|end_of_box|>
+        # ..<|begin_of_box|>.<|end_of_box|>
         content = content.replace("<|begin_of_box|>", "").replace("<|end_of_box|>", "")
         content = content.strip()
         if not json_format:
             return content
         else:
             json_text = content
-            # 如果有一行以```开头，则默认不在json文本内，否则默认在json文本内
+            # ......```..，.....json...，.....json...
             in_json = not any(line.startswith("```") for line in json_text.splitlines())
             json_lines = []
             for lines in json_text.splitlines():
@@ -258,12 +258,12 @@ def ask_about_image(image: np.ndarray, question: str, model_name: str, json_form
             json_text = "\n".join(json_lines)
             return json_text
     except Exception as e:
-        # 确保连接错误被正确处理和重试
+        # ..............
         if any(keyword in str(e).lower() for keyword in ['connection', 'timeout', 'network', 'socket']):
-            print(f"⚠️ 连接相关错误，将触发重试: {e}")
-            raise ConnectionError(f"连接错误: {e}")
+            print(f"⚠️ ......，.....: {e}")
+            raise ConnectionError(f"....: {e}")
         else:
-            # 非连接错误直接抛出
+            # .........
             raise
 
 
@@ -290,7 +290,7 @@ def ask_question(question: str, model_name: str, json_format: bool = False) -> s
         temperature=0
     )
     content = chat_response.choices[0].message.content
-    # 去除<think>和</think>之间的内容
+    # ..<think>.</think>.....
     content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL)
     content = content.replace("<|begin_of_box|>", "").replace("<|end_of_box|>", "")
     content = content.strip()
@@ -299,7 +299,7 @@ def ask_question(question: str, model_name: str, json_format: bool = False) -> s
     else:
         json_text = content
 
-        # 如果有一行以```开头，则默认不在json文本内，否则默认在json文本内
+        # ......```..，.....json...，.....json...
         in_json = not any(line.startswith("```") for line in json_text.splitlines())
         json_lines = []
         for lines in json_text.splitlines():
@@ -310,55 +310,55 @@ def ask_question(question: str, model_name: str, json_format: bool = False) -> s
         json_text = "\n".join(json_lines)
         return json_text
 
-# 手动重试使用示例：
+# ........：
 """
-使用方法：
+....：
 
-1. 在另一个终端或Jupyter cell中，你可以随时调用：
+1. .......Jupyter cell.，.......：
    from utils import manual_retry, check_retry_status
-   manual_retry()  # 立即触发重试
+   manual_retry()  # ......
 
-2. 检查当前状态：
-   check_retry_status()  # 查看当前是否有正在执行的API调用
+2. ......：
+   check_retry_status()  # ............API..
 
-3. 在程序运行过程中，如果遇到连接问题：
-   - 程序会自动重试
-   - 在等待期间，你可以调用 manual_retry() 立即重试
-   - 即使没有错误，你也可以手动触发重连
+3. ........，........：
+   - .......
+   - .....，..... manual_retry() ....
+   - ......，..........
 
-示例场景：
-- 服务器重启完成后，调用 manual_retry() 立即重连
-- 切换计算资源后，不等待自动重试时间，立即尝试连接
-- 网络恢复后，立即重试而不等待延迟时间
+....：
+- ........，.. manual_retry() ....
+- .......，.........，......
+- .....，............
 
-使用示例：
-# 在主程序中
-result = ask_about_image(image, "描述这张图片")
+....：
+# .....
+result = ask_about_image(image, "......")
 
-# 在另一个终端或cell中（当程序在重试等待时）
+# .......cell.（.........）
 from utils import manual_retry
-manual_retry()  # 立即触发重试，跳过等待时间
+manual_retry()  # ......，......
 """
 
 def give_color(total: int, index: int):
     """
-    根据索引返回一个颜色值，颜色值在0-255之间。
+    ...........，....0-255..。
     
     Args:
-        total: 总的颜色数量
-        index: 当前颜色的索引
+        total: ......
+        index: .......
     Returns:
-        RGB颜色元组
+        RGB....
     """
     if total <= 0 or index < 0 or index >= total:
-        raise ValueError("索引超出范围或总数无效")
+        raise ValueError("...........")
     
-    # 使用HSV颜色空间生成颜色
+    # ..HSV........
     hue = index / total
     saturation = 0.8
     value = 0.8
     
-    # 将HSV转换为RGB
+    # .HSV...RGB
     h = int(hue * 255)
     s = int(saturation * 255)
     v = int(value * 255)

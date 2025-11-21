@@ -179,14 +179,14 @@ class Person:
 
     @cache
     def face_area(self):
-        """计算人脸区域占整张图片的比例，整张图片大小为1"""
+        """..............，.......1"""
         if self.face_box is not None:
             return (self.face_box[3] - self.face_box[1]) * (self.face_box[2] - self.face_box[0])
         return 0
     
     @cache
     def body_area(self):
-        """计算身体区域占整张图片的比例，整张图片大小为1"""
+        """..............，.......1"""
         if self.body_box is not None:
             return (self.body_box[3] - self.body_box[1]) * (self.body_box[2] - self.body_box[0])
         return 0
@@ -270,13 +270,13 @@ class Person:
         return clothings
     
     def full_feature_set(self, body_boxes = False) -> List[Tuple[Dict]]:
-        """获取完整特征集合"""
+        """........"""
         feature_set = []
-        # 面部特征
+        # ....
         if self.face_box is not None and self.raw_data.get("facex_detailing") and self.detailing_property("face_seen", False):
             if self.face_area() > 0.05:
                 for attr_name, attr_value, accept_thresh, deny_thresh in zip(FACE_ATTR_NAMES, self.get_face_attr_vec(), FACE_ATTR_ADMIT_THRESHOLD, FACE_ATTR_DENY_THRESHOLD):
-                    # 只保留纯面部特征，防打架
+                    # ........，...
                     if attr_name not in ['5 oClock Shadow', 'Arched Eyebrows', 'Attractive', 'Bags Under Eyes', 'Bald', 'Bangs', 'Big Lips', 'Big Nose', 'Black Hair', 'Blond Hair', 'Blurry', 'Brown Hair', 'Bushy Eyebrows', 'Chubby', 'Double Chin', 'Goatee', 'Gray Hair', 'Heavy Makeup', 'High Cheekbones', 'Mouth Slightly Open', 'Mustache', 'Narrow Eyes', 'No Beard', 'Oval Face', 'Pale Skin', 'Pointy Nose', 'Receding Hairline', 'Rosy Cheeks', 'Sideburns', 'Smiling', 'Straight Hair', 'Wavy Hair']:
                         continue
                     if attr_value >= accept_thresh:
@@ -285,35 +285,35 @@ class Person:
                         feature_set.append( {"attr_type":"facial", "attr_name": attr_name, "attr_value": False} )
                     else:
                         feature_set.append( {"attr_type":"facial", "attr_name": attr_name, "attr_value": None} )
-                # 面部landmark
+                # ..landmark
                 if self.skeleton is not None:
                     facex_point_set = np.array(self.raw_data["facex_detailing"]["landmarks"])
                     wpose_point_set = np.array(self.skeleton["dw_face"])
-                    facex_nose = key_points_to_bounding_box(facex_point_set[[27,28,29,30,31,32,33,34,35]])  # facex鼻子相关点
-                    wpose_nose = key_points_to_bounding_box(wpose_point_set[[27,28,29,30,31,32,33,34,35]])  # wpose鼻子相关点
+                    facex_nose = key_points_to_bounding_box(facex_point_set[[27,28,29,30,31,32,33,34,35]])  # facex.....
+                    wpose_nose = key_points_to_bounding_box(wpose_point_set[[27,28,29,30,31,32,33,34,35]])  # wpose.....
                     if bounding_box_iou(facex_nose, wpose_nose) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "nose", "attr_value": facex_nose} )
-                    facex_mouth = key_points_to_bounding_box(facex_point_set[[48,49,50,51,52,53,54,55,56,57,58,59]])  # facex嘴巴相关点
-                    wpose_mouth = key_points_to_bounding_box(wpose_point_set[[48,49,50,51,52,53,54,55,56,57,58,59]])  # wpose嘴巴相关点
+                    facex_mouth = key_points_to_bounding_box(facex_point_set[[48,49,50,51,52,53,54,55,56,57,58,59]])  # facex.....
+                    wpose_mouth = key_points_to_bounding_box(wpose_point_set[[48,49,50,51,52,53,54,55,56,57,58,59]])  # wpose.....
                     if bounding_box_iou(facex_mouth, wpose_mouth) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "mouth", "attr_value": facex_mouth} )
-                    facex_leye = key_points_to_bounding_box(facex_point_set[[42,43,44,45,46,47]])  # facex左眼相关点
-                    wpose_leye = key_points_to_bounding_box(wpose_point_set[[42,43,44,45,46,47]])  # wpose左眼相关点
+                    facex_leye = key_points_to_bounding_box(facex_point_set[[42,43,44,45,46,47]])  # facex.....
+                    wpose_leye = key_points_to_bounding_box(wpose_point_set[[42,43,44,45,46,47]])  # wpose.....
                     if bounding_box_iou(facex_leye, wpose_leye) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "left_eye", "attr_value": facex_leye} )
-                    facex_reye = key_points_to_bounding_box(facex_point_set[[36,37,38,39,40,41]])  # facex右眼相关点
-                    wpose_reye = key_points_to_bounding_box(wpose_point_set[[36,37,38,39,40,41]])  # wpose右眼相关点
+                    facex_reye = key_points_to_bounding_box(facex_point_set[[36,37,38,39,40,41]])  # facex.....
+                    wpose_reye = key_points_to_bounding_box(wpose_point_set[[36,37,38,39,40,41]])  # wpose.....
                     if bounding_box_iou(facex_reye, wpose_reye) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "right_eye", "attr_value": facex_reye} )
-                    facex_leyebrow = key_points_to_bounding_box(facex_point_set[[22,23,24,25,26]])  # facex左眉相关点
-                    wpose_leyebrow = key_points_to_bounding_box(wpose_point_set[[22,23,24,25,26]])  # wpose左眉相关点
+                    facex_leyebrow = key_points_to_bounding_box(facex_point_set[[22,23,24,25,26]])  # facex.....
+                    wpose_leyebrow = key_points_to_bounding_box(wpose_point_set[[22,23,24,25,26]])  # wpose.....
                     if bounding_box_iou(facex_leyebrow, wpose_leyebrow) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "left_eyebrow", "attr_value": facex_leyebrow} )
-                    facex_reyebrow = key_points_to_bounding_box(facex_point_set[[17,18,19,20,21]])  # facex右眉相关点
-                    wpose_reyebrow = key_points_to_bounding_box(wpose_point_set[[17,18,19,20,21]])  # wpose右眉相关点
+                    facex_reyebrow = key_points_to_bounding_box(facex_point_set[[17,18,19,20,21]])  # facex.....
+                    wpose_reyebrow = key_points_to_bounding_box(wpose_point_set[[17,18,19,20,21]])  # wpose.....
                     if bounding_box_iou(facex_reyebrow, wpose_reyebrow) > 0:
                         feature_set.append( {"attr_type":"bbox", "attr_name": "right_eyebrow", "attr_value": facex_reyebrow} )
-            # 头部姿态
+            # ....
             if self.raw_data["facex_detailing"]["headpose"]["pitch"] < -15 and self.raw_data["facex_detailing"]["headpose"]["pitch"] > -60:
                 feature_set.append( {"attr_type":"facial", "attr_name": "pitch", "attr_value": "down", "real_value": self.raw_data["facex_detailing"]["headpose"]["pitch"]} )
             elif self.raw_data["facex_detailing"]["headpose"]["pitch"] > 15 and self.raw_data["facex_detailing"]["headpose"]["pitch"] < 60:
@@ -327,21 +327,21 @@ class Person:
                 feature_set.append( {"attr_type":"facial", "attr_name": "yaw", "attr_value": "right", "real_value": self.raw_data["facex_detailing"]["headpose"]["yaw"]} )
             else:
                 feature_set.append( {"attr_type":"facial", "attr_name": "yaw", "attr_value": None, "real_value": self.raw_data["facex_detailing"]["headpose"]["yaw"]} )
-            # 面部全框
+            # ....
             feature_set.append( {"attr_type":"bbox", "attr_name": "face", "attr_value": self.face_box} )
 
-        # qwen 捕获特征
+        # qwen ....
         if self.raw_data.get("qwen_detailing"):
             for key in ["age", "gender", "emotion", "race"]:
                 feature_set.append( {"attr_type":"overall", "attr_name": key, "attr_value": None if self.raw_data["qwen_detailing"][key] in ["unknown", "complex"] else self.raw_data["qwen_detailing"][key]} )
             if self.raw_data["qwen_detailing"].get("text") != "no_text":
                 feature_set.append( {"attr_type":"overall", "attr_name": "text", "attr_value": self.raw_data["qwen_detailing"]["text"]} )
 
-        # 衣着特征
+        # ....
         for clothing in self.get_clothing_list(only_confident=True):
             feature_set.append( {"attr_type":"clothing", "attr_name": "clothing", "attr_value": {"name": clothing["name"], "color": clothing["color"], "type": clothing["type"]}} )
 
-        # 人体全框
+        # ....
         if self.body_box is not None and self.body_area() > 0.1 and len([(x,y)  for x,y in self.skeleton["dw_body"] if x> 0 and y>0]) >= 10:
             feature_set.append( {"attr_type":"bbox", "attr_name": "body", "attr_value": self.body_box} )
 
@@ -351,7 +351,7 @@ class Person:
             left_foot_points = np.array(self.skeleton["dw_foot_1"])
             right_foot_points = np.array(self.skeleton["dw_foot_2"])
             bx1, by1, bx2, by2 = self.body_box
-            # 必须确保所有点都在body box内，才产生相应特征
+            # .........body box.，.......
             if np.any((left_hand_points[:,0] >= bx1) & (left_hand_points[:,0] <= bx2) & (left_hand_points[:,1] >= by1) & (left_hand_points[:,1] <= by2)):
                 feature_set.append( {"attr_type":"bbox", "attr_name": "left_hand", "attr_value": key_points_to_bounding_box(left_hand_points)} )
             if np.any((right_hand_points[:,0] >= bx1) & (right_hand_points[:,0] <= bx2) & (right_hand_points[:,1] >= by1) & (right_hand_points[:,1] <= by2)):
@@ -361,7 +361,7 @@ class Person:
             if np.any((right_foot_points[:,0] >= bx1) & (right_foot_points[:,0] <= bx2) & (right_foot_points[:,1] >= by1) & (right_foot_points[:,1] <= by2)):
                 feature_set.append( {"attr_type":"bbox", "attr_name": "right_foot", "attr_value": key_points_to_bounding_box(right_foot_points)} )
 
-        # 人-物交互特征
+        # .-.....
         for hoi in self.hois:
             if len(hoi.get_position_action_pairs()) == 0:
                 continue
@@ -371,7 +371,7 @@ class Person:
         return feature_set
     
     def hand_cant_swap(self):
-        """是否存在一件物品，左手右手都拿有"""
+        """........，......."""
         left_hand_items = set()
         right_hand_items = set()
         for hoi in self.hois:
@@ -501,25 +501,25 @@ def get_hoi_description(name, relations, no_obj_name = False, no_pos = False):
 
 # import atexit
 # atexit.register(at_exit)
-# ================== 题型生成器基类 ==================
+# ================== ....... ==================
 
 class QuestionGenerator:
-    """题目生成器基类"""
+    """......."""
     
     def __init__(self, dataset_pictures):
         self.dataset_pictures: List[Picture] = dataset_pictures
         self.picture_occurrence: Dict[Picture, int] = {}
     
     def filter_pictures(self):
-        """过滤图片，子类需要重写此方法"""
+        """....，........."""
         raise NotImplementedError("Subclasses must implement filter_pictures method")
     
     def generate_questions(self):
-        """生成题目，子类需要重写此方法"""
+        """....，........."""
         raise NotImplementedError("Subclasses must implement generate_questions method")
     
     def save_questions(self, questions, filename):
-        """保存题目到文件"""
+        """......."""
         with open(filename, "w") as f:
             json.dump(questions, f, indent=4, default=set_default)
         print(f"Generated {len(questions)} questions and saved to {filename}")

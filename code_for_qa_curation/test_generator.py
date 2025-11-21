@@ -408,7 +408,7 @@ def multi_mixed_gen_qa(q, q_msgs):
 
 
 async def generate_qa(question_list):
-    """生成问答对"""
+    """....."""
     async def process_question(q):
         question_msgs = []
         answer_msg = {}
@@ -791,7 +791,7 @@ async def generate_qa(question_list):
         
         return result
     
-    # 并行处理所有问题，限制并行度为64
+    # ........，......64
     from asyncio import Semaphore
     from tqdm import tqdm
     
@@ -801,8 +801,8 @@ async def generate_qa(question_list):
         async with sem:
             return await process_question(q)
     
-    # 使用tqdm显示进度
-    with tqdm(total=len(question_list), desc="处理问题") as pbar:
+    # ..tqdm....
+    with tqdm(total=len(question_list), desc="....") as pbar:
         async def process_and_update(q):
             result = await process_with_semaphore(q)
             pbar.update(1)
@@ -817,7 +817,7 @@ async def generate_qa(question_list):
             ret.extend(r)
         elif r is not None:
             ret.append(r)
-    # 过滤掉 None 结果并返回
+    # ... None .....
     return ret
 
 async def main():
@@ -853,7 +853,7 @@ async def main():
         q, imgs = history_to_str(qa["question"])
         for img in imgs:
             dst = os.path.join(qa_dir, os.path.basename(img))
-            # 压缩到长边长度为256
+            # ........256
             with Image.open(img) as im:
                 im.thumbnail((256, 256))
                 im.save(dst)
@@ -946,7 +946,7 @@ if __name__ == "__main__":
     
     
     dataset_pictures = [Picture(i) for i in get_full_data()]
-    # 生成单图单特征题目
+    # .........
     # single_feature_generator = SinglePersonQuestions(dataset_pictures)
     # single_feature_generator.filter_pictures()
     # single_feature_questions = single_feature_generator.generate_questions()
@@ -955,7 +955,7 @@ if __name__ == "__main__":
     #     single_feature_generator.save_questions(single_feature_questions, "single_feature_questions.json")
     
 
-    # 生成多图人脸特征题目
+    # ..........
     # multi_face_generator = MultiFaceFeatureQuestionGenerator(dataset_pictures)
     # multi_face_generator.filter_pictures()
     # face_questions = multi_face_generator.generate_questions()
@@ -963,7 +963,7 @@ if __name__ == "__main__":
     #     multi_face_generator.save_questions(face_questions, "multi_face_feature_questions.json")
     
 
-    # 生成多图人体服装特征题目
+    # ............
     # multi_clothing_generator = MultiPersonClothingFeatureQuestionGenerator(dataset_pictures)
     # multi_clothing_generator.filter_pictures()
     # clothing_questions = multi_clothing_generator.generate_questions()
@@ -971,21 +971,21 @@ if __name__ == "__main__":
     # if clothing_questions:
     #     multi_clothing_generator.save_questions(clothing_questions, "multi_clothing_feature_questions.json")
 
-    # 生成多图人-物交互特征题目
+    # .....-.......
     # multi_hoi_generator = MultiImageHoiFeatureQuestionGenerator(dataset_pictures)
     # multi_hoi_generator.filter_pictures()
     # hoi_questions = multi_hoi_generator.generate_questions()
     # if hoi_questions:
     #     multi_hoi_generator.save_questions(hoi_questions, "multi_hoi_feature_questions.json")
 
-    # 生成单图多人物多特征混合题目
+    # ..............
     # multi_mixed_generator = ManyPersonMixedFeatureQuestionGenerator(dataset_pictures)
     # multi_mixed_generator.filter_pictures()
     # mixed_questions = multi_mixed_generator.generate_questions()
     # if mixed_questions:
     #     multi_mixed_generator.save_questions(mixed_questions, "multi_mixed_feature_questions.json")
 
-    # 生成抽象属性选择题
+    # .........
     # abstract_generator = AbstractSingleImageChoiceQuestionGenerator(dataset_pictures)
     # abstract_generator.filter_pictures()
     # abstract_questions = abstract_generator.generate_questions()
