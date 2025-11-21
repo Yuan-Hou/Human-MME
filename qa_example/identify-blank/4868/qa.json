@@ -1,0 +1,46 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/016775.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- Face turned to right side of image\n\nWhat is name and color of the clothing item of type \"whole body\" that the person is wearing?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Red dress"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "yaw",
+            "attr_value": "left",
+            "real_value": -45.81642400901446,
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "dress",
+                "color": [
+                    "red"
+                ],
+                "type": "whole body"
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/016775.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-facial-yaw-left-clothing-whole body"
+        ]
+    }
+}

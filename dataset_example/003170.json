@@ -1,0 +1,683 @@
+{
+  "video_path": "./ref_datasets/part2/5916376000.mp4",
+  "start_time": 0.0,
+  "end_time": 6.08,
+  "image_path": "./003170.jpg",
+  "represents_multiple_types": true,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/5916376000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/person_-5584893527806419480_1_5916376000.mp4_0.00_6.08.jpg",
+      "type": "person"
+    },
+    {
+      "video_path": "./ref_datasets/part2/5916376000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/face_-5584893527806419480_1_5916376000.mp4_0.00_6.08.jpg",
+      "type": "face"
+    }
+  ],
+  "cross_video_duplicate": false,
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "child",
+        "gender": "female",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a white short-sleeved shirt with a red harness over it. She also has black pants and climbing shoes on her feet.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "t-shirt",
+                "shirt",
+                "blouse"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "shorts",
+                "pants"
+              ],
+              "name": "shorts",
+              "type": "bottom",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "climbing harness"
+              ],
+              "name": "climbing harness",
+              "type": "accessory",
+              "color": [
+                "red",
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "climbing hold",
+              "grip"
+            ],
+            "name": "climbing hold",
+            "position": "hand"
+          }
+        ],
+        "description": "A child, likely female, is engaged in indoor rock climbing. She is in the foreground of the image, focused on the task at hand with a neutral expression. She wears a white shirt, a red climbing harness, black pants, and black climbing shoes. Her hands are gripping a climbing hold as she ascends the wall. The setting appears to be an indoor climbing gym with various colored holds and a padded floor for safety.",
+        "blurry": false,
+        "face_seen": true,
+        "emotion_description": "The child appears focused and engaged in the activity, showing a neutral expression typical for someone concentrating on a task.",
+        "meaningful": true,
+        "story": "A young girl is actively climbing an indoor rock climbing wall. She is wearing a harness and appears to be enjoying the challenge and physical activity. The setting suggests a recreational or training environment aimed at developing climbing skills.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is actively engaged in rock climbing on an indoor wall, using various handholds and footholds to ascend. They are wearing a harness and appear focused on their movements, suggesting they are either practicing or participating in a climbing session. Their body position indicates careful placement of hands and feet, likely aiming to maintain balance and stability as they climb higher. The presence of climbing gear and the structured environment suggest this activity is part of a recreational or training exercise designed to improve climbing skills and physical fitness.",
+        "intention": "The individual is motivated to improve physical fitness and climbing proficiency through deliberate practice on an indoor climbing wall",
+        "intention_ok": true
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.3205896019935608,
+        0.2523513734340668,
+        0.5678344368934631,
+        0.6974449157714844
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.38326004207134245,
+            0.5082360643933252
+          ],
+          [
+            0.3925185775756836,
+            0.5953143088418819
+          ],
+          [
+            0.47822616338729856,
+            0.6715666093860233
+          ],
+          [
+            0.5136731278896332,
+            0.6066109459595324
+          ],
+          [
+            0.3740015065670013,
+            0.42115781994476864
+          ],
+          [
+            0.4279655420780182,
+            0.3439641329741563
+          ],
+          [
+            0.5067953586578369,
+            0.3995059321359383
+          ],
+          [
+            0.4501860272884369,
+            0.5567174653565756
+          ],
+          [
+            0.5025628852844238,
+            0.5275344861359783
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.44172108054161074,
+            0.4635202091359583
+          ],
+          [
+            0.49515605688095093,
+            0.28277401525354895
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.42902366042137147,
+            0.5039998254742062
+          ],
+          [
+            0.4343142521381378,
+            0.46069604985654566
+          ],
+          [
+            0.3935766959190369,
+            0.545420828238925
+          ],
+          [
+            0.3999254059791565,
+            0.43433722991536095
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.5083825361728668,
+            0.4032714778418219
+          ],
+          [
+            0.5131440687179566,
+            0.41927504709182684
+          ],
+          [
+            0.5184346604347229,
+            0.43622000276830275
+          ],
+          [
+            0.5237252521514892,
+            0.44563386703301155
+          ],
+          [
+            0.5274286663532257,
+            0.45598911772419126
+          ],
+          [
+            0.5300739622116089,
+            0.4286889113565357
+          ],
+          [
+            0.538538908958435,
+            0.4315130706359483
+          ],
+          [
+            0.5443585598468781,
+            0.4324544570624192
+          ],
+          [
+            0.5480619740486145,
+            0.4324544570624192
+          ],
+          [
+            0.5327192580699921,
+            0.41550950138594334
+          ],
+          [
+            0.5422423231601715,
+            0.418333660665356
+          ],
+          [
+            0.5475329148769379,
+            0.42021643351829774
+          ],
+          [
+            0.550178210735321,
+            0.42115781994476864
+          ],
+          [
+            0.5337773764133453,
+            0.40515425069476363
+          ],
+          [
+            0.5427713823318482,
+            0.4070370235477054
+          ],
+          [
+            0.5470038557052612,
+            0.40891979640064713
+          ],
+          [
+            0.5496491515636444,
+            0.41080256925358893
+          ],
+          [
+            0.5337773764133453,
+            0.3947990000035839
+          ],
+          [
+            0.5406551456451416,
+            0.39668177285652567
+          ],
+          [
+            0.5443585598468781,
+            0.3985645457094674
+          ],
+          [
+            0.5470038557052612,
+            0.4004473185624092
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.5136731278896332,
+            0.6047281731065907
+          ],
+          [
+            0.5210799562931061,
+            0.5877832174301147
+          ],
+          [
+            0.5295449030399323,
+            0.5727210346065806
+          ],
+          [
+            0.5390679681301117,
+            0.569896875327168
+          ],
+          [
+            0.5480619740486145,
+            0.569896875327168
+          ],
+          [
+            0.5380098497867585,
+            0.5906073767095273
+          ],
+          [
+            0.550178210735321,
+            0.5896659902830566
+          ],
+          [
+            0.5565269207954406,
+            0.5859004445771729
+          ],
+          [
+            0.561817512512207,
+            0.5830762852977603
+          ],
+          [
+            0.5395970273017884,
+            0.6037867866801198
+          ],
+          [
+            0.5528235065937043,
+            0.6000212409742363
+          ],
+          [
+            0.5581140983104705,
+            0.5953143088418819
+          ],
+          [
+            0.5623465716838837,
+            0.5915487631359982
+          ],
+          [
+            0.5406551456451416,
+            0.6132006509448286
+          ],
+          [
+            0.5517653882503509,
+            0.6084937188124742
+          ],
+          [
+            0.5565269207954406,
+            0.6037867866801198
+          ],
+          [
+            0.5602303349971771,
+            0.6000212409742363
+          ],
+          [
+            0.5406551456451416,
+            0.6188489695036539
+          ],
+          [
+            0.5491200923919678,
+            0.6150834237977704
+          ],
+          [
+            0.5533525657653808,
+            0.6113178780918868
+          ],
+          [
+            0.5559978616237641,
+            0.6075523323860033
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "003170",
+  "objects": [],
+  "mask_file": "./person_labeling/./003170.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A person is engaged in indoor rock climbing on a wall with various colorful handholds and safety equipment visible in a well-lit environment with shadows cast across the surface suggesting natural light from above",
+  "overall_past": "Before the current scene, the individual likely arrived at the climbing facility, put on their climbing harness, and checked their safety equipment—such as the rope and belay device—before beginning their ascent. They may have warmed up briefly or studied the route ahead, choosing their starting point and planning their next moves to ensure a controlled and safe climb.",
+  "overall_past_clean": "The individual approached the climbing wall with focused intent, securing their harness and verifying the integrity of the safety system before stepping onto the first hold, having already assessed the route and mentally mapped the sequence of movements to initiate the climb with precision and control.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the climber is likely to reach the top of the wall, where they will secure themselves to the anchor point using a belay system, then signal to their belayer that they have completed the route. Following this, they may begin to descend safely via rappelling or be lowered, marking the conclusion of their climbing session.",
+  "overall_future_clean": "The climber ascends the final few meters, reaches the summit, anchors securely into the system, signals completion with a clear hand gesture, then begins a controlled descent using the rappel device, moving steadily downward with precision and focus until safely on the ground.",
+  "future_scene_ok": true
+}

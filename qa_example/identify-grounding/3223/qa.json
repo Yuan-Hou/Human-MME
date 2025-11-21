@@ -1,0 +1,48 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006958.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- No beard\n\nPlease provide the bounding box of the person's all visible body in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.4407235085964203,
+            0.1034967452287674,
+            0.6967825889587402,
+            0.8659403324127197
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "No Beard",
+            "attr_value": true,
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.4407235085964203,
+                0.1034967452287674,
+                0.6967825889587402,
+                0.8659403324127197
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/006958.jpg",
+        "distinct": [
+            "identify-grounding-facial-No Beard-True-bbox-body"
+        ]
+    }
+}

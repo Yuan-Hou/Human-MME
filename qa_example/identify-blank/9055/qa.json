@@ -1,0 +1,45 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/019885.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- Wearing Teal jacket\n\nWhat is the emotion of the person?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "surprised"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "jacket",
+                "color": [
+                    "teal"
+                ],
+                "type": "top"
+            },
+            "person_no": 2
+        },
+        "question": {
+            "attr_type": "overall",
+            "attr_name": "emotion",
+            "attr_value": "surprised",
+            "person_no": 2
+        },
+        "image": "./final_labeling/019885.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-clothing-top-overall-emotion-surprised"
+        ]
+    }
+}

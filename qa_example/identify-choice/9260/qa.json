@@ -1,0 +1,82 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/021149.jpg",
+            "width": 1440,
+            "height": 2560,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.0,
+                        0.06798466295003891,
+                        0.4157760739326477,
+                        0.40853968262672424
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1440x2560. There is one person in the image that meets the following condition:\n\n- Wearing Gray turtleneck\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Not blond hair\nB. face in the red bounding box\nC. Blond hair\nD. Wearing Gray turtleneck\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "Mouth Slightly Open",
+            "attr_value": true,
+            "person_no": 1
+        },
+        "image": "./final_labeling/021149.jpg",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "Blond Hair",
+            "attr_value": true,
+            "person_no": 1
+        },
+        "false_answers": [
+            {
+                "attr_type": "bbox",
+                "attr_name": "face",
+                "attr_value": [
+                    0.0,
+                    0.06798466295003891,
+                    0.4157760739326477,
+                    0.40853968262672424
+                ],
+                "person_no": 0
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "Blond Hair",
+                "attr_value": false,
+                "person_no": 0
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "turtleneck",
+                    "color": [
+                        "gray"
+                    ],
+                    "type": "top"
+                },
+                "person_no": 0
+            }
+        ],
+        "distinct": [
+            "identify-choice-facial-Mouth Slightly Open-True-facial-Blond Hair-True"
+        ]
+    }
+}

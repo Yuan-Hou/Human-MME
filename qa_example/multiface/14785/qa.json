@@ -1,0 +1,49 @@
+{
+    "type": "multiface",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/train_00013243.jpg",
+            "image_B": "./final_labeling/train_00015907.jpg",
+            "image_C": "./final_labeling/train_00016436.jpg",
+            "image_D": "./final_labeling/train_00025418.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Male\n- Wearing necktie\n- Bald head\n\nListed are some facial attributes that appeared in the four images above. Please give the sequence of four images by the maximum count of facial attributes that appears in one single person. If someone in a specific image is showing all three facial attributes, it should be the first image in your answer, and if none of three facial attributes are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "B",
+            "A",
+            "D",
+            "C"
+        ]
+    },
+    "data": {
+        "type": "multiface",
+        "combine": [
+            "Male",
+            "Wearing Necktie",
+            "Bald"
+        ],
+        "fullfit": "./final_labeling/train_00015907.jpg",
+        "duo": "./final_labeling/train_00013243.jpg",
+        "duo_admit": [
+            "Wearing Necktie",
+            "Male"
+        ],
+        "solo": "./final_labeling/train_00025418.jpg",
+        "solo_admit": [
+            "Male"
+        ],
+        "none": "./final_labeling/train_00016436.jpg",
+        "distinct": [
+            "multiface-Male",
+            "multiface-Wearing Necktie",
+            "multiface-Bald"
+        ]
+    }
+}

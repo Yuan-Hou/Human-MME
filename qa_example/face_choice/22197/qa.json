@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/003476.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Has bangs\nB. Black hair\nC. Chubby face\nD. Has goatee\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Chubby"
+        ],
+        "false_answers": [
+            "Goatee",
+            "Black Hair",
+            "Bangs"
+        ],
+        "image": "./final_labeling/003476.jpg",
+        "distinct": [
+            "face_choice-Chubby",
+            "face_choice-false-Goatee",
+            "face_choice-false-Black Hair",
+            "face_choice-false-Bangs"
+        ]
+    }
+}

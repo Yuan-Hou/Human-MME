@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006195.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual is taking a deliberate pause to reflect on their thoughts or the content they are working on while maintaining focus on their task in a professional yet relaxed environment\nB. The individual aims to demonstrate the mug's innovative design for effortless tea bag removal to highlight its convenience and efficiency\nC. The individual intends to celebrate a meaningful occasion by sharing a cake with loved ones in a joyful and intimate setting\nD. The individual is preparing to deliver a structured presentation on literature likely aimed at an audience interested in the subject matter\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is taking a deliberate pause to reflect on their thoughts or the content they are working on while maintaining focus on their task in a professional yet relaxed environment",
+        "false_answers": [
+            "The individual aims to demonstrate the mug's innovative design for effortless tea bag removal to highlight its convenience and efficiency",
+            "The individual is preparing to deliver a structured presentation on literature likely aimed at an audience interested in the subject matter",
+            "The individual intends to celebrate a meaningful occasion by sharing a cake with loved ones in a joyful and intimate setting"
+        ],
+        "image": "./final_labeling/006195.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

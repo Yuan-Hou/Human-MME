@@ -1,0 +1,45 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/002929.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- age: senior\n\nWhat is name and color of the clothing item of type \"top\" that the person is wearing?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "White shirt"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "senior",
+            "person_no": 1
+        },
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "shirt",
+                "color": [
+                    "white"
+                ],
+                "type": "top"
+            },
+            "person_no": 1
+        },
+        "image": "./final_labeling/002929.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-overall-age-senior-clothing-top"
+        ]
+    }
+}

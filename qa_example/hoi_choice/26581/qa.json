@@ -1,0 +1,92 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004482.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: left hand, action: spraying, object: thread\nB. body part: left hand, action: spraying, object: spray gun\nC. body part: both hands, action: spraying, object: thread\nD. body part: both hands, action: spraying, object: spray gun\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "both hands",
+                        "holding"
+                    ],
+                    [
+                        "both hands",
+                        "spraying"
+                    ]
+                ],
+                "object": "spray gun",
+                "bbox": [
+                    0.3678137958049774,
+                    0.4334806203842163,
+                    0.5814228653907776,
+                    0.5372684597969055
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "spraying"
+                    ]
+                ],
+                "object": "spray gun"
+            },
+            {
+                "relation": [
+                    [
+                        "both hands",
+                        "holding"
+                    ],
+                    [
+                        "both hands",
+                        "spraying"
+                    ]
+                ],
+                "object": "thread"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "spraying"
+                    ]
+                ],
+                "object": "thread"
+            }
+        ],
+        "image": "./final_labeling/004482.jpg",
+        "distinct": [
+            "hoi_choice-both hands",
+            "hoi_choice-false-both hands",
+            "hoi_choice-false-left hand"
+        ]
+    }
+}

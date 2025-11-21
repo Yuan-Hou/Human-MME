@@ -1,0 +1,69 @@
+{
+    "type": "identify-tf_blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00036706.jpg",
+            "width": 640,
+            "height": 512
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x512. There might be one person in the image that meets the following two conditions:\n\n- Have interaction with object: \"body part: thigh, action: walk, object: horse\"\n- all visible body in the bounding box [15,109,68,215] (xyxy format)\n\nPlease answer the following question if there is such a person. Or else, please provide \"unknown\" as answer:\n\nWhat is name and color of the clothing item of type \"bottom\" that the person is wearing?"
+        }
+    ],
+    "answer": {
+        "type": "tf_blank",
+        "data": "unknown"
+    },
+    "data": {
+        "type": "identify-tf_blank",
+        "condition_1": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "thigh",
+                        "walk"
+                    ]
+                ],
+                "object": "horse",
+                "bbox": [
+                    0.328125,
+                    0.458984375,
+                    0.9234375,
+                    0.953125
+                ]
+            },
+            "person_no": 1
+        },
+        "condition_2": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.024951588362455368,
+                0.21291323006153107,
+                0.10660557448863983,
+                0.4211462140083313
+            ],
+            "person_no": 0
+        },
+        "fake_answer": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "pants",
+                "color": [
+                    "gray"
+                ],
+                "type": "bottom"
+            },
+            "person_no": 1
+        },
+        "image": "./final_labeling/train_00036706.jpg",
+        "distinct": [
+            "identify-f_blank-hoi-thigh-clothing-bottom"
+        ]
+    }
+}

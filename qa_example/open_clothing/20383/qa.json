@@ -1,0 +1,41 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/002431.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"accessory\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Silver chain necklace"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "Silver chain necklace"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "chain necklace",
+                "color": [
+                    "silver"
+                ],
+                "type": "accessory"
+            }
+        },
+        "image": "./final_labeling/002431.jpg",
+        "distinct": [
+            "open_clothing-accessory"
+        ]
+    }
+}

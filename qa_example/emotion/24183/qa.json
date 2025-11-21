@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00019030.jpg",
+            "width": 427,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. Intense frustration and irritation fuel a surge of anger driven by the pressure of high stakes and the fear of failure while grappling with overwhelming challenges and a deep sense of responsibility\nB. Intense frustration and irritation dominate the emotional state with a strong focus on the source of distress and a pressing need for immediate resolution\nC. Intense anger arises from a perceived threat or injustice triggering heightened alertness and a need to react driven by frustration and a sense of powerlessness with thoughts fixated on unfairness and control leading to a focus on resolution through assertion or alternative action as a protective response consuming attention and energy\nD. Intense anger is overwhelming with thoughts consumed by retaliation and a need to restore balance driven by perceived injustice and a readiness to confront with force\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "Intense frustration and irritation dominate the emotional state with a strong focus on the source of distress and a pressing need for immediate resolution",
+        "false_answers": [
+            "Intense frustration and irritation fuel a surge of anger driven by the pressure of high stakes and the fear of failure while grappling with overwhelming challenges and a deep sense of responsibility",
+            "Intense anger is overwhelming with thoughts consumed by retaliation and a need to restore balance driven by perceived injustice and a readiness to confront with force",
+            "Intense anger arises from a perceived threat or injustice triggering heightened alertness and a need to react driven by frustration and a sense of powerlessness with thoughts fixated on unfairness and control leading to a focus on resolution through assertion or alternative action as a protective response consuming attention and energy"
+        ],
+        "image": "./final_labeling/train_00019030.jpg",
+        "distinct": [
+            "emotion-angry"
+        ]
+    }
+}

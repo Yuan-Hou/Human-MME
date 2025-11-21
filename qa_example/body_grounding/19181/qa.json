@@ -1,0 +1,41 @@
+{
+    "type": "body_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/001378.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1080x1920. Please provide the bounding box (in xyxy format) of the \"all visible body\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.2108147144317627,
+            0.27066555619239807,
+            1,
+            0.9835866689682007
+        ]
+    },
+    "data": {
+        "type": "body_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.2108147144317627,
+                0.27066555619239807,
+                1.0,
+                0.9835866689682007
+            ]
+        },
+        "image": "./final_labeling/001378.jpg",
+        "distinct": [
+            "body_grounding-body"
+        ]
+    }
+}

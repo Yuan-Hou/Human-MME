@@ -1,0 +1,49 @@
+{
+    "type": "multiface",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/train_00029074.jpg",
+            "image_B": "./final_labeling/train_00005438.jpg",
+            "image_C": "./final_labeling/train_00026373.jpg",
+            "image_D": "./final_labeling/030890.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Has mustache\n- Male\n- Has sideburns\n\nListed are some facial attributes that appeared in the four images above. Please give the sequence of four images by the maximum count of facial attributes that appears in one single person. If someone in a specific image is showing all three facial attributes, it should be the first image in your answer, and if none of three facial attributes are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "B",
+            "A",
+            "C",
+            "D"
+        ]
+    },
+    "data": {
+        "type": "multiface",
+        "combine": [
+            "Mustache",
+            "Male",
+            "Sideburns"
+        ],
+        "fullfit": "./final_labeling/train_00005438.jpg",
+        "duo": "./final_labeling/train_00029074.jpg",
+        "duo_admit": [
+            "Male",
+            "Sideburns"
+        ],
+        "solo": "./final_labeling/train_00026373.jpg",
+        "solo_admit": [
+            "Male"
+        ],
+        "none": "./final_labeling/030890.jpg",
+        "distinct": [
+            "multiface-Mustache",
+            "multiface-Male",
+            "multiface-Sideburns"
+        ]
+    }
+}

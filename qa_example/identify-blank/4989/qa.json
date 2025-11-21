@@ -1,0 +1,40 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004131.jpg",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2560x1440. There is one person in the image that meets the following condition:\n\n- Face turned to left side of image\n\nWhat is the age of the person?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "adult"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "yaw",
+            "attr_value": "right",
+            "real_value": 22.499061475108665,
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "adult",
+            "person_no": 0
+        },
+        "image": "./final_labeling/004131.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-facial-yaw-right-overall-age-adult"
+        ]
+    }
+}

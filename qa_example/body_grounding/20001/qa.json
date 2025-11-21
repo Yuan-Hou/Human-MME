@@ -1,0 +1,41 @@
+{
+    "type": "body_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/000742.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x4096. Please provide the bounding box (in xyxy format) of the \"right hand\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.49262391572734515,
+            0.3739436872899532,
+            0.5934567510478485,
+            0.49272476729750636
+        ]
+    },
+    "data": {
+        "type": "body_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "right_hand",
+            "attr_value": [
+                0.5010266520040537,
+                0.38384211062391593,
+                0.5850540147711398,
+                0.4828263439635436
+            ]
+        },
+        "image": "./final_labeling/000742.jpg",
+        "distinct": [
+            "body_grounding-right_hand"
+        ]
+    }
+}

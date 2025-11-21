@@ -1,0 +1,68 @@
+{
+    "type": "identify-tf_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00029641.jpg",
+            "width": 640,
+            "height": 427
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x427. There might be one person in the image that meets the following two conditions:\n\n- Wearing Black watch\n- Wearing Red jersey\n\nPlease provide the bounding box of the person's all visible body in xyxy format if there is such a person. Or else, please provide [-1,-1,-1,-1] as answer."
+        }
+    ],
+    "answer": {
+        "type": "tf_bbox",
+        "data": [
+            0.03694422170519829,
+            0.058061372488737106,
+            0.7856996655464172,
+            0.9913045763969421
+        ]
+    },
+    "data": {
+        "type": "identify-tf_grounding",
+        "condition_1": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "watch",
+                "color": [
+                    "black"
+                ],
+                "type": "accessory"
+            },
+            "person_no": 3
+        },
+        "condition_2": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "jersey",
+                "color": [
+                    "red"
+                ],
+                "type": "top"
+            },
+            "person_no": 3
+        },
+        "answer": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.03694422170519829,
+                0.058061372488737106,
+                0.7856996655464172,
+                0.9913045763969421
+            ],
+            "person_no": 3
+        },
+        "image": "./final_labeling/train_00029641.jpg",
+        "can_mutate_hand_to_false": true,
+        "confuse_cond_from": "self",
+        "distinct": [
+            "identify-t_grounding-clothing-accessory-bbox-body"
+        ]
+    }
+}

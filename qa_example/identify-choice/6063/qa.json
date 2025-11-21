@@ -1,0 +1,78 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006140.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x4096. There is one person in the image that meets the following condition:\n\n- Wearing Purple white dress\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Not black hair\nB. Wearing Brown pants\nC. all visible body in the bounding box [1100,809,2152,2404] (xyxy format)\nD. Not wavy hair\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "dress",
+                "color": [
+                    "purple",
+                    "white"
+                ],
+                "type": "whole body"
+            },
+            "person_no": 1
+        },
+        "image": "./final_labeling/006140.jpg",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "Wavy Hair",
+            "attr_value": false,
+            "person_no": 1
+        },
+        "false_answers": [
+            {
+                "attr_type": "facial",
+                "attr_name": "Black Hair",
+                "attr_value": false,
+                "person_no": 0
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "pants",
+                    "color": [
+                        "brown"
+                    ],
+                    "type": "bottom"
+                },
+                "person_no": 0
+            },
+            {
+                "attr_type": "bbox",
+                "attr_name": "body",
+                "attr_value": [
+                    0.5096333026885986,
+                    0.19767121970653534,
+                    0.9964793920516968,
+                    0.5869431495666504
+                ],
+                "person_no": 0
+            }
+        ],
+        "distinct": [
+            "identify-choice-clothing-whole body-facial-Wavy Hair-False"
+        ]
+    }
+}

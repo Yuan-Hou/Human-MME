@@ -1,0 +1,61 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/008439.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There is one person in the image that meets the following condition:\n\n- age: adult\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: left hand, action: holding\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "ruler",
+            "bbox": [
+                0.38463708758354187,
+                0.40797409415245056,
+                0.48532143235206604,
+                0.49472424387931824
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "adult",
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "ruler",
+                "bbox": [
+                    0.38463708758354187,
+                    0.40797409415245056,
+                    0.48532143235206604,
+                    0.49472424387931824
+                ]
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/008439.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-open_grounding-overall-age-adult-hoi-left hand"
+        ]
+    }
+}

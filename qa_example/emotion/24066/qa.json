@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00012234.jpg",
+            "width": 512,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. A sudden overwhelming shock triggers disbelief and panic as the mind races to comprehend an unforeseen danger while the body instinctively reacts with frozen tension and a surge of urgency\nB. A sudden surge of astonishment triggers heightened awareness and mental engagement as the mind scrambles to process unexpected input while curiosity and intrigue take hold\nC. A sudden overwhelming shock grips the mind as disbelief floods in and thoughts race to comprehend an unforeseen event that disrupts the expected flow of reality\nD. A wave of surprise floods through with a mix of excitement and apprehension as the mind races with uncertainty and anticipation about what lies ahead\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "A sudden overwhelming shock triggers disbelief and panic as the mind races to comprehend an unforeseen danger while the body instinctively reacts with frozen tension and a surge of urgency",
+        "false_answers": [
+            "A wave of surprise floods through with a mix of excitement and apprehension as the mind races with uncertainty and anticipation about what lies ahead",
+            "A sudden overwhelming shock grips the mind as disbelief floods in and thoughts race to comprehend an unforeseen event that disrupts the expected flow of reality",
+            "A sudden surge of astonishment triggers heightened awareness and mental engagement as the mind scrambles to process unexpected input while curiosity and intrigue take hold"
+        ],
+        "image": "./final_labeling/train_00012234.jpg",
+        "distinct": [
+            "emotion-surprised"
+        ]
+    }
+}

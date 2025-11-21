@@ -1,0 +1,50 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/test_00000557.jpg",
+            "width": 550,
+            "height": 577
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: face, action: smell\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "carrot"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "face",
+                        "smell"
+                    ],
+                    [
+                        "face",
+                        "hold"
+                    ]
+                ],
+                "object": "carrot",
+                "bbox": [
+                    0.0018181818181818182,
+                    0.6689774696707106,
+                    0.9981818181818182,
+                    0.7781629116117851
+                ]
+            }
+        },
+        "image": "./final_labeling/test_00000557.jpg",
+        "distinct": [
+            "open_hoi-face"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

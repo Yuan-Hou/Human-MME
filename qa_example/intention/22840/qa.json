@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/003000.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual seeks a moment of quiet introspection in a secure and peaceful environment to recharge mentally and emotionally\nB. The individual is evaluating the wine's quality with intent to assess its characteristics for professional or personal appreciation within a winemaking context\nC. The individual is focused on effectively communicating valuable insights to an engaged audience using precise control of presentation tools to enhance understanding and impact\nD. The person is deliberately posing to draw attention to the red object while maintaining a calm and composed presence in the urban environment\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual seeks a moment of quiet introspection in a secure and peaceful environment to recharge mentally and emotionally",
+        "false_answers": [
+            "The individual is focused on effectively communicating valuable insights to an engaged audience using precise control of presentation tools to enhance understanding and impact",
+            "The person is deliberately posing to draw attention to the red object while maintaining a calm and composed presence in the urban environment",
+            "The individual is evaluating the wine's quality with intent to assess its characteristics for professional or personal appreciation within a winemaking context"
+        ],
+        "image": "./final_labeling/003000.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

@@ -1,0 +1,755 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/test/test_00000390.jpg",
+  "image_id": "test_00000390",
+  "width": 640,
+  "height": 426,
+  "split": "test",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 390,
+  "annotations": {
+    "objects": "[{'id': 479, 'bbox_human': [213, 497, 58, 291], 'bbox_object': [148, 286, 227, 291], 'connection': 1, 'invis': 0}, {'id': 480, 'bbox_human': [224, 499, 56, 294], 'bbox_object': [144, 407, 229, 336], 'connection': 1, 'invis': 0}, {'id': 481, 'bbox_human': [190, 517, 54, 304], 'bbox_object': [126, 300, 210, 329], 'connection': 1, 'invis': 0}, {'id': 482, 'bbox_human': [210, 503, 54, 295], 'bbox_object': [146, 409, 221, 332], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('snowboard', 'jump'), ('snowboard', 'ride'), ('snowboard', 'stand_on'), ('snowboard', 'wear')]",
+    "negative_captions": "[('snowboard', 'adjust'), ('snowboard', 'carry'), ('snowboard', 'grind'), ('snowboard', 'hold'), ('snowboard', 'no_interaction')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[478, 479, 480, 481]",
+    "negative_objects": "[474, 475, 476, 477, 482]",
+    "ambiguous_objects": "[]",
+    "size": "[640, 426, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person is dressed in winter sports attire, wearing a helmet, goggles, a jacket, pants, gloves, and snowboard boots attached to a snowboard.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "jacket",
+                "coat"
+              ],
+              "name": "jacket",
+              "type": "top",
+              "color": [
+                "brown",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "beige"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "gloves"
+              ],
+              "name": "gloves",
+              "type": "handwear",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "helmet"
+              ],
+              "name": "helmet",
+              "type": "headwear",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "snowboard"
+            ],
+            "name": "snowboard",
+            "position": "foot"
+          }
+        ],
+        "description": "An individual engaged in snowboarding, captured in mid-action with snow being kicked up around them. They are wearing a brown and white jacket, tan pants, black gloves, a white helmet, and goggles. The snowboard is attached to their feet. The person appears focused and is situated in the foreground of the image.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible due to the helmet and goggles, making it impossible to determine their emotional state.",
+        "meaningful": true,
+        "story": "The person appears to be snowboarding down a snowy slope, enjoying an outdoor winter activity. The dynamic pose suggests they are actively engaged in the sport, possibly performing a jump or maneuver.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is snowboarding down a slope, carving through the snow which sprays up around them as they make a sharp turn. They are wearing a helmet for safety and appear focused on maintaining balance and control over their board. The bright sunlight and clear blue sky suggest ideal conditions for snowboarding, likely motivating the individual to enjoy the thrill and freedom of gliding down the mountain. Their posture indicates an experienced level of skill, leaning into the turn with precision and confidence.",
+        "intention": "The individual is motivated by the desire to experience the thrill and freedom of snowboarding while demonstrating mastery and control over the terrain",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "foot",
+                "jump"
+              ],
+              [
+                "foot",
+                "ride"
+              ],
+              [
+                "foot",
+                "stand on"
+              ],
+              [
+                "foot",
+                "wear"
+              ]
+            ],
+            "negative_action": [
+              "adjust",
+              "carry",
+              "grind",
+              "hold",
+              "no interaction"
+            ],
+            "position": "foot"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.33988142013549805,
+        0.1305072009563446,
+        0.780502438545227,
+        0.7012041807174683
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5990731835365295,
+            0.29272902254394156
+          ],
+          [
+            0.5296263913313547,
+            0.26735067442176125
+          ],
+          [
+            0.46205653945604963,
+            0.31387764597909185
+          ],
+          [
+            0.37290187378724415,
+            0.3674541586814724
+          ],
+          [
+            0.6685199757417044,
+            0.31810737066612194
+          ],
+          [
+            0.7079357226689655,
+            0.4633279182541538
+          ],
+          [
+            0.7304590066274006,
+            0.5789403930329755
+          ],
+          [
+            0.5352572123209635,
+            0.40270186440672306
+          ],
+          [
+            0.5117954581975936,
+            0.5056251651244544
+          ],
+          [
+            0.37384034395217897,
+            0.6000890164681257
+          ],
+          [
+            0.605642474691073,
+            0.46896755117019395
+          ],
+          [
+            0.6178425868352255,
+            0.5873998424070356
+          ],
+          [
+            0.5052261670430502,
+            0.6889132348957571
+          ],
+          [
+            0.5624728471040725,
+            0.27581012379582137
+          ],
+          [
+            0.5812422504027683,
+            0.28144975671186134
+          ],
+          [
+            0.5624728471040725,
+            0.25184168390265094
+          ],
+          [
+            0.6234734078248341,
+            0.26312094973473116
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.733274417122205,
+            0.5916295670940657
+          ],
+          [
+            0.7276435961325962,
+            0.6155980069872359
+          ],
+          [
+            0.7238897154728573,
+            0.6367466304223862
+          ],
+          [
+            0.7257666558027267,
+            0.6564853456285265
+          ],
+          [
+            0.7276435961325962,
+            0.6748141526056567
+          ],
+          [
+            0.7445360591014225,
+            0.6409763551094163
+          ],
+          [
+            0.7492284099260967,
+            0.6564853456285265
+          ],
+          [
+            0.7520438204209011,
+            0.6677646114606068
+          ],
+          [
+            0.7548592309157055,
+            0.6762240608346669
+          ],
+          [
+            0.7539207607507705,
+            0.6353367221933761
+          ],
+          [
+            0.7595515817403793,
+            0.6508457127124865
+          ],
+          [
+            0.7623669922351837,
+            0.6635348867735767
+          ],
+          [
+            0.766120872894923,
+            0.6734042443766465
+          ],
+          [
+            0.7595515817403793,
+            0.6325169057353561
+          ],
+          [
+            0.765182402729988,
+            0.6452060797964463
+          ],
+          [
+            0.7679978132247924,
+            0.6564853456285265
+          ],
+          [
+            0.7708132237195968,
+            0.6663547032315966
+          ],
+          [
+            0.7642439325650532,
+            0.626877272819316
+          ],
+          [
+            0.7689362833897274,
+            0.6381565386513963
+          ],
+          [
+            0.7717516938845318,
+            0.6480258962544663
+          ],
+          [
+            0.7745671043793362,
+            0.6550754373995165
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.29500885009765626,
+            0.37591360805553253
+          ],
+          [
+            0.29500885009765626,
+            0.3801433327425626
+          ],
+          [
+            0.29500885009765626,
+            0.3745036998265226
+          ],
+          [
+            0.29500885009765626,
+            0.3716838833685025
+          ],
+          [
+            0.29500885009765626,
+            0.3745036998265226
+          ],
+          [
+            0.29500885009765626,
+            0.3688640669104826
+          ],
+          [
+            0.29500885009765626,
+            0.37591360805553253
+          ],
+          [
+            0.29500885009765626,
+            0.3815532409715728
+          ],
+          [
+            0.29500885009765626,
+            0.3900126903456329
+          ],
+          [
+            0.29500885009765626,
+            0.3688640669104826
+          ],
+          [
+            0.29500885009765626,
+            0.3716838833685025
+          ],
+          [
+            0.29500885009765626,
+            0.37591360805553253
+          ],
+          [
+            0.29500885009765626,
+            0.38437305742959266
+          ],
+          [
+            0.29500885009765626,
+            0.3688640669104826
+          ],
+          [
+            0.29500885009765626,
+            0.3716838833685025
+          ],
+          [
+            0.29500885009765626,
+            0.37591360805553253
+          ],
+          [
+            0.29500885009765626,
+            0.3815532409715728
+          ],
+          [
+            0.29500885009765626,
+            0.3716838833685025
+          ],
+          [
+            0.29500885009765626,
+            0.37309379159751266
+          ],
+          [
+            0.29500885009765626,
+            0.3745036998265226
+          ],
+          [
+            0.29500885009765626,
+            0.3801433327425626
+          ]
+        ],
+        "dw_face": [
+          [
+            0.5643497874339423,
+            0.2715803991087913
+          ],
+          [
+            0.5652882575988769,
+            0.28144975671186134
+          ],
+          [
+            0.5671651979287466,
+            0.2870893896279013
+          ],
+          [
+            0.5727960189183552,
+            0.2913191143149314
+          ],
+          [
+            0.574672959248225,
+            0.29554883900196144
+          ],
+          [
+            0.5756114294131598,
+            0.3025983801470116
+          ],
+          [
+            0.5784268399079642,
+            0.3082380130630516
+          ],
+          [
+            0.5821807205677032,
+            0.31387764597909185
+          ],
+          [
+            0.5887500117222467,
+            0.31387764597909185
+          ],
+          [
+            0.5934423625469207,
+            0.31105782952107175
+          ],
+          [
+            0.5971962432066599,
+            0.3054181966050318
+          ],
+          [
+            0.6047040045261383,
+            0.3025983801470116
+          ],
+          [
+            0.6047040045261383,
+            0.29695874723097165
+          ],
+          [
+            0.605642474691073,
+            0.29272902254394156
+          ],
+          [
+            0.6047040045261383,
+            0.2870893896279013
+          ],
+          [
+            0.6065809448560078,
+            0.2828596649408713
+          ],
+          [
+            0.6065809448560078,
+            0.27440021556681116
+          ],
+          [
+            0.5624728471040725,
+            0.2715803991087913
+          ],
+          [
+            0.5634113172690073,
+            0.2715803991087913
+          ],
+          [
+            0.5643497874339423,
+            0.2729903073378012
+          ],
+          [
+            0.5652882575988769,
+            0.27440021556681116
+          ],
+          [
+            0.5671651979287466,
+            0.27440021556681116
+          ],
+          [
+            0.5737344890832901,
+            0.27440021556681116
+          ],
+          [
+            0.5756114294131598,
+            0.2729903073378012
+          ],
+          [
+            0.5803037802378336,
+            0.2729903073378012
+          ],
+          [
+            0.5840576608975729,
+            0.2729903073378012
+          ],
+          [
+            0.5887500117222467,
+            0.27581012379582137
+          ],
+          [
+            0.5718575487534204,
+            0.2786299402538412
+          ],
+          [
+            0.5718575487534204,
+            0.28426957316988144
+          ],
+          [
+            0.5727960189183552,
+            0.28849929785691153
+          ],
+          [
+            0.5727960189183552,
+            0.29272902254394156
+          ],
+          [
+            0.5727960189183552,
+            0.29554883900196144
+          ],
+          [
+            0.5737344890832901,
+            0.29695874723097165
+          ],
+          [
+            0.574672959248225,
+            0.29695874723097165
+          ],
+          [
+            0.5774883697430292,
+            0.29695874723097165
+          ],
+          [
+            0.5803037802378336,
+            0.29554883900196144
+          ],
+          [
+            0.5634113172690073,
+            0.2786299402538412
+          ],
+          [
+            0.5634113172690073,
+            0.2800398484828514
+          ],
+          [
+            0.5652882575988769,
+            0.2800398484828514
+          ],
+          [
+            0.569042138258616,
+            0.2786299402538412
+          ],
+          [
+            0.5662267277638119,
+            0.2786299402538412
+          ],
+          [
+            0.5643497874339423,
+            0.2786299402538412
+          ],
+          [
+            0.5784268399079642,
+            0.28144975671186134
+          ],
+          [
+            0.5784268399079642,
+            0.2786299402538412
+          ],
+          [
+            0.5821807205677032,
+            0.2800398484828514
+          ],
+          [
+            0.5859346012274423,
+            0.28144975671186134
+          ],
+          [
+            0.5849961310625076,
+            0.2828596649408713
+          ],
+          [
+            0.5821807205677032,
+            0.2828596649408713
+          ],
+          [
+            0.574672959248225,
+            0.30400828837602156
+          ],
+          [
+            0.574672959248225,
+            0.30400828837602156
+          ],
+          [
+            0.5756114294131598,
+            0.30400828837602156
+          ],
+          [
+            0.5765498995780944,
+            0.3025983801470116
+          ],
+          [
+            0.5784268399079642,
+            0.3025983801470116
+          ],
+          [
+            0.5821807205677032,
+            0.30400828837602156
+          ],
+          [
+            0.5868730713923773,
+            0.30400828837602156
+          ],
+          [
+            0.5840576608975729,
+            0.3054181966050318
+          ],
+          [
+            0.5821807205677032,
+            0.30682810483404166
+          ],
+          [
+            0.5784268399079642,
+            0.3082380130630516
+          ],
+          [
+            0.5774883697430292,
+            0.30682810483404166
+          ],
+          [
+            0.5765498995780944,
+            0.3054181966050318
+          ],
+          [
+            0.5756114294131598,
+            0.3054181966050318
+          ],
+          [
+            0.5765498995780944,
+            0.3054181966050318
+          ],
+          [
+            0.5774883697430292,
+            0.30400828837602156
+          ],
+          [
+            0.5812422504027683,
+            0.30400828837602156
+          ],
+          [
+            0.5849961310625076,
+            0.30400828837602156
+          ],
+          [
+            0.5821807205677032,
+            0.3054181966050318
+          ],
+          [
+            0.5784268399079642,
+            0.3054181966050318
+          ],
+          [
+            0.5774883697430292,
+            0.3054181966050318
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.4995953460534414,
+            0.7382600229111076
+          ],
+          [
+            0.5061646372079849,
+            0.7438996558271479
+          ],
+          [
+            0.4836413532495499,
+            0.6790438772926868
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.3982405682404836,
+            0.6832736019797169
+          ],
+          [
+            0.3672710527976354,
+            0.6564853456285265
+          ],
+          [
+            0.35976329147815705,
+            0.6014989246971357
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "snowboard",
+      "possible_names": [
+        "snowboard"
+      ],
+      "box": [
+        0.23125,
+        0.5328638497652582,
+        0.446875,
+        0.6830985915492958
+      ]
+    },
+    {
+      "name": "snowboard",
+      "possible_names": [
+        "snowboard"
+      ],
+      "box": [
+        0.225,
+        0.5375586854460094,
+        0.6359375,
+        0.7887323943661971
+      ]
+    },
+    {
+      "name": "snowboard",
+      "possible_names": [
+        "snowboard"
+      ],
+      "box": [
+        0.196875,
+        0.49295774647887325,
+        0.46875,
+        0.7723004694835681
+      ]
+    }
+  ],
+  "scene": "A snowboarder is captured midair against a backdrop of clear blue skies and snow-covered mountains with evergreen trees scattered around creating a vibrant winter sports scene filled with action and energy",
+  "overall_past": "Before the current scene, the individual likely launched off a natural feature such as a snow ramp or a large mogul, using the momentum from a high-speed descent to gain height and initiate the midair maneuver. The sharp turn prior to the jump would have generated the necessary speed and edge control to launch into the air with precision, suggesting a deliberate and practiced approach to the feature. The clear skies and well-groomed snow indicate favorable conditions, which may have encouraged the rider to attempt a more dynamic trick or simply enjoy the exhilaration of flight, knowing the terrain and weather supported a safe and thrilling ride.",
+  "overall_past_clean": "The rider accelerated rapidly down the slope, carving a sharp, controlled turn that built momentum and locked the edges into the snow, then launched off the lip with precision, propelling upward into the air with full intent and mastery.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the snowboarder is likely to land smoothly on the slope following a midair trick, then continue carving down the mountain with controlled speed and rhythm, possibly preparing for another turn or jump, as the clear skies and pristine snow suggest optimal conditions for sustained high-performance riding.",
+  "overall_future_clean": "The rider lands with precision, edges biting into the snow as momentum carries them forward in a fluid, controlled descent, carving a clean line down the slope with increasing speed and rhythm, poised for the next maneuver under the open sky.",
+  "future_scene_ok": true
+}

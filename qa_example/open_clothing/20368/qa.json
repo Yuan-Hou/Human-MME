@@ -1,0 +1,42 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/002808.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"accessory\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Black silver choker necklace"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "Black silver choker necklace"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "choker necklace",
+                "color": [
+                    "black",
+                    "silver"
+                ],
+                "type": "accessory"
+            }
+        },
+        "image": "./final_labeling/002808.jpg",
+        "distinct": [
+            "open_clothing-accessory"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00030827.jpg",
+            "width": 640,
+            "height": 427
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. A dark towel.\nB. Pants are light olive.\nC. Dark slippers.\nD. Dark pants.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "pants",
+                    "jeans"
+                ],
+                "name": "pants",
+                "type": "bottom",
+                "color": [
+                    "dark"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "shoe"
+                ],
+                "name": "slippers",
+                "type": "footwear",
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "possible_names": [
+                    "pants",
+                    "jeans"
+                ],
+                "name": "towel",
+                "type": "bottom",
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "possible_names": [
+                    "pants",
+                    "jeans"
+                ],
+                "name": "pants",
+                "type": "bottom",
+                "color": [
+                    "light olive"
+                ]
+            }
+        ],
+        "image": "./final_labeling/train_00030827.jpg",
+        "distinct": [
+            "cloth_choice-false-bottom",
+            "cloth_choice-bottom",
+            "cloth_choice-false-footwear"
+        ]
+    }
+}

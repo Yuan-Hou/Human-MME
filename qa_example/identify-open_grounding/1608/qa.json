@@ -1,0 +1,68 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/003989.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1920x1080. There is one person in the image that meets the following condition:\n\n- Wearing Sunglasses in black and red.\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: right hand, action: holding\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "snowball",
+            "bbox": [
+                0.44789692759513855,
+                0.36662131547927856,
+                0.4819854199886322,
+                0.4306855797767639
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "sunglasses",
+                "color": [
+                    "black",
+                    "red"
+                ],
+                "type": "accessory"
+            },
+            "person_no": 1
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "snowball",
+                "bbox": [
+                    0.44789692759513855,
+                    0.36662131547927856,
+                    0.4819854199886322,
+                    0.4306855797767639
+                ]
+            },
+            "person_no": 1
+        },
+        "image": "./final_labeling/003989.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-open_grounding-clothing-accessory-hoi-right hand"
+        ]
+    }
+}

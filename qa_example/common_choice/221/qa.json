@@ -1,0 +1,60 @@
+{
+    "type": "common_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007680.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please select the option that fits most or all of persons in the image:\n\nA. Mouth closed\nB. Wearing White necklace\nC. race: white\nD. Has beard\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "common_choice",
+        "true_answer": {
+            "attr_type": "overall",
+            "attr_name": "race",
+            "attr_value": "white",
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "necklace",
+                    "color": [
+                        "white"
+                    ],
+                    "type": "accessory"
+                },
+                "person_no": 1
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "No Beard",
+                "attr_value": false,
+                "person_no": 0
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "Mouth Slightly Open",
+                "attr_value": false,
+                "person_no": 0
+            }
+        ],
+        "image": "./final_labeling/007680.jpg",
+        "distinct": [
+            "common_choice-overall-race-white"
+        ]
+    }
+}

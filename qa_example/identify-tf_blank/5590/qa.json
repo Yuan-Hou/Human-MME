@@ -1,0 +1,46 @@
+{
+    "type": "identify-tf_blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005180.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There might be one person in the image that meets the following two conditions:\n\n- Not rosy cheeks\n- Not straight hair\n\nPlease answer the following question if there is such a person. Or else, please provide \"unknown\" as answer:\n\nWhat is the gender of the person?"
+        }
+    ],
+    "answer": {
+        "type": "tf_blank",
+        "data": "male"
+    },
+    "data": {
+        "type": "identify-tf_blank",
+        "condition_1": {
+            "attr_type": "facial",
+            "attr_name": "Rosy Cheeks",
+            "attr_value": false,
+            "person_no": 1
+        },
+        "condition_2": {
+            "attr_type": "facial",
+            "attr_name": "Straight Hair",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "male",
+            "person_no": 1
+        },
+        "image": "./final_labeling/005180.jpg",
+        "can_mutate_hand_to_false": true,
+        "confuse_cond_from": "unity",
+        "distinct": [
+            "identify-t_blank-facial-Rosy Cheeks-False-overall-gender-male"
+        ]
+    }
+}

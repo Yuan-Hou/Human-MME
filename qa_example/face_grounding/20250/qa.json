@@ -1,0 +1,41 @@
+{
+    "type": "face_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/001315.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. Please provide the bounding box of the facial part \"left_eye\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.5283196442505869,
+            0.18715641692324425,
+            0.6358905601087568,
+            0.2727736453707621
+        ]
+    },
+    "data": {
+        "type": "face_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_eye",
+            "attr_value": [
+                0.5425891823251732,
+                0.20508490289960588,
+                0.6216210220341705,
+                0.25484515939440044
+            ]
+        },
+        "image": "./final_labeling/001315.jpg",
+        "distinct": [
+            "face_grounding-left_eye"
+        ]
+    }
+}

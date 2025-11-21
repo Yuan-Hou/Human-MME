@@ -1,0 +1,37 @@
+{
+    "type": "causal",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/016018.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of what happened in the past and what will happen in the future:\n\nA. The individual arrived at the location with purpose, immediately initiating setup by securing the structure and arranging essential supplies, demonstrating clear intent and coordination as part of an ongoing logistical effort that demanded precise execution and real-time decision-making.\nB. The individual ends the call with a firm nod, immediately issuing clear instructions to the team, directing adjustments to the layout, verifying the inventory, and ensuring every detail is aligned before the guests arrive.\nC. The individual pushed through a dense throng of people, the pulse of music vibrating through the air as red-lit shadows danced across faces, pausing only to glance at a screen glowing faintly in their hand before stepping into a quiet corner, exhaling slowly as if shedding the weight of the crowd.\nD. A breath is drawn in, the device stowed away, and with deliberate motion, the figure steps into the pulsing rhythm of the crowd, eyes locking onto a stranger\u2019s face across the haze\u2014words are spoken, a smile forms, and the night shifts from isolation to shared presence.\n\nPlease provide the option letters of the most possible answer separately for past and future."
+        }
+    ],
+    "answer": {
+        "type": "double_choice",
+        "data": {
+            "past": "C",
+            "future": "D"
+        }
+    },
+    "data": {
+        "type": "causal",
+        "true_answer": [
+            "The individual pushed through a dense throng of people, the pulse of music vibrating through the air as red-lit shadows danced across faces, pausing only to glance at a screen glowing faintly in their hand before stepping into a quiet corner, exhaling slowly as if shedding the weight of the crowd.",
+            "A breath is drawn in, the device stowed away, and with deliberate motion, the figure steps into the pulsing rhythm of the crowd, eyes locking onto a stranger\u2019s face across the haze\u2014words are spoken, a smile forms, and the night shifts from isolation to shared presence."
+        ],
+        "false_answers": [
+            "The individual arrived at the location with purpose, immediately initiating setup by securing the structure and arranging essential supplies, demonstrating clear intent and coordination as part of an ongoing logistical effort that demanded precise execution and real-time decision-making.",
+            "The individual ends the call with a firm nod, immediately issuing clear instructions to the team, directing adjustments to the layout, verifying the inventory, and ensuring every detail is aligned before the guests arrive."
+        ],
+        "image": "./final_labeling/016018.jpg",
+        "distinct": [
+            "causal"
+        ]
+    }
+}

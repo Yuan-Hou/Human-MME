@@ -1,0 +1,39 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/026215.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There is one person in the image that meets the following condition:\n\n- Mouth closed\n\nWhat is the gender of the person?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "male"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "Mouth Slightly Open",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "male",
+            "person_no": 0
+        },
+        "image": "./final_labeling/026215.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-facial-Mouth Slightly Open-False-overall-gender-male"
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "face_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00012102.jpg",
+            "width": 640,
+            "height": 463
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x463. Please provide the bounding box of the facial part \"left_eye\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.5526534572944481,
+            0.21548441003092678,
+            0.6390897926306713,
+            0.31016023727544073
+        ]
+    },
+    "data": {
+        "type": "face_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_eye",
+            "attr_value": [
+                0.5684327618352004,
+                0.22989046592029735,
+                0.6233104880899191,
+                0.2957541813860702
+            ]
+        },
+        "image": "./final_labeling/train_00012102.jpg",
+        "distinct": [
+            "face_grounding-left_eye"
+        ]
+    }
+}

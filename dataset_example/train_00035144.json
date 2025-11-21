@@ -1,0 +1,699 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00035144.jpg",
+  "image_id": "train_00035144",
+  "width": 640,
+  "height": 426,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 35144,
+  "annotations": {
+    "objects": "[{'id': 86, 'bbox_human': [35, 202, 1, 326], 'bbox_object': [135, 635, 131, 423], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('cat', 'no_interaction')]",
+    "negative_captions": "[('cat', 'dry'), ('cat', 'feed'), ('cat', 'hold'), ('cat', 'hug'), ('cat', 'kiss'), ('cat', 'pet'), ('cat', 'scratch'), ('cat', 'wash'), ('cat', 'chase')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[85]",
+    "negative_objects": "[76, 77, 78, 79, 80, 81, 82, 83, 84]",
+    "ambiguous_objects": "[]",
+    "size": "[640, 426, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a dark-colored top, dark-colored pants, and blue shoes with white soles.",
+        "clothing": {
+          "vague": true,
+          "clothing": [
+            {
+              "possible_names": [
+                "jacket",
+                "coat",
+                "hoodie"
+              ],
+              "name": "jacket",
+              "type": "top",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": false,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": false,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bicycle"
+            ],
+            "name": "bicycle",
+            "position": "other"
+          }
+        ],
+        "description": "The person is in the background, wearing a dark-colored sweater and pants, along with blue shoes with white soles. There is a bicycle nearby, likely indicating some interaction or proximity to the person. Details such as age, gender, and emotion cannot be determined clearly due to the angle and distance.",
+        "blurry": true,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green bounding box appears to be standing near a bicycle, possibly preparing for a ride or having just finished one. Their posture suggests they might be adjusting something on the bike or simply taking a moment to rest. The proximity to the bicycle indicates a strong connection or interest in cycling as a mode of transportation or leisure activity. Although their face is not visible, their body language conveys a sense of focus and engagement with the task at hand, perhaps motivated by the desire to enjoy the outdoors or maintain an active lifestyle. The presence of another bicycle nearby hints at a shared interest or group activity involving cycling.",
+        "intention": "The person is preparing to ride or has just finished cycling and is motivated by a desire to enjoy the outdoors and maintain an active lifestyle",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "standalone",
+                "no interaction"
+              ]
+            ],
+            "negative_action": [
+              "dry",
+              "feed",
+              "hold",
+              "hug",
+              "kiss",
+              "pet",
+              "scratch",
+              "wash",
+              "chase"
+            ],
+            "position": "standalone"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.05939791351556778,
+        0.0011862454703077674,
+        0.3092050850391388,
+        0.7567517161369324
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.24784439383850748,
+            0.006034209216611068
+          ],
+          [
+            0.28698426998065163,
+            0.14691326262338997
+          ],
+          [
+            0.24458273749332876,
+            0.14078808638831258
+          ],
+          [
+            0.10433151465064538,
+            0.01093435020467303
+          ],
+          [
+            0.07334577937144786,
+            0.12363759293009606
+          ],
+          [
+            0.24702897975221277,
+            0.14323815688234345
+          ],
+          [
+            0.1940270641430592,
+            0.20081481349207048
+          ],
+          [
+            0.19076540779788048,
+            0.43234647517799407
+          ],
+          [
+            0.17690336833087103,
+            0.6773535245810876
+          ],
+          [
+            0.09617737378769861,
+            0.19713970775102407
+          ],
+          [
+            0.13042476541207484,
+            0.4127459112257465
+          ],
+          [
+            0.15488718800091492,
+            0.6724533835930256
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.05377584130037576,
+            0.15058836836443637
+          ],
+          [
+            0.05540666947296513,
+            0.13466291015323534
+          ],
+          [
+            0.05622208355925977,
+            0.12118752243606508
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.05296042721408112,
+            0.12608766342412697
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.051329599041491744,
+            0.13833801589428174
+          ],
+          [
+            0.05377584130037576,
+            0.13956305114129705
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.043175458178545026,
+            0.15181340361145182
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.04154463000595569,
+            0.16773886182265285
+          ],
+          [
+            0.05214501312778639,
+            0.1689638970696684
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.24784439383850748,
+            0.14568822737637444
+          ],
+          [
+            0.24621356566591804,
+            0.13466291015323534
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.22256655716337265,
+            0.6932789827922887
+          ],
+          [
+            0.22012031490448863,
+            0.6896038770512424
+          ],
+          [
+            0.14347139079278953,
+            0.6957290532863196
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.23561318254408734,
+            0.699404159027366
+          ],
+          [
+            0.221751143077078,
+            0.7092044410034897
+          ],
+          [
+            0.1565180161735043,
+            0.704304300015428
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "cat",
+      "possible_names": [
+        "cat"
+      ],
+      "box": [
+        0.2109375,
+        0.3075117370892019,
+        0.9921875,
+        0.9929577464788732
+      ]
+    }
+  ],
+  "scene": "A black and white cat with striking yellow eyes sits in the foreground while bicycles and a trash bin are visible in the background under bright sunlight creating sharp contrasts and shadows around the scene",
+  "overall_past": "Before the current scene, the person in the green bounding box likely arrived at the location by bicycle, parked it near the other bicycle, and then stopped to adjust their gear, check the bike’s condition, or take a brief rest after a ride. The bright sunlight and sharp shadows suggest it is midday, and the presence of the trash bin nearby implies they may have passed through a busy urban or park-like area. Given the cat’s alert posture and the focus on the bicycle, it’s plausible that the person had just dismounted, perhaps after a short ride through a scenic or familiar route, and paused momentarily—possibly to admire the surroundings, secure their bike, or prepare for the next part of their journey. The shared presence of two bicycles indicates they were likely part of a group or cycling together, and the cat’s stillness suggests it has been observing the scene for some time, possibly a regular fixture in the area.",
+  "overall_past_clean": "They had just ridden through the sun-drenched path, slowing to a stop as the wheels came to rest, the momentum of their journey giving way to a brief pause before continuing onward.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the person in the green bounding box is likely to mount their bicycle and continue riding, possibly joining the other cyclist nearby. The focused posture, proximity to the bike, and the presence of a second bicycle suggest a shared activity or planned route. Given the bright sunlight and the active setting, it is plausible that they are preparing to enjoy a leisurely or fitness-oriented ride through the area, with the cat observing the scene from the foreground as a silent witness to the moment of departure.",
+  "overall_future_clean": "The person swiftly mounts the bicycle, pedals forward with determined rhythm, and merges seamlessly into the flow of movement along the path, the wheels humming in sync with the rhythm of the day.",
+  "future_scene_ok": true
+}

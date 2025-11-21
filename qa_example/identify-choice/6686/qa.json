@@ -1,0 +1,83 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/007816.jpg",
+            "width": 3840,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.4333808124065399,
+                        0.44002780318260193,
+                        0.46167707443237305,
+                        0.5031958222389221
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- face in the red bounding box\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Wearing dark blue jacket\nB. No mustache\nC. Has beard\nD. face in the red bounding box\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "yaw",
+            "attr_value": "left",
+            "real_value": -22.692617083355778,
+            "person_no": 1
+        },
+        "image": "./final_labeling/007816.jpg",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "No Beard",
+            "attr_value": false,
+            "person_no": 1
+        },
+        "false_answers": [
+            {
+                "attr_type": "facial",
+                "attr_name": "Mustache",
+                "attr_value": false,
+                "person_no": 0
+            },
+            {
+                "attr_type": "bbox",
+                "attr_name": "face",
+                "attr_value": [
+                    0.4333808124065399,
+                    0.44002780318260193,
+                    0.46167707443237305,
+                    0.5031958222389221
+                ],
+                "person_no": 0
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "jacket",
+                    "color": [
+                        "dark blue"
+                    ],
+                    "type": "top"
+                },
+                "person_no": 0
+            }
+        ],
+        "distinct": [
+            "identify-choice-facial-yaw-left-facial-No Beard-False"
+        ]
+    }
+}

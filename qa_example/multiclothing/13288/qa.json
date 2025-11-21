@@ -1,0 +1,107 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/005779.jpg",
+            "image_B": "./final_labeling/test_00000423.jpg",
+            "image_C": "./final_labeling/016951.jpg",
+            "image_D": "./final_labeling/train_00020812.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Wristband in silver.\n- Silver earrings\n- Dark gray sweater\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "D",
+            "A",
+            "B",
+            "C"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "wristband",
+                    "bracelet"
+                ],
+                "name": "wristband",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ]
+            },
+            {
+                "possible_names": [
+                    "earrings"
+                ],
+                "name": "earrings",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ]
+            },
+            {
+                "possible_names": [
+                    "sweater",
+                    "shirt",
+                    "blouse"
+                ],
+                "name": "sweater",
+                "type": "top",
+                "color": [
+                    "dark gray"
+                ]
+            }
+        ],
+        "fullfit": "./final_labeling/train_00020812.jpg",
+        "duo": "./final_labeling/005779.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "earrings",
+                    "hoop earrings"
+                ],
+                "name": "earrings",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ]
+            },
+            {
+                "possible_names": [
+                    "sweater",
+                    "knit top"
+                ],
+                "name": "sweater",
+                "type": "top",
+                "color": [
+                    "black"
+                ]
+            }
+        ],
+        "solo": "./final_labeling/test_00000423.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "shirt",
+                    "sweater"
+                ],
+                "name": "sweater",
+                "type": "top",
+                "color": [
+                    "gray"
+                ]
+            }
+        ],
+        "none": "./final_labeling/016951.jpg",
+        "distinct": [
+            "multiclothing-accessory-accessory-top"
+        ]
+    }
+}

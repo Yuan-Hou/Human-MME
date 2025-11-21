@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/009468.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. A deep sorrow lingers with a heavy heart carrying memories of loss and longing while clinging to a symbol of what once was unable to let go and overwhelmed by emotions seeking solace in quiet reflection\nB. Overwhelmed by sorrow a deep ache of loss lingers thoughts drift to memories regret and the fragility of life emotions surge as the weight of absence presses heavily on the heart\nC. Feeling overwhelmed by deep emotional pain a sense of vulnerability and introspection is present with tears indicating a release of pent up sorrow and a struggle to cope with inner turmoil\nD. Overwhelmed by grief thoughts are consumed by memories regrets and the painful reality of absence emotions are heavy and deeply sorrowful\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "A deep sorrow lingers with a heavy heart carrying memories of loss and longing while clinging to a symbol of what once was unable to let go and overwhelmed by emotions seeking solace in quiet reflection",
+        "false_answers": [
+            "Feeling overwhelmed by deep emotional pain a sense of vulnerability and introspection is present with tears indicating a release of pent up sorrow and a struggle to cope with inner turmoil",
+            "Overwhelmed by sorrow a deep ache of loss lingers thoughts drift to memories regret and the fragility of life emotions surge as the weight of absence presses heavily on the heart",
+            "Overwhelmed by grief thoughts are consumed by memories regrets and the painful reality of absence emotions are heavy and deeply sorrowful"
+        ],
+        "image": "./final_labeling/009468.jpg",
+        "distinct": [
+            "emotion-sad"
+        ]
+    }
+}

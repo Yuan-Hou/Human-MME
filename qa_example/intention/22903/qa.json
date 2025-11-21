@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006637.jpg",
+            "width": 1440,
+            "height": 2732
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual is prioritizing productivity during transit by utilizing available space and resources to complete tasks efficiently while maintaining comfort and focus\nB. The individual is likely seeking relaxation and personal connection through digital engagement in a familiar and comfortable environment\nC. The individual is driven by a strong focus to complete a task or engage in an activity despite external distractions or adverse weather conditions\nD. The individual intends to capture a moment of serene connection with nature while expressing a preference for timeless style and thoughtful presence\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is driven by a strong focus to complete a task or engage in an activity despite external distractions or adverse weather conditions",
+        "false_answers": [
+            "The individual is prioritizing productivity during transit by utilizing available space and resources to complete tasks efficiently while maintaining comfort and focus",
+            "The individual intends to capture a moment of serene connection with nature while expressing a preference for timeless style and thoughtful presence",
+            "The individual is likely seeking relaxation and personal connection through digital engagement in a familiar and comfortable environment"
+        ],
+        "image": "./final_labeling/006637.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

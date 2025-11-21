@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/030101.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. A deep sense of joy and contentment is evident through a broad smile that reaches the eyes and a relaxed, trusting posture suggesting emotional security and affectionate connection\nB. A surge of pure joy radiates through every thought and feeling as exhilaration and happiness flood the mind and body creating a state of complete presence and unfiltered delight\nC. A deep sense of joy and contentment fills the moment with warmth and gratitude for the connection shared in the present\nD. A deep sense of contentment and joy fills the moment accompanied by gratitude for a meaningful connection and a peaceful appreciation of the present\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "A surge of pure joy radiates through every thought and feeling as exhilaration and happiness flood the mind and body creating a state of complete presence and unfiltered delight",
+        "false_answers": [
+            "A deep sense of joy and contentment is evident through a broad smile that reaches the eyes and a relaxed, trusting posture suggesting emotional security and affectionate connection",
+            "A deep sense of contentment and joy fills the moment accompanied by gratitude for a meaningful connection and a peaceful appreciation of the present",
+            "A deep sense of joy and contentment fills the moment with warmth and gratitude for the connection shared in the present"
+        ],
+        "image": "./final_labeling/030101.jpg",
+        "distinct": [
+            "emotion-happy"
+        ]
+    }
+}

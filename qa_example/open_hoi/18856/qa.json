@@ -1,0 +1,46 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004676.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: both hands, action: holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "wood"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "both hands",
+                        "holding"
+                    ]
+                ],
+                "object": "wood",
+                "bbox": [
+                    0.3100261092185974,
+                    0.5442606210708618,
+                    0.563571035861969,
+                    0.8599302768707275
+                ]
+            }
+        },
+        "image": "./final_labeling/004676.jpg",
+        "distinct": [
+            "open_hoi-both hands"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

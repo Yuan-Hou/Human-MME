@@ -1,0 +1,118 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/test_00003175.jpg",
+            "image_B": "./final_labeling/024902.jpg",
+            "image_C": "./final_labeling/004299.jpg",
+            "image_D": "./final_labeling/train_00002797.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Red black lanyard\n- Long sleeve shirt in black.\n- Black glasses\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "A",
+            "C",
+            "B",
+            "D"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "lanyard",
+                    "badge holder"
+                ],
+                "name": "lanyard",
+                "type": "accessory",
+                "color": [
+                    "red",
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "shirt",
+                    "blouse",
+                    "long sleeve shirt"
+                ],
+                "name": "long sleeve shirt",
+                "type": "top",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "fullfit": "./final_labeling/test_00003175.jpg",
+        "duo": "./final_labeling/004299.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "shirt",
+                    "long-sleeved shirt",
+                    "striped shirt"
+                ],
+                "name": "long sleeved shirt",
+                "type": "top",
+                "color": [
+                    "white",
+                    "black"
+                ]
+            },
+            {
+                "possible_names": [
+                    "glasses",
+                    "eyeglasses",
+                    "spectacles"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ]
+            }
+        ],
+        "solo": "./final_labeling/024902.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "none": "./final_labeling/train_00002797.jpg",
+        "distinct": [
+            "multiclothing-accessory-accessory-top"
+        ]
+    }
+}

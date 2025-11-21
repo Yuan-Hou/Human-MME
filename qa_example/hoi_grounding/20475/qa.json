@@ -1,0 +1,50 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00016413.jpg",
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x480. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: hand, action: hold\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.26875,
+            0.17083333333333334,
+            0.696875,
+            0.85
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "hand",
+                        "hold"
+                    ]
+                ],
+                "object": "apple",
+                "bbox": [
+                    0.26875,
+                    0.17083333333333334,
+                    0.696875,
+                    0.85
+                ]
+            }
+        },
+        "image": "./final_labeling/train_00016413.jpg",
+        "distinct": [
+            "hoi_grounding-hand"
+        ]
+    }
+}

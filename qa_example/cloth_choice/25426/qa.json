@@ -1,0 +1,74 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00018567.jpg",
+            "width": 480,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. Pale blue apron.\nB. White skateboard clothing item.\nC. A dark purple shirt.\nD. White apron\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "apron"
+                ],
+                "name": "apron",
+                "type": "other",
+                "color": [
+                    "white"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "apron"
+                ],
+                "name": "skateboard",
+                "type": "other",
+                "color": [
+                    "white"
+                ]
+            },
+            {
+                "possible_names": [
+                    "shirt"
+                ],
+                "name": "shirt",
+                "type": "top",
+                "color": [
+                    "dark purple"
+                ]
+            },
+            {
+                "possible_names": [
+                    "apron"
+                ],
+                "name": "apron",
+                "type": "other",
+                "color": [
+                    "pale blue"
+                ]
+            }
+        ],
+        "image": "./final_labeling/train_00018567.jpg",
+        "distinct": [
+            "cloth_choice-false-other",
+            "cloth_choice-other",
+            "cloth_choice-false-top"
+        ]
+    }
+}

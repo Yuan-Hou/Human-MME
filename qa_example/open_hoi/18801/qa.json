@@ -1,0 +1,50 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/test_00003240.jpg",
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: face, action: hold\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "bottle"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "face",
+                        "hold"
+                    ],
+                    [
+                        "face",
+                        "drink with"
+                    ]
+                ],
+                "object": "bottle",
+                "bbox": [
+                    0.3171875,
+                    0.425,
+                    0.696875,
+                    0.6479166666666667
+                ]
+            }
+        },
+        "image": "./final_labeling/test_00003240.jpg",
+        "distinct": [
+            "open_hoi-face"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

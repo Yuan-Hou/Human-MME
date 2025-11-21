@@ -1,0 +1,54 @@
+{
+    "type": "common_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/018610.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. Please select the option that fits most or all of persons in the image:\n\nA. gender: female\nB. emotion: neutral\nC. age: adult\nD. No mustache\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "common_choice",
+        "true_answer": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "female",
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "facial",
+                "attr_name": "Mustache",
+                "attr_value": false,
+                "person_no": 0
+            },
+            {
+                "attr_type": "overall",
+                "attr_name": "emotion",
+                "attr_value": "neutral",
+                "person_no": 1
+            },
+            {
+                "attr_type": "overall",
+                "attr_name": "age",
+                "attr_value": "adult",
+                "person_no": 0
+            }
+        ],
+        "image": "./final_labeling/018610.jpg",
+        "distinct": [
+            "common_choice-overall-gender-female"
+        ]
+    }
+}

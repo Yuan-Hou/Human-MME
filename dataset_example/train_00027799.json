@@ -1,0 +1,689 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00027799.jpg",
+  "image_id": "train_00027799",
+  "width": 640,
+  "height": 480,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 27799,
+  "annotations": {
+    "objects": "[{'id': 558, 'bbox_human': [214, 437, 378, 478], 'bbox_object': [202, 416, 103, 421], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('toilet', 'no_interaction')]",
+    "negative_captions": "[('toilet', 'clean'), ('toilet', 'flush'), ('toilet', 'open'), ('toilet', 'repair'), ('toilet', 'sit_on'), ('toilet', 'stand_on'), ('toilet', 'wash')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[557]",
+    "negative_objects": "[550, 551, 552, 553, 554, 555, 556]",
+    "ambiguous_objects": "[]",
+    "size": "[640, 480, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing black pants and gray sneakers.",
+        "clothing": [
+          {
+            "possible_names": [
+              "pants",
+              "jeans"
+            ],
+            "name": "pants",
+            "type": "bottom",
+            "color": [
+              "black"
+            ]
+          },
+          {
+            "possible_names": [
+              "sneakers",
+              "shoes"
+            ],
+            "name": "sneakers",
+            "type": "footwear",
+            "color": [
+              "gray"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": true,
+            "possible_names": [
+              "toilet"
+            ],
+            "name": "toilet",
+            "position": "standalone"
+          }
+        ],
+        "description": "The person is in the foreground, wearing black pants and gray sneakers. They are standing in front of a toilet in a bathroom stall. The person's face and upper body are not visible, so age, gender, and emotion cannot be determined. The only visible objects are the person's lower body and the toilet.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotional state cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is standing directly in front of a toilet, likely preparing to use it as indicated by their position and orientation towards the fixture. Their feet are positioned on either side of the toilet base, suggesting they are about to engage in a personal hygiene activity. The presence of multiple toilet paper rolls nearby implies readiness for use, and the individual's stance indicates a routine action possibly driven by necessity or habit. The surrounding environment appears clean and well-maintained, which may contribute to the person's comfort and decision to use this particular facility.",
+        "intention": "The person intends to use the toilet for a routine personal hygiene activity driven by necessity and comfort in a clean environment",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "standalone",
+                "no interaction"
+              ]
+            ],
+            "negative_action": [
+              "clean",
+              "flush",
+              "open",
+              "repair",
+              "sit on",
+              "stand on",
+              "wash"
+            ],
+            "position": "standalone"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.3357810378074646,
+        0.7938859462738037,
+        0.6799436211585999,
+        0.9993842840194702
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6121707648038864,
+            0.9697344766722786
+          ],
+          [
+            0.6186655104160309,
+            0.9803185065587362
+          ],
+          [
+            0.6143356800079346,
+            0.9649235539966159
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.39207105239232376,
+            0.9783941374884713
+          ],
+          [
+            0.3884628603855769,
+            0.9783941374884713
+          ],
+          [
+            0.5897999743620554,
+            0.9726210302776761
+          ],
+          [
+            0.6215520640214285,
+            0.9726210302776761
+          ],
+          [
+            0.6085625727971395,
+            0.9572260777155558
+          ],
+          [
+            0.4043389052152634,
+            0.9716588457425436
+          ],
+          [
+            0.3841330299774806,
+            0.974545399347941
+          ],
+          [
+            0.3942359675963719,
+            0.966847923066881
+          ],
+          [
+            0.6193871488173803,
+            0.8610076242023046
+          ],
+          [
+            0.6229953408241272,
+            0.8610076242023046
+          ],
+          [
+            0.6266035328308741,
+            0.8937218983968099
+          ],
+          [
+            0.6114491264025371,
+            0.8340664572185938
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.3935143291950226,
+            0.9774319529533386
+          ],
+          [
+            0.39856579800446823,
+            0.9706966612074109
+          ],
+          [
+            0.3891844987869263,
+            0.9783941374884713
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3949576059977214,
+            0.8003899984889562
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.37186517715454104,
+            0.9360580179426404
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3826897531747818,
+            0.9783941374884713
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.6165005952119827,
+            0.976469768418206
+          ],
+          [
+            0.6121707648038864,
+            0.9495286014344958
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6352631936470667,
+            0.9110412200291952
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6453661312659582,
+            0.9273983571264478
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6453661312659582,
+            0.9514529705047607
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6215520640214285,
+            0.7724866469701132
+          ],
+          [
+            0.6258818944295248,
+            0.7888437840673658
+          ],
+          [
+            0.6085625727971395,
+            0.8561967015266418
+          ],
+          [
+            0.6128924032052359,
+            0.8610076242023046
+          ],
+          [
+            0.6273251712322235,
+            0.8638941778077022
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.4007307132085164,
+            0.8148227665159439
+          ],
+          [
+            0.3675353467464447,
+            0.8273311654726664
+          ],
+          [
+            0.409390374024709,
+            0.9783941374884713
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.617222233613332,
+            0.813860581980811
+          ],
+          [
+            0.6439228544632595,
+            0.8350286417537267
+          ],
+          [
+            0.5825835903485617,
+            0.9735832148128085
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "toilet",
+      "possible_names": [
+        "toilet"
+      ],
+      "box": [
+        0.315625,
+        0.21458333333333332,
+        0.65,
+        0.8770833333333333
+      ]
+    }
+  ],
+  "scene": "A modern bathroom with a sleek black toilet seat silver flush panel and multiple rolls of toilet paper on a holder set against beige tiles and a dark tiled floor creating a clean and organized space with contemporary design elements",
+  "overall_past": "Before the current scene, the person likely entered the bathroom after completing a prior activity—such as using the restroom, washing hands, or simply entering the space for personal hygiene—possibly after being in a public or shared environment. The clean, organized setup and the presence of multiple toilet paper rolls suggest the space was recently cleaned or maintained, indicating the person may have just arrived and was preparing to use the toilet. Given the modern, well-kept design and the individual’s poised stance, it is plausible that they had just opened the bathroom door, possibly after a brief pause to assess the cleanliness and functionality of the space, ensuring it met their standards before proceeding with their routine. This moment reflects a brief, deliberate pause before engaging in a habitual personal care action.",
+  "overall_past_clean": "They had just stepped through the doorway, pausing briefly to scan the space with deliberate scrutiny, ensuring every detail met their exacting standards before committing to the act of using the facility.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the person is likely to sit on the toilet, use the restroom, flush the toilet using the silver flush panel, and then stand up to wash their hands at the nearby sink—completing a typical bathroom routine in a clean, modern setting.",
+  "overall_future_clean": "They rise from the seat, step forward with purpose, press the flush mechanism with a firm motion, then move decisively to the sink, turning on the water and lathering their hands with soap, rinsing thoroughly before drying with a clean towel.",
+  "future_scene_ok": true
+}

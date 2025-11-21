@@ -1,0 +1,46 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/031631.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: head, action: encapsulate\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "bubble"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "head",
+                        "encapsulate"
+                    ]
+                ],
+                "object": "bubble",
+                "bbox": [
+                    0.3455218970775604,
+                    0.10504317283630371,
+                    0.8438615798950195,
+                    0.8580463528633118
+                ]
+            }
+        },
+        "image": "./final_labeling/031631.jpg",
+        "distinct": [
+            "open_hoi-head"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

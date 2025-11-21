@@ -1,0 +1,742 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/test/test_00000973.jpg",
+  "image_id": "test_00000973",
+  "width": 640,
+  "height": 427,
+  "split": "test",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 973,
+  "annotations": {
+    "objects": "[{'id': 153, 'bbox_human': [131, 373, 121, 377], 'bbox_object': [2, 517, 141, 387], 'connection': 1, 'invis': 0}, {'id': 154, 'bbox_human': [130, 401, 122, 379], 'bbox_object': [1, 521, 139, 370], 'connection': 1, 'invis': 0}, {'id': 155, 'bbox_human': [123, 382, 122, 373], 'bbox_object': [4, 518, 130, 382], 'connection': 1, 'invis': 0}, {'id': 156, 'bbox_human': [132, 370, 121, 354], 'bbox_object': [2, 528, 110, 374], 'connection': 1, 'invis': 0}, {'id': 157, 'bbox_human': [122, 382, 121, 379], 'bbox_object': [2, 521, 126, 361], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('motorcycle', 'race'), ('motorcycle', 'ride'), ('motorcycle', 'sit_on'), ('motorcycle', 'straddle'), ('motorcycle', 'turn')]",
+    "negative_captions": "[('motorcycle', 'inspect'), ('motorcycle', 'jump'), ('motorcycle', 'hop_on'), ('motorcycle', 'push'), ('motorcycle', 'walk'), ('motorcycle', 'wash'), ('motorcycle', 'no_interaction')]",
+    "ambiguous_captions": "[('motorcycle', 'hold'), ('motorcycle', 'park')]",
+    "positive_objects": "[152, 153, 154, 155, 156]",
+    "negative_objects": "[147, 148, 149, 151, 157, 158, 159]",
+    "ambiguous_objects": "[146, 150]",
+    "size": "[640, 427, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a full body racing suit with various sponsors' logos, a helmet, gloves, and boots.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "racing suit",
+                "jumpsuit",
+                "suit"
+              ],
+              "name": "racing suit",
+              "type": "whole body",
+              "color": [
+                "red",
+                "white",
+                "blue"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "gloves"
+              ],
+              "name": "gloves",
+              "type": "handwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "boots"
+              ],
+              "name": "boots",
+              "type": "footwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "helmet"
+              ],
+              "name": "helmet",
+              "type": "headwear",
+              "color": [
+                "blue",
+                "white",
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "motorcycle"
+            ],
+            "name": "motorcycle",
+            "position": "body"
+          }
+        ],
+        "description": "The person is in the foreground, likely an adult motorcycle racer, wearing a blue, red, and white racing suit with a matching helmet, black gloves, and boots. They appear neutral in emotion and are actively riding a motorcycle.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be focused and concentrated on riding the motorcycle, which is typical for a professional racer during a race.",
+        "meaningful": true,
+        "story": "The individual is a motorcycle racer participating in a high-speed race. He is wearing full protective gear, including a helmet, gloves, and a racing suit, indicating his role as a professional athlete. The setting suggests he is navigating a turn on a racetrack, demonstrating skill and precision.",
+        "race": "unknown",
+        "text": "SPIDI, Airwaves",
+        "text_relationship": "The text 'SPIDI' refers to the brand of the racing suit, known for its protective gear used by motorcyclists. 'Airwaves' appears to be a sponsor logo, suggesting a commercial relationship between the racer and the brand.",
+        "behaviour": "The person is leaning into a turn on a motorcycle, demonstrating skilled control and balance as they navigate the curve at high speed. Their body is positioned close to the bike, indicating an experienced rider who understands the dynamics of cornering for optimal performance. The rider's focus appears intense, suggesting concentration on maintaining speed while ensuring safety during the race. The protective gear, including the helmet and suit, indicates a professional approach to the sport, prioritizing safety amidst the competitive environment. The rider's posture and the angle of the motorcycle suggest a calculated maneuver to reduce drag and maintain momentum through the turn.",
+        "intention": "The intention is to execute a precise high-speed corner with maximum control and efficiency to maintain momentum and gain a competitive advantage",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "race"
+              ],
+              [
+                "body",
+                "ride"
+              ],
+              [
+                "body",
+                "sit on"
+              ],
+              [
+                "body",
+                "straddle"
+              ],
+              [
+                "body",
+                "turn"
+              ]
+            ],
+            "negative_action": [
+              "inspect",
+              "jump",
+              "hop on",
+              "push",
+              "walk",
+              "wash",
+              "no interaction"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.20349708199501038,
+        0.2850620448589325,
+        0.5772592425346375,
+        0.881597101688385
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3904974817298353,
+            0.5194689042395116
+          ],
+          [
+            0.40092214457690717,
+            0.6997549127639038
+          ],
+          [
+            0.4971498016268015,
+            0.6793224984644727
+          ],
+          [
+            0.42337526455521585,
+            0.3343752688211356
+          ],
+          [
+            0.5316313787363469,
+            0.3427886158856073
+          ],
+          [
+            0.5645091615617275,
+            0.3704324705260141
+          ],
+          [
+            0.24695789329707624,
+            0.5975928412667482
+          ],
+          [
+            0.3816766131669283,
+            0.8235513052839865
+          ],
+          [
+            0.2525711732916534,
+            0.7358121144687823
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.47389478450641037,
+            0.4749983554701615
+          ],
+          [
+            0.49795169876888395,
+            0.4689888218526818
+          ],
+          [
+            0.42979044169187547,
+            0.45576784789422636
+          ],
+          [
+            0.4514416645281017,
+            0.3584134032910546
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.6214438586495816,
+            0.37644200414349377
+          ],
+          [
+            0.6214438586495816,
+            0.38485535120796543
+          ],
+          [
+            0.6214438586495816,
+            0.39567251171942897
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6214438586495816,
+            0.38004772431398165
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6214438586495816,
+            0.3836534444844695
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.49795169876888395,
+            0.6805244051879686
+          ],
+          [
+            0.5091782587580382,
+            0.6661015245060172
+          ],
+          [
+            0.5244143044576048,
+            0.6528805505475618
+          ],
+          [
+            0.5340370701625943,
+            0.6528805505475618
+          ],
+          [
+            0.5452636301517486,
+            0.6540824572710577
+          ],
+          [
+            0.538848453015089,
+            0.6552843639945537
+          ],
+          [
+            0.5500750130042433,
+            0.6564862707180497
+          ],
+          [
+            0.5492731158621609,
+            0.6588900841650416
+          ],
+          [
+            0.5468674244359135,
+            0.6588900841650416
+          ],
+          [
+            0.5364427615888416,
+            0.6648996177825213
+          ],
+          [
+            0.547669321577996,
+            0.6661015245060172
+          ],
+          [
+            0.5460655272938311,
+            0.6697072446765051
+          ],
+          [
+            0.5436598358675837,
+            0.6709091514000011
+          ],
+          [
+            0.5324332758784294,
+            0.6745148715704888
+          ],
+          [
+            0.5428579387255013,
+            0.6757167782939848
+          ],
+          [
+            0.5404522472992539,
+            0.6793224984644727
+          ],
+          [
+            0.5372446587309241,
+            0.6817263119114646
+          ],
+          [
+            0.5284237901680171,
+            0.6853320320819524
+          ],
+          [
+            0.5340370701625943,
+            0.6865339388054483
+          ],
+          [
+            0.5348389673046767,
+            0.6877358455289443
+          ],
+          [
+            0.5324332758784294,
+            0.6913415656994322
+          ]
+        ],
+        "dw_face": [
+          [
+            0.43861131025478245,
+            0.46538310168219393
+          ],
+          [
+            0.4394132073968649,
+            0.46538310168219393
+          ],
+          [
+            0.4394132073968649,
+            0.46778691512918585
+          ],
+          [
+            0.4410170016810298,
+            0.4737964487466656
+          ],
+          [
+            0.4514416645281017,
+            0.4774021689171534
+          ],
+          [
+            0.45384735595434905,
+            0.4822097958111372
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.45545115023851396,
+            0.464181194958698
+          ],
+          [
+            0.4634701216593385,
+            0.4581716613412183
+          ],
+          [
+            0.4666777102276683,
+            0.4509602210002426
+          ],
+          [
+            0.4682815045118332,
+            0.4569697546177223
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.489130830205977,
+            0.46297928823520207
+          ],
+          [
+            0.4899327273480594,
+            0.45576784789422636
+          ],
+          [
+            0.49153652163222433,
+            0.45216212772373854
+          ],
+          [
+            0.49474411020055414,
+            0.4497583142767466
+          ],
+          [
+            0.5003573901951313,
+            0.44855640755325066
+          ],
+          [
+            0.48752703592181207,
+            0.4593735680647142
+          ],
+          [
+            0.4883289330638945,
+            0.464181194958698
+          ],
+          [
+            0.4899327273480594,
+            0.4701907285761777
+          ],
+          [
+            0.4907346244901419,
+            0.47620026219365746
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.48111185878515245,
+            0.48100788908764125
+          ],
+          [
+            0.489130830205977,
+            0.48100788908764125
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4634701216593385,
+            0.464181194958698
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.46587581308558584,
+            0.4689888218526818
+          ],
+          [
+            0.489130830205977,
+            0.464181194958698
+          ],
+          [
+            0.4907346244901419,
+            0.47259454202316964
+          ],
+          [
+            0.49153652163222433,
+            0.4701907285761777
+          ],
+          [
+            0.4939422130584717,
+            0.46538310168219393
+          ],
+          [
+            0.4923384187743068,
+            0.464181194958698
+          ],
+          [
+            0.4907346244901419,
+            0.46538310168219393
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4899327273480594,
+            0.48461360925812913
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.2710148075595498,
+            0.8031188909845554
+          ],
+          [
+            0.2477597904391587,
+            0.7898979170260999
+          ],
+          [
+            0.24054271616041661,
+            0.7093701665518714
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "motorcycle",
+      "possible_names": [
+        "motorcycle"
+      ],
+      "box": [
+        0.003125,
+        0.33021077283372363,
+        0.8078125,
+        0.9063231850117096
+      ]
+    }
+  ],
+  "scene": "A motorcycle racer speeds along a track with vibrant red and white bike adorned with various sponsor logos against a backdrop of green grass and blurred surroundings indicating motion and speed",
+  "overall_past": "Before the current scene, the rider likely completed a high-speed straightaway, building up significant momentum. As they approached the turn, they began to brake progressively, shifting their weight forward and preparing to lean the motorcycle into the curve. This preparation would have included scanning the track ahead, adjusting body position, and ensuring the bike was properly aligned for optimal cornering. The rider’s focus and precise posture suggest they had already made the decision to take the turn at maximum safe speed, relying on prior experience and track knowledge to execute the maneuver with confidence.",
+  "overall_past_clean": "The rider accelerated relentlessly down the straight, harnessing every ounce of speed, then smoothly applied the brakes, shifting重心 forward and settling into a low, balanced stance, eyes locked ahead, body and machine aligning with instinctive precision as the turn loomed.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the rider will likely accelerate out of the turn, straightening the motorcycle and regaining full speed along the straightaway. The precise lean and body positioning suggest the turn has been executed with optimal control, allowing the rider to smoothly transition into the next phase of the race. With momentum preserved and the bike stabilized, the rider will focus on maintaining a consistent line and maximizing throttle input to gain an advantage over competitors, setting up for the next challenge on the track.",
+  "overall_future_clean": "The motorcycle surges forward with relentless force, carving a precise line down the track as the rider hammers the throttle, wheels biting into the asphalt, momentum building in a seamless surge toward the next challenge.",
+  "future_scene_ok": true
+}

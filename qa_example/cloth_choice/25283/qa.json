@@ -1,0 +1,81 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/027003.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. Cream elbow pads.\nB. Black elbow pads provide protection for the elbows during activities such as skateboarding, rollerblading, or martial arts.\nC. Metallic silver glasses.\nD. Black glasses.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "metallic silver"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "elbow pads",
+                "type": "accessory",
+                "color": [
+                    "cream"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "elbow pads",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "image": "./final_labeling/027003.jpg",
+        "distinct": [
+            "cloth_choice-false-accessory",
+            "cloth_choice-accessory"
+        ]
+    }
+}

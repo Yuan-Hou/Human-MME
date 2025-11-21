@@ -1,0 +1,51 @@
+{
+    "type": "multihoi",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/train_00026364.jpg",
+            "image_B": "./final_labeling/train_00026707.jpg",
+            "image_C": "./final_labeling/003117.jpg",
+            "image_D": "./final_labeling/train_00023445.jpg"
+        },
+        {
+            "type": "text",
+            "text": "This is a description of a human-object interaction: \"body part: face, action: hold, object: wine_glass\"\n\nWhich one of four images listed above best represents this interaction? Provide your answer with the corresponding image letter."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "answer": "D"
+    },
+    "data": {
+        "type": "multihoi",
+        "object": "wine_glass",
+        "hoi": [
+            [
+                "face",
+                "sip"
+            ],
+            [
+                "face",
+                "hold"
+            ]
+        ],
+        "full": "./final_labeling/train_00023445.jpg",
+        "diff_object": "./final_labeling/train_00026364.jpg",
+        "object_diff": [
+            "toothbrush"
+        ],
+        "diff_position": "./final_labeling/003117.jpg",
+        "position_diff": [
+            "standalone"
+        ],
+        "distinct": [
+            "multihoi-wine_glass-face"
+        ],
+        "extra_type": "object",
+        "extra_diff": [
+            "cell_phone"
+        ],
+        "diff_extra": "./final_labeling/train_00026707.jpg"
+    }
+}

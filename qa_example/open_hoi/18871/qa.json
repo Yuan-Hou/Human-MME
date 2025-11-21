@@ -1,0 +1,46 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004010.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: right hand, action: holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "tea cup"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "tea cup",
+                "bbox": [
+                    0.3270069658756256,
+                    0.6603771448135376,
+                    0.398516982793808,
+                    0.7675154209136963
+                ]
+            }
+        },
+        "image": "./final_labeling/004010.jpg",
+        "distinct": [
+            "open_hoi-right hand"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

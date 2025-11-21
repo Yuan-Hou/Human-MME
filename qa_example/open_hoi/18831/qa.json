@@ -1,0 +1,50 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005450.jpg",
+            "width": 2160,
+            "height": 3840
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: both hands, action: holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "acoustic guitar"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "both hands",
+                        "playing"
+                    ],
+                    [
+                        "both hands",
+                        "holding"
+                    ]
+                ],
+                "object": "acoustic guitar",
+                "bbox": [
+                    0.032643675804138184,
+                    0.47605565190315247,
+                    0.9974890947341919,
+                    0.8342620134353638
+                ]
+            }
+        },
+        "image": "./final_labeling/005450.jpg",
+        "distinct": [
+            "open_hoi-both hands"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

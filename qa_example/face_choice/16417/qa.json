@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/013467.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Brown hair\nB. Young face\nC. High cheekbones\nD. Straight hair\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "High Cheekbones"
+        ],
+        "false_answers": [
+            "Brown Hair",
+            "Straight Hair",
+            "Young"
+        ],
+        "image": "./final_labeling/013467.jpg",
+        "distinct": [
+            "face_choice-High Cheekbones",
+            "face_choice-false-Brown Hair",
+            "face_choice-false-Straight Hair",
+            "face_choice-false-Young"
+        ]
+    }
+}

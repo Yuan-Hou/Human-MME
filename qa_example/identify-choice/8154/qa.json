@@ -1,0 +1,76 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/014367.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- all visible body in the bounding box [1795,687,3235,2137] (xyxy format)\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Have text \"SHOREDITCH\" on body, wearings or related objects\nB. Wearing Black jacket\nC. gender: female\nD. face in the bounding box [1540,1133,1821,1467] (xyxy format)\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.46754035353660583,
+                0.31805920600891113,
+                0.8426456451416016,
+                0.9895229935646057
+            ],
+            "person_no": 1
+        },
+        "image": "./final_labeling/014367.jpg",
+        "true_answer": {
+            "attr_type": "overall",
+            "attr_name": "text",
+            "attr_value": "SHOREDITCH",
+            "person_no": 1
+        },
+        "false_answers": [
+            {
+                "attr_type": "overall",
+                "attr_name": "gender",
+                "attr_value": "female",
+                "person_no": 0
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "jacket",
+                    "color": [
+                        "black"
+                    ],
+                    "type": "top"
+                },
+                "person_no": 0
+            },
+            {
+                "attr_type": "bbox",
+                "attr_name": "face",
+                "attr_value": [
+                    0.4010479152202606,
+                    0.5247156620025635,
+                    0.47441959381103516,
+                    0.6792632937431335
+                ],
+                "person_no": 0
+            }
+        ],
+        "distinct": [
+            "identify-choice-bbox-body-overall-text-SHOREDITCH"
+        ]
+    }
+}

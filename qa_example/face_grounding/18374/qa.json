@@ -1,0 +1,41 @@
+{
+    "type": "face_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/030957.jpg",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2560x1440. Please provide the bounding box of the facial part \"face\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.3154740631580353,
+            0.029195839539170265,
+            0.6468980312347412,
+            0.8273026943206787
+        ]
+    },
+    "data": {
+        "type": "face_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.3154740631580353,
+                0.029195839539170265,
+                0.6468980312347412,
+                0.8273026943206787
+            ]
+        },
+        "image": "./final_labeling/030957.jpg",
+        "distinct": [
+            "face_grounding-face"
+        ]
+    }
+}

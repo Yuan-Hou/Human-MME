@@ -1,0 +1,92 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/010578.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: left hand, action: displayed, object: monitor\nB. body part: left hand, action: displayed, object: banana\nC. body part: no direct contact, action: shown, object: banana\nD. body part: no direct contact, action: shown, object: monitor\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "standalone",
+                        "shown"
+                    ],
+                    [
+                        "standalone",
+                        "displayed"
+                    ]
+                ],
+                "object": "monitor",
+                "bbox": [
+                    0.5184638500213623,
+                    0.13142803311347961,
+                    0.9684743881225586,
+                    0.9926954507827759
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "shown"
+                    ],
+                    [
+                        "left hand",
+                        "displayed"
+                    ]
+                ],
+                "object": "monitor"
+            },
+            {
+                "relation": [
+                    [
+                        "standalone",
+                        "shown"
+                    ],
+                    [
+                        "standalone",
+                        "displayed"
+                    ]
+                ],
+                "object": "banana"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "shown"
+                    ],
+                    [
+                        "left hand",
+                        "displayed"
+                    ]
+                ],
+                "object": "banana"
+            }
+        ],
+        "image": "./final_labeling/010578.jpg",
+        "distinct": [
+            "hoi_choice-standalone",
+            "hoi_choice-false-standalone",
+            "hoi_choice-false-left hand"
+        ]
+    }
+}

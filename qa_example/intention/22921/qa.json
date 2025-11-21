@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007447.jpg",
+            "width": 2880,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual is striving for a flawless and polished appearance through meticulous and precise makeup application\nB. The intention is to engage in mindful self-reflection and cultivate a sense of inner peace through deliberate attention to personal appearance in a serene environment\nC. The individual is carefully considering the significance of the lipstick as a tool for self-expression or transformation in a moment of personal significance\nD. The individual is driven by curiosity to understand the object's purpose or meaning through close observation and focused attention\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The intention is to engage in mindful self-reflection and cultivate a sense of inner peace through deliberate attention to personal appearance in a serene environment",
+        "false_answers": [
+            "The individual is striving for a flawless and polished appearance through meticulous and precise makeup application",
+            "The individual is driven by curiosity to understand the object's purpose or meaning through close observation and focused attention",
+            "The individual is carefully considering the significance of the lipstick as a tool for self-expression or transformation in a moment of personal significance"
+        ],
+        "image": "./final_labeling/007447.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

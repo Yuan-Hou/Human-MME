@@ -1,0 +1,60 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/002231.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: no direct contact, action: video call\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.5421885848045349,
+            0.6453582644462585,
+            0.9338298439979553,
+            0.9867427945137024
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "standalone",
+                        "interacting online"
+                    ],
+                    [
+                        "standalone",
+                        "video call"
+                    ],
+                    [
+                        "standalone",
+                        "engaging"
+                    ]
+                ],
+                "object": "laptop",
+                "bbox": [
+                    0.5421885848045349,
+                    0.6453582644462585,
+                    0.9338298439979553,
+                    0.9867427945137024
+                ]
+            }
+        },
+        "image": "./final_labeling/002231.jpg",
+        "distinct": [
+            "hoi_grounding-standalone",
+            "hoi_grounding-standalone",
+            "hoi_grounding-standalone"
+        ]
+    }
+}

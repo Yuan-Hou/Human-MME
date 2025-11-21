@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/015271.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Big lips\nB. Has bangs\nC. Straight hair\nD. Male\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Big Lips"
+        ],
+        "false_answers": [
+            "Bangs",
+            "Straight Hair",
+            "Male"
+        ],
+        "image": "./final_labeling/015271.jpg",
+        "distinct": [
+            "face_choice-Big Lips",
+            "face_choice-false-Bangs",
+            "face_choice-false-Straight Hair",
+            "face_choice-false-Male"
+        ]
+    }
+}

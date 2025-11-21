@@ -1,0 +1,81 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/025624.jpg",
+            "width": 3840,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.6364230513572693,
+                        0.16626200079917908,
+                        0.8291397094726562,
+                        0.5997748374938965
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- whole visible body in the red bounding box\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: body, action: using\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "laptop",
+            "bbox": [
+                0.643968939781189,
+                0.39660266041755676,
+                0.7607290744781494,
+                0.5081396102905273
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.6364230513572693,
+                0.16626200079917908,
+                0.8291397094726562,
+                0.5997748374938965
+            ],
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "body",
+                        "using"
+                    ],
+                    [
+                        "body",
+                        "supporting"
+                    ]
+                ],
+                "object": "laptop",
+                "bbox": [
+                    0.643968939781189,
+                    0.39660266041755676,
+                    0.7607290744781494,
+                    0.5081396102905273
+                ]
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/025624.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-open_grounding-bbox-body-hoi-body"
+        ]
+    }
+}

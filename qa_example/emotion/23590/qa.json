@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/014706.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. A profound sense of wonder and fascination emerges as a sudden realization unfolds triggering deep introspection and emotional resonance with the flow of new understanding\nB. A deep internal struggle unfolds marked by intense awareness and vulnerability intertwined with quiet determination and the weight of unresolved emotions leading to a fragile yet resolute state of mind\nC. A fierce defiance pulses through with unyielding resolve intertwined with deep vulnerability and quiet hope despite overwhelming frustration and inner turmoil\nD. Intense focus and determination drive a deep emotional engagement with the creative process fueled by inner conflict and a need for self-expression through raw unfiltered action\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "Intense focus and determination drive a deep emotional engagement with the creative process fueled by inner conflict and a need for self-expression through raw unfiltered action",
+        "false_answers": [
+            "A fierce defiance pulses through with unyielding resolve intertwined with deep vulnerability and quiet hope despite overwhelming frustration and inner turmoil",
+            "A profound sense of wonder and fascination emerges as a sudden realization unfolds triggering deep introspection and emotional resonance with the flow of new understanding",
+            "A deep internal struggle unfolds marked by intense awareness and vulnerability intertwined with quiet determination and the weight of unresolved emotions leading to a fragile yet resolute state of mind"
+        ],
+        "image": "./final_labeling/014706.jpg",
+        "distinct": [
+            "emotion-complex"
+        ]
+    }
+}

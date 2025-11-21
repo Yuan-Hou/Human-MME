@@ -1,0 +1,112 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/004669.jpg",
+            "image_B": "./final_labeling/test_00001626.jpg",
+            "image_C": "./final_labeling/005876.jpg",
+            "image_D": "./final_labeling/005371.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Sunglasses in black.\n- Dark shoes\n- T shirt in gray color.\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "B",
+            "D",
+            "C",
+            "A"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "sunglasses"
+                ],
+                "name": "sunglasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ]
+            },
+            {
+                "possible_names": [
+                    "shoes",
+                    "footwear"
+                ],
+                "name": "shoes",
+                "type": "footwear",
+                "color": [
+                    "dark"
+                ]
+            },
+            {
+                "possible_names": [
+                    "t-shirt",
+                    "shirt"
+                ],
+                "name": "t shirt",
+                "type": "top",
+                "color": [
+                    "gray"
+                ]
+            }
+        ],
+        "fullfit": "./final_labeling/test_00001626.jpg",
+        "duo": "./final_labeling/005371.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "sunglasses"
+                ],
+                "name": "sunglasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "shoes",
+                    "loafers"
+                ],
+                "name": "shoes",
+                "type": "footwear",
+                "color": [
+                    "dark brown"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "solo": "./final_labeling/005876.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "shoes",
+                    "boots"
+                ],
+                "name": "shoes",
+                "type": "footwear",
+                "color": [
+                    "black",
+                    "red"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "none": "./final_labeling/004669.jpg",
+        "distinct": [
+            "multiclothing-accessory-footwear-top"
+        ]
+    }
+}

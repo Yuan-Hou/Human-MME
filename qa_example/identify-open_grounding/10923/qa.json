@@ -1,0 +1,69 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00024436.jpg",
+            "width": 640,
+            "height": 457
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x457. There is one person in the image that meets the following condition:\n\n- age: child\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: hand, action: open\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "book",
+            "bbox": [
+                0.83125,
+                0.5842450765864332,
+                0.9953125,
+                0.9978118161925602
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "child",
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "hand",
+                        "hold"
+                    ],
+                    [
+                        "hand",
+                        "read"
+                    ],
+                    [
+                        "hand",
+                        "open"
+                    ]
+                ],
+                "object": "book",
+                "bbox": [
+                    0.83125,
+                    0.5842450765864332,
+                    0.9953125,
+                    0.9978118161925602
+                ]
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/train_00024436.jpg",
+        "can_mutate_hand_to_false": false,
+        "distinct": [
+            "identify-open_grounding-overall-age-child-hoi-hand"
+        ]
+    }
+}

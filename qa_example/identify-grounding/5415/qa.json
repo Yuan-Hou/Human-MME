@@ -1,0 +1,48 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/016699.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There is one person in the image that meets the following condition:\n\n- Big lips\n\nPlease provide the bounding box of the person's all visible body in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.0012506007915362716,
+            0.005538187455385923,
+            0.26332566142082214,
+            0.9859452247619629
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "Big Lips",
+            "attr_value": true,
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.0012506007915362716,
+                0.005538187455385923,
+                0.26332566142082214,
+                0.9859452247619629
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/016699.jpg",
+        "distinct": [
+            "identify-grounding-facial-Big Lips-True-bbox-body"
+        ]
+    }
+}

@@ -1,0 +1,3324 @@
+{
+  "video_path": "./ref_datasets/part2/9750049001.mp4",
+  "start_time": 0.0,
+  "end_time": 6.08,
+  "image_path": "./031998.jpg",
+  "represents_multiple_types": false,
+  "cross_video_duplicate": false,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/9750049001.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/face_-684001032570187066_1_9750049001.mp4_0.00_6.08.jpg",
+      "type": "face"
+    }
+  ],
+  "types": [
+    "person",
+    "face"
+  ],
+  "persons": [
+    {
+      "body_box": 2,
+      "skeleton": 1,
+      "face_box": 2,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "happy",
+        "clothing_description": "The person is wearing a vibrant green sleeveless dress with a sweetheart neckline. She also has on long red gloves that extend past her elbows. Her hair is dark and curly, adorned with a colorful Mardi Gras-style mask featuring purple, green, and gold colors.",
+        "clothing": [
+          {
+            "possible_names": [
+              "dress",
+              "gown"
+            ],
+            "name": "dress",
+            "type": "whole body",
+            "color": [
+              "green"
+            ]
+          },
+          {
+            "possible_names": [
+              "gloves",
+              "handwear"
+            ],
+            "name": "gloves",
+            "type": "handwear",
+            "color": [
+              "red"
+            ]
+          },
+          {
+            "possible_names": [
+              "mask",
+              "headwear"
+            ],
+            "name": "mask",
+            "type": "headwear",
+            "color": [
+              "purple",
+              "green",
+              "gold"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "drink",
+              "glass"
+            ],
+            "name": "drink",
+            "position": "hand"
+          }
+        ],
+        "description": "A happy adult female in the foreground, dressed in a green sleeveless dress with a sweetheart neckline and long red gloves. She has dark, curly hair and wears a colorful Mardi Gras-style mask on her head. She is holding a glass of drink in her hand.",
+        "blurry": false,
+        "face_seen": true,
+        "emotion_description": "The person appears to be smiling and engaged in a cheerful interaction, suggesting a positive and joyful mood.",
+        "meaningful": true,
+        "story": "The person seems to be enjoying a festive gathering, possibly a costume party or a themed event, as indicated by her colorful attire and accessories. She is holding a drink and appears to be in good spirits, interacting with others around her.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green dress is holding a glass of yellow liquid, possibly a beverage, and appears to be engaged in a lively conversation with the other two individuals. She is wearing red gloves and a festive mask, suggesting she is at a party or celebration. Her body language, with one hand on her hip and the other holding the drink, indicates confidence and enjoyment. The interaction seems friendly and joyful, as all three individuals are smiling and appear to be having a good time together. The setting, with plants and decorative elements, adds to the festive atmosphere, and her attire complements the overall theme of the gathering.",
+        "intention": "The individual is actively participating in the celebration to express joy and connect with others through confident and engaging behavior",
+        "intention_ok": true,
+        "complex_emotion": "The person in the green dress appears to be experiencing a moment of genuine happiness. Her smile is broad and reaches her eyes, indicating a sense of joy and contentment. The way she holds her drink suggests a relaxed and carefree attitude, as if she is enjoying the company and the atmosphere around her. Her body language, with one hand on her hip and the other holding the glass, conveys confidence and ease. The festive attire, including the colorful mask and gloves, further enhances the celebratory mood, suggesting that she is fully immersed in the festivities.\n\nHer thoughts might be centered around the enjoyment of the moment, appreciating the company of her friends and the lively environment. The interaction with others, as seen by her engagement in conversation and the shared laughter, indicates a strong sense of connection and camaraderie. The overall scene, with its vibrant colors and festive decorations, likely contributes to her positive emotions, making her feel part of a joyful and inclusive celebration. The warmth of the moment is palpable, and it seems that she is savoring every second, cherishing the memories being created in this lively gathering.",
+        "complex_emotion_clean": "A deep sense of joy and contentment fills the moment with a carefree ease and genuine happiness that radiates through every thought and feeling as the experience of connection and celebration is fully embraced"
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "right hand",
+            "action": [
+              "holding"
+            ]
+          },
+          "object": 2,
+          "deleted": true
+        },
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "right hand",
+            "action": [
+              "holding"
+            ]
+          },
+          "object": 3,
+          "deleted": true
+        },
+        {
+          "object": 0,
+          "relationship": {
+            "position": "right hand",
+            "action": [
+              [
+                "right hand",
+                "holding"
+              ]
+            ]
+          },
+          "deleted": false
+        }
+      ],
+      "facex_detailing": {
+        "landmarks": [
+          [
+            0.7392070043388578,
+            0.38822592752320423
+          ],
+          [
+            0.7437159751497564,
+            0.4116290647516806
+          ],
+          [
+            0.7433464546643552,
+            0.43975621562786205
+          ],
+          [
+            0.7434960134150016,
+            0.46196938324226905
+          ],
+          [
+            0.7444976805931046,
+            0.48114216144753513
+          ],
+          [
+            0.7479289538980949,
+            0.5018564704234008
+          ],
+          [
+            0.7521957857622986,
+            0.5222773009507113
+          ],
+          [
+            0.7524176316956679,
+            0.5443394384686909
+          ],
+          [
+            0.7559080144479161,
+            0.5662092717867049
+          ],
+          [
+            0.767829063250905,
+            0.5636800231126251
+          ],
+          [
+            0.7792281618430501,
+            0.5405435759554464
+          ],
+          [
+            0.7911358619729678,
+            0.5156109202475775
+          ],
+          [
+            0.8004749060031914,
+            0.48659169812681813
+          ],
+          [
+            0.8103329321458226,
+            0.4525357018702876
+          ],
+          [
+            0.8134763970261528,
+            0.4202157881840196
+          ],
+          [
+            0.8130645150939624,
+            0.38480940391777685
+          ],
+          [
+            0.8138403620393504,
+            0.35426879339117223
+          ],
+          [
+            0.7371813801072893,
+            0.3783973676187021
+          ],
+          [
+            0.7365953671435516,
+            0.37037225375099786
+          ],
+          [
+            0.737393408783135,
+            0.371827838029811
+          ],
+          [
+            0.7396435323659154,
+            0.3659278242991715
+          ],
+          [
+            0.7403215388989165,
+            0.36358434135320955
+          ],
+          [
+            0.7448726671969607,
+            0.3516317997344587
+          ],
+          [
+            0.7497714398517494,
+            0.34648664612618707
+          ],
+          [
+            0.753453420350949,
+            0.34166464681032477
+          ],
+          [
+            0.759287501428099,
+            0.3397056109533108
+          ],
+          [
+            0.7652445526882297,
+            0.3510113224150642
+          ],
+          [
+            0.742217697318466,
+            0.38020922333475143
+          ],
+          [
+            0.7378630831660259,
+            0.4021424411150513
+          ],
+          [
+            0.7336163151033578,
+            0.4236397428487344
+          ],
+          [
+            0.7311297304218723,
+            0.4460762186340554
+          ],
+          [
+            0.7420915550774052,
+            0.46197990071836603
+          ],
+          [
+            0.7426361079017322,
+            0.4609890211196173
+          ],
+          [
+            0.7442635543467033,
+            0.4596183294341678
+          ],
+          [
+            0.7483822105008932,
+            0.45319681880335333
+          ],
+          [
+            0.7523161957661311,
+            0.4477334739039184
+          ],
+          [
+            0.7416234133055523,
+            0.39369970386621184
+          ],
+          [
+            0.7404420848758447,
+            0.3917226549494203
+          ],
+          [
+            0.7403927382968721,
+            0.39052028589778476
+          ],
+          [
+            0.7392261901426883,
+            0.38420227239371607
+          ],
+          [
+            0.7409407370679435,
+            0.3832973500408193
+          ],
+          [
+            0.7431142223289325,
+            0.387437030783406
+          ],
+          [
+            0.7541751111547152,
+            0.37980540817376796
+          ],
+          [
+            0.7534714464985189,
+            0.37439303754498715
+          ],
+          [
+            0.7562673563758532,
+            0.3724500682618883
+          ],
+          [
+            0.7598435459215017,
+            0.3705564708936782
+          ],
+          [
+            0.7578115756313006,
+            0.3706045093044402
+          ],
+          [
+            0.7541242028276126,
+            0.37293054915609813
+          ],
+          [
+            0.7472406114673331,
+            0.4910127159779664
+          ],
+          [
+            0.7465629137875068,
+            0.49080417313903724
+          ],
+          [
+            0.7445749482760827,
+            0.4805439988141338
+          ],
+          [
+            0.745812831801318,
+            0.47721666942828544
+          ],
+          [
+            0.7470043640406359,
+            0.4738915338718071
+          ],
+          [
+            0.756792111517418,
+            0.47158741080571737
+          ],
+          [
+            0.7639935613565502,
+            0.47700724475598205
+          ],
+          [
+            0.7589557193042267,
+            0.48740859845327955
+          ],
+          [
+            0.7530079025597799,
+            0.4991070860277408
+          ],
+          [
+            0.7458313940713803,
+            0.5025830365993359
+          ],
+          [
+            0.7470871483463617,
+            0.49797833930878416
+          ],
+          [
+            0.7478973149011533,
+            0.494442854230366
+          ],
+          [
+            0.747998210823252,
+            0.4904983275151127
+          ],
+          [
+            0.7496960408276035,
+            0.49271450383322585
+          ],
+          [
+            0.7472283292118284,
+            0.48853254885900593
+          ],
+          [
+            0.7555567765164943,
+            0.47934139317305624
+          ],
+          [
+            0.7647652824897142,
+            0.47585251621468355
+          ],
+          [
+            0.7554916298637787,
+            0.48869269840301033
+          ],
+          [
+            0.7478248062765315,
+            0.49216084152302414
+          ],
+          [
+            0.74711738293547,
+            0.48889590722543225
+          ]
+        ],
+        "visibility": [
+          0.9794012308120728,
+          1.0,
+          0.005594223737716675,
+          0.0035832859575748444,
+          2.4007545107451733e-07,
+          7.21586275176378e-08,
+          0.0017716205911710858,
+          0.6217752695083618,
+          0.002864537062123418,
+          0.9999996423721313,
+          7.090273720677942e-05,
+          2.594636862340849e-05,
+          3.211425125826395e-09,
+          2.1524883209167456e-07,
+          0.0002690321998670697,
+          0.9994474053382874,
+          2.2236250174501038e-08,
+          0.0028526249807327986,
+          0.012723511084914207,
+          0.000123966223327443,
+          1.8281570701716987e-10,
+          1.4782871815555154e-08,
+          0.9856634140014648,
+          0.8492653965950012,
+          2.476825855524112e-09,
+          0.0002241638139821589,
+          0.011934489943087101,
+          0.009684269316494465,
+          0.9952697157859802
+        ],
+        "headpose": {
+          "pitch": -11.00687204559035,
+          "yaw": 73.26623028324369,
+          "roll": -19.65910809180509
+        },
+        "attributes": {
+          "5 oClock Shadow": 0.004384503234177828,
+          "Arched Eyebrows": 0.0012484440812841058,
+          "Attractive": 0.04163685441017151,
+          "Bags Under Eyes": 0.062203407287597656,
+          "Bald": 4.811557118955534e-06,
+          "Bangs": 0.032500654458999634,
+          "Big Lips": 0.11517851799726486,
+          "Big Nose": 0.01985740102827549,
+          "Black Hair": 0.04834376275539398,
+          "Blond Hair": 0.0026285056956112385,
+          "Blurry": 0.3106957972049713,
+          "Brown Hair": 0.14681677520275116,
+          "Bushy Eyebrows": 0.000686665007378906,
+          "Chubby": 0.0009636501781642437,
+          "Double Chin": 0.0002599816070869565,
+          "Eyeglasses": 0.022037509828805923,
+          "Goatee": 0.0013712287181988358,
+          "Gray Hair": 0.0009728320874273777,
+          "Heavy Makeup": 0.0047151073813438416,
+          "High Cheekbones": 0.03108532726764679,
+          "Male": 0.33267709612846375,
+          "Mouth Slightly Open": 0.10221914947032928,
+          "Mustache": 0.0006784768193028867,
+          "Narrow Eyes": 0.16612710058689117,
+          "No Beard": 0.9755277633666992,
+          "Oval Face": 0.014505119062960148,
+          "Pale Skin": 0.008703205734491348,
+          "Pointy Nose": 0.23169094324111938,
+          "Receding Hairline": 0.0032367140520364046,
+          "Rosy Cheeks": 0.00010411618859507143,
+          "Sideburns": 0.00047154395724646747,
+          "Smiling": 0.09460179507732391,
+          "Straight Hair": 0.0020768216345459223,
+          "Wavy Hair": 0.8396314978599548,
+          "Wearing Earrings": 0.011166278272867203,
+          "Wearing Hat": 0.02020978182554245,
+          "Wearing Lipstick": 0.011295915581285954,
+          "Wearing Necklace": 0.022963419556617737,
+          "Wearing Necktie": 0.002048006048426032,
+          "Young": 0.6413974761962891
+        },
+        "age": [
+          3.3462241844972596e-05,
+          0.0021367722656577826,
+          0.7265734076499939,
+          0.89068204164505,
+          0.8741054534912109,
+          0.8270522952079773,
+          0.09228333830833435,
+          0.00048537389375269413
+        ],
+        "race": [
+          0.8754998445510864,
+          0.026508040726184845,
+          0.693882167339325,
+          0.2077476680278778,
+          0.6574114561080933
+        ],
+        "gender": [
+          0.026644233614206314,
+          0.975413978099823
+        ]
+      },
+      "deepface_detailing": {
+        "emotion": {
+          "angry": 0.0392634654417634,
+          "disgust": 3.085208824527008e-09,
+          "fear": 0.6794442422688007,
+          "happy": 99.27914142608643,
+          "sad": 0.0021082543753436767,
+          "surprise": 1.253849912785654e-06,
+          "neutral": 3.9767942894286534e-05
+        },
+        "dominant_emotion": "happy",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 218,
+          "h": 340,
+          "left_eye": null,
+          "right_eye": null
+        },
+        "face_confidence": 0.0,
+        "age": 39,
+        "gender": {
+          "Woman": 21.89730554819107,
+          "Man": 78.10270190238953
+        },
+        "dominant_gender": "Man",
+        "race": {
+          "asian": 13.701987266540527,
+          "indian": 9.331237524747849,
+          "black": 6.441166996955872,
+          "white": 29.8520565032959,
+          "middle eastern": 20.116811990737915,
+          "latino hispanic": 20.556743443012238
+        },
+        "dominant_race": "white"
+      }
+    },
+    {
+      "body_box": 1,
+      "skeleton": 2,
+      "face_box": 1,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "happy",
+        "clothing_description": "The person is wearing a sleeveless maroon dress with a shiny texture. She also has a colorful feathered headpiece with purple and green feathers and gold accents. She is holding a small golden clutch purse.",
+        "clothing": [
+          {
+            "possible_names": [
+              "sleeveless dress",
+              "maroon dress",
+              "shiny dress"
+            ],
+            "name": "sleeveless dress",
+            "type": "whole body",
+            "color": [
+              "maroon"
+            ]
+          },
+          {
+            "possible_names": [
+              "feathered headpiece",
+              "colorful headpiece",
+              "festival headpiece"
+            ],
+            "name": "feathered headpiece",
+            "type": "headwear",
+            "color": [
+              "purple",
+              "green",
+              "gold"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "clutch purse",
+              "golden purse",
+              "small purse"
+            ],
+            "name": "clutch purse",
+            "position": "hand"
+          }
+        ],
+        "description": "The person is an adult female who appears happy. She is dressed in a sleeveless maroon dress with a shiny texture and a colorful feathered headpiece featuring purple and green feathers and gold accents. She is holding a small golden clutch purse in her hand.",
+        "blurry": false,
+        "face_seen": true,
+        "emotion_description": "The person appears to be smiling broadly, suggesting they are enjoying themselves and possibly engaged in a cheerful conversation or celebration.",
+        "meaningful": true,
+        "story": "The person seems to be at a festive gathering, possibly a costume party or a themed event, given the decorative headpiece and the celebratory atmosphere indicated by the drinks and the smiles among the group.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green dress is holding a glass of yellow liquid, possibly a beverage, and appears to be engaged in a lively conversation with the other two individuals. She is wearing red gloves and a festive mask, suggesting she is at a party or celebration. Her body language, with one hand on her hip and the other holding the drink, indicates confidence and enjoyment. The interaction seems friendly and joyful, as all three individuals are smiling and appear to be having a good time together. The setting, with plants and decorative elements, adds to the festive atmosphere, and her attire complements the overall theme of the gathering.",
+        "intention": "The individual is actively participating in the celebration to express joy and connect with others through confident and engaging behavior",
+        "intention_ok": true,
+        "complex_emotion": "The person in the green dress appears to be experiencing a moment of genuine happiness. Her smile is broad and reaches her eyes, indicating a sense of joy and contentment. The way she holds her drink suggests a relaxed and carefree attitude, as if she is enjoying the company and the atmosphere around her. Her body language, with one hand on her hip and the other holding the glass, conveys confidence and ease. The festive attire, including the colorful mask and gloves, further enhances the celebratory mood, suggesting that she is fully immersed in the festivities.\n\nHer thoughts might be centered around the enjoyment of the moment, appreciating the company of her friends and the lively environment. The interaction with others, as seen by her engagement in conversation and the shared laughter, indicates a strong sense of connection and camaraderie. She may be reflecting on the positive aspects of the gathering, such as the fun activities, the delicious drinks, and the overall pleasant ambiance. The festive decorations and the presence of other people in similar attire suggest that this is a special occasion, adding to her sense of happiness and excitement. Overall, her demeanor reflects a state of blissful contentment, where she is fully present and savoring the delightful experience.",
+        "complex_emotion_clean": "A deep sense of joy and contentment fills the moment with a carefree ease and full presence in the experience of connection and celebration"
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "right hand",
+            "action": [
+              [
+                "right hand",
+                "holding"
+              ]
+            ]
+          },
+          "object": 4
+        }
+      ],
+      "facex_detailing": {
+        "landmarks": [
+          [
+            0.11758058346098378,
+            0.23129238309683622
+          ],
+          [
+            0.11703881027975253,
+            0.2602570229421848
+          ],
+          [
+            0.11748158209735439,
+            0.2884992459779063
+          ],
+          [
+            0.12073206019898255,
+            0.3179206813453997
+          ],
+          [
+            0.12803468889601174,
+            0.3405060205510054
+          ],
+          [
+            0.13799418265975658,
+            0.36075431669830643
+          ],
+          [
+            0.14928242117166518,
+            0.37680394189067623
+          ],
+          [
+            0.16008646818143982,
+            0.38761761522797683
+          ],
+          [
+            0.1712341075851804,
+            0.39253252795133636
+          ],
+          [
+            0.1810665811456385,
+            0.3863078133769767
+          ],
+          [
+            0.1883412153947921,
+            0.3726956701783276
+          ],
+          [
+            0.19593884561743055,
+            0.35651865850680714
+          ],
+          [
+            0.20381075654711042,
+            0.3418426019174081
+          ],
+          [
+            0.21006816568828762,
+            0.3231528945700832
+          ],
+          [
+            0.21301301476501286,
+            0.3026887240233245
+          ],
+          [
+            0.21382649044195812,
+            0.2823059737051606
+          ],
+          [
+            0.21585660867747805,
+            0.26033654235027454
+          ],
+          [
+            0.14454417122261864,
+            0.2258185556325963
+          ],
+          [
+            0.1530311258066268,
+            0.21604893158667932
+          ],
+          [
+            0.16213151418737004,
+            0.2182600321593108
+          ],
+          [
+            0.17024664045089768,
+            0.22026934645794055
+          ],
+          [
+            0.17884268483945304,
+            0.2264459524205122
+          ],
+          [
+            0.19502213416354994,
+            0.232484754147353
+          ],
+          [
+            0.19996167485203062,
+            0.22930168843773938
+          ],
+          [
+            0.20539202697220305,
+            0.22628697661495714
+          ],
+          [
+            0.21245054027863913,
+            0.22441255756156156
+          ],
+          [
+            0.21594863399153663,
+            0.23594165352917223
+          ],
+          [
+            0.18483443820760362,
+            0.2539941659364751
+          ],
+          [
+            0.1843613254527251,
+            0.27081579729993505
+          ],
+          [
+            0.1851732010287898,
+            0.2859123972988633
+          ],
+          [
+            0.1850869321752162,
+            0.30168633000560535
+          ],
+          [
+            0.16988097837283497,
+            0.30182005955428676
+          ],
+          [
+            0.17529343668194042,
+            0.30767880842168494
+          ],
+          [
+            0.1815527678955169,
+            0.312147584920207
+          ],
+          [
+            0.18676740885490464,
+            0.3121417459356722
+          ],
+          [
+            0.1914287466378439,
+            0.30940788296795396
+          ],
+          [
+            0.1518898148267042,
+            0.24606076075286465
+          ],
+          [
+            0.15687431932560036,
+            0.24646135079797615
+          ],
+          [
+            0.16546286568045615,
+            0.24868436562951912
+          ],
+          [
+            0.16944739493940558,
+            0.2509043979581702
+          ],
+          [
+            0.16482616212396398,
+            0.24791196039114047
+          ],
+          [
+            0.15704533010721206,
+            0.24644830759870942
+          ],
+          [
+            0.1925193031983716,
+            0.25610444425905826
+          ],
+          [
+            0.19828949137812568,
+            0.2544222496174
+          ],
+          [
+            0.20449415573051996,
+            0.2569605066032006
+          ],
+          [
+            0.2081461908561843,
+            0.25807603619716785
+          ],
+          [
+            0.20402222353787647,
+            0.2567133579304609
+          ],
+          [
+            0.19786694766510102,
+            0.25615649103487614
+          ],
+          [
+            0.14952392908079284,
+            0.3114413198339876
+          ],
+          [
+            0.16214257829955647,
+            0.3123399983638178
+          ],
+          [
+            0.17525548306959013,
+            0.3146442128867699
+          ],
+          [
+            0.1800812702448595,
+            0.3169233071740973
+          ],
+          [
+            0.18426732928270387,
+            0.31720599383904186
+          ],
+          [
+            0.19051801604884008,
+            0.3185950210485509
+          ],
+          [
+            0.1951861249903838,
+            0.32348699790460095
+          ],
+          [
+            0.18971115542309622,
+            0.340301593081661
+          ],
+          [
+            0.18365229538508826,
+            0.35327905126349635
+          ],
+          [
+            0.17555427263889994,
+            0.3570334133017
+          ],
+          [
+            0.16616498311715466,
+            0.3508796486905012
+          ],
+          [
+            0.15675374587022123,
+            0.33603594183291075
+          ],
+          [
+            0.1503153058035033,
+            0.3141154067226188
+          ],
+          [
+            0.16698863016707557,
+            0.3188271521891236
+          ],
+          [
+            0.1788038140961102,
+            0.3251526837626462
+          ],
+          [
+            0.1863389916008427,
+            0.32562331011686374
+          ],
+          [
+            0.19305018544906663,
+            0.3243340707329846
+          ],
+          [
+            0.18561198966843745,
+            0.3389936605458537
+          ],
+          [
+            0.17657377106093228,
+            0.342734097236048
+          ],
+          [
+            0.16428406453203587,
+            0.3350146656313901
+          ]
+        ],
+        "visibility": [
+          0.9999527931213379,
+          0.004707664251327515,
+          0.9999057054519653,
+          4.058752778313135e-10,
+          0.9999978542327881,
+          0.9993258714675903,
+          1.376561442612001e-07,
+          3.370510315292563e-09,
+          0.5278739333152771,
+          2.987950997734856e-10,
+          1.420617650182976e-06,
+          6.0898104337070436e-09,
+          0.010063023306429386,
+          0.0029686817433685064,
+          7.089012342476053e-06,
+          3.525923375491402e-06,
+          2.2470447220257483e-05,
+          3.777412712224759e-05,
+          5.318583403280796e-16,
+          0.00033691615681163967,
+          3.0951569432446924e-12,
+          1.981369517580129e-15,
+          3.318234853555424e-10,
+          6.799260590314993e-13,
+          4.1730227927534555e-18,
+          4.62265832140258e-18,
+          1.8574545113808627e-12,
+          7.449751926458248e-11,
+          1.2952638826391194e-05
+        ],
+        "headpose": {
+          "pitch": -9.554308521408434,
+          "yaw": -17.464943971884345,
+          "roll": 9.78526112290866
+        },
+        "attributes": {
+          "5 oClock Shadow": 0.002066593850031495,
+          "Arched Eyebrows": 0.05662238225340843,
+          "Attractive": 0.4741070866584778,
+          "Bags Under Eyes": 0.4262165427207947,
+          "Bald": 9.183177098748274e-07,
+          "Bangs": 0.012504398822784424,
+          "Big Lips": 0.2667686939239502,
+          "Big Nose": 0.16933299601078033,
+          "Black Hair": 0.27369195222854614,
+          "Blond Hair": 0.0019711307249963284,
+          "Blurry": 0.0034194299951195717,
+          "Brown Hair": 0.09028641879558563,
+          "Bushy Eyebrows": 0.2306092530488968,
+          "Chubby": 0.011497771367430687,
+          "Double Chin": 0.0026848872657865286,
+          "Eyeglasses": 0.00021560152526944876,
+          "Goatee": 1.6957568732323125e-05,
+          "Gray Hair": 0.00033271685242652893,
+          "Heavy Makeup": 0.03732864558696747,
+          "High Cheekbones": 0.7716529965400696,
+          "Male": 0.13349705934524536,
+          "Mouth Slightly Open": 0.9998108744621277,
+          "Mustache": 5.213001713855192e-06,
+          "Narrow Eyes": 0.8711869120597839,
+          "No Beard": 0.998950183391571,
+          "Oval Face": 0.23346321284770966,
+          "Pale Skin": 0.007878327742218971,
+          "Pointy Nose": 0.05336816981434822,
+          "Receding Hairline": 0.009206650778651237,
+          "Rosy Cheeks": 0.0014836837071925402,
+          "Sideburns": 4.437487223185599e-05,
+          "Smiling": 0.9770206212997437,
+          "Straight Hair": 0.017805198207497597,
+          "Wavy Hair": 0.36920973658561707,
+          "Wearing Earrings": 0.7026569843292236,
+          "Wearing Hat": 0.004174660425633192,
+          "Wearing Lipstick": 0.10645543038845062,
+          "Wearing Necklace": 0.047598905861377716,
+          "Wearing Necktie": 0.0010214988142251968,
+          "Young": 0.987515926361084
+        },
+        "age": [
+          0.03580022603273392,
+          0.9721213579177856,
+          0.98746258020401,
+          0.6487277150154114,
+          0.03433399647474289,
+          0.0001536681520519778,
+          1.4655865015811287e-05,
+          2.690995017928799e-07
+        ],
+        "race": [
+          0.4226740002632141,
+          0.17378205060958862,
+          0.32919439673423767,
+          0.3954778015613556,
+          0.9158241748809814
+        ],
+        "gender": [
+          0.16262118518352509,
+          0.8369561433792114
+        ]
+      },
+      "deepface_detailing": {
+        "emotion": {
+          "angry": 5.7572947298467625e-05,
+          "disgust": 5.625935273201321e-08,
+          "fear": 5.825278748261553e-06,
+          "happy": 99.2729127407074,
+          "sad": 0.0137966955662705,
+          "surprise": 8.874805057512702e-09,
+          "neutral": 0.7132243365049362
+        },
+        "dominant_emotion": "happy",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 274,
+          "h": 332,
+          "left_eye": null,
+          "right_eye": null
+        },
+        "face_confidence": 0.0,
+        "age": 24,
+        "gender": {
+          "Woman": 96.3394820690155,
+          "Man": 3.660522773861885
+        },
+        "dominant_gender": "Woman",
+        "race": {
+          "asian": 1.9144551408940387,
+          "indian": 6.459317331395467,
+          "black": 0.6395427213409279,
+          "white": 27.999010324596128,
+          "middle eastern": 27.6869919673214,
+          "latino hispanic": 35.30067678681889
+        },
+        "dominant_race": "latino hispanic"
+      }
+    },
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": 0,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "happy",
+        "clothing_description": "The person is wearing a light beige long-sleeved top with a patterned design under a maroon apron. She also has on a decorative headpiece with feathers and a mask.",
+        "clothing": [
+          {
+            "possible_names": [
+              "long-sleeved top",
+              "shirt",
+              "blouse"
+            ],
+            "name": "long sleeved top",
+            "type": "top",
+            "color": [
+              "light beige"
+            ]
+          },
+          {
+            "possible_names": [
+              "apron",
+              "dress"
+            ],
+            "name": "apron",
+            "type": "whole body",
+            "color": [
+              "maroon"
+            ]
+          },
+          {
+            "possible_names": [
+              "headpiece",
+              "mask",
+              "feathered hat"
+            ],
+            "name": "headpiece",
+            "type": "headwear",
+            "color": [
+              "green",
+              "gold",
+              "purple"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "glass",
+              "drink"
+            ],
+            "name": "glass",
+            "position": "hand"
+          }
+        ],
+        "description": "The person is an adult female who appears happy. She is dressed in a light beige long-sleeved top with a patterned design, covered by a maroon apron. She is also wearing a decorative headpiece with feathers and a mask. In her hand, she holds a glass filled with a yellowish drink. The setting suggests a festive or celebratory occasion.",
+        "blurry": false,
+        "face_seen": true,
+        "emotion_description": "The person appears to be smiling broadly, suggesting they are enjoying themselves and possibly engaged in a festive or celebratory moment.",
+        "meaningful": true,
+        "story": "The person seems to be at a party or social gathering, indicated by their costume-like attire, including a colorful wig and headpiece. They are holding a drink, which suggests a casual and joyful atmosphere. The presence of other similarly dressed individuals implies a themed event or celebration.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green dress is holding a glass of yellow liquid, possibly a beverage, and appears to be engaged in a lively conversation with the other two individuals. She is wearing red gloves and a festive mask, suggesting she is at a party or celebration. Her body language, with one hand on her hip and the other holding the drink, indicates confidence and enjoyment. The interaction seems friendly and joyful, as all three individuals are smiling and appear to be having a good time together. The setting, with plants and decorative elements, adds to the festive atmosphere, and her attire complements the overall theme of the gathering.",
+        "intention": "The individual is actively participating in the celebration to express joy and connect with others through confident and engaging behavior",
+        "intention_ok": true,
+        "complex_emotion": "The person in the green dress appears to be experiencing a moment of genuine happiness. Her smile is broad and reaches her eyes, indicating a sense of joy and contentment. The way she holds her drink suggests a relaxed and carefree attitude, as if she is enjoying the company and the atmosphere around her. Her body language, with an open stance and a slight lean towards the others, further emphasizes her engagement and positive feelings. It seems that she is fully immersed in the conversation and the festive environment, allowing herself to let go of any worries or concerns.\n\nThe vibrant green dress and the colorful mask on her head contribute to the overall festive mood, suggesting that she is embracing the occasion wholeheartedly. Her thoughts are likely focused on the present moment, savoring the interactions with her friends and the lively ambiance. The red gloves add a touch of elegance and playfulness to her appearance, enhancing her cheerful demeanor. She might be reflecting on the fun and laughter shared with her companions, feeling grateful for these moments of connection and celebration. The warmth in her expression indicates that she is not only enjoying the external festivities but also finding internal satisfaction and happiness in the experience.",
+        "complex_emotion_clean": "A deep sense of joy and contentment fills the moment with a broad smile that reaches the eyes a relaxed and carefree attitude a full immersion in the present a feeling of gratitude for connection and celebration a warmth that reflects both external delight and internal satisfaction"
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "left hand",
+            "action": [
+              "holding"
+            ]
+          },
+          "object": 0,
+          "deleted": true
+        },
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "right hand",
+            "action": [
+              [
+                "right hand",
+                "holding"
+              ]
+            ]
+          },
+          "object": 1
+        }
+      ],
+      "facex_detailing": {
+        "landmarks": [
+          [
+            0.39616007984039325,
+            0.25806712057224657
+          ],
+          [
+            0.39812432467671377,
+            0.2851340782074701
+          ],
+          [
+            0.4002696806742322,
+            0.31070742556657743
+          ],
+          [
+            0.40541903632914733,
+            0.337222434351684
+          ],
+          [
+            0.4129700559413149,
+            0.3570825834122915
+          ],
+          [
+            0.42387476272526237,
+            0.36997322127932597
+          ],
+          [
+            0.43559778226273405,
+            0.3772222667774826
+          ],
+          [
+            0.44677049272826735,
+            0.37950718592083643
+          ],
+          [
+            0.45832200568346754,
+            0.38073320842924574
+          ],
+          [
+            0.4680423127753394,
+            0.3758347095005096
+          ],
+          [
+            0.4734105800943715,
+            0.36743527846361596
+          ],
+          [
+            0.4788442304091794,
+            0.3521771950696511
+          ],
+          [
+            0.48279018753341263,
+            0.3322907657219619
+          ],
+          [
+            0.484611701184795,
+            0.31163425067114453
+          ],
+          [
+            0.48452267480038463,
+            0.2910766583901864
+          ],
+          [
+            0.48365303100574586,
+            0.2717152903319666
+          ],
+          [
+            0.48274221721859206,
+            0.24881448064531597
+          ],
+          [
+            0.4188677055672521,
+            0.22767417796705133
+          ],
+          [
+            0.4252866489724035,
+            0.21451213069693753
+          ],
+          [
+            0.4326289157782282,
+            0.21427145143034598
+          ],
+          [
+            0.43995674504410653,
+            0.21162904709104507
+          ],
+          [
+            0.4485164754802273,
+            0.21398044174941128
+          ],
+          [
+            0.46417067721486094,
+            0.21931361243838357
+          ],
+          [
+            0.46833774121034716,
+            0.217932923634847
+          ],
+          [
+            0.47259304289306914,
+            0.2178474237048437
+          ],
+          [
+            0.47753533486809047,
+            0.2178096156902414
+          ],
+          [
+            0.48192492538974396,
+            0.2322605382828485
+          ],
+          [
+            0.4569400154408954,
+            0.23780676776139195
+          ],
+          [
+            0.45878395438194275,
+            0.25234001780313164
+          ],
+          [
+            0.4609651577614603,
+            0.2638384286688749
+          ],
+          [
+            0.46209355557248705,
+            0.2770209661867252
+          ],
+          [
+            0.447400596046022,
+            0.28738430946592297
+          ],
+          [
+            0.453427793564541,
+            0.2905861698130451
+          ],
+          [
+            0.4594065519315856,
+            0.2936636856624058
+          ],
+          [
+            0.4645818250519889,
+            0.2918893788857435
+          ],
+          [
+            0.46759079240617296,
+            0.2907686659898707
+          ],
+          [
+            0.42611198551243257,
+            0.23714678703792513
+          ],
+          [
+            0.4303052605440219,
+            0.23223393341851611
+          ],
+          [
+            0.43980094229891187,
+            0.23403854105207655
+          ],
+          [
+            0.4433625629083032,
+            0.2385793663206555
+          ],
+          [
+            0.4383773438987278,
+            0.23824327181256005
+          ],
+          [
+            0.43082688294705895,
+            0.23572610194090182
+          ],
+          [
+            0.4640875134794485,
+            0.24310495739891416
+          ],
+          [
+            0.46865235251330195,
+            0.23827993857166754
+          ],
+          [
+            0.47573462529551414,
+            0.24305586247217084
+          ],
+          [
+            0.4777110303086894,
+            0.24712998753502258
+          ],
+          [
+            0.47407043044056213,
+            0.24485271166241357
+          ],
+          [
+            0.46899598787228264,
+            0.24461667070943843
+          ],
+          [
+            0.4330862199266752,
+            0.3142131111609242
+          ],
+          [
+            0.44288548436902814,
+            0.30338952781031375
+          ],
+          [
+            0.4547032965435868,
+            0.3005984775603764
+          ],
+          [
+            0.4596794061007954,
+            0.30169469010892996
+          ],
+          [
+            0.4628034005562464,
+            0.30158996682949174
+          ],
+          [
+            0.46871223215545926,
+            0.3073845711965409
+          ],
+          [
+            0.47140344218129204,
+            0.3186801945721662
+          ],
+          [
+            0.4680389564306963,
+            0.3226467170412578
+          ],
+          [
+            0.4628209622133346,
+            0.32678208250217333
+          ],
+          [
+            0.45751011204861464,
+            0.32968315396990094
+          ],
+          [
+            0.44943480379879475,
+            0.3257738408588228
+          ],
+          [
+            0.4409465994331099,
+            0.32292654451239045
+          ],
+          [
+            0.4340432382233086,
+            0.3140515973328283
+          ],
+          [
+            0.44740800979946344,
+            0.30609319348814623
+          ],
+          [
+            0.45847512685826847,
+            0.3076046136321214
+          ],
+          [
+            0.46457113382362186,
+            0.31090935449751594
+          ],
+          [
+            0.4697169447229022,
+            0.3161004545827391
+          ],
+          [
+            0.4641136193559283,
+            0.321732477157835
+          ],
+          [
+            0.45756417285828366,
+            0.3202055610676922
+          ],
+          [
+            0.4464853261198316,
+            0.31854087763993194
+          ]
+        ],
+        "visibility": [
+          0.9992784857749939,
+          0.9999996423721313,
+          0.5302184820175171,
+          7.374807708959707e-11,
+          0.9999996423721313,
+          0.9971966743469238,
+          0.8717578053474426,
+          0.0006307563744485378,
+          0.13879576325416565,
+          2.975459665321978e-06,
+          2.2522310683115165e-09,
+          4.827655608607984e-09,
+          1.8475332126399735e-06,
+          1.4476739806923433e-06,
+          1.473001542962038e-08,
+          4.772342663272866e-07,
+          1.7652573847115605e-11,
+          3.335733111953232e-08,
+          2.1273590225906682e-18,
+          1.1624468054804993e-09,
+          1.5724828911388368e-15,
+          3.617358157819207e-22,
+          7.09186669892864e-14,
+          1.467302706203641e-13,
+          1.2801766036381208e-22,
+          4.57342163621128e-19,
+          1.8033995520874702e-12,
+          1.615001403992161e-15,
+          3.7150133230107185e-14
+        ],
+        "headpose": {
+          "pitch": 8.208891882283798,
+          "yaw": -18.507848971348178,
+          "roll": -2.5367883933599766
+        },
+        "attributes": {
+          "5 oClock Shadow": 0.000465061457362026,
+          "Arched Eyebrows": 0.014481588266789913,
+          "Attractive": 0.20709776878356934,
+          "Bags Under Eyes": 0.22175899147987366,
+          "Bald": 8.824567339615896e-05,
+          "Bangs": 0.00021971671958453953,
+          "Big Lips": 0.0601249560713768,
+          "Big Nose": 0.2643340229988098,
+          "Black Hair": 0.0031527967657893896,
+          "Blond Hair": 0.24967992305755615,
+          "Blurry": 0.0010751893278211355,
+          "Brown Hair": 0.020070044323801994,
+          "Bushy Eyebrows": 0.03321795538067818,
+          "Chubby": 0.14131084084510803,
+          "Double Chin": 0.05039277672767639,
+          "Eyeglasses": 0.0002189688675571233,
+          "Goatee": 2.483069692971185e-05,
+          "Gray Hair": 0.010348360054194927,
+          "Heavy Makeup": 0.018584493547677994,
+          "High Cheekbones": 0.7873152494430542,
+          "Male": 0.054226309061050415,
+          "Mouth Slightly Open": 0.9999680519104004,
+          "Mustache": 3.903655397152761e-06,
+          "Narrow Eyes": 0.37820690870285034,
+          "No Beard": 0.9997205138206482,
+          "Oval Face": 0.49615901708602905,
+          "Pale Skin": 0.037191350013017654,
+          "Pointy Nose": 0.011965077370405197,
+          "Receding Hairline": 0.016060728579759598,
+          "Rosy Cheeks": 0.0029470871668308973,
+          "Sideburns": 1.1557713150978088e-05,
+          "Smiling": 0.9869481325149536,
+          "Straight Hair": 0.28792932629585266,
+          "Wavy Hair": 0.04097191244363785,
+          "Wearing Earrings": 0.0252913199365139,
+          "Wearing Hat": 0.03599333018064499,
+          "Wearing Lipstick": 0.03324868157505989,
+          "Wearing Necklace": 0.02634524181485176,
+          "Wearing Necktie": 0.00047074275789782405,
+          "Young": 0.95591139793396
+        },
+        "age": [
+          0.029360590502619743,
+          0.9882528185844421,
+          0.9665607810020447,
+          0.6002905368804932,
+          0.02662346512079239,
+          0.0005963827716186643,
+          1.5096777133294381e-05,
+          2.6495482075006294e-07
+        ],
+        "race": [
+          0.9336792826652527,
+          0.06993111968040466,
+          0.3949468433856964,
+          0.1964913010597229,
+          0.3626253604888916
+        ],
+        "gender": [
+          0.010208828374743462,
+          0.9918968081474304
+        ]
+      },
+      "deepface_detailing": {
+        "emotion": {
+          "angry": 0.6620159514825402,
+          "disgust": 0.00010138328362835659,
+          "fear": 0.3749481653856438,
+          "happy": 98.54212420676659,
+          "sad": 0.29493953310674037,
+          "surprise": 1.5082823857086725e-05,
+          "neutral": 0.12585082686608112
+        },
+        "dominant_emotion": "happy",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 246,
+          "h": 331,
+          "left_eye": null,
+          "right_eye": null
+        },
+        "face_confidence": 0.0,
+        "age": 33,
+        "gender": {
+          "Woman": 91.1924660205841,
+          "Man": 8.807537704706192
+        },
+        "dominant_gender": "Woman",
+        "race": {
+          "asian": 17.827332019805908,
+          "indian": 5.610434338450432,
+          "black": 1.3246284797787666,
+          "white": 32.251834869384766,
+          "middle eastern": 9.765861183404922,
+          "latino hispanic": 33.21990668773651
+        },
+        "dominant_race": "latino hispanic"
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.24919790029525757,
+        0.12948860228061676,
+        0.5814511775970459,
+        0.9899020195007324
+      ],
+      [
+        0.0006071567768231034,
+        0.07195837050676346,
+        0.287322998046875,
+        0.9893529415130615
+      ],
+      [
+        0.6228903532028198,
+        0.2278813272714615,
+        0.9383375644683838,
+        0.9912125468254089
+      ]
+    ],
+    "face_boxes": [
+      [
+        0.40188631415367126,
+        0.1667875349521637,
+        0.48749396204948425,
+        0.3711757957935333
+      ],
+      [
+        0.12119767814874649,
+        0.1805567592382431,
+        0.21661439538002014,
+        0.3860459625720978
+      ],
+      [
+        0.734449565410614,
+        0.32327887415885925,
+        0.8102522492408752,
+        0.5341221690177917
+      ]
+    ],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4295917957425118,
+            0.4836696943142236
+          ],
+          [
+            0.340209282875061,
+            0.499016008254755
+          ],
+          [
+            0.29081368365883825,
+            0.8338446760481645
+          ],
+          [
+            0.30100642635424935,
+            0.634342594821258
+          ],
+          [
+            0.5189743086099624,
+            0.4683233803736922
+          ],
+          [
+            0.554256879478693,
+            0.7585082257946473
+          ],
+          [
+            0.557393108000358,
+            0.7752496591843178
+          ],
+          [
+            0.3825483679175377,
+            0.9566151875724148
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5166221372187138,
+            0.9496395903267189
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.433512081394593,
+            0.2506847463079761
+          ],
+          [
+            0.4719308807849884,
+            0.2506847463079761
+          ],
+          [
+            0.39587733913461365,
+            0.2785871352907602
+          ],
+          [
+            0.48604390913248063,
+            0.27998225473989946
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.5754264219999313,
+            0.7529277479980906
+          ],
+          [
+            0.5832669933040936,
+            0.7292107173627239
+          ],
+          [
+            0.5871872789561748,
+            0.7096790450747751
+          ],
+          [
+            0.5887553932170074,
+            0.6971229700325222
+          ],
+          [
+            0.6405031638244787,
+            0.6943327311342439
+          ],
+          [
+            0.6405031638244787,
+            0.7054936867273575
+          ],
+          [
+            0.6405031638244787,
+            0.6985180894816615
+          ],
+          [
+            0.6405031638244787,
+            0.7027034478290791
+          ],
+          [
+            0.6405031638244787,
+            0.7082839256256358
+          ],
+          [
+            0.6405031638244787,
+            0.7264204784644456
+          ],
+          [
+            0.6405031638244787,
+            0.7236302395661672
+          ],
+          [
+            0.6405031638244787,
+            0.7236302395661672
+          ],
+          [
+            0.6405031638244787,
+            0.7264204784644456
+          ],
+          [
+            0.6405031638244787,
+            0.7459521507523944
+          ],
+          [
+            0.6405031638244787,
+            0.748742389650673
+          ],
+          [
+            0.6405031638244787,
+            0.7459521507523944
+          ],
+          [
+            0.6405031638244787,
+            0.7473472702015337
+          ],
+          [
+            0.6405031638244787,
+            0.7599033452437866
+          ],
+          [
+            0.6405031638244787,
+            0.7654838230403435
+          ],
+          [
+            0.6405031638244787,
+            0.7599033452437866
+          ],
+          [
+            0.6405031638244787,
+            0.7599033452437866
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.2955180264413357,
+            0.6148109225333092
+          ],
+          [
+            0.3002223692238331,
+            0.5785378168556896
+          ],
+          [
+            0.3049267120063305,
+            0.5422647111780703
+          ],
+          [
+            0.3143353975713253,
+            0.5227330388901212
+          ],
+          [
+            0.32217596887548766,
+            0.5059916055004507
+          ],
+          [
+            0.29394991218050326,
+            0.5366842333815136
+          ],
+          [
+            0.3002223692238331,
+            0.5213379194409822
+          ],
+          [
+            0.31355134044090904,
+            0.5157574416444255
+          ],
+          [
+            0.3260962545275688,
+            0.5157574416444255
+          ],
+          [
+            0.2955180264413357,
+            0.5576110251186017
+          ],
+          [
+            0.3064948262671629,
+            0.547845188974627
+          ],
+          [
+            0.32296002600590384,
+            0.5450549500763489
+          ],
+          [
+            0.3362889972229799,
+            0.5464500695254879
+          ],
+          [
+            0.2970861407021681,
+            0.5813280557539682
+          ],
+          [
+            0.31041511191924415,
+            0.5771426974065506
+          ],
+          [
+            0.32531219739715256,
+            0.574352458508272
+          ],
+          [
+            0.3378571114838123,
+            0.5715622196099936
+          ],
+          [
+            0.3002223692238331,
+            0.6036499669401953
+          ],
+          [
+            0.3119832261800766,
+            0.600859728041917
+          ],
+          [
+            0.32374408313632014,
+            0.5980694891436387
+          ],
+          [
+            0.33315276870131494,
+            0.5924890113470818
+          ]
+        ],
+        "dw_face": [
+          [
+            0.40293385330835974,
+            0.2604505824519504
+          ],
+          [
+            0.40371791043877603,
+            0.2785871352907602
+          ],
+          [
+            0.40607008183002474,
+            0.2981188075787091
+          ],
+          [
+            0.4084222532212734,
+            0.3176504798666579
+          ],
+          [
+            0.41234253887335465,
+            0.3343919132563284
+          ],
+          [
+            0.4193990530471008,
+            0.34834310774772054
+          ],
+          [
+            0.4288077386120955,
+            0.35810894389169495
+          ],
+          [
+            0.4382164241770903,
+            0.365084541137391
+          ],
+          [
+            0.44919322400291756,
+            0.36787478003566937
+          ],
+          [
+            0.4593859666983287,
+            0.36787478003566937
+          ],
+          [
+            0.4695787093937397,
+            0.3622943022391126
+          ],
+          [
+            0.47663522356748583,
+            0.34834310774772054
+          ],
+          [
+            0.4821236234803994,
+            0.3329967938071892
+          ],
+          [
+            0.48525985200206434,
+            0.31486024096837956
+          ],
+          [
+            0.48604390913248063,
+            0.29532856868043067
+          ],
+          [
+            0.48604390913248063,
+            0.27440177694334256
+          ],
+          [
+            0.4836917377412319,
+            0.2548701046553937
+          ],
+          [
+            0.41783093878626826,
+            0.2395237907148623
+          ],
+          [
+            0.42488745296001434,
+            0.23254819346916633
+          ],
+          [
+            0.43194396713376043,
+            0.23115307402002705
+          ],
+          [
+            0.4390004813075066,
+            0.23115307402002705
+          ],
+          [
+            0.44605699548125266,
+            0.23254819346916633
+          ],
+          [
+            0.4625221952199936,
+            0.2339433129183056
+          ],
+          [
+            0.467226538002491,
+            0.23254819346916633
+          ],
+          [
+            0.4727149379154047,
+            0.23115307402002705
+          ],
+          [
+            0.47741928069790196,
+            0.23254819346916633
+          ],
+          [
+            0.4813395663499832,
+            0.23673355181658395
+          ],
+          [
+            0.45546568104624746,
+            0.2506847463079761
+          ],
+          [
+            0.45703379530707994,
+            0.25905546300281135
+          ],
+          [
+            0.45860190956791247,
+            0.26882129914678565
+          ],
+          [
+            0.4593859666983287,
+            0.2771920158416209
+          ],
+          [
+            0.4476251097420852,
+            0.28974809088387377
+          ],
+          [
+            0.4523294525245826,
+            0.28974809088387377
+          ],
+          [
+            0.4578178524374962,
+            0.29114321033301305
+          ],
+          [
+            0.4617381380895774,
+            0.29114321033301305
+          ],
+          [
+            0.4648743666112423,
+            0.28974809088387377
+          ],
+          [
+            0.42410339582959805,
+            0.25347498520625444
+          ],
+          [
+            0.4295917957425118,
+            0.24789450740969754
+          ],
+          [
+            0.43586425278584157,
+            0.24789450740969754
+          ],
+          [
+            0.4413526526987553,
+            0.25347498520625444
+          ],
+          [
+            0.43586425278584157,
+            0.2548701046553937
+          ],
+          [
+            0.4295917957425118,
+            0.2548701046553937
+          ],
+          [
+            0.464090309480826,
+            0.25347498520625444
+          ],
+          [
+            0.46801059513290716,
+            0.24928962685883682
+          ],
+          [
+            0.4742830521762371,
+            0.24928962685883682
+          ],
+          [
+            0.47820333782831825,
+            0.2548701046553937
+          ],
+          [
+            0.47349899504582094,
+            0.2562652241045328
+          ],
+          [
+            0.46879465226332356,
+            0.2562652241045328
+          ],
+          [
+            0.433512081394593,
+            0.3120700020701011
+          ],
+          [
+            0.4429207669595877,
+            0.3036992853752659
+          ],
+          [
+            0.45389756678541493,
+            0.3023041659261267
+          ],
+          [
+            0.45703379530707994,
+            0.3023041659261267
+          ],
+          [
+            0.4601700238287449,
+            0.3023041659261267
+          ],
+          [
+            0.467226538002491,
+            0.3050944048244051
+          ],
+          [
+            0.4719308807849884,
+            0.31346512151924033
+          ],
+          [
+            0.46801059513290716,
+            0.3218358382140755
+          ],
+          [
+            0.4625221952199936,
+            0.32602119656149314
+          ],
+          [
+            0.45624973817666364,
+            0.3274163160106324
+          ],
+          [
+            0.4476251097420852,
+            0.32602119656149314
+          ],
+          [
+            0.4397845384379227,
+            0.32044071876493635
+          ],
+          [
+            0.43508019565542544,
+            0.3120700020701011
+          ],
+          [
+            0.44605699548125266,
+            0.3064895242735443
+          ],
+          [
+            0.45703379530707994,
+            0.3050944048244051
+          ],
+          [
+            0.464090309480826,
+            0.3078846437226835
+          ],
+          [
+            0.4703627665241559,
+            0.31346512151924033
+          ],
+          [
+            0.464090309480826,
+            0.32044071876493635
+          ],
+          [
+            0.45624973817666364,
+            0.32044071876493635
+          ],
+          [
+            0.4452729383508364,
+            0.3190455993157972
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      },
+      {
+        "dw_body": [
+          [
+            0.7434871873557568,
+            0.4359249566302747
+          ],
+          [
+            0.8179164365728696,
+            0.6283909201993212
+          ],
+          [
+            0.7643552011549473,
+            0.6017798705740189
+          ],
+          [
+            0.7386179841359457,
+            0.8443736252977047
+          ],
+          [
+            0.6600151321589947,
+            0.7676347845177633
+          ],
+          [
+            0.8714776719907921,
+            0.6550019698246234
+          ],
+          [
+            0.9111268982092537,
+            0.9433914843685971
+          ],
+          [
+            0.8095692310531933,
+            0.9260633590311906
+          ],
+          [
+            0.7212279726366202,
+            0.9743345653282506
+          ],
+          [
+            0.5828034811019898,
+            1.0857296567830041
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.8026132264534633,
+            0.9953758603808154
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7476607901155948,
+            0.4012687059554623
+          ],
+          [
+            0.7601815983951091,
+            0.3975555362403039
+          ],
+          [
+            0.8033088269134362,
+            0.41983455453125457
+          ],
+          [
+            0.8179164365728696,
+            0.41364593833932395
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.8116560324331125,
+            0.9223501893160322
+          ],
+          [
+            0.7977440232336521,
+            0.9050220639786262
+          ],
+          [
+            0.7831364135742187,
+            0.8876939386412203
+          ],
+          [
+            0.7685288039147854,
+            0.8876939386412203
+          ],
+          [
+            0.7532255937953789,
+            0.8975957245483093
+          ],
+          [
+            0.7761804089744886,
+            0.8777921527341307
+          ],
+          [
+            0.7553123951752981,
+            0.8901693851179924
+          ],
+          [
+            0.7400091850558916,
+            0.9037843407402399
+          ],
+          [
+            0.7281839772363503,
+            0.9161615731241016
+          ],
+          [
+            0.7782672103544076,
+            0.8988334477866956
+          ],
+          [
+            0.7567035960952442,
+            0.9087352336937846
+          ],
+          [
+            0.7400091850558916,
+            0.9235879125544185
+          ],
+          [
+            0.7274883767763773,
+            0.9359651449382801
+          ],
+          [
+            0.7838320140341919,
+            0.9198747428392601
+          ],
+          [
+            0.7657464020748932,
+            0.927301082269577
+          ],
+          [
+            0.749051991035541,
+            0.9396783146534387
+          ],
+          [
+            0.7351399818360805,
+            0.9495801005605277
+          ],
+          [
+            0.791483619093895,
+            0.9421537611302108
+          ],
+          [
+            0.7796584112743536,
+            0.9495801005605277
+          ],
+          [
+            0.7685288039147854,
+            0.9570064399908446
+          ],
+          [
+            0.7567035960952442,
+            0.9631950561827752
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.6537547280192375,
+            0.7602084450874464
+          ],
+          [
+            0.6502767257193723,
+            0.7354539803197235
+          ],
+          [
+            0.6467987234195074,
+            0.7106995155520002
+          ],
+          [
+            0.6370603169798851,
+            0.7007977296449112
+          ],
+          [
+            0.6287131114602089,
+            0.6946091134529805
+          ],
+          [
+            0.6106274995009104,
+            0.7131749620287728
+          ],
+          [
+            0.596019889841477,
+            0.7069863458368417
+          ],
+          [
+            0.5828034811019898,
+            0.7032731761216833
+          ],
+          [
+            0.5828034811019898,
+            0.7007977296449112
+          ],
+          [
+            0.6085406981209913,
+            0.732978533842951
+          ],
+          [
+            0.5967154903014501,
+            0.7292653641277925
+          ],
+          [
+            0.593933088461558,
+            0.7280276408894066
+          ],
+          [
+            0.5828034811019898,
+            0.7305030873661787
+          ],
+          [
+            0.6106274995009104,
+            0.7515443824187432
+          ],
+          [
+            0.6008890930612882,
+            0.7503066591803573
+          ],
+          [
+            0.6001934926013152,
+            0.7503066591803573
+          ],
+          [
+            0.5994978921413422,
+            0.7515443824187432
+          ],
+          [
+            0.6141055018007755,
+            0.7713479542329218
+          ],
+          [
+            0.6071494972010454,
+            0.7701102309945356
+          ],
+          [
+            0.6071494972010454,
+            0.7676347845177633
+          ],
+          [
+            0.6064538967410723,
+            0.7676347845177633
+          ]
+        ],
+        "dw_face": [
+          [
+            0.7476607901155948,
+            0.4000309827170762
+          ],
+          [
+            0.7476607901155948,
+            0.4185968312928685
+          ],
+          [
+            0.7469651896556218,
+            0.43840040310704687
+          ],
+          [
+            0.7476607901155948,
+            0.45696625168283916
+          ],
+          [
+            0.749051991035541,
+            0.4755321002586314
+          ],
+          [
+            0.75113879241546,
+            0.4940979488344237
+          ],
+          [
+            0.7532255937953789,
+            0.5139015206486023
+          ],
+          [
+            0.7601815983951091,
+            0.5250410297940776
+          ],
+          [
+            0.7699200048347314,
+            0.5238033065556914
+          ],
+          [
+            0.7789628108143807,
+            0.5139015206486023
+          ],
+          [
+            0.7866144158740839,
+            0.5015242882647406
+          ],
+          [
+            0.793570420473814,
+            0.4866716094041068
+          ],
+          [
+            0.7977440232336521,
+            0.4693434840667008
+          ],
+          [
+            0.8019176259934903,
+            0.45077763549090855
+          ],
+          [
+            0.8033088269134362,
+            0.43221178691511625
+          ],
+          [
+            0.8040044273734093,
+            0.41240821510093767
+          ],
+          [
+            0.8053956282933553,
+            0.3938423665251454
+          ],
+          [
+            0.7469651896556218,
+            0.38765375033321475
+          ],
+          [
+            0.7469651896556218,
+            0.38765375033321475
+          ],
+          [
+            0.7469651896556218,
+            0.38765375033321475
+          ],
+          [
+            0.7469651896556218,
+            0.38765375033321475
+          ],
+          [
+            0.7476607901155948,
+            0.38765375033321475
+          ],
+          [
+            0.75113879241546,
+            0.3839405806180563
+          ],
+          [
+            0.7553123951752981,
+            0.38146513414128397
+          ],
+          [
+            0.759485997935136,
+            0.38022741090289786
+          ],
+          [
+            0.7636596006949743,
+            0.38146513414128397
+          ],
+          [
+            0.7685288039147854,
+            0.3839405806180563
+          ],
+          [
+            0.749051991035541,
+            0.4000309827170762
+          ],
+          [
+            0.7448783882757029,
+            0.41364593833932395
+          ],
+          [
+            0.7407047855158646,
+            0.4260231707231854
+          ],
+          [
+            0.7372267832159995,
+            0.43963812634543314
+          ],
+          [
+            0.7386179841359457,
+            0.44830218901413615
+          ],
+          [
+            0.7427915868957837,
+            0.4520153587292946
+          ],
+          [
+            0.7469651896556218,
+            0.4520153587292946
+          ],
+          [
+            0.750443191955487,
+            0.45077763549090855
+          ],
+          [
+            0.7532255937953789,
+            0.44830218901413615
+          ],
+          [
+            0.7483563905755678,
+            0.4025064291938486
+          ],
+          [
+            0.7476607901155948,
+            0.4012687059554623
+          ],
+          [
+            0.7483563905755678,
+            0.4012687059554623
+          ],
+          [
+            0.7483563905755678,
+            0.4012687059554623
+          ],
+          [
+            0.7483563905755678,
+            0.4012687059554623
+          ],
+          [
+            0.7483563905755678,
+            0.4025064291938486
+          ],
+          [
+            0.7567035960952442,
+            0.4000309827170762
+          ],
+          [
+            0.7580947970151901,
+            0.3950800897635317
+          ],
+          [
+            0.7615727993150553,
+            0.3950800897635317
+          ],
+          [
+            0.7650508016149202,
+            0.39631781300191776
+          ],
+          [
+            0.7622683997750282,
+            0.4000309827170762
+          ],
+          [
+            0.7587903974751631,
+            0.4012687059554623
+          ],
+          [
+            0.750443191955487,
+            0.47676982349701774
+          ],
+          [
+            0.7483563905755678,
+            0.47305665378185924
+          ],
+          [
+            0.7476607901155948,
+            0.4681057608283145
+          ],
+          [
+            0.7483563905755678,
+            0.4681057608283145
+          ],
+          [
+            0.749747591495514,
+            0.46686803758992845
+          ],
+          [
+            0.7567035960952442,
+            0.46686803758992845
+          ],
+          [
+            0.7643552011549473,
+            0.4693434840667008
+          ],
+          [
+            0.7608771988550822,
+            0.47676982349701774
+          ],
+          [
+            0.7567035960952442,
+            0.48295843968894836
+          ],
+          [
+            0.751834392875433,
+            0.4854338861657207
+          ],
+          [
+            0.749747591495514,
+            0.48295843968894836
+          ],
+          [
+            0.749747591495514,
+            0.4792452699737899
+          ],
+          [
+            0.750443191955487,
+            0.47676982349701774
+          ],
+          [
+            0.750443191955487,
+            0.4755321002586314
+          ],
+          [
+            0.75113879241546,
+            0.47429437702024535
+          ],
+          [
+            0.7573991965552171,
+            0.47181893054347296
+          ],
+          [
+            0.7636596006949743,
+            0.4705812073050869
+          ],
+          [
+            0.7580947970151901,
+            0.47429437702024535
+          ],
+          [
+            0.751834392875433,
+            0.47676982349701774
+          ],
+          [
+            0.75113879241546,
+            0.47676982349701774
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      },
+      {
+        "dw_body": [
+          [
+            0.1822794847600162,
+            0.29064952118116766
+          ],
+          [
+            0.12595552784763275,
+            0.49840601861105693
+          ],
+          [
+            0.042497401911765334,
+            0.48231220542986836
+          ],
+          [
+            0.0013850246034562588,
+            0.7412762902544486
+          ],
+          [
+            0.09183225468173623,
+            0.7573701034356373
+          ],
+          [
+            0.2094136537835002,
+            0.5144998317922456
+          ],
+          [
+            0.21270264396816493,
+            0.7866315819468893
+          ],
+          [
+            0.24559254581481219,
+            0.6959209985620081
+          ],
+          [
+            0.09183225468173623,
+            0.9534220094610257
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.21105814887583255,
+            0.9504958616099005
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.15925655346736312,
+            0.25260959911654
+          ],
+          [
+            0.2003689307756722,
+            0.2628511165954782
+          ],
+          [
+            0.11238844333589076,
+            0.26577726444660343
+          ],
+          [
+            0.21188039642199874,
+            0.28772337333004244
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.24148130808398127,
+            0.6944579246364454
+          ],
+          [
+            0.23901456544548272,
+            0.6681225939763187
+          ],
+          [
+            0.235725575260818,
+            0.6432503372417544
+          ],
+          [
+            0.24148130808398127,
+            0.6315457458372536
+          ],
+          [
+            0.25134827863797543,
+            0.6198411544327528
+          ],
+          [
+            0.26121524919196965,
+            0.615451932656065
+          ],
+          [
+            0.26450423937663436,
+            0.6110627108793772
+          ],
+          [
+            0.25957075409963726,
+            0.630082671911691
+          ],
+          [
+            0.253815021276474,
+            0.6461764850928796
+          ],
+          [
+            0.27190446729212997,
+            0.6330088197628162
+          ],
+          [
+            0.26943772465363147,
+            0.6476395590184422
+          ],
+          [
+            0.25628176391497254,
+            0.6637333721996308
+          ],
+          [
+            0.24805928845331074,
+            0.6725118157530064
+          ],
+          [
+            0.2768379525691271,
+            0.6534918547206926
+          ],
+          [
+            0.27190446729212997,
+            0.6695856679018812
+          ],
+          [
+            0.2587485065534711,
+            0.6798271853808194
+          ],
+          [
+            0.25134827863797543,
+            0.6856794810830699
+          ],
+          [
+            0.2801269427537918,
+            0.6725118157530064
+          ],
+          [
+            0.27519345747679475,
+            0.6827533332319446
+          ],
+          [
+            0.26450423937663436,
+            0.6886056289341951
+          ],
+          [
+            0.2579262590073049,
+            0.6915317767853202
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.09841023505106568,
+            0.754443955584512
+          ],
+          [
+            0.11814417615905404,
+            0.7646854730634502
+          ],
+          [
+            0.13870036481320858,
+            0.7749269905423884
+          ],
+          [
+            0.15021183045953512,
+            0.7968730994258275
+          ],
+          [
+            0.15761205837503076,
+            0.8202822822348291
+          ],
+          [
+            0.1559675632826984,
+            0.7983361733513901
+          ],
+          [
+            0.1691235240213573,
+            0.8246715040115169
+          ],
+          [
+            0.17487925684452058,
+            0.8495437607460811
+          ],
+          [
+            0.18063498966768385,
+            0.8700267957039575
+          ],
+          [
+            0.14774508782103657,
+            0.8115038386814535
+          ],
+          [
+            0.15843430592119695,
+            0.8466176128949559
+          ],
+          [
+            0.1641900387443602,
+            0.8729529435550827
+          ],
+          [
+            0.16994577156752347,
+            0.897825200289647
+          ],
+          [
+            0.13541137462854386,
+            0.8217453561603917
+          ],
+          [
+            0.14363385009020566,
+            0.8568591303738942
+          ],
+          [
+            0.14856733536720276,
+            0.8817313871084583
+          ],
+          [
+            0.15350082064419984,
+            0.9080667177685852
+          ],
+          [
+            0.12225541388988495,
+            0.8275976518626421
+          ],
+          [
+            0.12718889916688203,
+            0.8583222042994567
+          ],
+          [
+            0.13047788935154678,
+            0.8817313871084583
+          ],
+          [
+            0.1329446319900453,
+            0.9036774959918973
+          ]
+        ],
+        "dw_face": [
+          [
+            0.11896642370522022,
+            0.24529422948872703
+          ],
+          [
+            0.11814417615905404,
+            0.26577726444660343
+          ],
+          [
+            0.11896642370522022,
+            0.28772337333004244
+          ],
+          [
+            0.1197886712513864,
+            0.30966948221348145
+          ],
+          [
+            0.12389990898221731,
+            0.33015251717135785
+          ],
+          [
+            0.13047788935154678,
+            0.3477094042781091
+          ],
+          [
+            0.13952261235937477,
+            0.36380321745929767
+          ],
+          [
+            0.15021183045953512,
+            0.3755078088637985
+          ],
+          [
+            0.16090104855969548,
+            0.3842862524171741
+          ],
+          [
+            0.17323476175218822,
+            0.3872124002682993
+          ],
+          [
+            0.18474622739851473,
+            0.3798970306404863
+          ],
+          [
+            0.19296870286017656,
+            0.3652662913848603
+          ],
+          [
+            0.2011911783218384,
+            0.3477094042781091
+          ],
+          [
+            0.20694691114500166,
+            0.33015251717135785
+          ],
+          [
+            0.21023590132966638,
+            0.30966948221348145
+          ],
+          [
+            0.21188039642199874,
+            0.28918644725560505
+          ],
+          [
+            0.21270264396816493,
+            0.26577726444660343
+          ],
+          [
+            0.1419893549978733,
+            0.23505271200978883
+          ],
+          [
+            0.15021183045953512,
+            0.23066349023310104
+          ],
+          [
+            0.15925655346736312,
+            0.23066349023310104
+          ],
+          [
+            0.16747902892902494,
+            0.23358963808422623
+          ],
+          [
+            0.17487925684452058,
+            0.23797885986091402
+          ],
+          [
+            0.19296870286017656,
+            0.24383115556316443
+          ],
+          [
+            0.19872443568333983,
+            0.24236808163760185
+          ],
+          [
+            0.2036579209603369,
+            0.24090500771203924
+          ],
+          [
+            0.20859140623733402,
+            0.24236808163760185
+          ],
+          [
+            0.21270264396816493,
+            0.24822037733985225
+          ],
+          [
+            0.18310173230618237,
+            0.26138804266991567
+          ],
+          [
+            0.18392397985234857,
+            0.2730926340744165
+          ],
+          [
+            0.18392397985234857,
+            0.2847972254789173
+          ],
+          [
+            0.18474622739851473,
+            0.29650181688341803
+          ],
+          [
+            0.1691235240213573,
+            0.30235411258566847
+          ],
+          [
+            0.17487925684452058,
+            0.3052802604367937
+          ],
+          [
+            0.18063498966768385,
+            0.30966948221348145
+          ],
+          [
+            0.18556847494468093,
+            0.30966948221348145
+          ],
+          [
+            0.18967971267551184,
+            0.3067433343623563
+          ],
+          [
+            0.14938958291336893,
+            0.25553574696766523
+          ],
+          [
+            0.1559675632826984,
+            0.25553574696766523
+          ],
+          [
+            0.16254554365202784,
+            0.25699882089322784
+          ],
+          [
+            0.1683012764751911,
+            0.25992496874435306
+          ],
+          [
+            0.16254554365202784,
+            0.25846189481879045
+          ],
+          [
+            0.1559675632826984,
+            0.25699882089322784
+          ],
+          [
+            0.1913242077678442,
+            0.26577726444660343
+          ],
+          [
+            0.19625769304484128,
+            0.26577726444660343
+          ],
+          [
+            0.20201342586800455,
+            0.26724033837216604
+          ],
+          [
+            0.20612466359883547,
+            0.27016648622329126
+          ],
+          [
+            0.2011911783218384,
+            0.27016648622329126
+          ],
+          [
+            0.19625769304484128,
+            0.26724033837216604
+          ],
+          [
+            0.14856733536720276,
+            0.3169848518412945
+          ],
+          [
+            0.16172329610586167,
+            0.3140587039901693
+          ],
+          [
+            0.17570150439068674,
+            0.3169848518412945
+          ],
+          [
+            0.1789904945753515,
+            0.31844792576685704
+          ],
+          [
+            0.1822794847600162,
+            0.31844792576685704
+          ],
+          [
+            0.18967971267551184,
+            0.32137407361798226
+          ],
+          [
+            0.19461319795250892,
+            0.3286894432457953
+          ],
+          [
+            0.18967971267551184,
+            0.34039403465029605
+          ],
+          [
+            0.18310173230618237,
+            0.3491724782036717
+          ],
+          [
+            0.17487925684452058,
+            0.35209862605479686
+          ],
+          [
+            0.16336779119819403,
+            0.3462463303525465
+          ],
+          [
+            0.1551453157365322,
+            0.33307866502248307
+          ],
+          [
+            0.15021183045953512,
+            0.31844792576685704
+          ],
+          [
+            0.1641900387443602,
+            0.31844792576685704
+          ],
+          [
+            0.1781682470291853,
+            0.32137407361798226
+          ],
+          [
+            0.18639072249084712,
+            0.3243002214691075
+          ],
+          [
+            0.19296870286017656,
+            0.3286894432457953
+          ],
+          [
+            0.18556847494468093,
+            0.34039403465029605
+          ],
+          [
+            0.17570150439068674,
+            0.34332018250142127
+          ],
+          [
+            0.16172329610586167,
+            0.3360048128736083
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "031998",
+  "objects": [
+    {
+      "box": [
+        0.5775375366210938,
+        0.6339499950408936,
+        0.6461330652236938,
+        0.8188462257385254
+      ],
+      "name": "glass",
+      "possible_names": [
+        "glass"
+      ],
+      "deleted": false
+    },
+    {
+      "box": [
+        0.3077903687953949,
+        0.4366604685783386,
+        0.3799421489238739,
+        0.6257454752922058
+      ],
+      "name": "glass",
+      "possible_names": [
+        "glass"
+      ]
+    },
+    {
+      "box": [
+        0.3162998557090759,
+        0.4979677200317383,
+        0.36637187004089355,
+        0.6233683824539185
+      ],
+      "name": "drink",
+      "possible_names": [
+        "drink"
+      ],
+      "deleted": true
+    },
+    {
+      "box": [
+        0.5889667868614197,
+        0.6892403960227966,
+        0.635843813419342,
+        0.7804723381996155
+      ],
+      "name": "drink",
+      "possible_names": [
+        "drink"
+      ],
+      "deleted": true
+    },
+    {
+      "box": [
+        0.05122242122888565,
+        0.7501091361045837,
+        0.25132158398628235,
+        0.9989072680473328
+      ],
+      "name": "clutch purse",
+      "possible_names": [
+        "clutch purse"
+      ]
+    }
+  ],
+  "mask_file": "./person_labeling/./031998.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A festive indoor setting with vibrant colors and decorative elements including plants and masks suggests a celebratory atmosphere possibly inspired by Mardi Gras traditions",
+  "overall_past": "Before the current scene, the individual in the green dress likely arrived at the celebration, perhaps greeted by the other two attendees, and immediately joined in the festive spirit by selecting a drink—possibly a signature cocktail or punch—before engaging in animated conversation. The presence of vibrant decorations, plants, and masks suggests the event had already been underway for some time, with music playing and guests mingling. Her confident posture and red gloves indicate she was already feeling at ease and eager to participate, possibly having just been introduced or reconnected with friends, setting the stage for the joyful, lively exchange captured in the moment.",
+  "overall_past_clean": "The individual arrived at the gathering with a sense of purpose, greeted warmly by others who welcomed them into the unfolding celebration, immediately stepping into the rhythm of the event by selecting a drink and joining the flow of conversation with ease and enthusiasm.",
+  "past_scene_ok": true,
+  "overall_future": "Given the vibrant, celebratory atmosphere and the joyful interaction among the individuals, it is likely that the festivities will continue to intensify. The person in the green dress, already exuding confidence and enthusiasm, may raise her glass in a toast, prompting the others to join in, leading to a moment of shared laughter or a spontaneous dance. The festive setting, enhanced by plants and masks, suggests a lively event where music and movement are expected, so the next moment could involve the group moving toward a central area to dance or participate in a traditional celebration, such as a parade or a group performance, further embracing the Mardi Gras-inspired spirit.",
+  "overall_future_clean": "The energy surges as voices rise in unison, feet stomp in rhythm, and bodies sway in sync, drawing everyone into a pulsing circle of motion that spirals into a thunderous, joyous celebration.",
+  "future_scene_ok": true
+}

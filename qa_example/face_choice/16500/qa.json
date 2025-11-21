@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/016797.jpg",
+            "width": 2160,
+            "height": 3840
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Bald head\nB. Has bangs\nC. Wearing necklace\nD. Mouth slightly open\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Bald"
+        ],
+        "false_answers": [
+            "Mouth Slightly Open",
+            "Bangs",
+            "Wearing Necklace"
+        ],
+        "image": "./final_labeling/016797.jpg",
+        "distinct": [
+            "face_choice-Bald",
+            "face_choice-false-Mouth Slightly Open",
+            "face_choice-false-Bangs",
+            "face_choice-false-Wearing Necklace"
+        ]
+    }
+}

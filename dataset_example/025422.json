@@ -1,0 +1,635 @@
+{
+  "video_path": "./ref_datasets/part2/7350347000.mp4",
+  "start_time": 0.0,
+  "end_time": 6.08,
+  "image_path": "./025422.jpg",
+  "represents_multiple_types": false,
+  "cross_video_duplicate": false,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/7350347000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/person_3322517142376946621_1_7350347000.mp4_0.00_6.08.jpg",
+      "type": "person"
+    }
+  ],
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a dark-colored turtleneck sweater. The fabric appears soft and slightly stretchy, fitting closely around the neck and shoulders.",
+        "clothing": [
+          {
+            "possible_names": [
+              "turtleneck sweater",
+              "high-neck sweater",
+              "long-sleeve top"
+            ],
+            "name": "turtleneck sweater",
+            "type": "top",
+            "color": [
+              "dark gray"
+            ]
+          }
+        ],
+        "objects": [],
+        "description": "The individual is an adult male with a neutral expression, wearing a dark gray turtleneck sweater. He is adjusting the collar of his sweater with both hands, pulling it up over his face. The background is a solid beige color, which contrasts with the dark tone of his clothing. There are no additional objects present in the image.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible as they are pulling up their turtleneck, so no specific emotion can be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "black",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is adjusting the collar of their black turtleneck sweater, pulling it up over their face with both hands. This action suggests they might be feeling cold and are trying to cover more of their face for warmth. The individual's expression is not visible due to the sweater covering their face, but the act of pulling up the collar indicates a focus on comfort and protection from the environment. The background is plain and neutral, which keeps the attention on the person and their actions without any distractions from other elements or people.",
+        "intention": "The person is seeking warmth and comfort by covering their face with the sweater collar due to feeling cold",
+        "intention_ok": true
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.0025548969861119986,
+        0.04187822341918945,
+        0.9986727833747864,
+        0.9964301586151123
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5072326811951887,
+            0.6385610072923202
+          ],
+          [
+            0.0916917463488356,
+            0.6009190130035081
+          ],
+          [
+            0.006943266215697726,
+            0.7929700042729578
+          ],
+          [
+            0.1436343632046298,
+            0.47800637859106065
+          ],
+          [
+            0.9227736160415417,
+            0.6762030015811324
+          ],
+          [
+            0.9255074379813204,
+            0.9727297321011624
+          ],
+          [
+            0.9993206303553437,
+            0.5240986164957285
+          ],
+          [
+            0.16277111678308015,
+            1.1033244061643876
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.747809011895709,
+            1.1033244061643876
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4525562423996158,
+            0.35048452038814615
+          ],
+          [
+            0.671261997581907,
+            0.3612393758992355
+          ],
+          [
+            0.3350018989891344,
+            0.31821995385487867
+          ],
+          [
+            0.8270898481492894,
+            0.3658485996897023
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            1.0102559181144584,
+            0.5133437609846394
+          ],
+          [
+            0.9719824109575572,
+            0.4549602596387267
+          ],
+          [
+            0.9337089038006564,
+            0.41501365345468116
+          ],
+          [
+            0.8981692185835339,
+            0.3888947186420362
+          ],
+          [
+            0.8653633553061904,
+            0.3612393758992355
+          ],
+          [
+            1.0020544522951222,
+            0.34280248073736835
+          ],
+          [
+            0.9391765476802135,
+            0.31821995385487867
+          ],
+          [
+            0.8598957114266331,
+            0.3305112172961235
+          ],
+          [
+            0.8216222042697322,
+            0.3489481124579906
+          ],
+          [
+            0.996586808415565,
+            0.34280248073736835
+          ],
+          [
+            0.9173059721619845,
+            0.31361073006441187
+          ],
+          [
+            0.8407589578481826,
+            0.332047625226279
+          ],
+          [
+            0.799751628751503,
+            0.36431219175954654
+          ],
+          [
+            0.966514767078,
+            0.3520209283183019
+          ],
+          [
+            0.8845001088846408,
+            0.3305112172961235
+          ],
+          [
+            0.8134207384503963,
+            0.3581665600389242
+          ],
+          [
+            0.7833486971128314,
+            0.3950403503626585
+          ],
+          [
+            0.928241259921099,
+            0.37199423141032456
+          ],
+          [
+            0.8571618894868546,
+            0.35970296796907975
+          ],
+          [
+            0.799751628751503,
+            0.38121267899125816
+          ],
+          [
+            0.7724134093537167,
+            0.4073316138039033
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.14636818514440833,
+            0.4703243389402826
+          ],
+          [
+            0.12996525350573648,
+            0.40579520587374757
+          ],
+          [
+            0.10809467798750734,
+            0.33358403315643476
+          ],
+          [
+            0.15730347290352273,
+            0.2967102428327005
+          ],
+          [
+            0.24478577497643933,
+            0.2767369397406776
+          ],
+          [
+            0.15183582902396572,
+            0.2721277159502108
+          ],
+          [
+            0.25845488467533245,
+            0.24139955734709906
+          ],
+          [
+            0.2830592821333402,
+            0.2613728604391217
+          ],
+          [
+            0.27759163825378297,
+            0.28288257146130014
+          ],
+          [
+            0.23111666527754599,
+            0.28288257146130014
+          ],
+          [
+            0.3350018989891344,
+            0.2567636366486549
+          ],
+          [
+            0.3404695428686918,
+            0.28288257146130014
+          ],
+          [
+            0.31313132347090517,
+            0.3013194666231673
+          ],
+          [
+            0.30219603571179077,
+            0.3028558745533228
+          ],
+          [
+            0.39241215972448584,
+            0.27980975560098886
+          ],
+          [
+            0.38967833778470734,
+            0.31207432213425634
+          ],
+          [
+            0.3678077622664781,
+            0.3305112172961235
+          ],
+          [
+            0.35140483062780625,
+            0.332047625226279
+          ],
+          [
+            0.4142827352427151,
+            0.3151471379945676
+          ],
+          [
+            0.4142827352427151,
+            0.33819325694690155
+          ],
+          [
+            0.3951459816642645,
+            0.35970296796907975
+          ]
+        ],
+        "dw_face": [
+          [
+            0.3842106939051499,
+            0.32590199350565674
+          ],
+          [
+            0.36234011838692065,
+            0.3581665600389242
+          ],
+          [
+            0.3568724745073635,
+            0.3888947186420362
+          ],
+          [
+            0.3568724745073635,
+            0.42269569310545924
+          ],
+          [
+            0.3732754061460355,
+            0.45649666756888224
+          ],
+          [
+            0.39787980360404324,
+            0.48568841824183867
+          ],
+          [
+            0.427951844941608,
+            0.5210258006354175
+          ],
+          [
+            0.46622535209850907,
+            0.5517539592385292
+          ],
+          [
+            0.5236356128338605,
+            0.5578995909591518
+          ],
+          [
+            0.5783120516294332,
+            0.553290367168685
+          ],
+          [
+            0.641189956244342,
+            0.5348534720068178
+          ],
+          [
+            0.679463463401243,
+            0.5102709451243281
+          ],
+          [
+            0.7204707924979226,
+            0.4933704578926165
+          ],
+          [
+            0.7450751899559303,
+            0.4595694834291935
+          ],
+          [
+            0.769679587413938,
+            0.42576850896577045
+          ],
+          [
+            0.7806148751730524,
+            0.393503942432503
+          ],
+          [
+            0.7915501629321671,
+            0.362775783829391
+          ],
+          [
+            0.39787980360404324,
+            0.3243655855755012
+          ],
+          [
+            0.4142827352427151,
+            0.31821995385487867
+          ],
+          [
+            0.4470885985200587,
+            0.32743840143581227
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6630605317625711,
+            0.33819325694690155
+          ],
+          [
+            0.7150031486183653,
+            0.3412660728072126
+          ],
+          [
+            0.7450751899559303,
+            0.3489481124579906
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4142827352427151,
+            0.3489481124579906
+          ],
+          [
+            0.4498224204598372,
+            0.3458752965976794
+          ],
+          [
+            0.4798944617974022,
+            0.3458752965976794
+          ],
+          [
+            0.4853621056769594,
+            0.3535573362484574
+          ],
+          [
+            0.4607577082189517,
+            0.3535573362484574
+          ],
+          [
+            0.44435477658028005,
+            0.35509374417861295
+          ],
+          [
+            0.6138517368465556,
+            0.3581665600389242
+          ],
+          [
+            0.6302546684852274,
+            0.35048452038814615
+          ],
+          [
+            0.6657943537023499,
+            0.35509374417861295
+          ],
+          [
+            0.7068016827990292,
+            0.362775783829391
+          ],
+          [
+            0.6685281756421283,
+            0.3689214155500133
+          ],
+          [
+            0.6329884904250059,
+            0.36738500761985776
+          ],
+          [
+            0.4607577082189517,
+            0.47800637859106065
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5755782296896547,
+            0.4826156023815274
+          ],
+          [
+            0.6138517368465556,
+            0.4964432737529278
+          ],
+          [
+            0.5783120516294332,
+            0.5010524975433945
+          ],
+          [
+            0.534570900592975,
+            0.5071981292640169
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4880959276167383,
+            0.5056617213338613
+          ],
+          [
+            0.46622535209850907,
+            0.4933704578926165
+          ],
+          [
+            0.46349153015873057,
+            0.4795427865212162
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5646429419305401,
+            0.4887612341021497
+          ],
+          [
+            0.6083840929669981,
+            0.4964432737529278
+          ],
+          [
+            0.5701105858100973,
+            0.49951608961323907
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.49356357149629554,
+            0.491834049962461
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "025422",
+  "objects": [],
+  "mask_file": "./person_labeling/./025422.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A person is adjusting a high-neck garment against a warm beige backdrop with a focus on the texture and fit of the clothing and the natural lighting enhancing the simplicity of the scene",
+  "overall_past": "Before the current scene, the person likely stepped outside into a cool or chilly environment—perhaps early morning or late autumn—where the temperature had dropped unexpectedly. They may have been preparing to leave the house or walking toward a destination when they felt the cold air on their neck and face, prompting them to instinctively adjust their black turtleneck for added warmth. The act of pulling the collar up over their face suggests they were caught off guard by the cold, indicating they either underestimated the weather or were transitioning from a warmer indoor space to a cooler outdoor one. The neutral backdrop and natural lighting imply this moment occurred in a transitional space—like a doorway or a quiet street—where the simplicity of the setting underscores the personal, intimate gesture of seeking comfort.",
+  "overall_past_clean": "They had just turned away from the warmth of the interior, stepping abruptly into a sudden chill that sliced through the air like a blade, their body reacting before their mind could catch up.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the person is likely to slowly lower the collar of the black turtleneck sweater, revealing their face as they take a deep breath or exhale, perhaps feeling a momentary sense of relief or reassurance from the warmth. The natural lighting, gently highlighting the texture of the fabric and the contours of the garment, suggests a quiet, introspective moment—indicating that the person may be pausing to collect themselves, perhaps after a brief moment of vulnerability or solitude. The simplicity of the scene implies a personal, internal experience, so the next action would likely be a subtle return to composure, signaling a transition from seeking comfort to re-engaging with the environment.",
+  "overall_future_clean": "They exhale slowly, shoulders relaxing as they lift their head, eyes sharpening with quiet resolve, then step forward with deliberate calm, reasserting their presence in the space.",
+  "future_scene_ok": true
+}

@@ -1,0 +1,76 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/002238.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: left hand, action: holding, object: sculpting tool\nB. body part: left hand, action: holding, object: credit card\nC. body part: right hand, action: holding, object: credit card\nD. body part: right hand, action: holding, object: sculpting tool\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "credit card",
+                "bbox": [
+                    0.5921947956085205,
+                    0.6425588726997375,
+                    0.6317000389099121,
+                    0.6916429400444031
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "credit card"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "sculpting tool"
+            },
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "sculpting tool"
+            }
+        ],
+        "image": "./final_labeling/002238.jpg",
+        "distinct": [
+            "hoi_choice-false-right hand",
+            "hoi_choice-false-left hand",
+            "hoi_choice-left hand"
+        ]
+    }
+}

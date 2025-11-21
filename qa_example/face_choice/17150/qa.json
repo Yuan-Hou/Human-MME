@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/031193.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Has sideburns\nB. Blond hair\nC. Black hair\nD. Wearing earrings\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Blond Hair"
+        ],
+        "false_answers": [
+            "Black Hair",
+            "Wearing Earrings",
+            "Sideburns"
+        ],
+        "image": "./final_labeling/031193.jpg",
+        "distinct": [
+            "face_choice-Blond Hair",
+            "face_choice-false-Black Hair",
+            "face_choice-false-Wearing Earrings",
+            "face_choice-false-Sideburns"
+        ]
+    }
+}

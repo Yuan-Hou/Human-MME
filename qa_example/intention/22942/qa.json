@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007917.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The intention is to celebrate a special occasion with joy and connection through shared moments of indulgence and festive surroundings\nB. The individual is intentionally creating a joyful and memorable moment to celebrate a significant event with enthusiasm and care\nC. The individual is engaging in the act of rocking with intention and focus to experience joy and a sense of control during a celebratory moment\nD. The individual is expressing joy and anticipation while preparing to open gifts as part of a celebratory event marked by thoughtful gestures and a festive atmosphere\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is expressing joy and anticipation while preparing to open gifts as part of a celebratory event marked by thoughtful gestures and a festive atmosphere",
+        "false_answers": [
+            "The intention is to celebrate a special occasion with joy and connection through shared moments of indulgence and festive surroundings",
+            "The individual is intentionally creating a joyful and memorable moment to celebrate a significant event with enthusiasm and care",
+            "The individual is engaging in the act of rocking with intention and focus to experience joy and a sense of control during a celebratory moment"
+        ],
+        "image": "./final_labeling/007917.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

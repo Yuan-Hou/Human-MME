@@ -1,0 +1,64 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/021173.jpg",
+            "width": 2160,
+            "height": 3840,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.0437658466398716,
+                        0.14914023876190186,
+                        0.4483206868171692,
+                        0.9060824513435364
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x3840. There is one person in the image that meets the following condition:\n\n- all visible body in the red bounding box\n\nPlease provide the bounding box of the person's mouth in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.22529756347969096,
+            0.2252319262141273,
+            0.2756914399919056,
+            0.23560599677619481
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.0437658466398716,
+                0.14914023876190186,
+                0.4483206868171692,
+                0.9060824513435364
+            ],
+            "person_no": 1
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "mouth",
+            "attr_value": [
+                0.22529756347969096,
+                0.2252319262141273,
+                0.2756914399919056,
+                0.23560599677619481
+            ],
+            "person_no": 1
+        },
+        "image": "./final_labeling/021173.jpg",
+        "distinct": [
+            "identify-grounding-bbox-body-bbox-mouth"
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005650.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual is likely exploring or showcasing the novelty of oversized wooden utensils in a specialized store to express amusement at their impractical size or to document a unique shopping experience\nB. The individual seeks mental clarity and emotional connection through immersive audio experiences in a serene environment that supports introspection and intellectual engagement\nC. The individual is likely seeking creative inspiration and mental clarity by combining auditory input with focused manual activity in a tranquil setting to enhance problem solving or idea generation\nD. The individual is preparing to move through an urban environment likely for a social or recreational purpose with a focus on personal expression and practicality\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is likely seeking creative inspiration and mental clarity by combining auditory input with focused manual activity in a tranquil setting to enhance problem solving or idea generation",
+        "false_answers": [
+            "The individual seeks mental clarity and emotional connection through immersive audio experiences in a serene environment that supports introspection and intellectual engagement",
+            "The individual is preparing to move through an urban environment likely for a social or recreational purpose with a focus on personal expression and practicality",
+            "The individual is likely exploring or showcasing the novelty of oversized wooden utensils in a specialized store to express amusement at their impractical size or to document a unique shopping experience"
+        ],
+        "image": "./final_labeling/005650.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

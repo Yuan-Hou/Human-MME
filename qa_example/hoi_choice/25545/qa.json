@@ -1,0 +1,76 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006065.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: left hand, action: holding, object: tennis racket\nB. body part: right hand, action: holding, object: fencing sword\nC. body part: left hand, action: holding, object: fencing sword\nD. body part: right hand, action: holding, object: tennis racket\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "fencing sword",
+                "bbox": [
+                    0.3155856430530548,
+                    0.33365553617477417,
+                    0.5719071626663208,
+                    0.9934985041618347
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "fencing sword"
+            },
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "tennis racket"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "tennis racket"
+            }
+        ],
+        "image": "./final_labeling/006065.jpg",
+        "distinct": [
+            "hoi_choice-false-right hand",
+            "hoi_choice-right hand",
+            "hoi_choice-false-left hand"
+        ]
+    }
+}

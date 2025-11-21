@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/009909.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual is motivated to execute a precise and powerful shot demonstrating commitment to performance and engagement in the physical demands of tennis\nB. The individual is preparing to strike the ball with focus and determination to perform effectively in the match\nC. The individual is driven by a desire to execute a powerful and precise serve to gain a competitive advantage in the match\nD. The individual is engaging in tennis for enjoyment and physical activity in an urban recreational setting\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is engaging in tennis for enjoyment and physical activity in an urban recreational setting",
+        "false_answers": [
+            "The individual is driven by a desire to execute a powerful and precise serve to gain a competitive advantage in the match",
+            "The individual is motivated to execute a precise and powerful shot demonstrating commitment to performance and engagement in the physical demands of tennis",
+            "The individual is preparing to strike the ball with focus and determination to perform effectively in the match"
+        ],
+        "image": "./final_labeling/009909.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

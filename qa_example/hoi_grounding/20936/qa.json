@@ -1,0 +1,55 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/027924.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: face, action: mouth holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.44710975885391235,
+            0.4104522168636322,
+            0.506600558757782,
+            0.502694308757782
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "face",
+                        "smoking"
+                    ],
+                    [
+                        "face",
+                        "mouth holding"
+                    ]
+                ],
+                "object": "cigarette",
+                "bbox": [
+                    0.44710975885391235,
+                    0.4104522168636322,
+                    0.506600558757782,
+                    0.502694308757782
+                ]
+            }
+        },
+        "image": "./final_labeling/027924.jpg",
+        "distinct": [
+            "hoi_grounding-face",
+            "hoi_grounding-face"
+        ]
+    }
+}

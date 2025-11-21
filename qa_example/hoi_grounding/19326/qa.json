@@ -1,0 +1,55 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/003562.jpg",
+            "width": 2160,
+            "height": 3840
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x3840. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: both hands, action: holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.0004702955484390259,
+            0.4275552034378052,
+            0.22007301449775696,
+            0.5169488191604614
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "both hands",
+                        "holding"
+                    ],
+                    [
+                        "both hands",
+                        "reading"
+                    ]
+                ],
+                "object": "book",
+                "bbox": [
+                    0.0004702955484390259,
+                    0.4275552034378052,
+                    0.22007301449775696,
+                    0.5169488191604614
+                ]
+            }
+        },
+        "image": "./final_labeling/003562.jpg",
+        "distinct": [
+            "hoi_grounding-both hands",
+            "hoi_grounding-both hands"
+        ]
+    }
+}

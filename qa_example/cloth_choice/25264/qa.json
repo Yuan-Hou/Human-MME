@@ -1,0 +1,81 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/021429.jpg",
+            "width": 1440,
+            "height": 2732
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. Silver black earring.\nB. Red scout shirt with pockets.\nC. A silver and black earphone case.\nD. A chain necklace in a colorless, transparent design, free from any specific coloration.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "earring",
+                    "dangling earring"
+                ],
+                "name": "earring",
+                "type": "accessory",
+                "color": [
+                    "silver",
+                    "black"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "earring",
+                    "dangling earring"
+                ],
+                "name": "earphone case",
+                "type": "accessory",
+                "color": [
+                    "silver",
+                    "black"
+                ]
+            },
+            {
+                "possible_names": [
+                    "silver chain necklace",
+                    "metallic necklace"
+                ],
+                "name": "chain necklace",
+                "type": "accessory",
+                "color": [
+                    "none"
+                ]
+            },
+            {
+                "possible_names": [
+                    "red top",
+                    "red blouse",
+                    "red shirt"
+                ],
+                "name": "scout shirt",
+                "type": "top",
+                "color": [
+                    "red"
+                ]
+            }
+        ],
+        "image": "./final_labeling/021429.jpg",
+        "distinct": [
+            "cloth_choice-false-accessory",
+            "cloth_choice-accessory",
+            "cloth_choice-false-top"
+        ]
+    }
+}

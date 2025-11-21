@@ -1,0 +1,55 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004775.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: left hand, action: talking on\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.5551168322563171,
+            0.20464712381362915,
+            0.5977057814598083,
+            0.38500136137008667
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "talking on"
+                    ]
+                ],
+                "object": "mobile phone",
+                "bbox": [
+                    0.5551168322563171,
+                    0.20464712381362915,
+                    0.5977057814598083,
+                    0.38500136137008667
+                ]
+            }
+        },
+        "image": "./final_labeling/004775.jpg",
+        "distinct": [
+            "hoi_grounding-left hand",
+            "hoi_grounding-left hand"
+        ]
+    }
+}

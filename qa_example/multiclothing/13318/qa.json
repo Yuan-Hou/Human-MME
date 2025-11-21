@@ -1,0 +1,110 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/000434.jpg",
+            "image_B": "./final_labeling/003092.jpg",
+            "image_C": "./final_labeling/train_00035972.jpg",
+            "image_D": "./final_labeling/009352.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- wristwatch in silver\n- Blue suit\n- Blue purple black tie\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "D",
+            "A",
+            "C",
+            "B"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "wristwatch",
+                    "watch"
+                ],
+                "name": "wristwatch",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ]
+            },
+            {
+                "possible_names": [
+                    "blue suit",
+                    "formal suit"
+                ],
+                "name": "suit",
+                "type": "whole body",
+                "color": [
+                    "blue"
+                ]
+            },
+            {
+                "possible_names": [
+                    "striped tie",
+                    "dress tie"
+                ],
+                "name": "tie",
+                "type": "accessory",
+                "color": [
+                    "blue",
+                    "purple",
+                    "black"
+                ]
+            }
+        ],
+        "fullfit": "./final_labeling/009352.jpg",
+        "duo": "./final_labeling/000434.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "dark blue suit",
+                    "formal suit"
+                ],
+                "name": "suit",
+                "type": "whole body",
+                "color": [
+                    "dark blue"
+                ]
+            },
+            {
+                "possible_names": [
+                    "black tie",
+                    "formal tie"
+                ],
+                "name": "tie",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ]
+            }
+        ],
+        "solo": "./final_labeling/train_00035972.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "tie"
+                ],
+                "name": "tie",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "none": "./final_labeling/003092.jpg",
+        "distinct": [
+            "multiclothing-accessory-accessory-whole body"
+        ]
+    }
+}

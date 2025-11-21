@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/018285.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. Intense frustration surges through the individual as a wave of rage consumes their thoughts overwhelming any sense of calm and replacing it with a fierce need to respond with force\nB. Intense frustration and irritation are present with a strong sense of being provoked and threatened leading to a heightened state of emotional readiness and determination to confront the source of distress\nC. Intense anger fuels a sense of powerlessness and frustration driven by a deep longing for release and justice accompanied by relentless thoughts of past events and a fierce determination to overcome confinement and injustice\nD. Intense frustration and irritation dominate the emotional state with a strong focus on the source of distress and a pressing need for immediate resolution\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "Intense anger fuels a sense of powerlessness and frustration driven by a deep longing for release and justice accompanied by relentless thoughts of past events and a fierce determination to overcome confinement and injustice",
+        "false_answers": [
+            "Intense frustration and irritation dominate the emotional state with a strong focus on the source of distress and a pressing need for immediate resolution",
+            "Intense frustration and irritation are present with a strong sense of being provoked and threatened leading to a heightened state of emotional readiness and determination to confront the source of distress",
+            "Intense frustration surges through the individual as a wave of rage consumes their thoughts overwhelming any sense of calm and replacing it with a fierce need to respond with force"
+        ],
+        "image": "./final_labeling/018285.jpg",
+        "distinct": [
+            "emotion-angry"
+        ]
+    }
+}

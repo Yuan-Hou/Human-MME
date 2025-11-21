@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/008929.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual seeks inner peace and a deep connection with nature through mindful presence and stillness in a tranquil environment\nB. The individual is collecting a dark substance in a clear plastic bag as part of a deliberate ritual or experimental process within a culturally significant context while being observed by another figure in the background\nC. The individual seeks inner peace and connection with nature through mindful solitude and reflective stillness\nD. The individual is intentionally guiding the elephant along the narrow road to ensure safe passage and prevent potential hazards\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual seeks inner peace and a deep connection with nature through mindful presence and stillness in a tranquil environment",
+        "false_answers": [
+            "The individual is collecting a dark substance in a clear plastic bag as part of a deliberate ritual or experimental process within a culturally significant context while being observed by another figure in the background",
+            "The individual is intentionally guiding the elephant along the narrow road to ensure safe passage and prevent potential hazards",
+            "The individual seeks inner peace and connection with nature through mindful solitude and reflective stillness"
+        ],
+        "image": "./final_labeling/008929.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/028523.jpg",
+            "width": 2160,
+            "height": 3840
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x3840. There is one person in the image that meets the following condition:\n\n- gender: female\n\nWhat is name and color of the clothing item of type \"bottom\" that the person is wearing?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Beige trousers"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "female",
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "trousers",
+                "color": [
+                    "beige"
+                ],
+                "type": "bottom"
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/028523.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-overall-gender-female-clothing-bottom"
+        ]
+    }
+}

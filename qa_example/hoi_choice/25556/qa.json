@@ -1,0 +1,76 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/032429.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: left hand, action: holding, object: green marker\nB. body part: left hand, action: holding, object: flower\nC. body part: right hand, action: holding, object: flower\nD. body part: right hand, action: holding, object: green marker\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "flower",
+                "bbox": [
+                    0.3841341733932495,
+                    0.36824753880500793,
+                    0.4529772400856018,
+                    0.9975991249084473
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "flower"
+            },
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "green marker"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "green marker"
+            }
+        ],
+        "image": "./final_labeling/032429.jpg",
+        "distinct": [
+            "hoi_choice-false-right hand",
+            "hoi_choice-right hand",
+            "hoi_choice-false-left hand"
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "type": "multiface",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/002491.jpg",
+            "image_B": "./final_labeling/011093.jpg",
+            "image_C": "./final_labeling/train_00023335.jpg",
+            "image_D": "./final_labeling/train_00032497.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Pale skin\n- Female\n- Face turned to left side of image\n\nListed are some facial attributes that appeared in the four images above. Please give the sequence of four images by the maximum count of facial attributes that appears in one single person. If someone in a specific image is showing all three facial attributes, it should be the first image in your answer, and if none of three facial attributes are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "D",
+            "A",
+            "C",
+            "B"
+        ]
+    },
+    "data": {
+        "type": "multiface",
+        "combine": [
+            "Pale Skin",
+            "Female",
+            "Face Left Side of Image"
+        ],
+        "fullfit": "./final_labeling/train_00032497.jpg",
+        "duo": "./final_labeling/002491.jpg",
+        "duo_admit": [
+            "Female",
+            "Face Left Side of Image"
+        ],
+        "solo": "./final_labeling/train_00023335.jpg",
+        "solo_admit": [
+            "Face Left Side of Image"
+        ],
+        "none": "./final_labeling/011093.jpg",
+        "distinct": [
+            "multiface-Pale Skin",
+            "multiface-Female",
+            "multiface-Face Left Side of Image"
+        ]
+    }
+}

@@ -1,0 +1,2032 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00020079.jpg",
+  "image_id": "train_00020079",
+  "width": 640,
+  "height": 427,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 20079,
+  "annotations": {
+    "objects": "[{'id': 456, 'bbox_human': [196, 504, 2, 423], 'bbox_object': [400, 469, 234, 426], 'connection': 1, 'invis': 0}, {'id': 460, 'bbox_human': [189, 501, 1, 426], 'bbox_object': [379, 472, 227, 426], 'connection': 1, 'invis': 0}, {'id': 462, 'bbox_human': [197, 504, 2, 422], 'bbox_object': [390, 472, 233, 424], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('skateboard', 'grind'), ('skateboard', 'ride'), ('skateboard', 'stand_on')]",
+    "negative_captions": "[('skateboard', 'carry'), ('skateboard', 'flip'), ('skateboard', 'hold'), ('skateboard', 'pick_up'), ('skateboard', 'sit_on'), ('skateboard', 'no_interaction')]",
+    "ambiguous_captions": "[('skateboard', 'jump')]",
+    "positive_objects": "[455, 459, 461]",
+    "negative_objects": "[453, 454, 456, 458, 460, 462]",
+    "ambiguous_objects": "[457]",
+    "size": "[640, 427, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 2,
+      "skeleton": 1,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a white top and dark shorts with white shoes.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "t-shirt",
+                "tee"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "dark gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "cap",
+                "hat"
+              ],
+              "name": "cap",
+              "type": "headwear",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "shoes",
+                "sneakers"
+              ],
+              "name": "shoes",
+              "type": "footwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [],
+        "description": "The person is in the background, making the details uncertain. They appear to be wearing a white t-shirt and dark shorts with white shoes. No objects are being held or interacted with by this individual.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is performing a skateboarding trick on the edge of a ramp, likely aiming to showcase their skills or practice for improvement. They are focused on maintaining balance as they grind along the coping, demonstrating control and precision. Their body posture suggests concentration and determination, possibly motivated by the desire to impress others or simply enjoy the thrill of skateboarding. The presence of other individuals in the background indicates a social setting where sharing tricks and techniques might be common, adding to the excitement and camaraderie of the scene.",
+        "intention": "They are driven by a desire to master their craft and gain recognition through skillful performance in a supportive social environment",
+        "intention_ok": true
+      }
+    },
+    {
+      "body_box": 1,
+      "skeleton": 2,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a white top and blue pants.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "t-shirt",
+                "tee"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "dark gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "cap",
+                "hat"
+              ],
+              "name": "cap",
+              "type": "headwear",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "shoes",
+                "sneakers"
+              ],
+              "name": "shoes",
+              "type": "footwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "skateboard"
+            ],
+            "name": "skateboard",
+            "position": "foot"
+          }
+        ],
+        "description": "The person is in the background, wearing a white top and blue jeans. They are wearing shoes and have physical contact with a skateboard, which they are holding near the foot area. The facial expression and gender are not discernible, and there is no clear indication of age or emotion.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is performing a skateboarding trick on the edge of a ramp, likely aiming to showcase their skills or practice for improvement. They are focused on maintaining balance as they grind along the coping, demonstrating control and precision. Their body posture suggests concentration and determination, possibly motivated by the desire to impress others or simply enjoy the thrill of skateboarding. The presence of other individuals in the background indicates a social setting where sharing tricks and techniques might be common, adding to the excitement and camaraderie of the scene.",
+        "intention": "They are driven by a desire to master their craft and gain recognition through skillful performance in a supportive social environment",
+        "intention_ok": true
+      }
+    },
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a grey short-sleeved t-shirt, brown shorts, blue shoes, and a brown cap worn backward. The person is also using a skateboard.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "t-shirt",
+                "tee"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "cap",
+                "hat"
+              ],
+              "name": "cap",
+              "type": "headwear",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "sneakers",
+                "shoes"
+              ],
+              "name": "sneakers",
+              "type": "footwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "skateboard"
+            ],
+            "name": "skateboard",
+            "position": "foot"
+          }
+        ],
+        "description": "The person in the foreground is an adult male performing a trick on a skateboard. He is wearing a grey short-sleeved t-shirt, brown shorts, blue shoes, and a brown cap worn backward. His expression is not discernible. He is engaged in skateboarding, holding onto the skateboard with his foot.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be focused on performing a skateboarding trick, which suggests a neutral emotional state centered around concentration.",
+        "meaningful": true,
+        "story": "A skateboarder is captured mid-trick at a skate park, demonstrating skill and balance as he maneuvers over the edge of a ramp. The setting suggests an active and recreational environment where individuals engage in sports and leisure activities.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is performing a skateboarding trick on the edge of a ramp, likely aiming to showcase their skills or practice for improvement. They are focused on maintaining balance as they grind along the coping, demonstrating control and precision. Their body posture suggests concentration and determination, possibly motivated by the desire to impress others or simply enjoy the thrill of skateboarding. The presence of other individuals in the background indicates a social setting where sharing tricks and techniques might be common, adding to the excitement and camaraderie of the scene.",
+        "intention": "They are driven by a desire to master their craft and gain recognition through skillful performance in a supportive social environment",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "foot",
+                "grind"
+              ],
+              [
+                "foot",
+                "ride"
+              ],
+              [
+                "foot",
+                "stand on"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "flip",
+              "hold",
+              "pick up",
+              "sit on",
+              "no interaction"
+            ],
+            "position": "foot"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.30780497193336487,
+        0.0044384850189089775,
+        0.7840034365653992,
+        0.9868641495704651
+      ],
+      [
+        0.9319547414779663,
+        0.0012958892621099949,
+        0.9994878768920898,
+        0.7243295907974243
+      ],
+      [
+        0.21084603667259216,
+        0.36941128969192505,
+        0.244578555226326,
+        0.47253525257110596
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4867790829390287,
+            0.14240028465473492
+          ],
+          [
+            0.41661682482808826,
+            0.20772771538467164
+          ],
+          [
+            0.34220230864981815,
+            0.39255654379132204
+          ],
+          [
+            0.4049231151429316,
+            0.5343648690343553
+          ],
+          [
+            0.5569413410499692,
+            0.07707285392479818
+          ],
+          [
+            0.635608115295569,
+            0.08503961376991233
+          ],
+          [
+            0.7238424701926609,
+            0.1583338043449634
+          ],
+          [
+            0.48784214745586113,
+            0.4515105666451673
+          ],
+          [
+            0.566508921701461,
+            0.6618330265561834
+          ],
+          [
+            0.6164729539925853,
+            0.8928690620644961
+          ],
+          [
+            0.5675719862182935,
+            0.36546956031793354
+          ],
+          [
+            0.6760045669352015,
+            0.43557704695493893
+          ],
+          [
+            0.6292297281945745,
+            0.5949122438572237
+          ],
+          [
+            0.521860211994499,
+            0.15992715631398635
+          ],
+          [
+            0.5452476313648124,
+            0.14080693268571218
+          ],
+          [
+            0.47508537325387207,
+            0.13284017284059776
+          ],
+          [
+            0.5473737603984773,
+            0.08025955786284379
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.7280947282599908,
+            0.16630056419007755
+          ],
+          [
+            0.7355361798778176,
+            0.18542078781835172
+          ],
+          [
+            0.7429776314956447,
+            0.2013543075085803
+          ],
+          [
+            0.7546713411808014,
+            0.2125077712917402
+          ],
+          [
+            0.7621127927986284,
+            0.22047453113685447
+          ],
+          [
+            0.7621127927986284,
+            0.1902008437254204
+          ],
+          [
+            0.7716803734501203,
+            0.20932106735369457
+          ],
+          [
+            0.7716803734501203,
+            0.22206788310587727
+          ],
+          [
+            0.7706173089332878,
+            0.23162799492001437
+          ],
+          [
+            0.7653019863491256,
+            0.18382743584932906
+          ],
+          [
+            0.7716803734501203,
+            0.2029476594776031
+          ],
+          [
+            0.7684911798996229,
+            0.21728782719880874
+          ],
+          [
+            0.7642389218322932,
+            0.22844129098196875
+          ],
+          [
+            0.7663650508659583,
+            0.1806407319112832
+          ],
+          [
+            0.7706173089332878,
+            0.19657425160151176
+          ],
+          [
+            0.7663650508659583,
+            0.21091441932271737
+          ],
+          [
+            0.7621127927986284,
+            0.21728782719880874
+          ],
+          [
+            0.7653019863491256,
+            0.1774540279732376
+          ],
+          [
+            0.7674281153827905,
+            0.1902008437254204
+          ],
+          [
+            0.7653019863491256,
+            0.2013543075085803
+          ],
+          [
+            0.7621127927986284,
+            0.20932106735369457
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.4070492441765964,
+            0.5423316288794697
+          ],
+          [
+            0.42299521192908285,
+            0.5471116847865384
+          ],
+          [
+            0.43787811516473685,
+            0.5518917406936069
+          ],
+          [
+            0.4453195667825639,
+            0.5694186123528581
+          ],
+          [
+            0.4516979538835585,
+            0.5837587800740637
+          ],
+          [
+            0.43362585709740725,
+            0.5741986682599266
+          ],
+          [
+            0.44425650226573155,
+            0.5933188918882009
+          ],
+          [
+            0.45063488936672613,
+            0.5949122438572237
+          ],
+          [
+            0.4538240829172233,
+            0.5949122438572237
+          ],
+          [
+            0.42618440547958014,
+            0.5869454840121093
+          ],
+          [
+            0.4389411796815693,
+            0.6028790037023379
+          ],
+          [
+            0.44425650226573155,
+            0.6012856517333149
+          ],
+          [
+            0.4453195667825639,
+            0.5965055958262464
+          ],
+          [
+            0.4187429538617531,
+            0.5949122438572237
+          ],
+          [
+            0.43149972806374237,
+            0.6076590596094065
+          ],
+          [
+            0.43681505064790443,
+            0.6044723556713608
+          ],
+          [
+            0.43681505064790443,
+            0.5996922997642923
+          ],
+          [
+            0.41342763127759097,
+            0.6012856517333149
+          ],
+          [
+            0.42299521192908285,
+            0.610845763547452
+          ],
+          [
+            0.42724746999641255,
+            0.6092524115784294
+          ],
+          [
+            0.42937359903007744,
+            0.6044723556713608
+          ]
+        ],
+        "dw_face": [
+          [
+            0.4867790829390287,
+            0.1471803405618034
+          ],
+          [
+            0.49103134100635853,
+            0.15514710040691782
+          ],
+          [
+            0.49422053455685583,
+            0.16311386025203195
+          ],
+          [
+            0.49740972810735296,
+            0.16948726812812343
+          ],
+          [
+            0.5027250506915152,
+            0.174267324035192
+          ],
+          [
+            0.5037881152083477,
+            0.17586067600421465
+          ],
+          [
+            0.5101665023093422,
+            0.18223408388030612
+          ],
+          [
+            0.5144187603766719,
+            0.18701413978737466
+          ],
+          [
+            0.5186710184440017,
+            0.18542078781835172
+          ],
+          [
+            0.5282385990954935,
+            0.17904737994226053
+          ],
+          [
+            0.5314277926459908,
+            0.17267397206616905
+          ],
+          [
+            0.5356800507133205,
+            0.1710806200971461
+          ],
+          [
+            0.5378061797469854,
+            0.16311386025203195
+          ],
+          [
+            0.5399323087806502,
+            0.15992715631398635
+          ],
+          [
+            0.5399323087806502,
+            0.15196039646887194
+          ],
+          [
+            0.5409953732974827,
+            0.14240028465473484
+          ],
+          [
+            0.5420584378143152,
+            0.1312468208715751
+          ],
+          [
+            0.5122926313430071,
+            0.15196039646887194
+          ],
+          [
+            0.5165448894103367,
+            0.1471803405618034
+          ],
+          [
+            0.5207971474776665,
+            0.14399363662375778
+          ],
+          [
+            0.5271755345786613,
+            0.14240028465473484
+          ],
+          [
+            0.5314277926459908,
+            0.14240028465473484
+          ],
+          [
+            0.5399323087806502,
+            0.14080693268571218
+          ],
+          [
+            0.5420584378143152,
+            0.13921358071668924
+          ],
+          [
+            0.5420584378143152,
+            0.13602687677864364
+          ],
+          [
+            0.5431215023311475,
+            0.13284017284059776
+          ],
+          [
+            0.54418456684798,
+            0.1312468208715751
+          ],
+          [
+            0.5378061797469854,
+            0.14558698859278071
+          ],
+          [
+            0.5388692442638179,
+            0.15196039646887194
+          ],
+          [
+            0.5409953732974827,
+            0.15674045237594048
+          ],
+          [
+            0.5431215023311475,
+            0.16311386025203195
+          ],
+          [
+            0.5346169861964881,
+            0.1678939161591005
+          ],
+          [
+            0.5367431152301532,
+            0.1678939161591005
+          ],
+          [
+            0.5388692442638179,
+            0.16630056419007755
+          ],
+          [
+            0.5420584378143152,
+            0.1647072122210549
+          ],
+          [
+            0.5431215023311475,
+            0.16311386025203195
+          ],
+          [
+            0.5176079539271694,
+            0.15674045237594048
+          ],
+          [
+            0.5207971474776665,
+            0.15514710040691782
+          ],
+          [
+            0.5261124700618286,
+            0.15196039646887194
+          ],
+          [
+            0.5282385990954935,
+            0.15196039646887194
+          ],
+          [
+            0.5250494055449962,
+            0.15514710040691782
+          ],
+          [
+            0.521860211994499,
+            0.15674045237594048
+          ],
+          [
+            0.5388692442638179,
+            0.14399363662375778
+          ],
+          [
+            0.5409953732974827,
+            0.14399363662375778
+          ],
+          [
+            0.5431215023311475,
+            0.14240028465473484
+          ],
+          [
+            0.54418456684798,
+            0.14080693268571218
+          ],
+          [
+            0.5431215023311475,
+            0.14240028465473484
+          ],
+          [
+            0.5409953732974827,
+            0.14399363662375778
+          ],
+          [
+            0.5261124700618286,
+            0.17586067600421465
+          ],
+          [
+            0.5303647281291584,
+            0.174267324035192
+          ],
+          [
+            0.5356800507133205,
+            0.17267397206616905
+          ],
+          [
+            0.5367431152301532,
+            0.17267397206616905
+          ],
+          [
+            0.5378061797469854,
+            0.1710806200971461
+          ],
+          [
+            0.5378061797469854,
+            0.1710806200971461
+          ],
+          [
+            0.5367431152301532,
+            0.16948726812812343
+          ],
+          [
+            0.5367431152301532,
+            0.17267397206616905
+          ],
+          [
+            0.5356800507133205,
+            0.17586067600421465
+          ],
+          [
+            0.5346169861964881,
+            0.1774540279732376
+          ],
+          [
+            0.5314277926459908,
+            0.17904737994226053
+          ],
+          [
+            0.5282385990954935,
+            0.17904737994226053
+          ],
+          [
+            0.5282385990954935,
+            0.1774540279732376
+          ],
+          [
+            0.5314277926459908,
+            0.17586067600421465
+          ],
+          [
+            0.5356800507133205,
+            0.17267397206616905
+          ],
+          [
+            0.5367431152301532,
+            0.17267397206616905
+          ],
+          [
+            0.5367431152301532,
+            0.1710806200971461
+          ],
+          [
+            0.5356800507133205,
+            0.17267397206616905
+          ],
+          [
+            0.5346169861964881,
+            0.174267324035192
+          ],
+          [
+            0.5314277926459908,
+            0.1774540279732376
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.6738784379015366,
+            0.9518230849183416
+          ],
+          [
+            0.6430495669133961,
+            0.96775660460857
+          ],
+          [
+            0.6037161797905963,
+            0.9024291738786332
+          ]
+        ]
+      },
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.2306496225297451,
+            0.4071944156351916
+          ],
+          [
+            0.23751532323658467,
+            0.43532181400325876
+          ],
+          [
+            0.24197802869603038,
+            0.45658887130594367
+          ],
+          [
+            0.21955007305368782,
+            0.40702290710855704
+          ],
+          [
+            0.23774417992681265,
+            0.4358363395831624
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.23190833432599903,
+            0.4636207208979604
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.21897793132811785,
+            0.46276317826478763
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.23316704612225295,
+            0.38644188391241036
+          ],
+          [
+            0.23305261777713895,
+            0.3866133924390449
+          ],
+          [
+            0.23442575791850687,
+            0.38764244359885225
+          ],
+          [
+            0.22195306830108166,
+            0.38729942654558314
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.23133619260042906,
+            0.3881569691787559
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      },
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9678321490297094,
+            0.008762963726872304
+          ],
+          [
+            0.9611624599434435,
+            0.006998836017045818
+          ],
+          [
+            0.9650858064647764,
+            0.06933134843091496
+          ],
+          [
+            0.976855846028775,
+            0.11519866888640357
+          ],
+          [
+            0.9745018381159752,
+            0.010527091436698789
+          ],
+          [
+            0.9815638618543744,
+            0.06815526329103064
+          ],
+          [
+            0.9901952242013067,
+            0.11402258374651925
+          ],
+          [
+            0.9737171688117087,
+            0.18458769213957865
+          ],
+          [
+            0.9752865074202418,
+            0.43626991207482385
+          ],
+          [
+            0.9964725786354393,
+            0.6561978332331924
+          ],
+          [
+            0.9847025390714407,
+            0.18576377727946297
+          ],
+          [
+            0.9847025390714407,
+            0.43744599721470817
+          ],
+          [
+            0.9972572479397058,
+            0.6656065143522669
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.9941185707226395,
+            0.11402258374651925
+          ],
+          [
+            0.9949032400269061,
+            0.10578998776732898
+          ],
+          [
+            0.9925492321141064,
+            0.09520522150837007
+          ],
+          [
+            0.9862718776799738,
+            0.09402913636848574
+          ],
+          [
+            0.9792098539415747,
+            0.09873347692802305
+          ],
+          [
+            0.9862718776799738,
+            0.0916769660887171
+          ],
+          [
+            0.9784251846373081,
+            0.09402913636848574
+          ],
+          [
+            0.976855846028775,
+            0.09873347692802305
+          ],
+          [
+            0.9760711767245084,
+            0.10226173234767601
+          ],
+          [
+            0.9854872083757072,
+            0.10343781748756034
+          ],
+          [
+            0.9760711767245084,
+            0.10931824318698195
+          ],
+          [
+            0.9752865074202418,
+            0.11519866888640357
+          ],
+          [
+            0.9752865074202418,
+            0.11872692430605654
+          ],
+          [
+            0.9854872083757072,
+            0.11519866888640357
+          ],
+          [
+            0.9760711767245084,
+            0.12225517972570951
+          ],
+          [
+            0.9752865074202418,
+            0.12813560542513114
+          ],
+          [
+            0.976855846028775,
+            0.13048777570489978
+          ],
+          [
+            0.987841216288507,
+            0.12813560542513114
+          ],
+          [
+            0.9799945232458412,
+            0.13401603112455274
+          ],
+          [
+            0.9799945232458412,
+            0.13872037168409004
+          ],
+          [
+            0.9815638618543744,
+            0.142248627103743
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9854872083757072,
+            0.10931824318698195
+          ],
+          [
+            0.9807791925501078,
+            0.11049432832686627
+          ],
+          [
+            0.982348531158641,
+            0.11167041346675059
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9854872083757072,
+            0.11284649860663493
+          ],
+          [
+            0.9807791925501078,
+            0.11402258374651925
+          ],
+          [
+            0.9807791925501078,
+            0.11755083916617222
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9839178697671741,
+            0.12107909458582519
+          ],
+          [
+            0.9807791925501078,
+            0.12343126486559383
+          ],
+          [
+            0.9799945232458412,
+            0.1269595202852468
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.982348531158641,
+            0.13048777570489978
+          ],
+          [
+            0.982348531158641,
+            0.13401603112455274
+          ],
+          [
+            0.9815638618543744,
+            0.13401603112455274
+          ],
+          [
+            0.9815638618543744,
+            0.13519211626443706
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.9525310975965112,
+            0.7067694942482182
+          ],
+          [
+            0.9674398143775761,
+            0.7114738348077555
+          ],
+          [
+            1.0019652637653054,
+            0.6855999617303004
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.9525310975965112,
+            0.6997129834089123
+          ],
+          [
+            0.9533157669007778,
+            0.6938325577094907
+          ],
+          [
+            1.0035346023738385,
+            0.6785434508909944
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "skateboard",
+      "possible_names": [
+        "skateboard"
+      ],
+      "box": [
+        0.625,
+        0.5480093676814989,
+        0.7328125,
+        0.9976580796252927
+      ]
+    },
+    {
+      "name": "skateboard",
+      "possible_names": [
+        "skateboard"
+      ],
+      "box": [
+        0.5921875,
+        0.531615925058548,
+        0.7375,
+        0.9976580796252927
+      ]
+    }
+  ],
+  "scene": "A vibrant outdoor skatepark scene features a skateboarder mid-trick on a ramp with another skateboard resting nearby and various skateboarding equipment scattered around under bright daylight conditions with greenery in the background creating an energetic atmosphere for extreme sports enthusiasts",
+  "overall_past": "Before the current scene, the skateboarders likely arrived at the skatepark together, possibly after a short walk or ride, and began warming up by testing small tricks or riding the ramps to get a feel for the space. One of them may have initiated a trick on the coping, prompting the others to gather nearby, observing and encouraging. The scattered skateboarding equipment—such as boards, helmets, and tools—suggests they had just set up or were in the middle of a session, with the environment already buzzing with energy. The presence of multiple individuals performing similar tricks indicates a shared moment of practice or friendly competition, where each person was building confidence and skill, possibly preparing for a more complex maneuver or simply enjoying the flow of the session.",
+  "overall_past_clean": "They arrived together, energized and focused, immediately launching into a series of controlled movements across the structure, each pushing their limits with deliberate precision, testing balance and timing as a group, their synchronized actions building momentum and camaraderie in the moments leading up to the current exchange.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, one plausible next event is: **One of the onlookers in the background will step forward to attempt the same grind trick, inspired by the skater’s successful execution, and begin their own run up the ramp—demonstrating the cyclical and communal nature of skate culture, where skill-sharing and friendly competition drive continuous participation and growth.**  \n\n*Analysis:* The repeated descriptions of three individuals performing similar tricks on the ramp suggest a shared moment of focus and skill display. The presence of scattered equipment and other people in the background reinforces a social, interactive environment typical of skateparks. In such settings, witnessing a successful trick often motivates others to try it themselves. The energy and camaraderie imply a dynamic, evolving scene rather than a static moment—making it highly likely that the next action will involve someone else attempting the same or a similar trick, continuing the flow of learning and performance.",
+  "overall_future_clean": "A new figure strides forward with determined focus, launching into a precise run up the incline, mirroring the previous feat with growing confidence, as the rhythm of the park pulses on, fueled by shared ambition and the unspoken challenge of pushing limits.",
+  "future_scene_ok": true
+}

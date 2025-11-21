@@ -1,0 +1,71 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/029742.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- all visible body in the bounding box [2099,5,3217,1499] (xyxy format)\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. race: middle eastern\nB. race: white\nC. Has bangs\nD. Wearing T shirt in orange\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.5467117428779602,
+                0.0024765199050307274,
+                0.8377748131752014,
+                0.694270670413971
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/029742.jpg",
+        "true_answer": {
+            "attr_type": "overall",
+            "attr_name": "race",
+            "attr_value": "middle eastern",
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "overall",
+                "attr_name": "race",
+                "attr_value": "white",
+                "person_no": 1
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "Bangs",
+                "attr_value": true,
+                "person_no": 1
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "t shirt",
+                    "color": [
+                        "orange"
+                    ],
+                    "type": "top"
+                },
+                "person_no": 1
+            }
+        ],
+        "distinct": [
+            "identify-choice-bbox-body-overall-race-middle eastern"
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "type": "identify-tf_blank",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/009067.jpg",
+            "width": 3840,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.23580564558506012,
+                        0.39501920342445374,
+                        0.2797435224056244,
+                        0.4974633455276489
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There might be one person in the image that meets the following two conditions:\n\n- Wearing Black pants\n- face in the red bounding box\n\nPlease answer the following question if there is such a person. Or else, please provide \"unknown\" as answer:\n\nWhat is the gender of the person?"
+        }
+    ],
+    "answer": {
+        "type": "tf_blank",
+        "data": "unknown"
+    },
+    "data": {
+        "type": "identify-tf_blank",
+        "condition_1": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "pants",
+                "color": [
+                    "black"
+                ],
+                "type": "bottom"
+            },
+            "person_no": 2
+        },
+        "condition_2": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.23580564558506012,
+                0.39501920342445374,
+                0.2797435224056244,
+                0.4974633455276489
+            ],
+            "person_no": 1
+        },
+        "fake_answer": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "male",
+            "person_no": 2
+        },
+        "image": "./final_labeling/009067.jpg",
+        "distinct": [
+            "identify-f_blank-clothing-bottom-overall-gender-male"
+        ]
+    }
+}

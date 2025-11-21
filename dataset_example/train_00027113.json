@@ -1,0 +1,700 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00027113.jpg",
+  "image_id": "train_00027113",
+  "width": 478,
+  "height": 640,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 27113,
+  "annotations": {
+    "objects": "[{'id': 126, 'bbox_human': [3, 166, 2, 341], 'bbox_object': [63, 454, 241, 525], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('dog', 'walk')]",
+    "negative_captions": "[('dog', 'carry'), ('dog', 'dry'), ('dog', 'feed'), ('dog', 'groom'), ('dog', 'hold'), ('dog', 'hose'), ('dog', 'hug'), ('dog', 'inspect'), ('dog', 'kiss'), ('dog', 'pet'), ('dog', 'run'), ('dog', 'scratch'), ('dog', 'straddle'), ('dog', 'train'), ('dog', 'wash'), ('dog', 'chase'), ('dog', 'no_interaction')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[125]",
+    "negative_objects": "[111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 126, 127, 128]",
+    "ambiguous_objects": "[]",
+    "size": "[478, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing dark pants and gray shoes.",
+        "clothing": [
+          {
+            "possible_names": [
+              "pants",
+              "jeans"
+            ],
+            "name": "pants",
+            "type": "bottom",
+            "color": [
+              "dark"
+            ]
+          },
+          {
+            "possible_names": [
+              "shoes",
+              "boots",
+              "footwear"
+            ],
+            "name": "shoes",
+            "type": "footwear",
+            "color": [
+              "gray"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "leash"
+            ],
+            "name": "leash",
+            "position": "hand"
+          }
+        ],
+        "description": "In the background, there is a person wearing dark pants and gray shoes. Only the lower part of the person is visible. The person is holding a leash in their hand, which is attached to a dog that is not fully visible in the frame.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is standing on a paved surface holding a red leash attached to a Cavalier King Charles Spaniel, suggesting they are taking the dog for a walk. Their posture indicates they are casually observing the surroundings while ensuring the dog remains under control. The individual's attire, consisting of dark pants and sneakers, implies comfort and practicality for outdoor activities. Although the person's upper body is not visible, their stance suggests attentiveness towards the dog's behavior, possibly motivated by a desire to provide exercise and companionship for the pet.",
+        "intention": "The person is intentionally walking their Cavalier King Charles Spaniel to provide exercise companionship and maintain control in a comfortable practical manner",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "thigh",
+                "walk"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "dry",
+              "feed",
+              "groom",
+              "hold",
+              "hose",
+              "hug",
+              "inspect",
+              "kiss",
+              "pet",
+              "run",
+              "scratch",
+              "straddle",
+              "train",
+              "wash",
+              "chase",
+              "no interaction"
+            ],
+            "position": "thigh"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.0,
+        0.0005925178411416709,
+        0.3440667986869812,
+        0.5332880020141602
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.010772441273537015,
+            0.008231631387025118
+          ],
+          [
+            0.02463467044020634,
+            0.17129693182650954
+          ],
+          [
+            0.09394581627355297,
+            0.39561956735172615
+          ],
+          [
+            0.1667225193985669,
+            0.008231631387025118
+          ],
+          [
+            0.2002229065513511,
+            0.15231578574360666
+          ],
+          [
+            0.22679217912080074,
+            0.38354065620806066
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.27415479544025423,
+            0.46981859294852873
+          ],
+          [
+            0.31227592564859474,
+            0.4534257849678397
+          ],
+          [
+            0.20599883537079675,
+            0.4025218022909637
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.12051508884300248,
+            0.5026042089099064
+          ],
+          [
+            0.07315247252354899,
+            0.49397641523585956
+          ],
+          [
+            0.11127360273188958,
+            0.41287515469981984
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "dog",
+      "possible_names": [
+        "dog"
+      ],
+      "box": [
+        0.13179916317991633,
+        0.3765625,
+        0.9497907949790795,
+        0.8203125
+      ]
+    }
+  ],
+  "scene": "A Cavalier King Charles Spaniel with a white and brown coat stands on a gravel path tethered by a red leash exploring its surroundings under bright sunlight",
+  "overall_past": "Before the current scene, the person likely returned home from a previous activity—perhaps a short errand or a break from indoors—and decided to take their Cavalier King Charles Spaniel for a walk. The dog’s alert posture and focused exploration suggest it had been indoors for some time, possibly waiting by the door or in a quiet space, and the red leash being held indicates the walk was a deliberate, planned outing. The person may have just put the leash on the dog, possibly after a brief moment of preparation (like grabbing a water bottle or checking the weather), and stepped outside onto the paved surface to begin the walk. This transition from indoor calm to outdoor exploration marks the start of a routine or spontaneous bonding moment between the dog and its owner.",
+  "overall_past_clean": "The person had just finished a quiet moment indoors, rising from a seated position with purpose, moving swiftly to the door where they retrieved the leash, their steps quick and deliberate as they prepared to step outside, the dog already alert and eager, sensing the shift in energy and the imminent departure.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the Cavalier King Charles Spaniel is likely to pause briefly to sniff a patch of grass or a tree along the gravel path, then tug gently on the red leash, prompting the person to either follow the dog’s lead or gently guide it onward, continuing their walk with a moment of playful curiosity. This natural behavior reflects the dog’s inquisitive nature and the owner’s attentive, responsive interaction, maintaining the rhythm of a relaxed, enjoyable outdoor stroll.",
+  "overall_future_clean": "The dog suddenly lifts its head, ears perking as a faint scent catches its attention, then breaks into a light trot, pulling the leash taut with eager determination, urging the person forward with a joyful, persistent nudge.",
+  "future_scene_ok": true
+}

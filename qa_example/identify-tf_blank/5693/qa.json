@@ -1,0 +1,52 @@
+{
+    "type": "identify-tf_blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005303.jpg",
+            "width": 2160,
+            "height": 3840
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x3840. There might be one person in the image that meets the following two conditions:\n\n- Wearing Silver watch\n- race: white\n\nPlease answer the following question if there is such a person. Or else, please provide \"unknown\" as answer:\n\nWhat is the age of the person?"
+        }
+    ],
+    "answer": {
+        "type": "tf_blank",
+        "data": "senior"
+    },
+    "data": {
+        "type": "identify-tf_blank",
+        "condition_1": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "watch",
+                "color": [
+                    "silver"
+                ],
+                "type": "accessory"
+            },
+            "person_no": 0
+        },
+        "condition_2": {
+            "attr_type": "overall",
+            "attr_name": "race",
+            "attr_value": "white",
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "senior",
+            "person_no": 0
+        },
+        "image": "./final_labeling/005303.jpg",
+        "can_mutate_hand_to_false": true,
+        "confuse_cond_from": "unity",
+        "distinct": [
+            "identify-t_blank-clothing-accessory-overall-age-senior"
+        ]
+    }
+}

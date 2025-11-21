@@ -1,0 +1,48 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004013.jpg",
+            "width": 1280,
+            "height": 720
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1280x720. There is one person in the image that meets the following condition:\n\n- gender: female\n\nPlease provide the bounding box of the person's left hand in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.32895448206199535,
+            0.6790382437210585,
+            0.3742291915085581,
+            0.7630021678112203
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "gender",
+            "attr_value": "female",
+            "person_no": 1
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_hand",
+            "attr_value": [
+                0.32895448206199535,
+                0.6790382437210585,
+                0.3742291915085581,
+                0.7630021678112203
+            ],
+            "person_no": 1
+        },
+        "image": "./final_labeling/004013.jpg",
+        "distinct": [
+            "identify-grounding-overall-gender-female-bbox-left_hand"
+        ]
+    }
+}

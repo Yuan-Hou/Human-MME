@@ -1,0 +1,79 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00033900.jpg",
+            "width": 612,
+            "height": 612
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. An orange and red sweater.\nB. A puffer vest in vibrant orange and striking red colors.\nC. Light gray sweater.\nD. Crimson puffer vest.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "sweater",
+                    "shirt"
+                ],
+                "name": "sweater",
+                "type": "top",
+                "color": [
+                    "orange",
+                    "red"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "sweater",
+                    "shirt"
+                ],
+                "name": "puffer vest",
+                "type": "top",
+                "color": [
+                    "crimson"
+                ]
+            },
+            {
+                "possible_names": [
+                    "sweater",
+                    "shirt"
+                ],
+                "name": "sweater",
+                "type": "top",
+                "color": [
+                    "light gray"
+                ]
+            },
+            {
+                "possible_names": [
+                    "sweater",
+                    "shirt"
+                ],
+                "name": "puffer vest",
+                "type": "top",
+                "color": [
+                    "orange",
+                    "red"
+                ]
+            }
+        ],
+        "image": "./final_labeling/train_00033900.jpg",
+        "distinct": [
+            "cloth_choice-top",
+            "cloth_choice-false-top"
+        ]
+    }
+}

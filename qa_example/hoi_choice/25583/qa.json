@@ -1,0 +1,92 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/021010.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: right hand, action: looking at, object: cup with lemon slice\nB. body part: right hand, action: looking at, object: smartphone\nC. body part: left hand, action: looking at, object: cup with lemon slice\nD. body part: left hand, action: holding, object: smartphone\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "looking at"
+                    ]
+                ],
+                "object": "smartphone",
+                "bbox": [
+                    0.26333728432655334,
+                    0.29977354407310486,
+                    0.39852234721183777,
+                    0.44682595133781433
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ],
+                    [
+                        "right hand",
+                        "looking at"
+                    ]
+                ],
+                "object": "smartphone"
+            },
+            {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "looking at"
+                    ]
+                ],
+                "object": "cup with lemon slice"
+            },
+            {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ],
+                    [
+                        "right hand",
+                        "looking at"
+                    ]
+                ],
+                "object": "cup with lemon slice"
+            }
+        ],
+        "image": "./final_labeling/021010.jpg",
+        "distinct": [
+            "hoi_choice-false-right hand",
+            "hoi_choice-false-left hand",
+            "hoi_choice-left hand"
+        ]
+    }
+}

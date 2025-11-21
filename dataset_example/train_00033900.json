@@ -1,0 +1,692 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00033900.jpg",
+  "image_id": "train_00033900",
+  "width": 612,
+  "height": 612,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 33900,
+  "annotations": {
+    "objects": "[{'id': 305, 'bbox_human': [1, 608, 1, 374], 'bbox_object': [1, 277, 158, 590], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('cup', 'no_interaction')]",
+    "negative_captions": "[('cup', 'carry'), ('cup', 'drink_with'), ('cup', 'hold'), ('cup', 'inspect'), ('cup', 'pour'), ('cup', 'sip'), ('cup', 'smell'), ('cup', 'fill'), ('cup', 'wash')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[304]",
+    "negative_objects": "[295, 296, 297, 298, 299, 300, 301, 302, 303]",
+    "ambiguous_objects": "[]",
+    "size": "[612, 612, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a bright orange/red top.",
+        "clothing": [
+          {
+            "possible_names": [
+              "sweater",
+              "shirt"
+            ],
+            "name": "sweater",
+            "type": "top",
+            "color": [
+              "orange",
+              "red"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bag",
+              "sandwich",
+              "bread"
+            ],
+            "name": "sandwich",
+            "position": "hand"
+          },
+          {
+            "standalone": true,
+            "possible_names": [
+              "mug",
+              "cup"
+            ],
+            "name": "mug",
+            "position": "standalone"
+          }
+        ],
+        "description": "The person is in the foreground and is wearing a bright orange/red sweater. They are holding a sandwich in their hand, and there is a white mug on the table beside them. Due to the framing, the person's age, gender, and emotion cannot be determined. Their nails are painted with a red design. The sandwich is wrapped in a napkin or paper.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be engaged in an activity involving food, suggesting a neutral emotional state as there are no visible facial expressions.",
+        "meaningful": true,
+        "story": "A person is enjoying a meal, possibly at a café or restaurant, holding a sandwich wrapped in paper. The presence of a mug suggests they might be having a beverage along with their meal. The setting implies a casual dining experience.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is holding a sandwich wrapped in paper, possibly preparing to eat it as they sit at a table with a mug nearby suggesting they might be enjoying a meal or snack. Their hands are positioned carefully around the sandwich, indicating attentiveness to handling the food neatly. The presence of another hand suggests interaction, perhaps sharing the meal or engaging in conversation while eating. The overall setting appears casual and relaxed, likely a moment of leisure or a break during the day where the individual is focused on enjoying their food.",
+        "intention": "The individual is intentionally savoring a quiet moment of nourishment and connection through mindful eating and shared presence",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "standalone",
+                "no interaction"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "drink with",
+              "hold",
+              "inspect",
+              "pour",
+              "sip",
+              "smell",
+              "fill",
+              "wash"
+            ],
+            "position": "standalone"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.0024440763518214226,
+        0.0009676932822912931,
+        0.9987860918045044,
+        0.6144540309906006
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5760968371090098,
+            0.07665998526248093
+          ],
+          [
+            0.21382658855486375,
+            0.1078345763843511
+          ],
+          [
+            0.06332856244928378,
+            0.8495748479047096
+          ],
+          [
+            0.28907560160765383,
+            0.5163292186709254
+          ],
+          [
+            0.938367085663156,
+            0.04548539414061077
+          ],
+          [
+            0.9663167190827638,
+            0.22823299726881513
+          ],
+          [
+            0.9663167190827638,
+            0.3077819539246217
+          ],
+          [
+            0.42667379690418394,
+            0.845274904301693
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.878167875220924,
+            0.8130253272790688
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.9684666908842721,
+            0.29058217951255527
+          ],
+          [
+            0.9340671420601396,
+            0.26908246149747256
+          ],
+          [
+            0.878167875220924,
+            0.22178308186429022
+          ],
+          [
+            0.8394683827937749,
+            0.20028336384920734
+          ],
+          [
+            0.8093687775726589,
+            0.1637338432235665
+          ],
+          [
+            0.938367085663156,
+            0.26908246149747256
+          ],
+          [
+            0.8910677060299739,
+            0.3013320385200968
+          ],
+          [
+            0.8265685519847252,
+            0.34433147455026236
+          ],
+          [
+            0.7491695671304269,
+            0.3873309105804283
+          ],
+          [
+            0.9706166626857802,
+            0.3314316437412127
+          ],
+          [
+            0.9276172266556146,
+            0.37443107977137846
+          ],
+          [
+            0.8416183545952831,
+            0.4174305158015442
+          ],
+          [
+            0.7642193697409848,
+            0.4389302338166271
+          ],
+          [
+            0.9942663525023714,
+            0.3980807695879697
+          ],
+          [
+            0.9555668600752223,
+            0.44753012102266015
+          ],
+          [
+            0.8652680444118743,
+            0.4754797544422679
+          ],
+          [
+            0.7921690031605927,
+            0.4905295570528259
+          ],
+          [
+            1.0071661833114212,
+            0.4647298954347266
+          ],
+          [
+            0.9684666908842721,
+            0.5034293878618757
+          ],
+          [
+            0.8953676496329904,
+            0.5184791904724335
+          ],
+          [
+            0.8351684391907582,
+            0.5249291058769584
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.27832574260011245,
+            0.5055793596633839
+          ],
+          [
+            0.34712484024837753,
+            0.42388043120606916
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5212725561705487,
+            0.3271317001381963
+          ],
+          [
+            0.6008215128263552,
+            0.29273215131406377
+          ],
+          [
+            0.4202238814996592,
+            0.36583119256534546
+          ],
+          [
+            0.4653732893313331,
+            0.3292816719397046
+          ],
+          [
+            0.5341723869795983,
+            0.3077819539246217
+          ],
+          [
+            0.6416709770550127,
+            0.2819822923065222
+          ],
+          [
+            0.4438735713162504,
+            0.44968009282416843
+          ],
+          [
+            0.5513721613916646,
+            0.44968009282416843
+          ],
+          [
+            0.6524208360625541,
+            0.4367802620151188
+          ],
+          [
+            0.7083201029017695,
+            0.4174305158015442
+          ],
+          [
+            0.4524734585222836,
+            0.520629162273942
+          ],
+          [
+            0.5556721049946812,
+            0.5184791904724335
+          ],
+          [
+            0.6373710334519961,
+            0.5012794160603674
+          ],
+          [
+            0.6932703002912115,
+            0.4754797544422679
+          ],
+          [
+            0.4524734585222836,
+            0.5743784573116492
+          ],
+          [
+            0.5341723869795983,
+            0.5722284855101408
+          ],
+          [
+            0.583621738414289,
+            0.5614786265025995
+          ],
+          [
+            0.6094214000323883,
+            0.5378289366860081
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "cup",
+      "possible_names": [
+        "cup"
+      ],
+      "box": [
+        0.0016339869281045752,
+        0.2581699346405229,
+        0.4526143790849673,
+        0.9640522875816994
+      ]
+    }
+  ],
+  "scene": "A cozy indoor setting features a white mug and hands holding a wrapped sandwich with soft warm tones suggesting a relaxed mealtime atmosphere",
+  "overall_past": "Before the current scene, the individual likely prepared the sandwich, perhaps by assembling ingredients on a cutting board or retrieving it from a container, then wrapped it in paper to keep it fresh and easy to handle. They may have poured a hot drink into the white mug, choosing a cozy spot at the table to enjoy a quiet moment. The careful way the sandwich is held suggests attention to detail, possibly indicating it was made with care—perhaps even as a thoughtful gesture for a shared meal. The presence of another hand nearby implies a companion was involved in the preparation or is about to join, making the moment feel warm and intentional, perhaps marking a brief pause in the day for comfort and connection.",
+  "overall_past_clean": "The sandwich was carefully assembled with deliberate precision, then wrapped with intention, while a hot beverage was poured into a vessel, setting the stage for a quiet, meaningful pause shared between two individuals.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual is likely to take a slow, deliberate bite of the sandwich, savoring the flavor as they glance briefly at the mug, perhaps sipping warm tea or coffee. The relaxed posture and soft lighting suggest a moment of quiet enjoyment, and the presence of another hand nearby implies a shared experience—possibly a quiet conversation or a companion silently joining in the meal. The scene points to a peaceful interlude, so the next moment would naturally involve continuing this calm, intimate ritual of eating and companionship.",
+  "overall_future_clean": "A soft pause lingers as the breath settles, followed by the quiet crunch of food, the gentle clink of a cup being set down, and a low, steady murmur of words exchanged between two figures, the air thick with unspoken ease and the slow, steady rhythm of shared presence.",
+  "future_scene_ok": true
+}

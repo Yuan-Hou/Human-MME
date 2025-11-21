@@ -1,0 +1,118 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/test_00000012.jpg",
+            "image_B": "./final_labeling/023451.jpg",
+            "image_C": "./final_labeling/train_00014525.jpg",
+            "image_D": "./final_labeling/train_00020528.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Blue white socks\n- brown shoes\n- Black pants\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "D",
+            "B",
+            "A",
+            "C"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "socks"
+                ],
+                "name": "socks",
+                "type": "accessory",
+                "color": [
+                    "blue",
+                    "white"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "shoes"
+                ],
+                "name": "shoes",
+                "type": "footwear",
+                "color": [
+                    "brown"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "pants",
+                    "jeans",
+                    "trousers"
+                ],
+                "name": "pants",
+                "type": "bottom",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "fullfit": "./final_labeling/train_00020528.jpg",
+        "duo": "./final_labeling/023451.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "socks"
+                ],
+                "name": "socks",
+                "type": "accessory",
+                "color": [
+                    "white"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "pants",
+                    "trousers"
+                ],
+                "name": "pants",
+                "type": "bottom",
+                "color": [
+                    "dark blue"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "solo": "./final_labeling/test_00000012.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "pants",
+                    "trousers"
+                ],
+                "name": "pants",
+                "type": "bottom",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "none": "./final_labeling/train_00014525.jpg",
+        "distinct": [
+            "multiclothing-accessory-bottom-footwear"
+        ]
+    }
+}

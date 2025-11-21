@@ -1,0 +1,40 @@
+{
+    "type": "identify-blank",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/031395.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There is one person in the image that meets the following condition:\n\n- Small nose\n\nThe face is turned to left or right side of image?"
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "right side"
+    },
+    "data": {
+        "type": "identify-blank",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "Big Nose",
+            "attr_value": false,
+            "person_no": 2
+        },
+        "question": {
+            "attr_type": "facial",
+            "attr_name": "yaw",
+            "attr_value": "left",
+            "real_value": -51.19517065964283,
+            "person_no": 2
+        },
+        "image": "./final_labeling/031395.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-blank-facial-Big Nose-False-facial-yaw-left"
+        ]
+    }
+}

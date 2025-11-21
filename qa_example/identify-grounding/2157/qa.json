@@ -1,0 +1,48 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/018475.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- race: white\n\nPlease provide the bounding box of the person's right hand in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.3019775798817476,
+            0.44566371990975406,
+            0.34488520544270673,
+            0.48730813164798686
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "race",
+            "attr_value": "white",
+            "person_no": 1
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "right_hand",
+            "attr_value": [
+                0.3019775798817476,
+                0.44566371990975406,
+                0.34488520544270673,
+                0.48730813164798686
+            ],
+            "person_no": 1
+        },
+        "image": "./final_labeling/018475.jpg",
+        "distinct": [
+            "identify-grounding-overall-race-white-bbox-right_hand"
+        ]
+    }
+}

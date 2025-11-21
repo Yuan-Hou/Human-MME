@@ -1,0 +1,108 @@
+{
+    "type": "hoi_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00000492.jpg",
+            "width": 427,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please select the option that best describes the interaction between the person and object (only one selection is allowed):\n\nA. body part: neck, action: carry, object: suitcase\nB. body part: hand, action: carry, object: kite\nC. body part: hand, action: inspect, object: suitcase\nD. body part: neck, action: inspect, object: kite\n\nPlease provide the option letters of all correct choices, separated by commas if multiple."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "hoi_choice",
+        "true_answers": [
+            {
+                "relation": [
+                    [
+                        "hand",
+                        "carry"
+                    ],
+                    [
+                        "hand",
+                        "hold"
+                    ],
+                    [
+                        "hand",
+                        "inspect"
+                    ]
+                ],
+                "object": "kite",
+                "bbox": [
+                    0.06557377049180328,
+                    0.2671875,
+                    0.2505854800936768,
+                    0.5140625
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "relation": [
+                    [
+                        "neck",
+                        "hold"
+                    ],
+                    [
+                        "neck",
+                        "carry"
+                    ],
+                    [
+                        "neck",
+                        "inspect"
+                    ]
+                ],
+                "object": "kite"
+            },
+            {
+                "relation": [
+                    [
+                        "hand",
+                        "carry"
+                    ],
+                    [
+                        "hand",
+                        "hold"
+                    ],
+                    [
+                        "hand",
+                        "inspect"
+                    ]
+                ],
+                "object": "suitcase"
+            },
+            {
+                "relation": [
+                    [
+                        "neck",
+                        "hold"
+                    ],
+                    [
+                        "neck",
+                        "carry"
+                    ],
+                    [
+                        "neck",
+                        "inspect"
+                    ]
+                ],
+                "object": "suitcase"
+            }
+        ],
+        "image": "./final_labeling/train_00000492.jpg",
+        "distinct": [
+            "hoi_choice-false-neck",
+            "hoi_choice-hand",
+            "hoi_choice-false-hand"
+        ]
+    }
+}

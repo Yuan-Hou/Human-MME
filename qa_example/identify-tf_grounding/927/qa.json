@@ -1,0 +1,70 @@
+{
+    "type": "identify-tf_grounding",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/028059.jpg",
+            "width": 1920,
+            "height": 1080,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.6590882539749146,
+                        0.3081519305706024,
+                        0.7346911430358887,
+                        0.47936752438545227
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1920x1080. There might be one person in the image that meets the following two conditions:\n\n- face in the red bounding box\n- race: black\n\nPlease provide the bounding box of the person's mouth in xyxy format if there is such a person. Or else, please provide [-1,-1,-1,-1] as answer."
+        }
+    ],
+    "answer": {
+        "type": "tf_bbox",
+        "data": [
+            -1,
+            -1,
+            -1,
+            -1
+        ]
+    },
+    "data": {
+        "type": "identify-tf_grounding",
+        "condition_1": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.6590882539749146,
+                0.3081519305706024,
+                0.7346911430358887,
+                0.47936752438545227
+            ],
+            "person_no": 1
+        },
+        "condition_2": {
+            "attr_type": "overall",
+            "attr_name": "race",
+            "attr_value": "black",
+            "person_no": 0
+        },
+        "fake_answer": {
+            "attr_type": "bbox",
+            "attr_name": "mouth",
+            "attr_value": [
+                0.6747624199837446,
+                0.4286600093362192,
+                0.7045245366791885,
+                0.45543558086667746
+            ],
+            "person_no": 1
+        },
+        "image": "./final_labeling/028059.jpg",
+        "distinct": [
+            "identify-f_grounding-bbox-face-bbox-mouth"
+        ]
+    }
+}

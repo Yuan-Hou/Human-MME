@@ -1,0 +1,79 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005230.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. Black and white jacket.\nB. Dark-pattern military uniform.\nC. Black and white military uniform.\nD. A plaid jacket featuring blue, red, yellow, and white stripes.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "jacket",
+                    "coat"
+                ],
+                "name": "jacket",
+                "type": "whole body",
+                "color": [
+                    "black",
+                    "white"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "jacket",
+                    "coat"
+                ],
+                "name": "military uniform",
+                "type": "whole body",
+                "color": [
+                    "dark pattern"
+                ]
+            },
+            {
+                "possible_names": [
+                    "jacket",
+                    "coat"
+                ],
+                "name": "military uniform",
+                "type": "whole body",
+                "color": [
+                    "black",
+                    "white"
+                ]
+            },
+            {
+                "possible_names": [
+                    "jacket",
+                    "coat"
+                ],
+                "name": "jacket",
+                "type": "whole body",
+                "color": [
+                    "plaid with blue, red, yellow, and white stripes"
+                ]
+            }
+        ],
+        "image": "./final_labeling/005230.jpg",
+        "distinct": [
+            "cloth_choice-whole body",
+            "cloth_choice-false-whole body"
+        ]
+    }
+}

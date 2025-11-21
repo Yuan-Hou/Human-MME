@@ -1,0 +1,76 @@
+{
+    "type": "identify-tf_grounding",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/003262.jpg",
+            "width": 4096,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.5839557647705078,
+                        0.32660597562789917,
+                        0.716740608215332,
+                        0.6355249285697937
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There might be one person in the image that meets the following two conditions:\n\n- Wearing White blouse\n- face in the red bounding box\n\nPlease provide the bounding box of the person's nose in xyxy format if there is such a person. Or else, please provide [-1,-1,-1,-1] as answer."
+        }
+    ],
+    "answer": {
+        "type": "tf_bbox",
+        "data": [
+            -1,
+            -1,
+            -1,
+            -1
+        ]
+    },
+    "data": {
+        "type": "identify-tf_grounding",
+        "condition_1": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "blouse",
+                "color": [
+                    "white"
+                ],
+                "type": "top"
+            },
+            "person_no": 0
+        },
+        "condition_2": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.5839557647705078,
+                0.32660597562789917,
+                0.716740608215332,
+                0.6355249285697937
+            ],
+            "person_no": 1
+        },
+        "fake_answer": {
+            "attr_type": "bbox",
+            "attr_name": "nose",
+            "attr_value": [
+                0.3692489010281861,
+                0.35827721451956124,
+                0.38345383759588003,
+                0.42884871218570325
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/003262.jpg",
+        "distinct": [
+            "identify-f_grounding-clothing-top-bbox-nose"
+        ]
+    }
+}

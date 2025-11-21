@@ -1,0 +1,41 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00037979.jpg",
+            "width": 640,
+            "height": 427
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"accessory\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Black tie"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "Black tie"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "tie",
+                "color": [
+                    "black"
+                ],
+                "type": "accessory"
+            }
+        },
+        "image": "./final_labeling/train_00037979.jpg",
+        "distinct": [
+            "open_clothing-accessory"
+        ]
+    }
+}

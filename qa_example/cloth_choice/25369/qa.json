@@ -1,0 +1,85 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/023348.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. A fur vest in various colors.\nB. Silver earring\nC. Earring soft pink\nD. The fur vest is silver in color.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "earring",
+                    "ear studs"
+                ],
+                "name": "earring",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "earring",
+                    "ear studs"
+                ],
+                "name": "fur vest",
+                "type": "accessory",
+                "color": [
+                    "various colors from the graphic"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "earring",
+                    "ear studs"
+                ],
+                "name": "earring",
+                "type": "accessory",
+                "color": [
+                    "soft pink"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "earring",
+                    "ear studs"
+                ],
+                "name": "fur vest",
+                "type": "accessory",
+                "color": [
+                    "silver"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "image": "./final_labeling/023348.jpg",
+        "distinct": [
+            "cloth_choice-false-accessory",
+            "cloth_choice-accessory"
+        ]
+    }
+}

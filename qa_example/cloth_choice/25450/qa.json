@@ -1,0 +1,87 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00013023.jpg",
+            "width": 471,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. Green sneakers.\nB. Prosthetic legs, camel.\nC. White, red, and gray sneakers.\nD. Backpack (Black, Gray)\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "sneakers",
+                    "athletic shoes"
+                ],
+                "name": "sneakers",
+                "type": "footwear",
+                "color": [
+                    "white",
+                    "red",
+                    "gray"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "sneakers",
+                    "athletic shoes"
+                ],
+                "name": "sneakers",
+                "type": "footwear",
+                "color": [
+                    "green"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "prosthetic legs"
+                ],
+                "name": "prosthetic legs",
+                "type": "other",
+                "color": [
+                    "camel"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "prosthetic legs"
+                ],
+                "name": "backpack",
+                "type": "other",
+                "color": [
+                    "black",
+                    "gray"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "image": "./final_labeling/train_00013023.jpg",
+        "distinct": [
+            "cloth_choice-false-other",
+            "cloth_choice-footwear",
+            "cloth_choice-false-footwear"
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "type": "multihoi",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/015489.jpg",
+            "image_B": "./final_labeling/024584.jpg",
+            "image_C": "./final_labeling/032459.jpg",
+            "image_D": "./final_labeling/000845.jpg"
+        },
+        {
+            "type": "text",
+            "text": "This is a description of a human-object interaction: \"body part: face, action: holding, object: flower\"\n\nWhich one of four images listed above best represents this interaction? Provide your answer with the corresponding image letter."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "answer": "A"
+    },
+    "data": {
+        "type": "multihoi",
+        "object": "flower",
+        "hoi": [
+            [
+                "face",
+                "holding"
+            ]
+        ],
+        "full": "./final_labeling/015489.jpg",
+        "diff_object": "./final_labeling/024584.jpg",
+        "object_diff": [
+            "plastic bag"
+        ],
+        "diff_position": "./final_labeling/032459.jpg",
+        "position_diff": [
+            "body"
+        ],
+        "distinct": [
+            "multihoi-flowers-face"
+        ],
+        "extra_type": "position",
+        "extra_diff": [
+            "standalone"
+        ],
+        "diff_extra": "./final_labeling/000845.jpg"
+    }
+}

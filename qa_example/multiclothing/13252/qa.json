@@ -1,0 +1,115 @@
+{
+    "type": "multiclothing",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/016930.jpg",
+            "image_B": "./final_labeling/027722.jpg",
+            "image_C": "./final_labeling/train_00028193.jpg",
+            "image_D": "./final_labeling/000678.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Black watch\n- Pink bracelet\n- Black glasses\n\nListed are some clothing items that appeared in the four images above. Please give the sequence of four images by the maximum count of clothing listed that appears in one single person. If someone in a specific image is wearing all three clothing items, it should be the first image in your answer, and if none of three clothing items are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "C",
+            "D",
+            "A",
+            "B"
+        ]
+    },
+    "data": {
+        "type": "multiclothing",
+        "combine": [
+            {
+                "possible_names": [
+                    "watch"
+                ],
+                "name": "watch",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "bracelet"
+                ],
+                "name": "bracelet",
+                "type": "accessory",
+                "color": [
+                    "pink"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "glasses",
+                    "eyewear"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "fullfit": "./final_labeling/train_00028193.jpg",
+        "duo": "./final_labeling/000678.jpg",
+        "duo_admit": [
+            {
+                "possible_names": [
+                    "watch"
+                ],
+                "name": "watch",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            },
+            {
+                "possible_names": [
+                    "glasses",
+                    "eyewear"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "solo": "./final_labeling/016930.jpg",
+        "solo_admit": [
+            {
+                "possible_names": [
+                    "glasses"
+                ],
+                "name": "glasses",
+                "type": "accessory",
+                "color": [
+                    "black"
+                ],
+                "belonging_confident": true,
+                "existence_confident": true
+            }
+        ],
+        "none": "./final_labeling/027722.jpg",
+        "distinct": [
+            "multiclothing-accessory-accessory-accessory"
+        ]
+    }
+}

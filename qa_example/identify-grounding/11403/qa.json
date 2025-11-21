@@ -1,0 +1,70 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00026516.jpg",
+            "width": 466,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 466x640. There is one person in the image that meets the following condition:\n\n- Have interaction with object: \"body part: foot, action: ride, object: skateboard\"\n\nPlease provide the bounding box of the person's left hand in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.8517126692978609,
+            0.2950130419805646,
+            0.933420741762726,
+            0.3444230559282005
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "foot",
+                        "flip"
+                    ],
+                    [
+                        "foot",
+                        "ride"
+                    ],
+                    [
+                        "foot",
+                        "jump"
+                    ]
+                ],
+                "object": "skateboard",
+                "bbox": [
+                    0.26394849785407726,
+                    0.503125,
+                    0.7489270386266095,
+                    0.7859375
+                ]
+            },
+            "person_no": 2
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_hand",
+            "attr_value": [
+                0.8517126692978609,
+                0.2950130419805646,
+                0.933420741762726,
+                0.3444230559282005
+            ],
+            "person_no": 2
+        },
+        "image": "./final_labeling/train_00026516.jpg",
+        "distinct": [
+            "identify-grounding-hoi-foot-bbox-left_hand"
+        ]
+    }
+}

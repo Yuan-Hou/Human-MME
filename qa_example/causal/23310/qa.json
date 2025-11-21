@@ -1,0 +1,37 @@
+{
+    "type": "causal",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/018942.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of what happened in the past and what will happen in the future:\n\nA. The figure rises with quiet intention, closes the notebook with a soft but deliberate snap, and moves toward the sofa, settling into the cushions with a subtle shift of posture, eyes lingering on the pages as if savoring the weight of the words just written, a faint, knowing smile touching the lips before the first line of the next passage is read.\nB. The hand moves with deliberate calm, tracing lines that breathe life into the stillness, each stroke a quiet declaration of presence, as the mind, unburdened and attuned, translates the essence of the moment into something tangible and enduring.\nC. The figure moved steadily along a winding trail, the earth beneath foot soft with fallen leaves and moss, drawn by the hush of the water and the distant whisper of reeds, pausing only to steady breath and release the weight of the day before stepping into the clearing.\nD. A quiet moment of reflection followed an engaging story, sparking a sudden urge to express thoughts, leading to a deliberate shift from listening to creating, with hands moving purposefully toward the blank page.\n\nPlease provide the option letters of the most possible answer separately for past and future."
+        }
+    ],
+    "answer": {
+        "type": "double_choice",
+        "data": {
+            "future": "A",
+            "past": "D"
+        }
+    },
+    "data": {
+        "type": "causal",
+        "true_answer": [
+            "A quiet moment of reflection followed an engaging story, sparking a sudden urge to express thoughts, leading to a deliberate shift from listening to creating, with hands moving purposefully toward the blank page.",
+            "The figure rises with quiet intention, closes the notebook with a soft but deliberate snap, and moves toward the sofa, settling into the cushions with a subtle shift of posture, eyes lingering on the pages as if savoring the weight of the words just written, a faint, knowing smile touching the lips before the first line of the next passage is read."
+        ],
+        "false_answers": [
+            "The figure moved steadily along a winding trail, the earth beneath foot soft with fallen leaves and moss, drawn by the hush of the water and the distant whisper of reeds, pausing only to steady breath and release the weight of the day before stepping into the clearing.",
+            "The hand moves with deliberate calm, tracing lines that breathe life into the stillness, each stroke a quiet declaration of presence, as the mind, unburdened and attuned, translates the essence of the moment into something tangible and enduring."
+        ],
+        "image": "./final_labeling/018942.jpg",
+        "distinct": [
+            "causal"
+        ]
+    }
+}

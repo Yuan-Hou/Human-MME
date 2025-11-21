@@ -1,0 +1,62 @@
+{
+    "type": "identify-tf_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004925.jpg",
+            "width": 2732,
+            "height": 1440
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2732x1440. There might be one person in the image that meets the following two conditions:\n\n- No sideburns\n- Wearing White shirt\n\nPlease provide the bounding box of the person's face in xyxy format if there is such a person. Or else, please provide [-1,-1,-1,-1] as answer."
+        }
+    ],
+    "answer": {
+        "type": "tf_bbox",
+        "data": [
+            0.2575405538082123,
+            0.503021240234375,
+            0.3190043866634369,
+            0.6495201587677002
+        ]
+    },
+    "data": {
+        "type": "identify-tf_grounding",
+        "condition_1": {
+            "attr_type": "facial",
+            "attr_name": "Sideburns",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "condition_2": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "shirt",
+                "color": [
+                    "white"
+                ],
+                "type": "top"
+            },
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.2575405538082123,
+                0.503021240234375,
+                0.3190043866634369,
+                0.6495201587677002
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/004925.jpg",
+        "can_mutate_hand_to_false": true,
+        "confuse_cond_from": "unity",
+        "distinct": [
+            "identify-t_grounding-facial-Sideburns-False-bbox-face"
+        ]
+    }
+}

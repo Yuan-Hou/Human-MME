@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00012387.jpg",
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Double chin\nB. Attractive face\nC. Smiling\nD. Pointy nose\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Double Chin"
+        ],
+        "false_answers": [
+            "Smiling",
+            "Attractive",
+            "Pointy Nose"
+        ],
+        "image": "./final_labeling/train_00012387.jpg",
+        "distinct": [
+            "face_choice-Double Chin",
+            "face_choice-false-Smiling",
+            "face_choice-false-Attractive",
+            "face_choice-false-Pointy Nose"
+        ]
+    }
+}

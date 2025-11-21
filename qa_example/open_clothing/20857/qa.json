@@ -1,0 +1,41 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/013888.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"headwear\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Pink headband"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "Pink headband"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "headband",
+                "color": [
+                    "pink"
+                ],
+                "type": "headwear"
+            }
+        },
+        "image": "./final_labeling/013888.jpg",
+        "distinct": [
+            "open_clothing-headwear"
+        ]
+    }
+}

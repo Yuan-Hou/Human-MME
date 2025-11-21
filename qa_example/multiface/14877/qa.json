@@ -1,0 +1,49 @@
+{
+    "type": "multiface",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/029148.jpg",
+            "image_B": "./final_labeling/023188.jpg",
+            "image_C": "./final_labeling/000140.jpg",
+            "image_D": "./final_labeling/train_00030918.jpg"
+        },
+        {
+            "type": "text",
+            "text": "- Has bangs\n- Blond hair\n- Female\n\nListed are some facial attributes that appeared in the four images above. Please give the sequence of four images by the maximum count of facial attributes that appears in one single person. If someone in a specific image is showing all three facial attributes, it should be the first image in your answer, and if none of three facial attributes are present, it should be the last image. Please provide a explicit sequence of four images by their letters."
+        }
+    ],
+    "answer": {
+        "type": "sequence",
+        "answer": [
+            "D",
+            "C",
+            "A",
+            "B"
+        ]
+    },
+    "data": {
+        "type": "multiface",
+        "combine": [
+            "Bangs",
+            "Blond Hair",
+            "Female"
+        ],
+        "fullfit": "./final_labeling/train_00030918.jpg",
+        "duo": "./final_labeling/000140.jpg",
+        "duo_admit": [
+            "Blond Hair",
+            "Female"
+        ],
+        "solo": "./final_labeling/029148.jpg",
+        "solo_admit": [
+            "Blond Hair"
+        ],
+        "none": "./final_labeling/023188.jpg",
+        "distinct": [
+            "multiface-Bangs",
+            "multiface-Blond Hair",
+            "multiface-Female"
+        ]
+    }
+}

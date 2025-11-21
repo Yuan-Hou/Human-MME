@@ -1,0 +1,34 @@
+{
+    "type": "emotion",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005087.jpg",
+            "width": 4096,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of emotion for someone appearing in the image:\n\nA. Overwhelmed by grief thoughts are consumed by memories of a profound loss longing for what is gone and clinging to symbols of remembrance while feeling the weight of sorrow despite the presence of support\nB. Feeling overwhelmed by deep emotional pain a sense of vulnerability and introspection is present with tears indicating a release of pent up sorrow and a struggle to cope with inner turmoil\nC. A deep sense of disappointment and emotional disconnect persists despite the surrounding celebration as unmet expectations and internal struggles create a profound feeling of sadness and longing\nD. A deep sorrow weighs heavily with introspective stillness and emotional vulnerability intertwined with the lingering impact of trauma and a quiet burden of unresolved pain\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "emotion",
+        "true_answer": "A deep sorrow weighs heavily with introspective stillness and emotional vulnerability intertwined with the lingering impact of trauma and a quiet burden of unresolved pain",
+        "false_answers": [
+            "Feeling overwhelmed by deep emotional pain a sense of vulnerability and introspection is present with tears indicating a release of pent up sorrow and a struggle to cope with inner turmoil",
+            "Overwhelmed by grief thoughts are consumed by memories of a profound loss longing for what is gone and clinging to symbols of remembrance while feeling the weight of sorrow despite the presence of support",
+            "A deep sense of disappointment and emotional disconnect persists despite the surrounding celebration as unmet expectations and internal struggles create a profound feeling of sadness and longing"
+        ],
+        "image": "./final_labeling/005087.jpg",
+        "distinct": [
+            "emotion-sad"
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007353.jpg",
+            "width": 2560,
+            "height": 1440
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Wearing lipstick\nB. Has bangs\nC. Wearing eyeglasses\nD. Gray hair\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Gray Hair"
+        ],
+        "false_answers": [
+            "Bangs",
+            "Eyeglasses",
+            "Wearing Lipstick"
+        ],
+        "image": "./final_labeling/007353.jpg",
+        "distinct": [
+            "face_choice-Gray Hair",
+            "face_choice-false-Bangs",
+            "face_choice-false-Eyeglasses",
+            "face_choice-false-Wearing Lipstick"
+        ]
+    }
+}

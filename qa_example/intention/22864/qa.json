@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/005124.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The intention is to provide comfort and nourishment while maintaining a calm and secure environment to support the infant's well-being\nB. The individual is likely engaged in a focused task requiring attention and access to digital information seeking clarity or progress on an important matter\nC. The individual is seeking comfort and connection through a relaxed shared moment that includes enjoying wine and music in a cozy setting\nD. The individual is carefully reviewing a document marked with a \"BUG TEST\" stamp to assess its contents for accuracy or potential issues while in a relaxed yet focused state\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual is likely engaged in a focused task requiring attention and access to digital information seeking clarity or progress on an important matter",
+        "false_answers": [
+            "The individual is seeking comfort and connection through a relaxed shared moment that includes enjoying wine and music in a cozy setting",
+            "The intention is to provide comfort and nourishment while maintaining a calm and secure environment to support the infant's well-being",
+            "The individual is carefully reviewing a document marked with a \"BUG TEST\" stamp to assess its contents for accuracy or potential issues while in a relaxed yet focused state"
+        ],
+        "image": "./final_labeling/005124.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

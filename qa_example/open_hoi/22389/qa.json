@@ -1,0 +1,46 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00001039.jpg",
+            "width": 428,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: thigh, action: sit on\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "chair"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "thigh",
+                        "sit on"
+                    ]
+                ],
+                "object": "chair",
+                "bbox": [
+                    0.3037383177570093,
+                    0.4265625,
+                    0.9299065420560748,
+                    0.9359375
+                ]
+            }
+        },
+        "image": "./final_labeling/train_00001039.jpg",
+        "distinct": [
+            "open_hoi-thigh"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

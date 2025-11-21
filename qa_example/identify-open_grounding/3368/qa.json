@@ -1,0 +1,61 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/003198.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1920x1080. There is one person in the image that meets the following condition:\n\n- No sideburns\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: right hand, action: holding\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "gift box",
+            "bbox": [
+                0.4711560904979706,
+                0.5530785322189331,
+                0.5796794891357422,
+                0.6595507860183716
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "Sideburns",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "right hand",
+                        "holding"
+                    ]
+                ],
+                "object": "gift box",
+                "bbox": [
+                    0.4711560904979706,
+                    0.5530785322189331,
+                    0.5796794891357422,
+                    0.6595507860183716
+                ]
+            },
+            "person_no": 0
+        },
+        "image": "./final_labeling/003198.jpg",
+        "can_mutate_hand_to_false": true,
+        "distinct": [
+            "identify-open_grounding-facial-Sideburns-False-hoi-right hand"
+        ]
+    }
+}

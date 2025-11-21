@@ -1,0 +1,74 @@
+{
+    "type": "cloth_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00030301.jpg",
+            "width": 640,
+            "height": 409
+        },
+        {
+            "type": "text",
+            "text": "Please select the wearing of the person in the image from the following options (only one selection is allowed):\n\nA. A brown hat.\nB. A loose shirt featuring a plaid pattern.\nC. Light yellow hat.\nD. A brown turban is a wrapped head covering used for warmth and fashion.\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "cloth_choice",
+        "true_answers": [
+            {
+                "possible_names": [
+                    "hat"
+                ],
+                "name": "hat",
+                "type": "headwear",
+                "color": [
+                    "brown"
+                ]
+            }
+        ],
+        "false_answers": [
+            {
+                "possible_names": [
+                    "shirt"
+                ],
+                "name": "loose shirt",
+                "type": "top",
+                "color": [
+                    "plaid"
+                ]
+            },
+            {
+                "possible_names": [
+                    "hat"
+                ],
+                "name": "turban",
+                "type": "headwear",
+                "color": [
+                    "brown"
+                ]
+            },
+            {
+                "possible_names": [
+                    "hat"
+                ],
+                "name": "hat",
+                "type": "headwear",
+                "color": [
+                    "light yellow"
+                ]
+            }
+        ],
+        "image": "./final_labeling/train_00030301.jpg",
+        "distinct": [
+            "cloth_choice-false-headwear",
+            "cloth_choice-headwear",
+            "cloth_choice-false-top"
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "body_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00031981.jpg",
+            "width": 480,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 480x640. Please provide the bounding box (in xyxy format) of the \"left foot\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.7352666646345623,
+            0.7603541976151368,
+            0.7673305042812393,
+            0.7812238956801595
+        ]
+    },
+    "data": {
+        "type": "body_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_foot",
+            "attr_value": [
+                0.7400176665849156,
+                0.7688365800927084,
+                0.762579502330886,
+                0.7727415132025879
+            ]
+        },
+        "image": "./final_labeling/train_00031981.jpg",
+        "distinct": [
+            "body_grounding-left_foot"
+        ]
+    }
+}

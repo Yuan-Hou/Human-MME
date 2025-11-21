@@ -1,0 +1,67 @@
+{
+    "type": "common_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/015558.jpg",
+            "width": 720,
+            "height": 1280
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 720x1280. Please select the option that fits most or all of persons in the image:\n\nA. Wearing Multicolor bracelet\nB. Wearing blue jeans\nC. Face turned to right side of image\nD. Not smiling\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "common_choice",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "Smiling",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "facial",
+                "attr_name": "yaw",
+                "attr_value": "left",
+                "real_value": -56.454416320552646,
+                "person_no": 1
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "bracelet",
+                    "color": [
+                        "multicolor"
+                    ],
+                    "type": "accessory"
+                },
+                "person_no": 1
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "jeans",
+                    "color": [
+                        "blue"
+                    ],
+                    "type": "bottom"
+                },
+                "person_no": 1
+            }
+        ],
+        "image": "./final_labeling/015558.jpg",
+        "distinct": [
+            "common_choice-facial-Smiling-False"
+        ]
+    }
+}

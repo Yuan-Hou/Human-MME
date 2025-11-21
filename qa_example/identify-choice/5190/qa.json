@@ -1,0 +1,94 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/004510.jpg",
+            "width": 3840,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.49882543087005615,
+                        0.29793956875801086,
+                        0.7521915435791016,
+                        0.9920557737350464
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- all visible body in the red bounding box\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Has goatee\nB. No sideburns\nC. gender: male\nD. Have interaction with object: \"body part: both hands, action: looking at, object: floor plan\"\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "bbox",
+            "attr_name": "body",
+            "attr_value": [
+                0.49882543087005615,
+                0.29793956875801086,
+                0.7521915435791016,
+                0.9920557737350464
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/004510.jpg",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "Sideburns",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "hoi",
+                "attr_name": "hoi",
+                "attr_value": {
+                    "relation": [
+                        [
+                            "both hands",
+                            "holding"
+                        ],
+                        [
+                            "both hands",
+                            "looking at"
+                        ]
+                    ],
+                    "object": "floor plan",
+                    "bbox": [
+                        0.27780747413635254,
+                        0.4431910514831543,
+                        0.4773538112640381,
+                        0.6852463483810425
+                    ]
+                },
+                "person_no": 1
+            },
+            {
+                "attr_type": "overall",
+                "attr_name": "gender",
+                "attr_value": "male",
+                "person_no": 1
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "Goatee",
+                "attr_value": true,
+                "person_no": 1
+            }
+        ],
+        "distinct": [
+            "identify-choice-bbox-body-facial-Sideburns-False"
+        ]
+    }
+}

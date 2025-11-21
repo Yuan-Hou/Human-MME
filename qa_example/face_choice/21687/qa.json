@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/009706.jpg",
+            "width": 720,
+            "height": 1280
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. Has sideburns\nB. Chubby face\nC. Narrow eyes\nD. Wearing necktie\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "D"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Wearing Necktie"
+        ],
+        "false_answers": [
+            "Sideburns",
+            "Chubby",
+            "Narrow Eyes"
+        ],
+        "image": "./final_labeling/009706.jpg",
+        "distinct": [
+            "face_choice-Wearing Necktie",
+            "face_choice-false-Sideburns",
+            "face_choice-false-Chubby",
+            "face_choice-false-Narrow Eyes"
+        ]
+    }
+}

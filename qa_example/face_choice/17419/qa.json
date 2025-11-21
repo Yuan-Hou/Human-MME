@@ -1,0 +1,39 @@
+{
+    "type": "face_choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00013442.jpg",
+            "width": 384,
+            "height": 512
+        },
+        {
+            "type": "text",
+            "text": "Please select the facial features of the person in the image from the following options (only one selection is allowed):\n\nA. High cheekbones\nB. Gray hair\nC. Has 5 o'clock shadow\nD. Wearing hat\n\nPlease provide the option letters of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "B"
+        ]
+    },
+    "data": {
+        "type": "face_choice",
+        "true_answers": [
+            "Gray Hair"
+        ],
+        "false_answers": [
+            "Wearing Hat",
+            "5 oClock Shadow",
+            "High Cheekbones"
+        ],
+        "image": "./final_labeling/train_00013442.jpg",
+        "distinct": [
+            "face_choice-Gray Hair",
+            "face_choice-false-Wearing Hat",
+            "face_choice-false-5 oClock Shadow",
+            "face_choice-false-High Cheekbones"
+        ]
+    }
+}

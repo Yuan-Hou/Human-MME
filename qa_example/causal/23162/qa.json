@@ -1,0 +1,37 @@
+{
+    "type": "causal",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/012703.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of what happened in the past and what will happen in the future:\n\nA. A soft pause lingers as the voice settles, then continues with confident clarity, weaving a final reflection that resonates before smoothly shifting to the next topic with purposeful momentum.\nB. The space was meticulously prepared with optimized lighting and camera positioning, technical systems were verified and operational, key content was reviewed and refined, and the environment was curated to foster focus and engagement, ensuring everything was in place for a seamless and impactful recording.\nC. The train accelerates smoothly down the track, its momentum carrying the passengers forward into the rhythm of the day, the cityscape blurring past as the journey unfolds with steady purpose.\nD. They each arrived at the station separately, having traveled from different directions, having verified departure details, and having moved through the station\u2019s entry points with purposeful strides, each absorbed in private preparations for the day ahead.\n\nPlease provide the option letters of the most possible answer separately for past and future."
+        }
+    ],
+    "answer": {
+        "type": "double_choice",
+        "data": {
+            "future": "A",
+            "past": "B"
+        }
+    },
+    "data": {
+        "type": "causal",
+        "true_answer": [
+            "The space was meticulously prepared with optimized lighting and camera positioning, technical systems were verified and operational, key content was reviewed and refined, and the environment was curated to foster focus and engagement, ensuring everything was in place for a seamless and impactful recording.",
+            "A soft pause lingers as the voice settles, then continues with confident clarity, weaving a final reflection that resonates before smoothly shifting to the next topic with purposeful momentum."
+        ],
+        "false_answers": [
+            "They each arrived at the station separately, having traveled from different directions, having verified departure details, and having moved through the station\u2019s entry points with purposeful strides, each absorbed in private preparations for the day ahead.",
+            "The train accelerates smoothly down the track, its momentum carrying the passengers forward into the rhythm of the day, the cityscape blurring past as the journey unfolds with steady purpose."
+        ],
+        "image": "./final_labeling/012703.jpg",
+        "distinct": [
+            "causal"
+        ]
+    }
+}

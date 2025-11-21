@@ -1,0 +1,96 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image_bbox",
+            "image": "./final_labeling/016809.jpg",
+            "width": 4096,
+            "height": 2160,
+            "bboxes": [
+                [
+                    "red",
+                    [
+                        0.5047542452812195,
+                        0.26729029417037964,
+                        0.5971540808677673,
+                        0.5242533087730408
+                    ]
+                ],
+                [
+                    "green",
+                    [
+                        0.22734132409095764,
+                        0.2828707695007324,
+                        0.5033908486366272,
+                        0.9893298745155334
+                    ]
+                ]
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 4096x2160. There is one person in the image that meets the following condition:\n\n- face in the red bounding box\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. Wearing White shirt\nB. all visible body in the green bounding box\nC. Narrow eyes\nD. face in the red bounding box\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "emotion",
+            "attr_value": "happy",
+            "person_no": 0
+        },
+        "image": "./final_labeling/016809.jpg",
+        "true_answer": {
+            "attr_type": "facial",
+            "attr_name": "Narrow Eyes",
+            "attr_value": true,
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "bbox",
+                "attr_name": "face",
+                "attr_value": [
+                    0.5047542452812195,
+                    0.26729029417037964,
+                    0.5971540808677673,
+                    0.5242533087730408
+                ],
+                "person_no": 2
+            },
+            {
+                "attr_type": "bbox",
+                "attr_name": "body",
+                "attr_value": [
+                    0.22734132409095764,
+                    0.2828707695007324,
+                    0.5033908486366272,
+                    0.9893298745155334
+                ],
+                "person_no": 1
+            },
+            {
+                "attr_type": "clothing",
+                "attr_name": "clothing",
+                "attr_value": {
+                    "name": "shirt",
+                    "color": [
+                        "white"
+                    ],
+                    "type": "top"
+                },
+                "person_no": 2
+            }
+        ],
+        "distinct": [
+            "identify-choice-overall-emotion-happy-facial-Narrow Eyes-True"
+        ]
+    }
+}

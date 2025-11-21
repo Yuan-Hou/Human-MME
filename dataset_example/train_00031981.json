@@ -1,0 +1,727 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00031981.jpg",
+  "image_id": "train_00031981",
+  "width": 480,
+  "height": 640,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 31981,
+  "annotations": {
+    "objects": "[{'id': 322, 'bbox_human': [338, 401, 330, 506], 'bbox_object': [135, 353, 160, 567], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('elephant', 'walk')]",
+    "negative_captions": "[('elephant', 'feed'), ('elephant', 'hold'), ('elephant', 'hose'), ('elephant', 'hug'), ('elephant', 'kiss'), ('elephant', 'hop_on'), ('elephant', 'pet'), ('elephant', 'ride'), ('elephant', 'wash'), ('elephant', 'no_interaction')]",
+    "ambiguous_captions": "[('elephant', 'watch')]",
+    "positive_objects": "[321]",
+    "negative_objects": "[313, 314, 315, 316, 317, 318, 319, 320, 322, 324]",
+    "ambiguous_objects": "[323]",
+    "size": "[480, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a yellow top, red shorts, and a red head covering.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "blouse",
+                "tunic"
+              ],
+              "name": "shirt",
+              "type": "top",
+              "color": [
+                "olive"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "skirt",
+                "shorts"
+              ],
+              "name": "skirt",
+              "type": "bottom",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "sandals",
+                "flip-flops"
+              ],
+              "name": "sandals",
+              "type": "footwear",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "hat",
+                "cap"
+              ],
+              "name": "hat",
+              "type": "headwear",
+              "color": [
+                "red"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "stick",
+              "cane"
+            ],
+            "name": "stick",
+            "position": "hand"
+          }
+        ],
+        "description": "The person is an adult in the foreground, walking in front of an elephant. They are shirtless except for a yellow top and red shorts, with a red head covering. The person also holds a stick in their hand. They appear neutral in emotion.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be walking calmly alongside an elephant, suggesting a neutral emotional state without visible signs of distress or excitement.",
+        "meaningful": true,
+        "story": "The individual seems to be a mahout or someone accustomed to handling elephants, as he walks confidently beside the large animal. This scene likely takes place in a rural area where humans and elephants coexist, possibly during a routine task such as taking the elephant for a walk or returning from work.",
+        "race": "asian",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green shirt is walking alongside an elephant on a narrow road, holding a stick which suggests they might be guiding or controlling the animal's movement. Their posture indicates attentiveness to the elephant, possibly ensuring its path stays along the road while avoiding obstacles. The individual appears focused on their task, likely motivated by the responsibility of safely escorting the elephant through this area, which could involve managing the elephant's behavior and ensuring both their safety and that of others around them. The presence of the stick implies a traditional method of interaction between humans and elephants, indicating a possible cultural or occupational context where such handling is common.",
+        "intention": "The individual is intentionally guiding the elephant along the narrow road to ensure safe passage and prevent potential hazards",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "hand",
+                "walk"
+              ]
+            ],
+            "negative_action": [
+              "feed",
+              "hold",
+              "hose",
+              "hug",
+              "kiss",
+              "hop on",
+              "pet",
+              "ride",
+              "wash",
+              "no interaction"
+            ],
+            "position": "hand"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.7027647495269775,
+        0.5209884643554688,
+        0.8344739079475403,
+        0.7874044179916382
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7660505539841123,
+            0.5722882802287736
+          ],
+          [
+            0.7984470360808903,
+            0.572722161685427
+          ],
+          [
+            0.8186948373913765,
+            0.6139409000674882
+          ],
+          [
+            0.8042321221696006,
+            0.6382382616400719
+          ],
+          [
+            0.7336540718873342,
+            0.5718543987721205
+          ],
+          [
+            0.7186128480566872,
+            0.6139409000674882
+          ],
+          [
+            0.7128277619679769,
+            0.6512547053396702
+          ],
+          [
+            0.7845628294679854,
+            0.646482009316484
+          ],
+          [
+            0.781091777814759,
+            0.7085270576179028
+          ],
+          [
+            0.7805132692058881,
+            0.7710059873759747
+          ],
+          [
+            0.745802752673626,
+            0.6477836536864439
+          ],
+          [
+            0.7365466149316894,
+            0.7041882430513698
+          ],
+          [
+            0.7556373990244336,
+            0.7614605953296024
+          ],
+          [
+            0.7648935367663702,
+            0.541482696806391
+          ],
+          [
+            0.7434887182381418,
+            0.5423504597196976
+          ],
+          [
+            0.778199234770404,
+            0.5440859855463107
+          ],
+          [
+            0.7440672268470129,
+            0.5445198670029641
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.7134062705768479,
+            0.654291875536243
+          ],
+          [
+            0.7151417964034611,
+            0.6581968086461225
+          ],
+          [
+            0.7162988136212031,
+            0.662101741756002
+          ],
+          [
+            0.7162988136212031,
+            0.6655727934092284
+          ],
+          [
+            0.7162988136212031,
+            0.6690438450624546
+          ],
+          [
+            0.7134062705768479,
+            0.6660066748658815
+          ],
+          [
+            0.7122492533591058,
+            0.669911607975761
+          ],
+          [
+            0.7139847791857189,
+            0.6716471338023743
+          ],
+          [
+            0.7157203050123321,
+            0.6720810152590275
+          ],
+          [
+            0.7128277619679769,
+            0.6668744377791882
+          ],
+          [
+            0.7128277619679769,
+            0.6703454894324145
+          ],
+          [
+            0.71456328779459,
+            0.6712132523457208
+          ],
+          [
+            0.7168773222300742,
+            0.6716471338023743
+          ],
+          [
+            0.7116707447502348,
+            0.6673083192358413
+          ],
+          [
+            0.7122492533591058,
+            0.669911607975761
+          ],
+          [
+            0.7139847791857189,
+            0.6707793708890677
+          ],
+          [
+            0.7151417964034611,
+            0.6712132523457208
+          ],
+          [
+            0.7093567103147507,
+            0.6668744377791882
+          ],
+          [
+            0.7110922361413637,
+            0.6690438450624546
+          ],
+          [
+            0.7128277619679769,
+            0.669911607975761
+          ],
+          [
+            0.7134062705768479,
+            0.669911607975761
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.8030751049518585,
+            0.6395399060100317
+          ],
+          [
+            0.7996040532986323,
+            0.6391060245533785
+          ],
+          [
+            0.7961330016454061,
+            0.638672143096725
+          ],
+          [
+            0.794975984427664,
+            0.6399737874666849
+          ],
+          [
+            0.794975984427664,
+            0.6412754318366447
+          ],
+          [
+            0.7972900188631482,
+            0.6404076689233383
+          ],
+          [
+            0.796711510254277,
+            0.6417093132932982
+          ],
+          [
+            0.7961330016454061,
+            0.6425770762066045
+          ],
+          [
+            0.7961330016454061,
+            0.643010957663258
+          ],
+          [
+            0.7996040532986323,
+            0.6421431947499514
+          ],
+          [
+            0.7990255446897613,
+            0.643010957663258
+          ],
+          [
+            0.7990255446897613,
+            0.6434448391199112
+          ],
+          [
+            0.7990255446897613,
+            0.6438787205765644
+          ],
+          [
+            0.8024965963429875,
+            0.6438787205765644
+          ],
+          [
+            0.8019180877341163,
+            0.6447464834898711
+          ],
+          [
+            0.8013395791252454,
+            0.6447464834898711
+          ],
+          [
+            0.8013395791252454,
+            0.6447464834898711
+          ],
+          [
+            0.8053891393873427,
+            0.6451803649465242
+          ],
+          [
+            0.8059676479962137,
+            0.6460481278598309
+          ],
+          [
+            0.8053891393873427,
+            0.6460481278598309
+          ],
+          [
+            0.8048106307784716,
+            0.6460481278598309
+          ]
+        ],
+        "dw_face": [
+          [
+            0.7492738043268522,
+            0.5406149338930846
+          ],
+          [
+            0.7498523129357231,
+            0.5423504597196976
+          ],
+          [
+            0.7498523129357231,
+            0.5432182226330042
+          ],
+          [
+            0.745224244064755,
+            0.5440859855463107
+          ],
+          [
+            0.7440672268470129,
+            0.5449537484596173
+          ],
+          [
+            0.746959769891368,
+            0.5453876299162705
+          ],
+          [
+            0.747538278500239,
+            0.5466892742862304
+          ],
+          [
+            0.7446457354558838,
+            0.5497264444828034
+          ],
+          [
+            0.747538278500239,
+            0.5510280888527632
+          ],
+          [
+            0.7504308215445943,
+            0.5501603259394566
+          ],
+          [
+            0.7544803818066915,
+            0.54929256302615
+          ],
+          [
+            0.7596869592865308,
+            0.5488586815694968
+          ],
+          [
+            0.7637365195486281,
+            0.547557037199537
+          ],
+          [
+            0.7521663473712074,
+            0.5458215113729239
+          ],
+          [
+            0.7562159076333046,
+            0.5453876299162705
+          ],
+          [
+            0.7591084506776598,
+            0.5440859855463107
+          ],
+          [
+            0.762579502330886,
+            0.5432182226330042
+          ],
+          [
+            0.7492738043268522,
+            0.5410488153497378
+          ],
+          [
+            0.746381261282497,
+            0.5406149338930846
+          ],
+          [
+            0.747538278500239,
+            0.5406149338930846
+          ],
+          [
+            0.7486952957179811,
+            0.5410488153497378
+          ],
+          [
+            0.7486952957179811,
+            0.541482696806391
+          ],
+          [
+            0.7521663473712074,
+            0.5419165782630444
+          ],
+          [
+            0.7527448559800783,
+            0.5423504597196976
+          ],
+          [
+            0.7527448559800783,
+            0.5427843411763509
+          ],
+          [
+            0.7544803818066915,
+            0.5423504597196976
+          ],
+          [
+            0.7562159076333046,
+            0.5427843411763509
+          ],
+          [
+            0.7492738043268522,
+            0.5427843411763509
+          ],
+          [
+            0.7481167871091101,
+            0.5427843411763509
+          ],
+          [
+            0.7481167871091101,
+            0.5436521040896575
+          ],
+          [
+            0.7492738043268522,
+            0.5449537484596173
+          ],
+          [
+            0.747538278500239,
+            0.5453876299162705
+          ],
+          [
+            0.7481167871091101,
+            0.5458215113729239
+          ],
+          [
+            0.7481167871091101,
+            0.5453876299162705
+          ],
+          [
+            0.7486952957179811,
+            0.5449537484596173
+          ],
+          [
+            0.7486952957179811,
+            0.5453876299162705
+          ],
+          [
+            0.7504308215445943,
+            0.5419165782630444
+          ],
+          [
+            0.7498523129357231,
+            0.541482696806391
+          ],
+          [
+            0.7492738043268522,
+            0.5419165782630444
+          ],
+          [
+            0.7492738043268522,
+            0.5427843411763509
+          ],
+          [
+            0.7504308215445943,
+            0.5427843411763509
+          ],
+          [
+            0.7510093301534653,
+            0.5423504597196976
+          ],
+          [
+            0.7498523129357231,
+            0.5427843411763509
+          ],
+          [
+            0.7498523129357231,
+            0.5423504597196976
+          ],
+          [
+            0.7510093301534653,
+            0.5427843411763509
+          ],
+          [
+            0.7527448559800783,
+            0.5432182226330042
+          ],
+          [
+            0.7521663473712074,
+            0.5432182226330042
+          ],
+          [
+            0.7510093301534653,
+            0.5432182226330042
+          ],
+          [
+            0.745802752673626,
+            0.5462553928295771
+          ],
+          [
+            0.746381261282497,
+            0.5466892742862304
+          ],
+          [
+            0.7486952957179811,
+            0.5466892742862304
+          ],
+          [
+            0.7492738043268522,
+            0.5471231557428837
+          ],
+          [
+            0.7498523129357231,
+            0.5471231557428837
+          ],
+          [
+            0.747538278500239,
+            0.5471231557428837
+          ],
+          [
+            0.746959769891368,
+            0.547557037199537
+          ],
+          [
+            0.745802752673626,
+            0.547557037199537
+          ],
+          [
+            0.747538278500239,
+            0.5479909186561902
+          ],
+          [
+            0.7492738043268522,
+            0.5471231557428837
+          ],
+          [
+            0.7486952957179811,
+            0.5466892742862304
+          ],
+          [
+            0.747538278500239,
+            0.5462553928295771
+          ],
+          [
+            0.746381261282497,
+            0.5466892742862304
+          ],
+          [
+            0.747538278500239,
+            0.5466892742862304
+          ],
+          [
+            0.7486952957179811,
+            0.5466892742862304
+          ],
+          [
+            0.7481167871091101,
+            0.5471231557428837
+          ],
+          [
+            0.746381261282497,
+            0.547557037199537
+          ],
+          [
+            0.746959769891368,
+            0.5479909186561902
+          ],
+          [
+            0.7486952957179811,
+            0.547557037199537
+          ],
+          [
+            0.7481167871091101,
+            0.5466892742862304
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.7400176665849156,
+            0.7718737502892811
+          ],
+          [
+            0.7405961751937866,
+            0.7727415132025879
+          ],
+          [
+            0.762579502330886,
+            0.7688365800927084
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.778199234770404,
+            0.7740431575725477
+          ],
+          [
+            0.7897694069478247,
+            0.7766464463124674
+          ],
+          [
+            0.7805132692058881,
+            0.7779480906824272
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "elephant",
+      "possible_names": [
+        "elephant"
+      ],
+      "box": [
+        0.28125,
+        0.25,
+        0.7354166666666667,
+        0.8859375
+      ]
+    }
+  ],
+  "scene": "An elephant walks down a narrow road surrounded by lush greenery and palm trees with a yellow road sign visible on the left side of the path and puddles reflecting the overcast sky above",
+  "overall_past": "Before the current scene, the individual likely approached the elephant in a nearby clearing or forested area, where they may have used the stick to gently guide or calm the animal, possibly after it had wandered off a designated path. The elephant, perhaps accustomed to human presence or trained for such tasks, responded to the person’s presence and commands, allowing itself to be led. The two then began moving together along the narrow road, with the person carefully navigating the terrain—watching for puddles, uneven ground, and the surrounding vegetation—ensuring a safe passage through the overcast, lush environment. This suggests a routine or familiar interaction, possibly part of a daily task such as transporting the elephant through a rural or protected area, indicating a long-standing relationship between the human and the animal.",
+  "overall_past_clean": "The individual had approached the animal in a secluded clearing, its presence met with calm recognition as it responded to subtle cues, then followed without resistance as the path narrowed and the terrain grew uneven, the two moving in quiet coordination through the dense, damp undergrowth.",
+  "past_scene_ok": false,
+  "overall_future": "After the current scene, the elephant and the individual are likely to continue moving along the narrow road, carefully navigating around the puddles reflecting the overcast sky. The person will remain alert, using the stick to gently guide the elephant away from potential hazards such as loose gravel, uneven ground, or the edge of the road, especially given the wet conditions that could make the surface slippery. As they progress, they may encounter a crossroads or a change in terrain—perhaps a bridge over a small stream or a clearing where the path widens—where the need for careful direction becomes even more critical. The overcast sky suggests possible rain, so the pair may be seeking shelter or a safer route ahead, indicating that their journey is purposeful and time-sensitive. Ultimately, they will likely reach a destination such as a wildlife sanctuary, a village, or a designated elephant corridor, where the animal can be safely released or cared for.",
+  "overall_future_clean": "The pair presses forward with steady determination, the elephant's broad feet testing each step as the path narrows further, the air thick with the scent of damp earth, until they crest a rise and spot a weathered signpost pointing toward a hidden sanctuary, its faded markings now clear in the dim light.",
+  "future_scene_ok": true
+}

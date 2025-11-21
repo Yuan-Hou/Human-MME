@@ -1,0 +1,37 @@
+{
+    "type": "causal",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/016516.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of what happened in the past and what will happen in the future:\n\nA. The individual moved with purpose toward the object, their hands reaching out not in haste but with intention, having made a deliberate choice to bring it into their space, their fingers tracing its contours as if confirming its presence, their breath steady and focused, as though the act of acquiring it had already begun to shift their inner rhythm.\nB. They had just confronted a long-avoided truth in a raw, unfiltered conversation, the weight of it settling over them like silence after a storm, forcing them to face a choice they could no longer ignore.\nC. The hands move with quiet precision, setting the vessel down with deliberate care before turning to gather tools, each motion a quiet affirmation of purpose, as the space settles into a rhythm of mindful intention.\nD. The air shifts as they exhale with purpose, voice steady and clear, cutting through the silence with a declaration that carries the weight of long-held truth.\n\nPlease provide the option letters of the most possible answer separately for past and future."
+        }
+    ],
+    "answer": {
+        "type": "double_choice",
+        "data": {
+            "past": "A",
+            "future": "C"
+        }
+    },
+    "data": {
+        "type": "causal",
+        "true_answer": [
+            "The individual moved with purpose toward the object, their hands reaching out not in haste but with intention, having made a deliberate choice to bring it into their space, their fingers tracing its contours as if confirming its presence, their breath steady and focused, as though the act of acquiring it had already begun to shift their inner rhythm.",
+            "The hands move with quiet precision, setting the vessel down with deliberate care before turning to gather tools, each motion a quiet affirmation of purpose, as the space settles into a rhythm of mindful intention."
+        ],
+        "false_answers": [
+            "They had just confronted a long-avoided truth in a raw, unfiltered conversation, the weight of it settling over them like silence after a storm, forcing them to face a choice they could no longer ignore.",
+            "The air shifts as they exhale with purpose, voice steady and clear, cutting through the silence with a declaration that carries the weight of long-held truth."
+        ],
+        "image": "./final_labeling/016516.jpg",
+        "distinct": [
+            "causal"
+        ]
+    }
+}

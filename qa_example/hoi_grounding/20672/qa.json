@@ -1,0 +1,55 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00021754.jpg",
+            "width": 427,
+            "height": 640
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 427x640. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: no direct contact, action: ride\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.04918032786885246,
+            0.5484375,
+            0.5784543325526932,
+            0.6640625
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "standalone",
+                        "ride"
+                    ],
+                    [
+                        "standalone",
+                        "flip"
+                    ]
+                ],
+                "object": "skateboard",
+                "bbox": [
+                    0.04918032786885246,
+                    0.5484375,
+                    0.5784543325526932,
+                    0.6640625
+                ]
+            }
+        },
+        "image": "./final_labeling/train_00021754.jpg",
+        "distinct": [
+            "hoi_grounding-standalone",
+            "hoi_grounding-standalone"
+        ]
+    }
+}

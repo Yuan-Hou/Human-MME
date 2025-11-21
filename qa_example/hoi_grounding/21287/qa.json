@@ -1,0 +1,65 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00007350.jpg",
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 640x480. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: body, action: straddle\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.0890625,
+            0.3854166666666667,
+            0.753125,
+            0.9
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "body",
+                        "straddle"
+                    ],
+                    [
+                        "body",
+                        "hold"
+                    ],
+                    [
+                        "body",
+                        "jump"
+                    ],
+                    [
+                        "body",
+                        "ride"
+                    ]
+                ],
+                "object": "motorcycle",
+                "bbox": [
+                    0.0890625,
+                    0.3854166666666667,
+                    0.753125,
+                    0.9
+                ]
+            }
+        },
+        "image": "./final_labeling/train_00007350.jpg",
+        "distinct": [
+            "hoi_grounding-body",
+            "hoi_grounding-body",
+            "hoi_grounding-body",
+            "hoi_grounding-body"
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/test_00000512.jpg",
+            "width": 640,
+            "height": 428
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"handwear\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "white gloves"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "white gloves"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "gloves",
+                "color": [
+                    "white"
+                ],
+                "type": "handwear"
+            }
+        },
+        "image": "./final_labeling/test_00000512.jpg",
+        "distinct": [
+            "open_clothing-handwear"
+        ]
+    }
+}

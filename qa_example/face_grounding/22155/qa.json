@@ -1,0 +1,41 @@
+{
+    "type": "face_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007286.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please provide the bounding box of the facial part \"left_eyebrow\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.6959811209567957,
+            0.11619763714926581,
+            0.8660932995733763,
+            0.2119372742516654
+        ]
+    },
+    "data": {
+        "type": "face_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "left_eyebrow",
+            "attr_value": [
+                0.6959811209567957,
+                0.11619763714926583,
+                0.8660932995733762,
+                0.2119372742516654
+            ]
+        },
+        "image": "./final_labeling/007286.jpg",
+        "distinct": [
+            "face_grounding-left_eyebrow"
+        ]
+    }
+}

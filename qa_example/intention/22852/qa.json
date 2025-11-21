@@ -1,0 +1,34 @@
+{
+    "type": "intention",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004719.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of intention for someone appearing in the image:\n\nA. The individual seeks introspection and emotional clarity through solitude and sensory ambiance using the drink and lighting as anchors for inner reflection\nB. The individual is deliberately posing to capture a striking visual moment that highlights their presence and style within an expressive and dynamic environment\nC. The individual is taking a moment to observe the surroundings likely assessing the shop or waiting for someone while maintaining a relaxed and unhurried presence\nD. The individual is likely sharing a personal moment or message with an audience using a dynamic setting to enhance engagement and convey energy\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "A"
+        ]
+    },
+    "data": {
+        "type": "intention",
+        "true_answer": "The individual seeks introspection and emotional clarity through solitude and sensory ambiance using the drink and lighting as anchors for inner reflection",
+        "false_answers": [
+            "The individual is deliberately posing to capture a striking visual moment that highlights their presence and style within an expressive and dynamic environment",
+            "The individual is likely sharing a personal moment or message with an audience using a dynamic setting to enhance engagement and convey energy",
+            "The individual is taking a moment to observe the surroundings likely assessing the shop or waiting for someone while maintaining a relaxed and unhurried presence"
+        ],
+        "image": "./final_labeling/004719.jpg",
+        "distinct": [
+            "intention"
+        ]
+    }
+}

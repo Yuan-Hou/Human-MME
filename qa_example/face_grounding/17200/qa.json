@@ -1,0 +1,41 @@
+{
+    "type": "face_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/004834.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. Please provide the bounding box of the facial part \"nose\" of the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.40747534222581555,
+            0.4779803313228582,
+            0.46413572865547165,
+            0.6014465238098351
+        ]
+    },
+    "data": {
+        "type": "face_grounding",
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "nose",
+            "attr_value": [
+                0.41816184520721433,
+                0.4823043765845122,
+                0.4534492256740729,
+                0.5971224785481811
+            ]
+        },
+        "image": "./final_labeling/004834.jpg",
+        "distinct": [
+            "face_grounding-nose"
+        ]
+    }
+}

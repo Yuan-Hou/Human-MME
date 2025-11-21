@@ -1,0 +1,48 @@
+{
+    "type": "identify-grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007901.jpg",
+            "width": 1080,
+            "height": 1920
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1080x1920. There is one person in the image that meets the following condition:\n\n- age: child\n\nPlease provide the bounding box of the person's face in xyxy format."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.5898063778877258,
+            0.38786187767982483,
+            0.7093296051025391,
+            0.5203732252120972
+        ]
+    },
+    "data": {
+        "type": "identify-grounding",
+        "condition": {
+            "attr_type": "overall",
+            "attr_name": "age",
+            "attr_value": "child",
+            "person_no": 0
+        },
+        "question": {
+            "attr_type": "bbox",
+            "attr_name": "face",
+            "attr_value": [
+                0.5898063778877258,
+                0.38786187767982483,
+                0.7093296051025391,
+                0.5203732252120972
+            ],
+            "person_no": 0
+        },
+        "image": "./final_labeling/007901.jpg",
+        "distinct": [
+            "identify-grounding-overall-age-child-bbox-face"
+        ]
+    }
+}

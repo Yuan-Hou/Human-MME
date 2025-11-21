@@ -1,0 +1,37 @@
+{
+    "type": "causal",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/019628.jpg",
+            "width": 1280,
+            "height": 720
+        },
+        {
+            "type": "text",
+            "text": "Please select the best analysis of what happened in the past and what will happen in the future:\n\nA. The air shifts as they exhale with purpose, voice steady and clear, cutting through the silence with a declaration that carries the weight of long-held truth.\nB. With deliberate grace, the figure straightens their posture, exhales once to center themselves, and steps forward into the unfolding day with unwavering presence.\nC. They had just confronted a long-avoided truth in a raw, unfiltered conversation, the weight of it settling over them like silence after a storm, forcing them to face a choice they could no longer ignore.\nD. The individual paused to deliberate, their gaze fixed on a selection of colors, weighing each against the day\u2019s intent, then reached with purpose, fingers closing around the chosen shade as if claiming a quiet power.\n\nPlease provide the option letters of the most possible answer separately for past and future."
+        }
+    ],
+    "answer": {
+        "type": "double_choice",
+        "data": {
+            "future": "B",
+            "past": "D"
+        }
+    },
+    "data": {
+        "type": "causal",
+        "true_answer": [
+            "The individual paused to deliberate, their gaze fixed on a selection of colors, weighing each against the day\u2019s intent, then reached with purpose, fingers closing around the chosen shade as if claiming a quiet power.",
+            "With deliberate grace, the figure straightens their posture, exhales once to center themselves, and steps forward into the unfolding day with unwavering presence."
+        ],
+        "false_answers": [
+            "They had just confronted a long-avoided truth in a raw, unfiltered conversation, the weight of it settling over them like silence after a storm, forcing them to face a choice they could no longer ignore.",
+            "The air shifts as they exhale with purpose, voice steady and clear, cutting through the silence with a declaration that carries the weight of long-held truth."
+        ],
+        "image": "./final_labeling/019628.jpg",
+        "distinct": [
+            "causal"
+        ]
+    }
+}

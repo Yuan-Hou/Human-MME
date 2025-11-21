@@ -1,0 +1,50 @@
+{
+    "type": "hoi_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/006155.jpg",
+            "width": 2160,
+            "height": 4096
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 2160x4096. Please provide the bounding box (in xyxy format) of the object that have interation \"body part: left hand, action: hold\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "bbox",
+        "data": [
+            0.2634384334087372,
+            0.3697577714920044,
+            0.6375796794891357,
+            0.6483688354492188
+        ]
+    },
+    "data": {
+        "type": "hoi_grounding",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "left hand",
+                        "hold"
+                    ]
+                ],
+                "object": "cat",
+                "bbox": [
+                    0.2634384334087372,
+                    0.3697577714920044,
+                    0.6375796794891357,
+                    0.6483688354492188
+                ]
+            }
+        },
+        "image": "./final_labeling/006155.jpg",
+        "distinct": [
+            "hoi_grounding-left hand"
+        ]
+    }
+}

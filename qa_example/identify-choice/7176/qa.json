@@ -1,0 +1,83 @@
+{
+    "type": "identify-choice",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/008581.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 1920x1080. There is one person in the image that meets the following condition:\n\n- Has beard\n\nIgnoring other persons, please select the option that best describes the referred person.\n\nA. all visible body in the bounding box [1127,213,1835,1037] (xyxy format)\nB. No goatee\nC. Have interaction with object: \"body part: left hand, action: holding, object: paper\"\nD. No mustache\n\nPlease provide the option letter of the most possible answer."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "data": [
+            "C"
+        ]
+    },
+    "data": {
+        "type": "identify-choice",
+        "condition": {
+            "attr_type": "facial",
+            "attr_name": "No Beard",
+            "attr_value": false,
+            "person_no": 0
+        },
+        "image": "./final_labeling/008581.jpg",
+        "true_answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ],
+                    [
+                        "left hand",
+                        "reading"
+                    ]
+                ],
+                "object": "paper",
+                "bbox": [
+                    0.28373482823371887,
+                    0.7449897527694702,
+                    0.45037463307380676,
+                    0.9316296577453613
+                ]
+            },
+            "person_no": 0
+        },
+        "false_answers": [
+            {
+                "attr_type": "facial",
+                "attr_name": "Goatee",
+                "attr_value": false,
+                "person_no": 1
+            },
+            {
+                "attr_type": "bbox",
+                "attr_name": "body",
+                "attr_value": [
+                    0.5873435139656067,
+                    0.19798770546913147,
+                    0.9561505317687988,
+                    0.9603307247161865
+                ],
+                "person_no": 1
+            },
+            {
+                "attr_type": "facial",
+                "attr_name": "Mustache",
+                "attr_value": false,
+                "person_no": 1
+            }
+        ],
+        "distinct": [
+            "identify-choice-facial-No Beard-False-hoi-left hand"
+        ]
+    }
+}

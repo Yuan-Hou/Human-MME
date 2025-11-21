@@ -1,0 +1,46 @@
+{
+    "type": "open_hoi",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/007653.jpg",
+            "width": 1920,
+            "height": 1080
+        },
+        {
+            "type": "text",
+            "text": "Please name the object that have interation \"body part: left hand, action: holding\" with the main person in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "cardboard box"
+    },
+    "data": {
+        "type": "open_hoi",
+        "question": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "left hand",
+                        "holding"
+                    ]
+                ],
+                "object": "cardboard box",
+                "bbox": [
+                    0.367145299911499,
+                    0.6317564249038696,
+                    0.6189879775047302,
+                    0.9716509580612183
+                ]
+            }
+        },
+        "image": "./final_labeling/007653.jpg",
+        "distinct": [
+            "open_hoi-left hand"
+        ],
+        "can_mutate_hand_to_false": true
+    }
+}

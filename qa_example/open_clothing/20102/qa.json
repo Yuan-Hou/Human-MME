@@ -1,0 +1,41 @@
+{
+    "type": "open_clothing",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/train_00027799.jpg",
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "text",
+            "text": "Please give name and color of the clothing item of type \"bottom\" that the main person is wearing in the image."
+        }
+    ],
+    "answer": {
+        "type": "blank",
+        "data": "Black pants"
+    },
+    "answer_detail": {
+        "type": "blank",
+        "data": "Black pants"
+    },
+    "data": {
+        "type": "open_clothing",
+        "question": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "pants",
+                "color": [
+                    "black"
+                ],
+                "type": "bottom"
+            }
+        },
+        "image": "./final_labeling/train_00027799.jpg",
+        "distinct": [
+            "open_clothing-bottom"
+        ]
+    }
+}

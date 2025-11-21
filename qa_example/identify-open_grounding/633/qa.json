@@ -1,0 +1,67 @@
+{
+    "type": "identify-open_grounding",
+    "question": [
+        {
+            "type": "image",
+            "image": "./final_labeling/001005.jpg",
+            "width": 3840,
+            "height": 2160
+        },
+        {
+            "type": "text",
+            "text": "Resolution of the image provided is 3840x2160. There is one person in the image that meets the following condition:\n\n- Wearing Black tie\n\nPlease provide the name and bounding box in xyxy format of the object that have interation \"body part: both hands, action: resting on\" with the person."
+        }
+    ],
+    "answer": {
+        "type": "open_hoi",
+        "data": {
+            "name": "chair",
+            "bbox": [
+                0.26824086904525757,
+                0.5928257703781128,
+                0.6813344359397888,
+                0.9856001138687134
+            ]
+        }
+    },
+    "data": {
+        "type": "identify-open_grounding",
+        "condition": {
+            "attr_type": "clothing",
+            "attr_name": "clothing",
+            "attr_value": {
+                "name": "tie",
+                "color": [
+                    "black"
+                ],
+                "type": "accessory"
+            },
+            "person_no": 5
+        },
+        "answer": {
+            "attr_type": "hoi",
+            "attr_name": "hoi",
+            "attr_value": {
+                "relation": [
+                    [
+                        "both hands",
+                        "resting on"
+                    ]
+                ],
+                "object": "chair",
+                "bbox": [
+                    0.26824086904525757,
+                    0.5928257703781128,
+                    0.6813344359397888,
+                    0.9856001138687134
+                ]
+            },
+            "person_no": 5
+        },
+        "image": "./final_labeling/001005.jpg",
+        "can_mutate_hand_to_false": false,
+        "distinct": [
+            "identify-open_grounding-clothing-accessory-hoi-both hands"
+        ]
+    }
+}

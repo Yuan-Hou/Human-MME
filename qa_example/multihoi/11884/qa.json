@@ -1,0 +1,47 @@
+{
+    "type": "multihoi",
+    "question": [
+        {
+            "type": "multi_image",
+            "image_A": "./final_labeling/008263.jpg",
+            "image_B": "./final_labeling/018577.jpg",
+            "image_C": "./final_labeling/018585.jpg",
+            "image_D": "./final_labeling/test_00000390.jpg"
+        },
+        {
+            "type": "text",
+            "text": "This is a description of a human-object interaction: \"body part: foot, action: standing on, object: yoga mat\"\n\nWhich one of four images listed above best represents this interaction? Provide your answer with the corresponding image letter."
+        }
+    ],
+    "answer": {
+        "type": "choice",
+        "answer": "A"
+    },
+    "data": {
+        "type": "multihoi",
+        "object": "yoga mat",
+        "hoi": [
+            [
+                "foot",
+                "standing on"
+            ]
+        ],
+        "full": "./final_labeling/008263.jpg",
+        "diff_object": "./final_labeling/test_00000390.jpg",
+        "object_diff": [
+            "snowboard"
+        ],
+        "diff_position": "./final_labeling/018577.jpg",
+        "position_diff": [
+            "body"
+        ],
+        "distinct": [
+            "multihoi-yoga mat-foot"
+        ],
+        "extra_type": "position",
+        "extra_diff": [
+            "body"
+        ],
+        "diff_extra": "./final_labeling/018585.jpg"
+    }
+}
