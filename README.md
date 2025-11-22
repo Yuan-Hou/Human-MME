@@ -2,8 +2,6 @@
   <img src="./imgs/human-mme-logo.png" alt="LOGO" width="20%">
 </p>
 
-[![arXiv](https://img.shields.io/badge/arXiv-2509.26165-b31b1b.svg)](https://www.arxiv.org/abs/2509.26165)
-[![HuggingFace Datasets](https://img.shields.io/badge/HuggingFace-Yuanhou%2FHuman--MME-yellow.svg?logo=huggingface)](https://huggingface.co/datasets/Yuanhou/Human-MME)
 
 Official repository for "Human-MME: A Holistic Evaluation Benchmark for Human-Centric Multimodal Large Language Models"
 
@@ -98,16 +96,3 @@ Bold indicates the best. Italics indicates the second place.
 | :----------------- | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: | -------: |
 | *GPT-4o*           |   *28.8* |   *58.8* |   *59.8* |   *74.7* |   *41.4* |   *79.2* |   *76.2* |   *52.7* |   *59.0* |     
 | **Gemini-2.5-Pro** | **42.4** | **66.5** | **70.0** | **83.6** | **58.9** | **79.4** | **86.1** | **64.5** | **68.9** |   
-
-## Citation
-
-If you find **Human-MME** useful for your research, please consider citing:
-
-```bibtex
-@article{liu2025human,
-  title={Human-MME: A Holistic Evaluation Benchmark for Human-Centric Multimodal Large Language Models},
-  author={Liu, Yuansen and Tang, Haiming and Peng, Jinlong and Zhang, Jiangning and Ji, Xiaozhong and He, Qingdong and Luo, Donghao and Gan, Zhenye and Zhu, Junwei and Shen, Yunhang and others},
-  journal={arXiv preprint arXiv:2509.26165},
-  year={2025}
-}
-```
