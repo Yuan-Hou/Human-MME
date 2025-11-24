@@ -1,0 +1,715 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00031778.jpg",
+  "image_id": "train_00031778",
+  "width": 416,
+  "height": 640,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 31778,
+  "annotations": {
+    "objects": "[{'id': 70, 'bbox_human': [39, 414, 133, 442], 'bbox_object': [1, 415, 54, 607], 'connection': 1, 'invis': 0}, {'id': 75, 'bbox_human': [42, 414, 143, 434], 'bbox_object': [2, 411, 58, 603], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('car', 'inspect'), ('car', 'wash')]",
+    "negative_captions": "[('car', 'board'), ('car', 'drive'), ('car', 'hose'), ('car', 'jump'), ('car', 'park'), ('car', 'ride'), ('car', 'no_interaction')]",
+    "ambiguous_captions": "[('car', 'direct'), ('car', 'load')]",
+    "positive_objects": "[69, 74]",
+    "negative_objects": "[65, 67, 68, 70, 72, 73, 75]",
+    "ambiguous_objects": "[66, 71]",
+    "size": "[416, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a yellow t-shirt, beige shorts, and black sandals. He also has a beige cloth or towel draped over his arm.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "tee",
+                "t-shirt"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "yellow"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "shorts",
+                "trousers"
+              ],
+              "name": "shorts",
+              "type": "bottom",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "sandals",
+                "flip-flops"
+              ],
+              "name": "sandals",
+              "type": "footwear",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "car",
+              "vehicle"
+            ],
+            "name": "car",
+            "position": "body"
+          }
+        ],
+        "description": "The person is an adult male wearing a yellow t-shirt, beige shorts, and black sandals. He has a beige cloth or towel over his arm and is leaning on an orange car with his body, possibly inspecting or cleaning it. The specific emotion is not discernible from the image.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be engaged in an activity involving the car, suggesting a neutral emotional state focused on the task at hand.",
+        "meaningful": true,
+        "story": "A man is leaning over the hood of a vintage orange Volkswagen Beetle, possibly inspecting or cleaning it. His posture suggests he is attentive and involved in the care of the vehicle, indicating a possible interest in classic cars or maintenance work.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "A person is leaning over an orange Volkswagen Beetle, appearing to be in the process of either entering or exiting the vehicle. The individual's body is positioned at an angle, suggesting they might be adjusting something inside the car or perhaps retrieving an item. Their casual attire, consisting of a yellow shirt and shorts, along with flip-flops, indicates a relaxed setting, possibly during leisure time. The person's head is not visible, but their posture suggests focus on the task at hand, which could be related to travel preparations or simply enjoying a moment of interaction with the classic car. The surrounding environment, with other parked cars and residential buildings, adds to the everyday context of this scene.",
+        "intention": "The individual is likely preparing for a journey or engaging with the vehicle in a casual and deliberate manner",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "inspect"
+              ],
+              [
+                "body",
+                "wash"
+              ]
+            ],
+            "negative_action": [
+              "board",
+              "drive",
+              "hose",
+              "jump",
+              "park",
+              "ride",
+              "no interaction"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.10674989968538284,
+        0.22108955681324005,
+        1.0,
+        0.6685700416564941
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.31402331012754864,
+            0.2630653245891962
+          ],
+          [
+            0.3071344207622047,
+            0.27393992851591775
+          ],
+          [
+            0.34453124874550056,
+            0.34686374308334456
+          ],
+          [
+            0.33665823232796466,
+            0.41211136664367387
+          ],
+          [
+            0.3209121994928926,
+            0.2521907206624746
+          ],
+          [
+            0.46459474911292387,
+            0.304644692544308
+          ],
+          [
+            0.429166175234012,
+            0.38012723744743393
+          ],
+          [
+            0.6220550774636432,
+            0.35965739476184055
+          ],
+          [
+            0.8306900125283462,
+            0.4453748610077633
+          ],
+          [
+            0.9920868490878334,
+            0.5323716924215357
+          ],
+          [
+            0.659451905446939,
+            0.3443050127476453
+          ],
+          [
+            0.8208487420064261,
+            0.46328597335765764
+          ],
+          [
+            0.9861820867746812,
+            0.5937812204783162
+          ],
+          [
+            0.19691219091670126,
+            0.3136002487192552
+          ],
+          [
+            0.19691219091670126,
+            0.3123208835514055
+          ],
+          [
+            0.20281695322985327,
+            0.2547494509981738
+          ],
+          [
+            0.20281695322985327,
+            0.2880129453622632
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.429166175234012,
+            0.3814066026152836
+          ],
+          [
+            0.41932490471209216,
+            0.38396533295098284
+          ],
+          [
+            0.40554712598140424,
+            0.3878034284545316
+          ],
+          [
+            0.4035788718770202,
+            0.39292088912592993
+          ],
+          [
+            0.40554712598140424,
+            0.39931771496517793
+          ],
+          [
+            0.3976741095638683,
+            0.39675898462947884
+          ],
+          [
+            0.39964236366825234,
+            0.4031558104687266
+          ],
+          [
+            0.4035788718770202,
+            0.4031558104687266
+          ],
+          [
+            0.4094836341901722,
+            0.401876445300877
+          ],
+          [
+            0.4016106177726363,
+            0.39931771496517793
+          ],
+          [
+            0.40554712598140424,
+            0.4031558104687266
+          ],
+          [
+            0.4094836341901722,
+            0.401876445300877
+          ],
+          [
+            0.41342014239894015,
+            0.39931771496517793
+          ],
+          [
+            0.4114518882945561,
+            0.39931771496517793
+          ],
+          [
+            0.4114518882945561,
+            0.4031558104687266
+          ],
+          [
+            0.4153883965033242,
+            0.39931771496517793
+          ],
+          [
+            0.41735665060770827,
+            0.3954796194616292
+          ],
+          [
+            0.4212931588164761,
+            0.39931771496517793
+          ],
+          [
+            0.4212931588164761,
+            0.401876445300877
+          ],
+          [
+            0.42326141292086017,
+            0.3980383497973283
+          ],
+          [
+            0.4271979211296281,
+            0.3954796194616292
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.3346899782235806,
+            0.4159494621472226
+          ],
+          [
+            0.3464995028498846,
+            0.4159494621472226
+          ],
+          [
+            0.3563407733718045,
+            0.41467009697937296
+          ],
+          [
+            0.36421378978934055,
+            0.41850819248292187
+          ],
+          [
+            0.37208680620687645,
+            0.4249050183221697
+          ],
+          [
+            0.3425629946411165,
+            0.41722882731507227
+          ],
+          [
+            0.35830902747618837,
+            0.4249050183221697
+          ],
+          [
+            0.3701185521024924,
+            0.4313018441614177
+          ],
+          [
+            0.3799598226244124,
+            0.4351399396649664
+          ],
+          [
+            0.3346899782235806,
+            0.4249050183221697
+          ],
+          [
+            0.35240426516303647,
+            0.4325812093292673
+          ],
+          [
+            0.36618204389372444,
+            0.43641930483281605
+          ],
+          [
+            0.3760233144156443,
+            0.44025740033636496
+          ],
+          [
+            0.3287852159104287,
+            0.4313018441614177
+          ],
+          [
+            0.34453124874550056,
+            0.43769867000066565
+          ],
+          [
+            0.35830902747618837,
+            0.44153676550421456
+          ],
+          [
+            0.36618204389372444,
+            0.44409549583991365
+          ],
+          [
+            0.3248487077016606,
+            0.43641930483281605
+          ],
+          [
+            0.33665823232796466,
+            0.44153676550421456
+          ],
+          [
+            0.3464995028498846,
+            0.44409549583991365
+          ],
+          [
+            0.3563407733718045,
+            0.4453748610077633
+          ]
+        ],
+        "dw_face": [
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.21659473196054121,
+            0.3136002487192552
+          ],
+          [
+            0.22446774837807715,
+            0.3123208835514055
+          ],
+          [
+            0.2343090188999971,
+            0.31104151838355587
+          ],
+          [
+            0.240213781213149,
+            0.3084827880478568
+          ],
+          [
+            0.25399155994383693,
+            0.304644692544308
+          ],
+          [
+            0.25399155994383693,
+            0.30208596220860884
+          ],
+          [
+            0.25792806815260494,
+            0.30208596220860884
+          ],
+          [
+            0.25989632225698894,
+            0.3008065970407592
+          ],
+          [
+            0.25399155994383693,
+            0.29696850153721044
+          ],
+          [
+            0.24808679763068506,
+            0.29313040603366164
+          ],
+          [
+            0.2382455271087651,
+            0.2880129453622632
+          ],
+          [
+            0.2284042565868451,
+            0.28929231053011284
+          ],
+          [
+            0.2224994942736931,
+            0.2880129453622632
+          ],
+          [
+            0.21659473196054121,
+            0.2905716756979625
+          ],
+          [
+            0.2106899696473892,
+            0.28929231053011284
+          ],
+          [
+            0.2008486991254692,
+            0.2880129453622632
+          ],
+          [
+            0.19297568270793328,
+            0.3148796138871048
+          ],
+          [
+            0.19494393681231734,
+            0.3148796138871048
+          ],
+          [
+            0.19494393681231734,
+            0.3148796138871048
+          ],
+          [
+            0.19691219091670126,
+            0.3148796138871048
+          ],
+          [
+            0.19691219091670126,
+            0.31615897905495444
+          ],
+          [
+            0.19494393681231734,
+            0.3136002487192552
+          ],
+          [
+            0.19297568270793328,
+            0.31104151838355587
+          ],
+          [
+            0.19297568270793328,
+            0.3084827880478568
+          ],
+          [
+            0.19494393681231734,
+            0.3072034228800072
+          ],
+          [
+            0.19691219091670126,
+            0.3059240577121575
+          ],
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.2106899696473892,
+            0.31743834422280387
+          ],
+          [
+            0.21659473196054121,
+            0.3187177093906535
+          ],
+          [
+            0.22053124016930917,
+            0.3212764397263526
+          ],
+          [
+            0.22643600248246104,
+            0.3199970745585031
+          ],
+          [
+            0.2284042565868451,
+            0.31743834422280387
+          ],
+          [
+            0.22446774837807715,
+            0.3148796138871048
+          ],
+          [
+            0.22446774837807715,
+            0.3136002487192552
+          ],
+          [
+            0.2224994942736931,
+            0.3136002487192552
+          ],
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.20281695322985327,
+            0.31743834422280387
+          ],
+          [
+            0.20281695322985327,
+            0.31743834422280387
+          ],
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.20281695322985327,
+            0.31615897905495444
+          ],
+          [
+            0.20281695322985327,
+            0.3123208835514055
+          ],
+          [
+            0.20281695322985327,
+            0.31104151838355587
+          ],
+          [
+            0.20281695322985327,
+            0.30976215321570627
+          ],
+          [
+            0.20281695322985327,
+            0.3084827880478568
+          ],
+          [
+            0.20281695322985327,
+            0.31104151838355587
+          ],
+          [
+            0.20281695322985327,
+            0.31104151838355587
+          ],
+          [
+            0.24611854352630103,
+            0.3084827880478568
+          ],
+          [
+            0.2382455271087651,
+            0.3136002487192552
+          ],
+          [
+            0.2343090188999971,
+            0.3136002487192552
+          ],
+          [
+            0.2343090188999971,
+            0.3136002487192552
+          ],
+          [
+            0.2343090188999971,
+            0.3136002487192552
+          ],
+          [
+            0.23627727300438103,
+            0.31104151838355587
+          ],
+          [
+            0.2382455271087651,
+            0.3072034228800072
+          ],
+          [
+            0.24415028942191697,
+            0.3072034228800072
+          ],
+          [
+            0.24808679763068506,
+            0.3072034228800072
+          ],
+          [
+            0.250055051735069,
+            0.30976215321570627
+          ],
+          [
+            0.25202330583945304,
+            0.30976215321570627
+          ],
+          [
+            0.24808679763068506,
+            0.3084827880478568
+          ],
+          [
+            0.24611854352630103,
+            0.3084827880478568
+          ],
+          [
+            0.2382455271087651,
+            0.31104151838355587
+          ],
+          [
+            0.2343090188999971,
+            0.31104151838355587
+          ],
+          [
+            0.2343090188999971,
+            0.31104151838355587
+          ],
+          [
+            0.2382455271087651,
+            0.3072034228800072
+          ],
+          [
+            0.240213781213149,
+            0.3084827880478568
+          ],
+          [
+            0.24415028942191697,
+            0.30976215321570627
+          ],
+          [
+            0.24611854352630103,
+            0.30976215321570627
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.9153249390168576,
+            0.6577494788707958
+          ],
+          [
+            0.9507535128957694,
+            0.6487939226958488
+          ],
+          [
+            1.0137376442360575,
+            0.5963399508140153
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.9507535128957694,
+            0.5681939171213244
+          ],
+          [
+            0.9409122423738497,
+            0.5592383609463771
+          ],
+          [
+            1.0176741524448252,
+            0.5259748665822876
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "car",
+      "possible_names": [
+        "car"
+      ],
+      "box": [
+        0.002403846153846154,
+        0.084375,
+        0.9975961538461539,
+        0.9484375
+      ]
+    }
+  ],
+  "scene": "An orange Volkswagen Beetle is parked on a street with other cars around and the environment suggests a typical urban setting with buildings and trees in the background creating a vibrant and lively scene with a mix of colors and textures.",
+  "overall_past": "Before the current scene, the individual likely arrived at the parking spot, possibly after a short trip or a visit to a nearby location. They may have driven the orange Volkswagen Beetle to this spot, perhaps to run a quick errand or to rest briefly during a journey. The casual clothing and flip-flops suggest they were in a relaxed, informal setting prior to this moment—perhaps returning from a beach outing, a casual outing with friends, or a leisurely day of errands. The act of leaning over the car indicates they were either retrieving something they had left inside—like a bag, keys, or a personal item—or making a final check before continuing their journey, such as adjusting a seat or securing a loose object. The vibrant urban backdrop implies this is a routine, everyday moment, not a special event, so the prior activity was likely ordinary and uneventful, fitting seamlessly into the rhythm of daily life.",
+  "overall_past_clean": "The individual had just completed a brief journey, pulling into the parking spot after navigating through the bustling city streets, the engine idling briefly before being turned off, signaling the end of a routine pause in an otherwise unremarkable day.",
+  "past_scene_ok": false,
+  "overall_future": "After the current scene, the individual is likely to straighten up, close the car door, and walk away from the orange Volkswagen Beetle, possibly heading toward a nearby sidewalk or destination, suggesting the completion of a brief interaction with the vehicle—such as retrieving an item or preparing to drive off—before continuing with their day in the lively urban environment.",
+  "overall_future_clean": "The figure rises with purpose, the car door sealing shut with a soft click, then strides forward with steady momentum, footsteps echoing against the pavement as they merge into the flow of the bustling cityscape, already moving toward the next moment.",
+  "future_scene_ok": false
+}

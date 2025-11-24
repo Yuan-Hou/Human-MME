@@ -1,0 +1,714 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00011242.jpg",
+  "image_id": "train_00011242",
+  "width": 494,
+  "height": 640,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 11242,
+  "annotations": {
+    "objects": "[{'id': 178, 'bbox_human': [199, 454, 150, 491], 'bbox_object': [160, 484, 167, 488], 'connection': 1, 'invis': 0}, {'id': 179, 'bbox_human': [194, 456, 144, 492], 'bbox_object': [156, 481, 164, 482], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('sheep', 'hold'), ('sheep', 'hug')]",
+    "negative_captions": "[('sheep', 'carry'), ('sheep', 'feed'), ('sheep', 'herd'), ('sheep', 'pet'), ('sheep', 'ride'), ('sheep', 'shear'), ('sheep', 'walk'), ('sheep', 'wash'), ('sheep', 'no_interaction')]",
+    "ambiguous_captions": "[('sheep', 'kiss')]",
+    "positive_objects": "[177, 178]",
+    "negative_objects": "[174, 175, 176, 180, 181, 182, 183, 184, 185]",
+    "ambiguous_objects": "[179]",
+    "size": "[494, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "child",
+        "gender": "female",
+        "emotion": "neutral",
+        "clothing_description": "The child is wearing a pink hoodie, patterned shorts, and pink shoes.",
+        "clothing": [
+          {
+            "possible_names": [
+              "hoodie",
+              "jacket",
+              "sweater",
+              "top"
+            ],
+            "name": "hoodie",
+            "type": "top",
+            "color": [
+              "pink"
+            ]
+          },
+          {
+            "possible_names": [
+              "shorts",
+              "skirt",
+              "pants"
+            ],
+            "name": "shorts",
+            "type": "bottom",
+            "color": [
+              "yellow",
+              "white",
+              "pink"
+            ]
+          },
+          {
+            "possible_names": [
+              "shoes",
+              "sandals",
+              "slippers"
+            ],
+            "name": "shoes",
+            "type": "footwear",
+            "color": [
+              "pink"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "sheep",
+              "lamb",
+              "animal"
+            ],
+            "name": "sheep",
+            "position": "body"
+          }
+        ],
+        "description": "A young female child is in the foreground. She is happily wearing a pink hoodie with patterned shorts in yellow, white, and pink. She also has on pink shoes. The child is hugging a sheep, which she is making physical contact with using her body. She appears to be enjoying the interaction with the animal.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The child appears to be calmly interacting with the sheep, suggesting a neutral emotional state focused on the activity.",
+        "meaningful": true,
+        "story": "A young girl is gently hugging a small black sheep in a grassy field. She seems to be enjoying a peaceful moment with the animal, possibly at a petting zoo or farm. The interaction suggests a sense of curiosity and affection towards animals.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "A young child is embracing a dark-colored sheep while standing close to another sheep grazing nearby. The child appears to be showing affection towards the animal, possibly indicating a sense of curiosity or love for animals. Wearing a pink hoodie and patterned shorts, the child's posture suggests comfort and joy in interacting with the sheep, likely motivated by the playful and gentle nature of the setting. The scene conveys a moment of innocent connection between the child and the animals, highlighting a nurturing interaction in an outdoor environment.",
+        "intention": "The individual is seeking emotional connection and joy through gentle interaction with animals in a peaceful outdoor setting",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "hold"
+              ],
+              [
+                "body",
+                "hug"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "feed",
+              "herd",
+              "pet",
+              "ride",
+              "shear",
+              "walk",
+              "wash",
+              "no interaction"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.405820369720459,
+        0.23654720187187195,
+        0.9198560118675232,
+        0.7685849070549011
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.644342006352159,
+            0.3525688916237818
+          ],
+          [
+            0.6934526849854813,
+            0.3225204180926084
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5952313277188369,
+            0.38261736515495515
+          ],
+          [
+            0.5125816490432458,
+            0.46490395420955294
+          ],
+          [
+            0.4275363275074926,
+            0.4741496383729908
+          ],
+          [
+            0.8587520423366635,
+            0.4556582700461149
+          ],
+          [
+            0.7952675065423688,
+            0.5924943956649967
+          ],
+          [
+            0.8276086851545565,
+            0.7247076792021593
+          ],
+          [
+            0.7880805779618827,
+            0.487093596201804
+          ],
+          [
+            0.6982439707058054,
+            0.5924943956649967
+          ],
+          [
+            0.6970461492757245,
+            0.7339533633655974
+          ],
+          [
+            0.5305489704944613,
+            0.3114255970964829
+          ],
+          [
+            0.5317467919245422,
+            0.32067128125992084
+          ],
+          [
+            0.6335616134814297,
+            0.27814113410810626
+          ],
+          [
+            0.5569010419562439,
+            0.31974671284357703
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.4263385060774116,
+            0.47784791203836596
+          ],
+          [
+            0.42274504178716854,
+            0.4732250699566471
+          ],
+          [
+            0.42394286321724955,
+            0.4676776594585844
+          ],
+          [
+            0.4179537560668444,
+            0.4676776594585844
+          ],
+          [
+            0.4107668274863583,
+            0.4667530910422405
+          ],
+          [
+            0.4107668274863583,
+            0.47045136470761567
+          ],
+          [
+            0.4095690060562773,
+            0.47137593312395953
+          ],
+          [
+            0.4107668274863583,
+            0.47137593312395953
+          ],
+          [
+            0.4215472203570875,
+            0.47137593312395953
+          ],
+          [
+            0.4095690060562773,
+            0.47599877520567857
+          ],
+          [
+            0.4071733631961151,
+            0.47599877520567857
+          ],
+          [
+            0.4107668274863583,
+            0.47599877520567857
+          ],
+          [
+            0.4203493989270065,
+            0.47599877520567857
+          ],
+          [
+            0.4131624703465203,
+            0.4843198909527727
+          ],
+          [
+            0.4095690060562773,
+            0.4843198909527727
+          ],
+          [
+            0.4119646489164393,
+            0.4833953225364288
+          ],
+          [
+            0.4179537560668444,
+            0.4833953225364288
+          ],
+          [
+            0.4179537560668444,
+            0.48801816461814784
+          ],
+          [
+            0.4131624703465203,
+            0.48801816461814784
+          ],
+          [
+            0.4191515774969255,
+            0.48801816461814784
+          ],
+          [
+            0.4215472203570875,
+            0.48894273303449154
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            0.5329446133546233,
+            0.3105010286801391
+          ],
+          [
+            0.5317467919245422,
+            0.3188221444272333
+          ],
+          [
+            0.5305489704944613,
+            0.3188221444272333
+          ],
+          [
+            0.5329446133546233,
+            0.3252941233416399
+          ],
+          [
+            0.5437250062253526,
+            0.328992397007015
+          ],
+          [
+            0.5485162919456767,
+            0.338238081170453
+          ],
+          [
+            0.5545053990960818,
+            0.33361523908873403
+          ],
+          [
+            0.5557032205261628,
+            0.35303117583195365
+          ],
+          [
+            0.562890149106649,
+            0.35303117583195365
+          ],
+          [
+            0.5676814348269731,
+            0.35025747058292234
+          ],
+          [
+            0.5856487562781886,
+            0.3456346285012033
+          ],
+          [
+            0.5880443991383506,
+            0.3456346285012033
+          ],
+          [
+            0.5784618276977024,
+            0.33731351275410915
+          ],
+          [
+            0.5784618276977024,
+            0.33084153383970255
+          ],
+          [
+            0.5784618276977024,
+            0.32436955492529607
+          ],
+          [
+            0.5748683634074593,
+            0.3188221444272333
+          ],
+          [
+            0.5712748991172163,
+            0.31327473392917055
+          ],
+          [
+            0.5281533276342992,
+            0.3105010286801391
+          ],
+          [
+            0.5293511490643802,
+            0.3123501655128267
+          ],
+          [
+            0.5293511490643802,
+            0.31327473392917055
+          ],
+          [
+            0.5293511490643802,
+            0.31327473392917055
+          ],
+          [
+            0.5293511490643802,
+            0.31327473392917055
+          ],
+          [
+            0.5293511490643802,
+            0.31789757601088947
+          ],
+          [
+            0.5305489704944613,
+            0.31789757601088947
+          ],
+          [
+            0.5329446133546233,
+            0.3169730075945457
+          ],
+          [
+            0.5365380776448664,
+            0.3169730075945457
+          ],
+          [
+            0.5413293633651906,
+            0.31789757601088947
+          ],
+          [
+            0.5293511490643802,
+            0.32067128125992084
+          ],
+          [
+            0.5281533276342992,
+            0.32344498650895226
+          ],
+          [
+            0.5281533276342992,
+            0.3262186917579836
+          ],
+          [
+            0.5269555062042182,
+            0.328992397007015
+          ],
+          [
+            0.5305489704944613,
+            0.328992397007015
+          ],
+          [
+            0.5317467919245422,
+            0.328992397007015
+          ],
+          [
+            0.5341424347847042,
+            0.32991696542335885
+          ],
+          [
+            0.5401315419351095,
+            0.33084153383970255
+          ],
+          [
+            0.5401315419351095,
+            0.32991696542335885
+          ],
+          [
+            0.5317467919245422,
+            0.3188221444272333
+          ],
+          [
+            0.5317467919245422,
+            0.31974671284357703
+          ],
+          [
+            0.5305489704944613,
+            0.3188221444272333
+          ],
+          [
+            0.5329446133546233,
+            0.3188221444272333
+          ],
+          [
+            0.5317467919245422,
+            0.3188221444272333
+          ],
+          [
+            0.5317467919245422,
+            0.3188221444272333
+          ],
+          [
+            0.5365380776448664,
+            0.3215958496762647
+          ],
+          [
+            0.5365380776448664,
+            0.32067128125992084
+          ],
+          [
+            0.5365380776448664,
+            0.31974671284357703
+          ],
+          [
+            0.5401315419351095,
+            0.31974671284357703
+          ],
+          [
+            0.5377358990749475,
+            0.3215958496762647
+          ],
+          [
+            0.5365380776448664,
+            0.3225204180926084
+          ],
+          [
+            0.5413293633651906,
+            0.34008721800314057
+          ],
+          [
+            0.5401315419351095,
+            0.3419363548358282
+          ],
+          [
+            0.5413293633651906,
+            0.34008721800314057
+          ],
+          [
+            0.5425271847952715,
+            0.3410117864194844
+          ],
+          [
+            0.5437250062253526,
+            0.3410117864194844
+          ],
+          [
+            0.5461206490855146,
+            0.34378549166851574
+          ],
+          [
+            0.5509119348058388,
+            0.34378549166851574
+          ],
+          [
+            0.5509119348058388,
+            0.3484083337502347
+          ],
+          [
+            0.5485162919456767,
+            0.34748376533389086
+          ],
+          [
+            0.5461206490855146,
+            0.3456346285012033
+          ],
+          [
+            0.5449228276554335,
+            0.3447100600848595
+          ],
+          [
+            0.5413293633651906,
+            0.34286092325217193
+          ],
+          [
+            0.5413293633651906,
+            0.34008721800314057
+          ],
+          [
+            0.5413293633651906,
+            0.3419363548358282
+          ],
+          [
+            0.5437250062253526,
+            0.3410117864194844
+          ],
+          [
+            0.5473184705155956,
+            0.34378549166851574
+          ],
+          [
+            0.5509119348058388,
+            0.34378549166851574
+          ],
+          [
+            0.5509119348058388,
+            0.3447100600848595
+          ],
+          [
+            0.5449228276554335,
+            0.3419363548358282
+          ],
+          [
+            0.5437250062253526,
+            0.3419363548358282
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.6311659706212677,
+            0.7163865634550651
+          ],
+          [
+            0.635957256341592,
+            0.7311796581165659
+          ],
+          [
+            0.7126178278667777,
+            0.7459727527780666
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.765321970790343,
+            0.708065447707971
+          ],
+          [
+            0.7916740422521259,
+            0.7052917424589396
+          ],
+          [
+            0.8383890780252858,
+            0.7395007738636601
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "sheep",
+      "possible_names": [
+        "sheep"
+      ],
+      "box": [
+        0.32388663967611336,
+        0.2609375,
+        0.979757085020243,
+        0.7625
+      ]
+    }
+  ],
+  "scene": "A sheep and a lamb are grazing on green grass with the lamb being embraced by someone wearing pink clothing and crocs shoes.",
+  "overall_past": "Before the current scene, the child likely approached the sheep cautiously, drawn by its calm presence and the peaceful environment. Having seen the dark-colored sheep grazing nearby, the child may have slowly walked closer, perhaps calling out or making a soft sound to get its attention. The lamb, sensing the child’s gentle intentions, may have turned its head or remained still, encouraging further interaction. The child then reached out, eventually embracing the sheep in a moment of trust and affection, while the other sheep continued grazing nearby, undisturbed. This suggests a sequence of curiosity turning into connection, with the child’s pink hoodie and crocs shoes indicating a casual, carefree outing at a farm or outdoor setting.",
+  "overall_past_clean": "The figure moved slowly toward the animal, pausing frequently as if testing the air, then took a deliberate step forward, hand outstretched, as the creature turned its head with quiet awareness, the moment thick with unspoken understanding.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the child is likely to gently lead the dark-colored sheep a little further into the field, perhaps to a spot with even greener grass or a shaded area, while the lamb continues to graze nearby. The child may pause to softly talk to the sheep, showing continued affection and curiosity, possibly even offering a small treat from their pocket. This moment of gentle interaction could evolve into a brief, joyful play session, with the child laughing as the sheep steps forward curiously, reinforcing the bond between them in the peaceful, natural setting.",
+  "overall_future_clean": "The figure moves forward with quiet intention, guiding the animal deeper into the open space, pausing to murmur softly as the creature lifts its head, ears twitching, then steps lightly in response, a moment of shared stillness giving way to a sudden, playful leap that sends a ripple of motion through the grass, followed by a burst of laughter echoing into the calm air.",
+  "future_scene_ok": true
+}

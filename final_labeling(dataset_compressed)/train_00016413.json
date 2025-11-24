@@ -1,0 +1,667 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00016413.jpg",
+  "image_id": "train_00016413",
+  "width": 640,
+  "height": 480,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 16413,
+  "annotations": {
+    "objects": "[{'id': 202, 'bbox_human': [3, 512, 106, 479], 'bbox_object': [172, 446, 82, 408], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('apple', 'hold')]",
+    "negative_captions": "[('apple', 'buy'), ('apple', 'cut'), ('apple', 'eat'), ('apple', 'peel'), ('apple', 'pick'), ('apple', 'smell'), ('apple', 'wash'), ('apple', 'no_interaction')]",
+    "ambiguous_captions": "[('apple', 'inspect')]",
+    "positive_objects": "[201]",
+    "negative_objects": "[198, 199, 200, 203, 204, 205, 206, 207]",
+    "ambiguous_objects": "[202]",
+    "size": "[640, 480, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person's clothing is not clearly visible in the image.",
+        "clothing": [],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "apple"
+            ],
+            "name": "apple",
+            "position": "hand"
+          }
+        ],
+        "description": "The person is in the foreground, holding a red apple. The apple is prominently visible and is being held with one hand. There is no clearly visible clothing or facial expression to determine further details about the person's age, gender, or emotion.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's hand is holding an apple, which does not convey any specific emotion.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is holding a red apple gently in their hand, showcasing it as if to display its freshness or quality. Their fingers are carefully positioned around the fruit, suggesting an intention to either present it for inspection or prepare to eat it. The apple's vibrant color and intact stem indicate it might be freshly picked, possibly motivating the individual to share their find or enjoy a healthy snack. The background appears to be indoors, perhaps a kitchen or dining area, which aligns with the context of handling food. There is no visible interaction with others, focusing solely on the person's engagement with the apple.",
+        "intention": "The person intends to share or enjoy a fresh and high-quality apple they have just picked",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "hand",
+                "hold"
+              ]
+            ],
+            "negative_action": [
+              "buy",
+              "cut",
+              "eat",
+              "peel",
+              "pick",
+              "smell",
+              "wash",
+              "no interaction"
+            ],
+            "position": "hand"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.011550736613571644,
+        0.2882172167301178,
+        0.7987693548202515,
+        0.9989842176437378
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.16285783160063955,
+            0.8821587194171217
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.742222901268138,
+            0.7626071971047806
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7111854868216648,
+            0.8959531258377764
+          ],
+          [
+            0.7249798932423193,
+            0.8522708388390364
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6991153812035918,
+            0.32348525938060546
+          ],
+          [
+            0.7611902100965381,
+            0.8568689743125881
+          ],
+          [
+            0.7542930068862107,
+            0.5901771168465969
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7404986004655558,
+            0.6315603361085611
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.7267041940449014,
+            0.3349805980644844
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.7060125844139191,
+            0.33038246259093274
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "apple",
+      "possible_names": [
+        "apple"
+      ],
+      "box": [
+        0.26875,
+        0.17083333333333334,
+        0.696875,
+        0.85
+      ]
+    }
+  ],
+  "scene": "A hand holds a shiny red apple with a dried stem against a dimly lit indoor background featuring soft furnishings and hanging wires",
+  "overall_past": "Before the current scene, the person likely went outside—perhaps to a nearby orchard, garden, or farm—to pick the apple fresh from the tree. The apple’s vibrant red color and intact, dried stem suggest it was recently harvested, indicating the person had just picked it. The careful way they are holding it implies a sense of pride or appreciation for their find, possibly after searching for a particularly ripe or perfect fruit. The indoor setting, with soft furnishings and hanging wires (perhaps from a light fixture or decorative elements), suggests they returned indoors shortly after picking it, perhaps to examine it more closely, consider eating it, or share it with someone. The absence of others and the focused attention on the apple imply this moment is private and reflective, possibly a quiet pause between the act of harvesting and the next step—eating, giving, or storing the fruit.",
+  "overall_past_clean": "They moved through the open air with purpose, stepping past rows of trees and brushing aside leaves, their hands searching with intent until they found the perfect fruit, plucking it from the branch with a quiet satisfaction, the weight of it in their palm a quiet triumph.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the person is likely to take a bite of the apple. The careful, deliberate way they are holding the fruit—showcasing its freshness and vibrant appearance—suggests anticipation or appreciation, possibly indicating a moment of pause before consumption. The indoor setting, with soft furnishings and hanging wires, implies a relaxed, personal environment, such as a kitchen or dining nook, where eating a snack would be natural. With no one else present and no indication of preparation for sharing or further action (like placing it on a table or in a bowl), the most plausible next action is that the person brings the apple to their mouth and takes a bite, enjoying the crisp, fresh fruit.",
+  "overall_future_clean": "The person lifts the fruit to their lips, their mouth parting slightly as they sink their teeth into the crisp flesh, the satisfying crunch echoing softly in the quiet space.",
+  "future_scene_ok": true
+}

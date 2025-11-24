@@ -1,0 +1,695 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00017614.jpg",
+  "image_id": "train_00017614",
+  "width": 640,
+  "height": 512,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 17614,
+  "annotations": {
+    "objects": "[{'id': 354, 'bbox_human': [76, 638, 1, 510], 'bbox_object': [127, 588, 101, 490], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('handbag', 'hold')]",
+    "negative_captions": "[('handbag', 'inspect'), ('handbag', 'no_interaction')]",
+    "ambiguous_captions": "[('handbag', 'carry')]",
+    "positive_objects": "[353]",
+    "negative_objects": "[354, 355]",
+    "ambiguous_objects": "[352]",
+    "size": "[640, 512, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a sleeveless blue top.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "dress",
+                "jumpsuit"
+              ],
+              "name": "dress",
+              "type": "whole body",
+              "color": [
+                "blue"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "handbag",
+                "purse"
+              ],
+              "name": "handbag",
+              "type": "accessory",
+              "color": [
+                "black",
+                "white",
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "purse",
+              "handbag",
+              "bag"
+            ],
+            "name": "purse",
+            "position": "body"
+          }
+        ],
+        "description": "The person in the foreground appears to be wearing a sleeveless blue top. They are carrying a black purse with white coach-themed designs, which is held against their body. The individual is partially visible, making it difficult to ascertain their age, gender, or emotions.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "Coach est. 1941",
+        "text_relationship": "The text 'Coach est. 1941' is printed on the purse the person is holding, indicating the brand and its establishment year. This suggests the person may have an interest in fashion or accessories from this particular brand.",
+        "behaviour": "The person is holding a Coach handbag with a design featuring horse-drawn carriages and the brand's logo, suggesting an interest in fashion or luxury accessories. The individual appears to be standing indoors, possibly in a store or a home setting, as indicated by the background which includes books and decorative items like rubber ducks. Their posture is relaxed, and they seem to be showcasing the bag, perhaps for personal enjoyment or to share it with someone nearby, indicating pride or satisfaction with the purchase. The blue dress complements the black handbag, hinting at a sense of style and coordination in their outfit choice.",
+        "intention": "The person is proudly displaying their Coach handbag to express satisfaction with their luxury purchase and showcase their stylish personal aesthetic",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "hold"
+              ]
+            ],
+            "negative_action": [
+              "inspect",
+              "no interaction"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.14072160422801971,
+        0.0005118250846862793,
+        0.9893217086791992,
+        0.9678138494491577
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5534762404445145,
+            0.006147219644238533
+          ],
+          [
+            0.22893718729416523,
+            0.004964497147334934
+          ],
+          [
+            0.23082954328921107,
+            0.582133075636294
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.8780152935948637,
+            0.007329942141142132
+          ],
+          [
+            0.8912617855601841,
+            0.6152493055495952
+          ],
+          [
+            0.7171650340159734,
+            0.11850585685008108
+          ],
+          [
+            0.361402106947369,
+            0.9322189347197612
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7985363418029415,
+            0.9345843797135686
+          ],
+          [
+            0.8647688016295433,
+            0.6365383104938601
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.7114879660308361,
+            0.11850585685008108
+          ],
+          [
+            0.6963491180704701,
+            0.0617351769987079
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6017313183181816,
+            -0.009228172815508251
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5790230463776324,
+            0.004964497147334934
+          ],
+          [
+            0.533606502496534,
+            -0.016324507796929955
+          ],
+          [
+            0.5317141465014881,
+            -0.0021318378340867694
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.5619918424222204,
+            0.02861894708540702
+          ],
+          [
+            0.5279294345113966,
+            0.0025990521535277367
+          ],
+          [
+            0.5222523665262593,
+            0.0025990521535277367
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "handbag",
+      "possible_names": [
+        "handbag"
+      ],
+      "box": [
+        0.1984375,
+        0.197265625,
+        0.91875,
+        0.95703125
+      ]
+    }
+  ],
+  "scene": "A black Coach purse with horse carriage designs and white text is held against a backdrop of colorful books and yellow rubber ducks on a wooden surface suggesting a casual indoor setting with vibrant colors and a mix of luxury and everyday items.",
+  "overall_past": "Before the current scene, the person likely visited a luxury retail store or an upscale boutique, where they discovered and fell in love with the Coach handbag featuring the horse-drawn carriage design. They may have tried it on, admired it in a mirror, and ultimately decided to purchase it, possibly after comparing it with other accessories. The thoughtful choice of pairing it with their blue dress suggests they carefully considered the outfit beforehand, indicating a moment of personal indulgence or a special treat for themselves. The presence of books and rubber ducks in the background hints that they brought the bag home to display or enjoy in a personal, cozy space—perhaps as a celebration of a small victory or a well-earned reward.",
+  "overall_past_clean": "They stepped into the store with purpose, their eyes immediately drawn to the handbag that seemed to shimmer with promise, their fingers brushing its surface as if confirming its worth, their heart quickening with each moment of hesitation before finally making the decision to claim it as their own.",
+  "past_scene_ok": false,
+  "overall_future": "After the current scene, the person is likely to place the Coach handbag on a nearby table or shelf, perhaps alongside the colorful books and rubber ducks, as a deliberate display of their new luxury purchase. This action would reflect a moment of satisfaction and personal pride, possibly followed by taking a photo to share on social media—highlighting the stylish coordination of their blue dress with the black handbag, and the playful contrast of the whimsical rubber ducks against the elegant design. The scene suggests a blend of everyday charm and curated luxury, so the next step would naturally be sharing that curated moment with others.",
+  "overall_future_clean": "She confidently sets the handbag down, snaps a polished photo with deliberate framing, and instantly uploads it to her feed with a caption celebrating the perfect blend of elegance and joy.",
+  "future_scene_ok": true
+}

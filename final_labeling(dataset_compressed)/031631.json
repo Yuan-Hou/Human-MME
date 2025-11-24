@@ -1,0 +1,674 @@
+{
+  "video_path": "./ref_datasets/part2/9183876004.mp4",
+  "start_time": 0.0,
+  "end_time": 3.7333333333333334,
+  "image_path": "./031631.jpg",
+  "represents_multiple_types": false,
+  "cross_video_duplicate": false,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/9183876004.mp4",
+      "start_time": 0.0,
+      "end_time": 3.7333333333333334,
+      "image_path": "./ref_datasets/extracted_frames/person_290277123912599595_1_9183876004.mp4_0.00_3.73.jpg",
+      "type": "person"
+    }
+  ],
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "child",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a white top. The rest of their clothing is not visible in the image.",
+        "clothing": [
+          {
+            "possible_names": [
+              "white shirt",
+              "white t-shirt",
+              "white top"
+            ],
+            "name": "top",
+            "type": "top",
+            "color": [
+              "white"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bubble",
+              "soap bubble"
+            ],
+            "name": "bubble",
+            "position": "head"
+          }
+        ],
+        "description": "A child with curly hair is seen from behind, wearing a white top. They have a large soap bubble around their head. The background shows a beach scene with the ocean and sky. The child's gender and specific emotions are not discernible from the image.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotional state cannot be determined. The overall posture suggests a calm or neutral stance.",
+        "meaningful": true,
+        "story": "A child is standing by the sea, possibly enjoying a moment of solitude or play. The bubble around their head adds an element of whimsy and could symbolize a sense of wonder or protection from the outside world.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is standing on a beach facing the ocean, wearing a transparent spherical helmet that covers their entire head. Their curly hair is visible through the helmet, suggesting they might be engaging in an activity that requires protection from the elements or perhaps for artistic or experimental purposes. The individual appears to be gazing out at the water, possibly contemplating or enjoying the serene environment around them, as there is no indication of interaction with others in the scene. The overall atmosphere suggests a moment of solitude and reflection amidst nature.",
+        "intention": "The individual seeks a protected yet immersive experience with nature using the transparent helmet to maintain connection with the environment while shielding themselves from external elements possibly for contemplation or creative exploration",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "head",
+            "action": [
+              [
+                "head",
+                "encapsulate"
+              ]
+            ]
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.39690321683883667,
+        0.1112360954284668,
+        0.8409759402275085,
+        0.9858791828155518
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7947611967855029,
+            0.9615350740848676
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7648964482016033,
+            0.4927632832725136
+          ],
+          [
+            0.4267848303053114,
+            0.53261837479907
+          ],
+          [
+            0.7670296445290246,
+            0.5819627738319494
+          ],
+          [
+            0.445983597252104,
+            0.6426943418724164
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "031631",
+  "objects": [
+    {
+      "box": [
+        0.3455218970775604,
+        0.10504317283630371,
+        0.8438615798950195,
+        0.8580463528633118
+      ],
+      "name": "bubble",
+      "possible_names": [
+        "bubble"
+      ]
+    }
+  ],
+  "mask_file": "./person_labeling/./031631.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A serene beach scene with soft pastel hues captures a tranquil moment as gentle waves meet the shore under a vast sky reflected in a transparent spherical object.",
+  "overall_past": "Before the current scene, the individual likely arrived at the beach after a journey—perhaps walking along a coastal path or arriving by boat—seeking a quiet, meditative space. They may have carefully placed the transparent spherical helmet on their head, possibly as part of a personal ritual, artistic performance, or experimental exploration of perception and isolation. The act of donning the helmet suggests a deliberate transition into a state of introspection, preparing to immerse themselves fully in the sensory experience of the sea and sky, with the helmet serving as both a physical barrier and a symbolic lens through which to view the world.",
+  "overall_past_clean": "The figure emerged from the edge of the land, footsteps leaving faint imprints in the damp sand, having traversed a winding path shaped by tides and time, each step carrying the weight of intention toward a solitary convergence with the horizon.",
+  "past_scene_ok": true,
+  "overall_future": "The transparent spherical helmet, reflecting the vast sky and gentle waves, suggests a moment of immersive stillness. Given the serene atmosphere and the individual’s contemplative posture, it is plausible that after this quiet moment, the person slowly lifts a hand to gently touch the inner surface of the helmet, perhaps feeling the coolness of the material or tracing the reflection of the horizon. This small gesture could signal a transition—perhaps a decision to remove the helmet, stepping into the open air with renewed awareness, or simply pausing to absorb the sensory details of the sea breeze, the sound of waves, and the light before continuing on their journey.",
+  "overall_future_clean": "The figure exhales slowly, the breath fogging briefly against the inner surface before dissolving into the stillness, then lifts a hand with deliberate care, fingers brushing the cool curve of the barrier, as if testing the boundary between inside and out, and with a quiet resolve, begins to draw back the first step toward the open air, where the wind carries the salt and the sky leans closer.",
+  "future_scene_ok": true
+}

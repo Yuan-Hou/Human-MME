@@ -1,0 +1,672 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/test/test_00000174.jpg",
+  "image_id": "test_00000174",
+  "width": 333,
+  "height": 500,
+  "split": "test",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 174,
+  "annotations": {
+    "objects": "[{'id': 92, 'bbox_human': [222, 330, 144, 317], 'bbox_object': [11, 305, 105, 485], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('chair', 'no_interaction')]",
+    "negative_captions": "[('chair', 'carry'), ('chair', 'hold'), ('chair', 'lie_on'), ('chair', 'sit_on')]",
+    "ambiguous_captions": "[('chair', 'stand_on')]",
+    "positive_objects": "[91]",
+    "negative_objects": "[86, 87, 88, 89]",
+    "ambiguous_objects": "[90]",
+    "size": "[333, 500, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "unknown",
+        "gender": "unknown",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a light gray sweater and possibly patterned pants or bottoms.",
+        "clothing": {
+          "vague": true,
+          "clothing": [
+            {
+              "possible_names": [
+                "sweater",
+                "jacket",
+                "hoodie"
+              ],
+              "name": "sweater",
+              "type": "top",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": false,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [],
+        "description": "The person is in the background, sitting or crouching on a red cushioned chair. They are wearing a light gray sweater and possibly patterned bottoms, which might be pants with a pink pattern. Their face is not visible, so their emotion and specific details like age and gender cannot be determined. There are no objects in physical contact or association with the person visible in the image.",
+        "blurry": true,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, making it impossible to determine their emotional state.",
+        "meaningful": false,
+        "story": "unknown",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person in the green bounding box appears to be leaning forward with their head down, possibly engaged in an activity on the floor such as reading, writing, or examining something closely. Their posture suggests concentration or deep focus on the task at hand. The individual is positioned near a wooden armchair with a red cushion and a white pillow, indicating they might have been sitting there before moving to the floor. The orange wall and wooden floor provide a warm setting, which could imply a comfortable and familiar environment for this person, perhaps their home or a cozy space where they feel relaxed enough to engage in personal activities. The presence of another person in the background suggests a shared space, but the individual's current action does not seem directly related to interaction with others, pointing towards a moment of solitude amidst company.",
+        "intention": "The person is deeply focused on a close-up task on the floor likely seeking clarity or connection with a personal activity in a comfortable private moment",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "no interaction"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "hold",
+              "lie on",
+              "sit on"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.6801975965499878,
+        0.2911038398742676,
+        0.9988539814949036,
+        0.6193549036979675
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.8705182978072324,
+            0.3913583542257547
+          ],
+          [
+            0.9723045086717462,
+            0.3976964077949524
+          ],
+          [
+            0.983889931046569,
+            0.5299688301086426
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7687320869427186,
+            0.38502030065655707
+          ],
+          [
+            0.6983920225241521,
+            0.4781621313691139
+          ],
+          [
+            0.7372859404967712,
+            0.500758670181036
+          ],
+          [
+            0.9185150476457836,
+            0.608781148403883
+          ],
+          [
+            0.9863725215554595,
+            0.6705082788169384
+          ],
+          [
+            0.9598915561272934,
+            0.6016163921952248
+          ],
+          [
+            0.762111845585677,
+            0.5905936903357506
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9938202930821313,
+            0.35856581619381905
+          ],
+          [
+            0.9863725215554595,
+            0.35636127582192423
+          ],
+          [
+            0.9747870991806368,
+            0.3480942494273186
+          ],
+          [
+            0.8887239615390966,
+            0.332111331731081
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            0.9723045086717462,
+            0.3502987897992134
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9847174612161992,
+            0.3447874388694763
+          ],
+          [
+            0.9863725215554595,
+            0.3442363037765026
+          ],
+          [
+            0.9863725215554595,
+            0.3447874388694763
+          ],
+          [
+            0.9863725215554595,
+            0.34533857396245005
+          ],
+          [
+            0.983889931046569,
+            0.3458897090554237
+          ],
+          [
+            0.9905101724036105,
+            0.35305446526408196
+          ],
+          [
+            0.9913377025732407,
+            0.35305446526408196
+          ],
+          [
+            0.992992762912501,
+            0.35305446526408196
+          ],
+          [
+            0.9938202930821313,
+            0.3514010599851608
+          ],
+          [
+            0.9946478232517615,
+            0.35084992489218714
+          ],
+          [
+            0.9847174612161992,
+            0.3574635460078716
+          ],
+          [
+            0.9830624008769387,
+            0.3574635460078716
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9830624008769387,
+            0.3502987897992134
+          ],
+          [
+            0.9863725215554595,
+            0.3552590056359768
+          ],
+          [
+            0.98802758189472,
+            0.35636127582192423
+          ],
+          [
+            0.9872000517250897,
+            0.3574635460078716
+          ],
+          [
+            0.98802758189472,
+            0.35636127582192423
+          ],
+          [
+            0.9863725215554595,
+            0.3552590056359768
+          ],
+          [
+            0.9872000517250897,
+            0.3574635460078716
+          ],
+          [
+            0.9896826422339803,
+            0.3574635460078716
+          ],
+          [
+            0.9921652327428709,
+            0.3574635460078716
+          ],
+          [
+            0.9921652327428709,
+            0.3569124109148979
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "chair",
+      "possible_names": [
+        "chair"
+      ],
+      "box": [
+        0.03303303303303303,
+        0.21,
+        0.9159159159159159,
+        0.97
+      ]
+    }
+  ],
+  "scene": "A cozy living room with warm orange walls wooden flooring and a prominent red upholstered armchair with intricate wood carvings and a white pillow featuring a botanical design creates an inviting atmosphere for relaxation and comfort",
+  "overall_past": "Before the current scene, the person in the green bounding box likely sat comfortably in the red upholstered armchair, perhaps reading a book or journal, enjoying a quiet moment of relaxation in the cozy living room. The warm orange walls and wooden flooring suggest a familiar, inviting space, possibly their own home. After some time, they may have become deeply engrossed in their reading or writing, prompting them to shift their position—leaning forward and moving to the floor to get a better view or to focus more intently on the material. This transition from sitting in the armchair to leaning on the floor indicates a natural progression from relaxation to deep concentration, possibly sparked by an interesting or important detail they encountered. The presence of another person in the background implies the space is shared, but the individual chose to disengage momentarily for personal focus, highlighting a brief, intimate moment of solitude within a shared environment.",
+  "overall_past_clean": "They had been settled in the armchair, absorbed in thought, their body language shifting from ease to intent as a sudden spark of focus drew them forward, their hands instinctively reaching out as if to grasp the moment of insight unfolding in their mind.",
+  "past_scene_ok": false,
+  "overall_future": "After the current scene, the person in the green bounding box is likely to slowly lift their head, stretch slightly, and then return to the red upholstered armchair—perhaps picking up a book or cup of tea they had set aside earlier. The focused posture suggests they were deeply engaged in a quiet, personal activity like reading or journaling, and now, having completed that moment of concentration, they will transition back to a more relaxed state, re-establishing their presence in the cozy space. This return to the armchair would signify a natural rhythm of solitude and comfort, reinforcing the room’s role as a sanctuary for both introspection and rest.",
+  "overall_future_clean": "They rise slowly, shoulders unwinding, spine lengthening in a quiet stretch, then settle back into the embrace of the chair with a deliberate ease, fingers brushing the edge of a forgotten book or cup, as if reclaiming a moment of stillness after the quiet intensity of thought.",
+  "future_scene_ok": true
+}

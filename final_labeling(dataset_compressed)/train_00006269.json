@@ -1,0 +1,709 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00006269.jpg",
+  "image_id": "train_00006269",
+  "width": 600,
+  "height": 400,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 6269,
+  "annotations": {
+    "objects": "[{'id': 132, 'bbox_human': [268, 596, 56, 398], 'bbox_object': [3, 364, 6, 398], 'connection': 1, 'invis': 0}, {'id': 135, 'bbox_human': [273, 593, 53, 393], 'bbox_object': [3, 366, 16, 387], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('horse', 'hold'), ('horse', 'kiss')]",
+    "negative_captions": "[('horse', 'feed'), ('horse', 'groom'), ('horse', 'hug'), ('horse', 'jump'), ('horse', 'load'), ('horse', 'hop_on'), ('horse', 'pet'), ('horse', 'race'), ('horse', 'ride'), ('horse', 'run'), ('horse', 'walk'), ('horse', 'wash'), ('horse', 'no_interaction')]",
+    "ambiguous_captions": "[('horse', 'straddle'), ('horse', 'train')]",
+    "positive_objects": "[131, 134]",
+    "negative_objects": "[129, 130, 132, 133, 135, 136, 137, 138, 139, 140, 143, 144, 145]",
+    "ambiguous_objects": "[141, 142]",
+    "size": "[600, 400, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "child",
+        "gender": "female",
+        "emotion": "neutral",
+        "clothing_description": "The child is wearing a light pink cowboy hat and a white sleeveless dress",
+        "clothing": [
+          {
+            "possible_names": [
+              "hat",
+              "cowboy hat",
+              "headwear"
+            ],
+            "name": "cowboy hat",
+            "type": "headwear",
+            "color": [
+              "pink"
+            ]
+          },
+          {
+            "possible_names": [
+              "dress",
+              "outfit"
+            ],
+            "name": "dress",
+            "type": "whole body",
+            "color": [
+              "white"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "lead rope",
+              "reins"
+            ],
+            "name": "lead rope",
+            "position": "hand"
+          },
+          {
+            "standalone": false,
+            "possible_names": [
+              "horse"
+            ],
+            "name": "horse",
+            "position": "face"
+          }
+        ],
+        "description": "The child is in the foreground, joyfully interacting with a white horse, wearing a light pink cowboy hat and a white sleeveless dress. She is holding the horse's lead rope in her hand and leaning in to kiss or nuzzle the horse. Her emotion appears to be happy, highlighting a tender moment between her and the horse.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The child appears to be calmly interacting with the horse, suggesting a neutral emotional state focused on the activity.",
+        "meaningful": true,
+        "story": "A young girl wearing a pink cowboy hat and a white dress is gently petting a horse. The scene suggests a peaceful moment of connection between the child and the animal, possibly during a visit to a farm or ranch.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is interacting closely with a white horse, holding its reins gently while leaning towards it as if to whisper or share a moment of affection. She appears to be in a serene outdoor setting, possibly enjoying a peaceful connection with the animal. Her attire, including a cowboy hat and a white dress, suggests she might be participating in a casual equestrian activity or simply spending leisure time outdoors. The way she holds the reins indicates familiarity and comfort with handling horses, suggesting she may have experience or a fondness for them. Her posture and proximity to the horse convey a sense of trust and companionship between them.",
+        "intention": "The individual seeks a moment of quiet connection and mutual trust with the horse through gentle physical contact and close proximity",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "mouth",
+                "hold"
+              ],
+              [
+                "mouth",
+                "kiss"
+              ]
+            ],
+            "negative_action": [
+              "feed",
+              "groom",
+              "hug",
+              "jump",
+              "load",
+              "hop on",
+              "pet",
+              "race",
+              "ride",
+              "run",
+              "walk",
+              "wash",
+              "no interaction"
+            ],
+            "position": "mouth"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.45113900303840637,
+        0.14639367163181305,
+        0.9991896748542786,
+        0.9858083128929138
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6727967357635497,
+            0.4076934120059013
+          ],
+          [
+            0.6986514988210466,
+            0.3777253911892572
+          ],
+          [
+            0.77386535498831,
+            0.4676294536391893
+          ],
+          [
+            0.776215787993537,
+            0.4834948764244714
+          ],
+          [
+            0.6469419727060529,
+            0.43766143282254544
+          ],
+          [
+            0.6833736842870712,
+            0.6280465062459308
+          ],
+          [
+            0.6469419727060529,
+            0.6826940736174584
+          ],
+          [
+            0.7973696850405798,
+            0.5645848151048025
+          ],
+          [
+            0.8725835412078434,
+            0.7567327132821083
+          ],
+          [
+            0.9689512944221497,
+            0.9347780134280521
+          ],
+          [
+            0.7668140559726292,
+            0.6157067329684895
+          ],
+          [
+            0.8173483655850092,
+            0.8096174558997155
+          ],
+          [
+            0.9642504284116956,
+            0.955931910475095
+          ],
+          [
+            0.5670272505283356,
+            0.37596256643533704
+          ],
+          [
+            0.5740785495440165,
+            0.3741997416814169
+          ],
+          [
+            0.6551684882243475,
+            0.30016110201676693
+          ],
+          [
+            0.5987580960988999,
+            0.35657149414221434
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.6492924057112799,
+            0.6844568983713788
+          ],
+          [
+            0.6398906736903721,
+            0.6826940736174584
+          ],
+          [
+            0.6304889416694641,
+            0.6791684241096181
+          ],
+          [
+            0.6257880756590101,
+            0.6862197231252987
+          ],
+          [
+            0.6246128591563966,
+            0.6950338468949002
+          ],
+          [
+            0.6199119931459427,
+            0.6932710221409798
+          ],
+          [
+            0.6175615601407156,
+            0.7056107954184216
+          ],
+          [
+            0.6210872096485563,
+            0.7108992696801824
+          ],
+          [
+            0.6257880756590101,
+            0.7108992696801824
+          ],
+          [
+            0.6246128591563966,
+            0.7073736201723415
+          ],
+          [
+            0.6234376426537832,
+            0.7214762182037038
+          ],
+          [
+            0.6269632921616236,
+            0.7232390429576236
+          ],
+          [
+            0.6304889416694641,
+            0.7197133934497834
+          ],
+          [
+            0.6316641581720778,
+            0.7179505686958629
+          ],
+          [
+            0.6293137251668507,
+            0.7302903419733048
+          ],
+          [
+            0.6340145911773046,
+            0.7320531667272252
+          ],
+          [
+            0.637540240685145,
+            0.7302903419733048
+          ],
+          [
+            0.6398906736903721,
+            0.7267646924654645
+          ],
+          [
+            0.6387154571877585,
+            0.7373416409889859
+          ],
+          [
+            0.6422411066955992,
+            0.7391044657429058
+          ],
+          [
+            0.6457667562034395,
+            0.7373416409889859
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.7703397054804695,
+            0.4693922783931097
+          ],
+          [
+            0.776215787993537,
+            0.46586662888526914
+          ],
+          [
+            0.77386535498831,
+            0.4676294536391893
+          ],
+          [
+            0.7726901384856967,
+            0.47291792790095
+          ],
+          [
+            0.7691644889778563,
+            0.47996922691663113
+          ],
+          [
+            0.7750405714909235,
+            0.464103804131349
+          ],
+          [
+            0.7750405714909235,
+            0.47291792790095
+          ],
+          [
+            0.77386535498831,
+            0.4817320516705513
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.778566220998764,
+            0.4676294536391893
+          ],
+          [
+            0.7797414375013777,
+            0.4782064021627107
+          ],
+          [
+            0.7797414375013777,
+            0.4834948764244714
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7809166540039909,
+            0.47115510314702985
+          ],
+          [
+            0.7820918705066046,
+            0.47996922691663113
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7832670870092181,
+            0.4782064021627107
+          ],
+          [
+            0.7832670870092181,
+            0.48525770117839184
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            0.5717281165387895,
+            0.3794882159431776
+          ],
+          [
+            0.5752537660466299,
+            0.3830138654510179
+          ],
+          [
+            0.5752537660466299,
+            0.38653951495885847
+          ],
+          [
+            0.5811298485596975,
+            0.3935908139745393
+          ],
+          [
+            0.587005931072765,
+            0.4112190615137419
+          ],
+          [
+            0.587005931072765,
+            0.4217960100372633
+          ],
+          [
+            0.5917067970832189,
+            0.427084484299024
+          ],
+          [
+            0.5999333126015133,
+            0.4323729585607847
+          ],
+          [
+            0.6069846116171942,
+            0.42884730905294416
+          ],
+          [
+            0.6093350446224213,
+            0.4200331852833429
+          ],
+          [
+            0.6128606941302618,
+            0.4112190615137419
+          ],
+          [
+            0.6163863436381022,
+            0.4024049377441406
+          ],
+          [
+            0.6187367766433293,
+            0.3935908139745393
+          ],
+          [
+            0.6140359106328752,
+            0.3830138654510179
+          ],
+          [
+            0.6116854776276484,
+            0.3777253911892572
+          ],
+          [
+            0.6081598281198078,
+            0.3636227931578955
+          ],
+          [
+            0.6116854776276484,
+            0.3548086693882942
+          ],
+          [
+            0.5717281165387895,
+            0.3794882159431776
+          ],
+          [
+            0.5705529000361761,
+            0.38125104069709775
+          ],
+          [
+            0.5705529000361761,
+            0.38125104069709775
+          ],
+          [
+            0.5693776835335627,
+            0.38125104069709775
+          ],
+          [
+            0.568202467030949,
+            0.3794882159431776
+          ],
+          [
+            0.5705529000361761,
+            0.38125104069709775
+          ],
+          [
+            0.5729033330414031,
+            0.3777253911892572
+          ],
+          [
+            0.5740785495440165,
+            0.37596256643533704
+          ],
+          [
+            0.5740785495440165,
+            0.3724369169274965
+          ],
+          [
+            0.5764289825492436,
+            0.3636227931578955
+          ],
+          [
+            0.5752537660466299,
+            0.3847766902049383
+          ],
+          [
+            0.5752537660466299,
+            0.38653951495885847
+          ],
+          [
+            0.5740785495440165,
+            0.3935908139745393
+          ],
+          [
+            0.5729033330414031,
+            0.4076934120059013
+          ],
+          [
+            0.5752537660466299,
+            0.412981886267662
+          ],
+          [
+            0.5764289825492436,
+            0.41474471102158217
+          ],
+          [
+            0.577604199051857,
+            0.4112190615137419
+          ],
+          [
+            0.5799546320570841,
+            0.40945623675982146
+          ],
+          [
+            0.5834802815649245,
+            0.40593058725198117
+          ],
+          [
+            0.5729033330414031,
+            0.3830138654510179
+          ],
+          [
+            0.5729033330414031,
+            0.3830138654510179
+          ],
+          [
+            0.5740785495440165,
+            0.3830138654510179
+          ],
+          [
+            0.5740785495440165,
+            0.3830138654510179
+          ],
+          [
+            0.5717281165387895,
+            0.3830138654510179
+          ],
+          [
+            0.5717281165387895,
+            0.3830138654510179
+          ],
+          [
+            0.5764289825492436,
+            0.38125104069709775
+          ],
+          [
+            0.577604199051857,
+            0.38125104069709775
+          ],
+          [
+            0.5787794155544704,
+            0.3794882159431776
+          ],
+          [
+            0.5799546320570841,
+            0.3777253911892572
+          ],
+          [
+            0.5787794155544704,
+            0.38125104069709775
+          ],
+          [
+            0.577604199051857,
+            0.3830138654510179
+          ],
+          [
+            0.587005931072765,
+            0.42355883479118345
+          ],
+          [
+            0.5846554980675379,
+            0.4217960100372633
+          ],
+          [
+            0.5811298485596975,
+            0.41827036052942274
+          ],
+          [
+            0.5834802815649245,
+            0.4165075357755026
+          ],
+          [
+            0.5834802815649245,
+            0.41474471102158217
+          ],
+          [
+            0.587005931072765,
+            0.41474471102158217
+          ],
+          [
+            0.5893563640779919,
+            0.412981886267662
+          ],
+          [
+            0.5905315805806055,
+            0.41827036052942274
+          ],
+          [
+            0.5893563640779919,
+            0.4200331852833429
+          ],
+          [
+            0.587005931072765,
+            0.427084484299024
+          ],
+          [
+            0.587005931072765,
+            0.42884730905294416
+          ],
+          [
+            0.587005931072765,
+            0.427084484299024
+          ],
+          [
+            0.5881811475753784,
+            0.4217960100372633
+          ],
+          [
+            0.5846554980675379,
+            0.4217960100372633
+          ],
+          [
+            0.5834802815649245,
+            0.41827036052942274
+          ],
+          [
+            0.5881811475753784,
+            0.4165075357755026
+          ],
+          [
+            0.5905315805806055,
+            0.412981886267662
+          ],
+          [
+            0.5905315805806055,
+            0.41827036052942274
+          ],
+          [
+            0.5881811475753784,
+            0.4217960100372633
+          ],
+          [
+            0.5881811475753784,
+            0.4253216595451036
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.9489726138777205,
+            0.9770858075221378
+          ],
+          [
+            0.9713017274273765,
+            0.9806114570299787
+          ],
+          [
+            0.9795282429456711,
+            0.9629832094907761
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.9571991293960148,
+            0.9629832094907761
+          ],
+          [
+            0.9571991293960148,
+            0.9594575599829358
+          ],
+          [
+            0.9854043254587385,
+            0.9488806114594144
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "horse",
+      "possible_names": [
+        "horse"
+      ],
+      "box": [
+        0.005,
+        0.015,
+        0.6066666666666667,
+        0.995
+      ]
+    }
+  ],
+  "scene": "A serene outdoor setting features a white horse with a bridle interacting with its surroundings amidst lush greenery and trees creating a peaceful pastoral atmosphere with soft natural lighting enhancing the tranquil mood of the scene",
+  "overall_past": "Before the current scene, the individual likely approached the white horse calmly and gently, perhaps after riding it through the meadow or leading it from a nearby stable. The horse’s relaxed posture and the close, affectionate interaction suggest it had already been accustomed to her presence, indicating a prior moment of bonding—possibly a shared ride or a quiet moment of grooming and quiet conversation. The soft lighting and serene environment imply that this was a deliberate pause in a peaceful outing, where both horse and rider had settled into a moment of mutual trust and calm, setting the stage for the tender, intimate exchange captured in the image.",
+  "overall_past_clean": "The figure approached with quiet intention, movements fluid and deliberate, having just dismounted or released the animal from a tether, the bond between them evident in the ease with which the creature stood still, head lowered, ears forward, responding to the soft cadence of a voice that carried no urgency—only familiarity, a language spoken in silence and touch, forged through shared time and trust.",
+  "past_scene_ok": true,
+  "overall_future": "The horse may gently step forward, leading the way down a quiet forest path, as the person follows with a soft smile, their bond guiding them deeper into the tranquil landscape.",
+  "overall_future_clean": "The path narrows as the horse pauses, ears flicking toward a distant rustle in the undergrowth, and the figure tenses slightly, hand instinctively reaching for the hilt of a blade at their side, both now still and alert, senses sharpening as the forest holds its breath.",
+  "future_scene_ok": false
+}

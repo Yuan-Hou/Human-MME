@@ -1,0 +1,1161 @@
+{
+  "video_path": "./ref_datasets/part2/6473927000.mp4",
+  "start_time": 0.0,
+  "end_time": 6.08,
+  "image_path": "./004482.jpg",
+  "represents_multiple_types": true,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/6473927000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/person_-2712428086334540922_1_6473927000.mp4_0.00_6.08.jpg",
+      "type": "person"
+    },
+    {
+      "video_path": "./ref_datasets/part2/6473927000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/face_-2712428086334540922_1_6473927000.mp4_0.00_6.08.jpg",
+      "type": "face"
+    },
+    {
+      "video_path": "./ref_datasets/part2/6473927001.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/person_3928419585493758099_1_6473927001.mp4_0.00_6.08.jpg",
+      "type": "person"
+    },
+    {
+      "video_path": "./ref_datasets/part2/6473927001.mp4",
+      "start_time": 0.0,
+      "end_time": 6.08,
+      "image_path": "./ref_datasets/extracted_frames/face_3928419585493758099_1_6473927001.mp4_0.00_6.08.jpg",
+      "type": "face"
+    }
+  ],
+  "cross_video_duplicate": true,
+  "types": [
+    "person",
+    "face"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": 0,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a full-body protective suit with a hood, gloves, and a mask. The suit appears to be made of a light-colored material, possibly white or gray. The person also wears white sneakers.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "jumpsuit",
+                "overall",
+                "coverall"
+              ],
+              "name": "jumpsuit",
+              "type": "whole body",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "gloves"
+              ],
+              "name": "gloves",
+              "type": "handwear",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "mask",
+                "respirator"
+              ],
+              "name": "mask",
+              "type": "accessory",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "sneakers",
+                "athletic shoes"
+              ],
+              "name": "sneakers",
+              "type": "footwear",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "spray gun",
+              "paint sprayer"
+            ],
+            "name": "spray gun",
+            "position": "hand"
+          }
+        ],
+        "description": "An adult male is shown in the foreground, wearing a protective suit, gloves, and a mask. He is holding a spray gun in his hand, likely used for painting or applying some substance to the wall. The setting appears to be an indoor space with large windows and a plastic-covered floor. The person's expression is neutral, focused on the task at hand.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person appears to be focused on their task, wearing protective gear while working, which suggests a neutral emotional state centered on concentration.",
+        "meaningful": true,
+        "story": "A worker is engaged in painting or applying a finish to a wall using a spray gun. The setting suggests an indoor renovation or construction project. The individual is dressed in protective clothing, indicating safety precautions are being taken during the work process.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is wearing protective gear including a hooded suit, gloves, and a mask while using a spray gun to apply paint onto a wall covered with geometric patterns. They are focused on their task, carefully maneuvering the spray gun to ensure even coverage. The room appears to be set up for painting, with plastic sheeting on the floor and a covered radiator, indicating an effort to protect surfaces from paint splatters. The individual's posture suggests concentration and precision, likely motivated by the desire to achieve a professional finish on the wall art. The large windows allow natural light into the space, enhancing visibility for the detailed work being performed.",
+        "intention": "The individual is striving for a flawless professional result by meticulously applying paint with precision and care while protecting the surrounding environment",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": false,
+            "position": "both hands",
+            "action": [
+              [
+                "both hands",
+                "holding"
+              ],
+              [
+                "both hands",
+                "spraying"
+              ]
+            ]
+          },
+          "object": 0
+        }
+      ],
+      "facex_detailing": {
+        "landmarks": [
+          [
+            0.41519466803542204,
+            0.22784183433762303
+          ],
+          [
+            0.4121262746907416,
+            0.23491003623715154
+          ],
+          [
+            0.4109343309931102,
+            0.2511748747141273
+          ],
+          [
+            0.40911759363398664,
+            0.2712164721003285
+          ],
+          [
+            0.40937167856664886,
+            0.2882278314343205
+          ],
+          [
+            0.4116160236032946,
+            0.3077643663794906
+          ],
+          [
+            0.4140603009788763,
+            0.32246803751698244
+          ],
+          [
+            0.41870137084098086,
+            0.33336679648469997
+          ],
+          [
+            0.4262784344099817,
+            0.3392004421463719
+          ],
+          [
+            0.4306918728919256,
+            0.3338174572697392
+          ],
+          [
+            0.4360641827895528,
+            0.3270711452872665
+          ],
+          [
+            0.4407690195810227,
+            0.32074610899995876
+          ],
+          [
+            0.44274737480140863,
+            0.31139283886662233
+          ],
+          [
+            0.4451465461225737,
+            0.3020257305215906
+          ],
+          [
+            0.44585477915548144,
+            0.28807967912267757
+          ],
+          [
+            0.4496452513904799,
+            0.2745734454305084
+          ],
+          [
+            0.4529181487503506,
+            0.2609008253724487
+          ],
+          [
+            0.4330652929487683,
+            0.24605974814406148
+          ],
+          [
+            0.4357571666794164,
+            0.24876077980906874
+          ],
+          [
+            0.43858917568411143,
+            0.2505962899437657
+          ],
+          [
+            0.44222629162527266,
+            0.2520414889962585
+          ],
+          [
+            0.44498457397733415,
+            0.25267282636077315
+          ],
+          [
+            0.45118733807688666,
+            0.25776365907103926
+          ],
+          [
+            0.4527226551657631,
+            0.25752440602691085
+          ],
+          [
+            0.4548498661745162,
+            0.2565822900445373
+          ],
+          [
+            0.4552902333083607,
+            0.2539138447355341
+          ],
+          [
+            0.455763519023146,
+            0.25650302083403975
+          ],
+          [
+            0.4452397212386131,
+            0.27109818171571803
+          ],
+          [
+            0.4440151692855926,
+            0.28114639233659816
+          ],
+          [
+            0.44396485991421203,
+            0.2892734757176152
+          ],
+          [
+            0.4423372217587062,
+            0.301019604117782
+          ],
+          [
+            0.4346232674661137,
+            0.29754598449777675
+          ],
+          [
+            0.436585395747707,
+            0.3009522210668634
+          ],
+          [
+            0.4380208058016641,
+            0.3024623842151077
+          ],
+          [
+            0.439913463024866,
+            0.30280400823663783
+          ],
+          [
+            0.4409620180016472,
+            0.3054870914529871
+          ],
+          [
+            0.43228386704410826,
+            0.26241296540807796
+          ],
+          [
+            0.4355072839629083,
+            0.26543035120875746
+          ],
+          [
+            0.4387509091978981,
+            0.2668594619742146
+          ],
+          [
+            0.43869802093222027,
+            0.26591969044120223
+          ],
+          [
+            0.43810115761700136,
+            0.2670104256382695
+          ],
+          [
+            0.43496658276943934,
+            0.2632586460422586
+          ],
+          [
+            0.44849675170012887,
+            0.26870038619747866
+          ],
+          [
+            0.4492865841303553,
+            0.2720612487307301
+          ],
+          [
+            0.4496794677916027,
+            0.2707223843645166
+          ],
+          [
+            0.4505370757409504,
+            0.2700747500967096
+          ],
+          [
+            0.4487669453024864,
+            0.2718973856281351
+          ],
+          [
+            0.4481561367000852,
+            0.27004068107516677
+          ],
+          [
+            0.42782922905115855,
+            0.3078816484521936
+          ],
+          [
+            0.43121439204329537,
+            0.31002288571110476
+          ],
+          [
+            0.43542116312753587,
+            0.3137242944152267
+          ],
+          [
+            0.4372021910690126,
+            0.314429427297027
+          ],
+          [
+            0.4372762191508498,
+            0.31514106701921535
+          ],
+          [
+            0.4381832259041923,
+            0.3177756419888249
+          ],
+          [
+            0.439501693986711,
+            0.3160442065309595
+          ],
+          [
+            0.4370974737263861,
+            0.3166413755328567
+          ],
+          [
+            0.4354364104214169,
+            0.3185301076482843
+          ],
+          [
+            0.43277115247079306,
+            0.3199778249970189
+          ],
+          [
+            0.42983567998522804,
+            0.3164527168980351
+          ],
+          [
+            0.4278851567279725,
+            0.3122861336778711
+          ],
+          [
+            0.4275025300326802,
+            0.3069529186796259
+          ],
+          [
+            0.43168343681664695,
+            0.3126104226818791
+          ],
+          [
+            0.4348219888550895,
+            0.31895090650629115
+          ],
+          [
+            0.43615956210664336,
+            0.3188721787046503
+          ],
+          [
+            0.4398520970628375,
+            0.3177832316469263
+          ],
+          [
+            0.43642487213725134,
+            0.31884629042060286
+          ],
+          [
+            0.43370915828716183,
+            0.31895780077687014
+          ],
+          [
+            0.4309894902720338,
+            0.3135058433921249
+          ]
+        ],
+        "visibility": [
+          0.84392911195755,
+          0.9825970530509949,
+          0.9999994039535522,
+          0.8896211385726929,
+          0.9999475479125977,
+          0.9999985694885254,
+          0.0007022765348665416,
+          0.061462756246328354,
+          0.18349812924861908,
+          8.13805490906816e-06,
+          0.9995991587638855,
+          0.24665029346942902,
+          0.9967411160469055,
+          0.9960378408432007,
+          0.02188096009194851,
+          1.930039252329152e-05,
+          0.9033583402633667,
+          8.136985343298875e-07,
+          0.9998728036880493,
+          1.0,
+          0.9997715353965759,
+          0.9874792695045471,
+          0.9997748732566833,
+          0.9733530879020691,
+          0.9999998807907104,
+          1.0,
+          0.9999994039535522,
+          0.9999973773956299,
+          0.913605809211731
+        ],
+        "headpose": {
+          "pitch": -46.05907672456292,
+          "yaw": -51.8084465150291,
+          "roll": 30.722125999920237
+        },
+        "attributes": {
+          "5 oClock Shadow": 0.005035351496189833,
+          "Arched Eyebrows": 0.000502878800034523,
+          "Attractive": 0.027894333004951477,
+          "Bags Under Eyes": 0.01139241922646761,
+          "Bald": 0.00010723404557211325,
+          "Bangs": 0.00262846820987761,
+          "Big Lips": 0.02794107422232628,
+          "Big Nose": 0.09209451079368591,
+          "Black Hair": 0.004905212204903364,
+          "Blond Hair": 0.001558596850372851,
+          "Blurry": 0.09750881046056747,
+          "Brown Hair": 0.006107714492827654,
+          "Bushy Eyebrows": 0.0025480808690190315,
+          "Chubby": 0.005952321458607912,
+          "Double Chin": 0.0004880808701273054,
+          "Eyeglasses": 0.011905936524271965,
+          "Goatee": 0.0011556772515177727,
+          "Gray Hair": 0.0003817784017883241,
+          "Heavy Makeup": 0.0011851612944155931,
+          "High Cheekbones": 0.0028981086798012257,
+          "Male": 0.9281875491142273,
+          "Mouth Slightly Open": 0.010375273413956165,
+          "Mustache": 0.004805039614439011,
+          "Narrow Eyes": 0.07002198696136475,
+          "No Beard": 0.9362536668777466,
+          "Oval Face": 0.007291223853826523,
+          "Pale Skin": 0.0039515504613518715,
+          "Pointy Nose": 0.06110572814941406,
+          "Receding Hairline": 0.00019652245100587606,
+          "Rosy Cheeks": 5.7668748922878876e-05,
+          "Sideburns": 0.0011614474933594465,
+          "Smiling": 0.0033205195795744658,
+          "Straight Hair": 0.012796890921890736,
+          "Wavy Hair": 0.0022294598165899515,
+          "Wearing Earrings": 0.0036959946155548096,
+          "Wearing Hat": 0.9386449456214905,
+          "Wearing Lipstick": 0.0012681627413257957,
+          "Wearing Necklace": 0.005440332926809788,
+          "Wearing Necktie": 0.0008793401648290455,
+          "Young": 0.8401140570640564
+        },
+        "age": [
+          0.03715558722615242,
+          0.009020539000630379,
+          0.4497103989124298,
+          0.3006001114845276,
+          0.35833409428596497,
+          0.016874315217137337,
+          0.05194217339158058,
+          0.05732724815607071
+        ],
+        "race": [
+          0.9910590052604675,
+          0.0046477364376187325,
+          0.7440989017486572,
+          0.08803632855415344,
+          0.3618277907371521
+        ],
+        "gender": [
+          0.9617931842803955,
+          0.0570368729531765
+        ]
+      },
+      "deepface_detailing": {
+        "emotion": {
+          "angry": 0.00016453567468488473,
+          "disgust": 1.8105906773868696e-07,
+          "fear": 62.148356437683105,
+          "happy": 6.452366960729705e-05,
+          "sad": 37.64636516571045,
+          "surprise": 1.3378583574308323e-06,
+          "neutral": 0.205049361102283
+        },
+        "dominant_emotion": "fear",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 235,
+          "h": 314,
+          "left_eye": null,
+          "right_eye": null
+        },
+        "face_confidence": 0.0,
+        "age": 34,
+        "gender": {
+          "Woman": 44.47088539600372,
+          "Man": 55.52910566329956
+        },
+        "dominant_gender": "Man",
+        "race": {
+          "asian": 17.120124399662018,
+          "indian": 3.2115034759044647,
+          "black": 3.6071404814720154,
+          "white": 45.65296471118927,
+          "middle eastern": 14.156006276607513,
+          "latino hispanic": 16.252262890338898
+        },
+        "dominant_race": "white"
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.26354703307151794,
+        0.16345341503620148,
+        0.548110842704773,
+        0.9890611171722412
+      ]
+    ],
+    "face_boxes": [
+      [
+        0.4135019779205322,
+        0.2349025458097458,
+        0.45443978905677795,
+        0.3321327269077301
+      ]
+    ],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3830961258485913,
+            0.30548933824504393
+          ],
+          [
+            0.3440916695843141,
+            0.2839272575958909
+          ],
+          [
+            0.283502222960194,
+            0.4200378916936695
+          ],
+          [
+            0.35015061424672606,
+            0.48607176368170085
+          ],
+          [
+            0.42210058211286855,
+            0.327051418894197
+          ],
+          [
+            0.45542477775613477,
+            0.4281236719371019
+          ],
+          [
+            0.5061684393038353,
+            0.4833765036005567
+          ],
+          [
+            0.3054658973614374,
+            0.4995480640874214
+          ],
+          [
+            0.321370627100269,
+            0.7057354602949475
+          ],
+          [
+            0.30092168886462844,
+            0.9146181165836176
+          ],
+          [
+            0.3584816631575426,
+            0.5197625146960024
+          ],
+          [
+            0.3675700801511605,
+            0.7165165006195239
+          ],
+          [
+            0.35393745466073345,
+            0.9240515268676222
+          ],
+          [
+            0.44103478418290615,
+            0.2731462172713144
+          ],
+          [
+            0.44785109692811964,
+            0.2758414773524585
+          ],
+          [
+            0.41528426936765506,
+            0.2529317666627334
+          ],
+          [
+            0.4327037352720897,
+            0.265060437027882
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.5091979116350412,
+            0.48472413364112865
+          ],
+          [
+            0.5175289605458576,
+            0.48876702376284487
+          ],
+          [
+            0.5281321137050788,
+            0.492809913884561
+          ],
+          [
+            0.5334336902846893,
+            0.5008956941279934
+          ],
+          [
+            0.5372205306986968,
+            0.5076338443308538
+          ],
+          [
+            0.5357057945330937,
+            0.5170672546148583
+          ],
+          [
+            0.5417647391955058,
+            0.5265006648988628
+          ],
+          [
+            0.5432794753611088,
+            0.5224577747771466
+          ],
+          [
+            0.5425221072783072,
+            0.5170672546148583
+          ],
+          [
+            0.5304042179534834,
+            0.5238054048177186
+          ],
+          [
+            0.5326763222018878,
+            0.5251530348582907
+          ],
+          [
+            0.5304042179534834,
+            0.51167673445257
+          ],
+          [
+            0.5281321137050788,
+            0.4995480640874214
+          ],
+          [
+            0.5235879052082698,
+            0.5251530348582907
+          ],
+          [
+            0.5251026413738727,
+            0.5238054048177186
+          ],
+          [
+            0.5228305371254682,
+            0.5089814743714258
+          ],
+          [
+            0.5205584328770637,
+            0.49550517396570526
+          ],
+          [
+            0.5167715924630564,
+            0.5238054048177186
+          ],
+          [
+            0.5182863286286592,
+            0.5224577747771466
+          ],
+          [
+            0.5175289605458576,
+            0.51167673445257
+          ],
+          [
+            0.5167715924630564,
+            0.5022433241685657
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.353180086577932,
+            0.49146228384398905
+          ],
+          [
+            0.36226850357155,
+            0.48068124351941244
+          ],
+          [
+            0.37059955248236653,
+            0.46855257315426385
+          ],
+          [
+            0.3796879694759846,
+            0.46855257315426385
+          ],
+          [
+            0.38726165030399956,
+            0.4712478332354081
+          ],
+          [
+            0.37817323331038166,
+            0.47394309331655227
+          ],
+          [
+            0.38801901838680103,
+            0.4766383533976963
+          ],
+          [
+            0.39407796304921305,
+            0.47933361347884046
+          ],
+          [
+            0.4001369077116251,
+            0.48202887355998464
+          ],
+          [
+            0.37817323331038166,
+            0.48741939372227283
+          ],
+          [
+            0.38726165030399956,
+            0.492809913884561
+          ],
+          [
+            0.3887763864696026,
+            0.4941575439251332
+          ],
+          [
+            0.38726165030399956,
+            0.49550517396570526
+          ],
+          [
+            0.37590112906197704,
+            0.5008956941279934
+          ],
+          [
+            0.3842321779727936,
+            0.5062862142902819
+          ],
+          [
+            0.3834748098899921,
+            0.5076338443308538
+          ],
+          [
+            0.3812027056415875,
+            0.5076338443308538
+          ],
+          [
+            0.3736290248135725,
+            0.51167673445257
+          ],
+          [
+            0.380445337558786,
+            0.5170672546148583
+          ],
+          [
+            0.380445337558786,
+            0.5184148846554304
+          ],
+          [
+            0.37893060139318313,
+            0.5184148846554304
+          ]
+        ],
+        "dw_face": [
+          [
+            0.4205858459472656,
+            0.2610175469061658
+          ],
+          [
+            0.4183137416988611,
+            0.2664080670684541
+          ],
+          [
+            0.4167990055332581,
+            0.2744938473118865
+          ],
+          [
+            0.4167990055332581,
+            0.2825796275553189
+          ],
+          [
+            0.41604163745045664,
+            0.2906654077987513
+          ],
+          [
+            0.41604163745045664,
+            0.2987511880421837
+          ],
+          [
+            0.4183137416988611,
+            0.305489338245044
+          ],
+          [
+            0.4213432140300672,
+            0.31222748844790427
+          ],
+          [
+            0.4243726863612732,
+            0.31761800861019257
+          ],
+          [
+            0.4296742629408836,
+            0.3216608987319088
+          ],
+          [
+            0.43421847143769265,
+            0.31761800861019257
+          ],
+          [
+            0.4372479437688986,
+            0.31222748844790427
+          ],
+          [
+            0.44103478418290615,
+            0.3068369682856161
+          ],
+          [
+            0.44406425651411213,
+            0.2987511880421837
+          ],
+          [
+            0.4455789926797152,
+            0.2920130378393233
+          ],
+          [
+            0.44709372884531806,
+            0.2839272575958909
+          ],
+          [
+            0.4486084650109212,
+            0.2758414773524585
+          ],
+          [
+            0.43800531185170016,
+            0.2637128069873099
+          ],
+          [
+            0.44027741610010457,
+            0.2637128069873099
+          ],
+          [
+            0.4425495203485091,
+            0.265060437027882
+          ],
+          [
+            0.4448216245969137,
+            0.2664080670684541
+          ],
+          [
+            0.44633636076251676,
+            0.2677556971090261
+          ],
+          [
+            0.4486084650109212,
+            0.2717985872307423
+          ],
+          [
+            0.4493658330937226,
+            0.2717985872307423
+          ],
+          [
+            0.4493658330937226,
+            0.2717985872307423
+          ],
+          [
+            0.4493658330937226,
+            0.2717985872307423
+          ],
+          [
+            0.45012320117652416,
+            0.2717985872307423
+          ],
+          [
+            0.4455789926797152,
+            0.2771891073930306
+          ],
+          [
+            0.4455789926797152,
+            0.2839272575958909
+          ],
+          [
+            0.44633636076251676,
+            0.2893177777581792
+          ],
+          [
+            0.44633636076251676,
+            0.29605592796103947
+          ],
+          [
+            0.43876267993450163,
+            0.29605592796103947
+          ],
+          [
+            0.4395200480173032,
+            0.29740355800161156
+          ],
+          [
+            0.44103478418290615,
+            0.2987511880421837
+          ],
+          [
+            0.44330688843131066,
+            0.3000988180827557
+          ],
+          [
+            0.4448216245969137,
+            0.2987511880421837
+          ],
+          [
+            0.43800531185170016,
+            0.2717985872307423
+          ],
+          [
+            0.4395200480173032,
+            0.2717985872307423
+          ],
+          [
+            0.44103478418290615,
+            0.2731462172713144
+          ],
+          [
+            0.4417921522657077,
+            0.2744938473118865
+          ],
+          [
+            0.44027741610010457,
+            0.2758414773524585
+          ],
+          [
+            0.4395200480173032,
+            0.2731462172713144
+          ],
+          [
+            0.44709372884531806,
+            0.2771891073930306
+          ],
+          [
+            0.44709372884531806,
+            0.2771891073930306
+          ],
+          [
+            0.44785109692811964,
+            0.2771891073930306
+          ],
+          [
+            0.44785109692811964,
+            0.2771891073930306
+          ],
+          [
+            0.44709372884531806,
+            0.2771891073930306
+          ],
+          [
+            0.44709372884531806,
+            0.2771891073930306
+          ],
+          [
+            0.43194636718928814,
+            0.30279407816389986
+          ],
+          [
+            0.43497583952049423,
+            0.30279407816389986
+          ],
+          [
+            0.43876267993450163,
+            0.3041417082044719
+          ],
+          [
+            0.43876267993450163,
+            0.305489338245044
+          ],
+          [
+            0.4395200480173032,
+            0.305489338245044
+          ],
+          [
+            0.43876267993450163,
+            0.30818459832618805
+          ],
+          [
+            0.43800531185170016,
+            0.3095322283667602
+          ],
+          [
+            0.4372479437688986,
+            0.3108798584073323
+          ],
+          [
+            0.43649057568609717,
+            0.31222748844790427
+          ],
+          [
+            0.4357332076032956,
+            0.31222748844790427
+          ],
+          [
+            0.4334611033548911,
+            0.3095322283667602
+          ],
+          [
+            0.4327037352720897,
+            0.3068369682856161
+          ],
+          [
+            0.43194636718928814,
+            0.30279407816389986
+          ],
+          [
+            0.43497583952049423,
+            0.305489338245044
+          ],
+          [
+            0.4372479437688986,
+            0.30818459832618805
+          ],
+          [
+            0.43800531185170016,
+            0.3095322283667602
+          ],
+          [
+            0.43800531185170016,
+            0.3095322283667602
+          ],
+          [
+            0.4372479437688986,
+            0.3095322283667602
+          ],
+          [
+            0.4357332076032956,
+            0.30818459832618805
+          ],
+          [
+            0.4334611033548911,
+            0.305489338245044
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.3978648034632206,
+            0.9752614684093606
+          ],
+          [
+            0.39710743538041915,
+            0.9631327980442119
+          ],
+          [
+            0.3440916695843141,
+            0.9415707173950592
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.33197378025949004,
+            0.9685233182065003
+          ],
+          [
+            0.31228221010665097,
+            0.9671756881659281
+          ],
+          [
+            0.2842595910429955,
+            0.9307896770704823
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "004482",
+  "objects": [
+    {
+      "box": [
+        0.3678137958049774,
+        0.4334806203842163,
+        0.5814228653907776,
+        0.5372684597969055
+      ],
+      "name": "spray gun",
+      "possible_names": [
+        "spray gun"
+      ]
+    }
+  ],
+  "mask_file": "./person_labeling/./004482.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A person is using a spray gun to paint a wall with geometric patterns in a room covered with protective sheets and plastic bags near a window with a view of buildings outside the overall color scheme is muted with shades of gray and white dominating the scene",
+  "overall_past": "Before the current scene, the individual likely prepared the workspace by laying down protective plastic sheeting on the floor and covering the radiator to prevent paint from damaging surrounding surfaces. They probably also masked off any areas of the wall that were not meant to be painted, ensuring clean, sharp geometric lines. The setup of the large windows suggests they timed their work to take advantage of natural light, possibly arriving early to position themselves for optimal visibility. Additionally, they may have pre-mixed the paint in a container, tested the spray gun’s flow and pressure on a scrap surface, and sketched or taped out the geometric pattern on the wall to guide their application. This careful preparation indicates a deliberate and methodical approach to creating a precise, professional-grade mural.",
+  "overall_past_clean": "The surface was meticulously protected, edges were precisely masked, the layout was pre-planned with measured markings, the paint was pre-mixed to exact specifications, the equipment was calibrated and tested, and the timing was carefully chosen to align with the most favorable lighting conditions.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual will likely step back to assess the completed geometric patterns, checking for consistency in coverage, alignment, and overall visual balance. Once satisfied with the result, they may begin removing the protective plastic sheeting from the floor and surrounding surfaces, carefully cleaning up any overspray or debris. Following this, they might inspect the wall for any touch-ups needed, particularly in the finer details of the design, before finally turning off the spray equipment and preparing to exit the room, marking the completion of the painting phase.",
+  "overall_future_clean": "The individual steps back, evaluates the work with a critical eye, then begins methodically stripping away protective coverings, cleans residual particles from surfaces, inspects the wall for imperfections, makes precise adjustments, powers down the equipment, and exits the space, sealing the conclusion of the painting process.",
+  "future_scene_ok": true
+}

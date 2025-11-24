@@ -1,0 +1,664 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00030301.jpg",
+  "image_id": "train_00030301",
+  "width": 640,
+  "height": 409,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 30301,
+  "annotations": {
+    "objects": "[{'id': 246, 'bbox_human': [293, 345, 188, 320], 'bbox_object': [229, 423, 225, 320], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('bench', 'sit_on')]",
+    "negative_captions": "[('bench', 'lie_on'), ('bench', 'no_interaction')]",
+    "ambiguous_captions": "[('bench', 'inspect')]",
+    "positive_objects": "[245]",
+    "negative_objects": "[244, 246]",
+    "ambiguous_objects": "[243]",
+    "size": "[640, 409, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "adult",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "Wearing a plaid shirt and a straw hat.",
+        "clothing": [
+          {
+            "possible_names": [
+              "shirt"
+            ],
+            "name": "shirt",
+            "type": "top",
+            "color": [
+              "plaid"
+            ]
+          },
+          {
+            "possible_names": [
+              "hat"
+            ],
+            "name": "hat",
+            "type": "headwear",
+            "color": [
+              "brown"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bench"
+            ],
+            "name": "bench",
+            "position": "body"
+          }
+        ],
+        "description": "The person is sitting in the background on a bench, wearing a plaid shirt and a brown straw hat. Their gender and specific emotions are unclear due to the distance and angle. They appear neutral, likely enjoying the view in front of them.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined. However, their posture suggests a calm and contemplative state.",
+        "meaningful": true,
+        "story": "A person is sitting alone on a bench overlooking a serene body of water, possibly enjoying the peaceful surroundings and reflecting on personal thoughts.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is sitting on a wooden bench facing away from the camera towards a scenic view of the sea, suggesting they might be enjoying the peaceful surroundings and perhaps contemplating or relaxing. They are wearing a hat and a plaid shirt, indicating they may be dressed for outdoor leisure activities. The individual appears to be alone, possibly seeking solitude or simply taking a moment to appreciate nature. Their posture is upright yet relaxed, which could imply a sense of calmness and contentment as they gaze at the horizon. The presence of trees and grass around them enhances the serene atmosphere, further supporting the idea that they are engaging in a quiet, reflective activity.",
+        "intention": "The individual is seeking tranquility and mental clarity by immersing themselves in nature through quiet observation and reflection",
+        "intention_ok": true
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.45700064301490784,
+        0.46485793590545654,
+        0.5293415784835815,
+        0.7767547369003296
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.4913867338832157,
+            0.5434765149736754
+          ],
+          [
+            0.5154092911708479,
+            0.5419828602839216
+          ],
+          [
+            0.5246364986058325,
+            0.5942607744253061
+          ],
+          [
+            0.5211365233718728,
+            0.6400661849110905
+          ],
+          [
+            0.46736417659558355,
+            0.5449701696634293
+          ],
+          [
+            0.46100058526111143,
+            0.5992396233911521
+          ],
+          [
+            0.46831871529575436,
+            0.6410619547042599
+          ],
+          [
+            0.5119093159368883,
+            0.6415598396008443
+          ],
+          [
+            0.5093638794030995,
+            0.6863694802934596
+          ],
+          [
+            0.5106365976699939,
+            0.7421325887109365
+          ],
+          [
+            0.482318616231593,
+            0.642057724497429
+          ],
+          [
+            0.4972730558676024,
+            0.6878631349832134
+          ],
+          [
+            0.5014093902350093,
+            0.7520902866426287
+          ],
+          [
+            0.5033184676353509,
+            0.4991647591776447
+          ],
+          [
+            0.4858185914655526,
+            0.500160528970814
+          ],
+          [
+            0.5042730063355217,
+            0.5006584138673985
+          ],
+          [
+            0.4813640775314222,
+            0.5021520685571524
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            0.4880458484326179,
+            0.5036457232469063
+          ],
+          [
+            0.48740948929917066,
+            0.5046414930400756
+          ],
+          [
+            0.48772766886589425,
+            0.5056372628332448
+          ],
+          [
+            0.4890003871327887,
+            0.5076288024195832
+          ],
+          [
+            0.4899549258329595,
+            0.5096203420059217
+          ],
+          [
+            0.4912276440998539,
+            0.5116118815922601
+          ],
+          [
+            0.4905912849664067,
+            0.5136034211785986
+          ],
+          [
+            0.49090946453313034,
+            0.5145991909717679
+          ],
+          [
+            0.49409126020036637,
+            0.5145991909717679
+          ],
+          [
+            0.4947276193338136,
+            0.5141013060751831
+          ],
+          [
+            0.4956821580339844,
+            0.5136034211785986
+          ],
+          [
+            0.4982275945677732,
+            0.5121097664888448
+          ],
+          [
+            0.49886395370122044,
+            0.5111139966956755
+          ],
+          [
+            0.5001366719681148,
+            0.5096203420059217
+          ],
+          [
+            0.49981849240139126,
+            0.5076288024195832
+          ],
+          [
+            0.49918213326794403,
+            0.5066330326264139
+          ],
+          [
+            0.49886395370122044,
+            0.5056372628332448
+          ],
+          [
+            0.4902731053996831,
+            0.5011562987639833
+          ],
+          [
+            0.49090946453313034,
+            0.5011562987639833
+          ],
+          [
+            0.4912276440998539,
+            0.5011562987639833
+          ],
+          [
+            0.49186400323330115,
+            0.5016541836605678
+          ],
+          [
+            0.49345490106691914,
+            0.5021520685571524
+          ],
+          [
+            0.496000337600708,
+            0.5026499534537371
+          ],
+          [
+            0.4966366967341552,
+            0.5026499534537371
+          ],
+          [
+            0.4979094150010496,
+            0.5021520685571524
+          ],
+          [
+            0.49854577413449686,
+            0.5016541836605678
+          ],
+          [
+            0.49886395370122044,
+            0.5016541836605678
+          ],
+          [
+            0.4947276193338136,
+            0.5041436081434909
+          ],
+          [
+            0.4947276193338136,
+            0.5046414930400756
+          ],
+          [
+            0.4950457989005372,
+            0.5056372628332448
+          ],
+          [
+            0.4947276193338136,
+            0.5066330326264139
+          ],
+          [
+            0.49313672150019555,
+            0.509122457109337
+          ],
+          [
+            0.49345490106691914,
+            0.509122457109337
+          ],
+          [
+            0.49409126020036637,
+            0.509122457109337
+          ],
+          [
+            0.4947276193338136,
+            0.5086245722127525
+          ],
+          [
+            0.4956821580339844,
+            0.5081266873161677
+          ],
+          [
+            0.4912276440998539,
+            0.5036457232469063
+          ],
+          [
+            0.49186400323330115,
+            0.5036457232469063
+          ],
+          [
+            0.49313672150019555,
+            0.5036457232469063
+          ],
+          [
+            0.4937730806336428,
+            0.5041436081434909
+          ],
+          [
+            0.49345490106691914,
+            0.5041436081434909
+          ],
+          [
+            0.49218218280002474,
+            0.5041436081434909
+          ],
+          [
+            0.4966366967341552,
+            0.5036457232469063
+          ],
+          [
+            0.49759123543432604,
+            0.5031478383503216
+          ],
+          [
+            0.4969548763008788,
+            0.5031478383503216
+          ],
+          [
+            0.4979094150010496,
+            0.5036457232469063
+          ],
+          [
+            0.49759123543432604,
+            0.5036457232469063
+          ],
+          [
+            0.4966366967341552,
+            0.5036457232469063
+          ],
+          [
+            0.49186400323330115,
+            0.5111139966956755
+          ],
+          [
+            0.4915458236665775,
+            0.5106161117990908
+          ],
+          [
+            0.4937730806336428,
+            0.5106161117990908
+          ],
+          [
+            0.49409126020036637,
+            0.5111139966956755
+          ],
+          [
+            0.49440943976708995,
+            0.5111139966956755
+          ],
+          [
+            0.49536397846726077,
+            0.5111139966956755
+          ],
+          [
+            0.4956821580339844,
+            0.5111139966956755
+          ],
+          [
+            0.4947276193338136,
+            0.5121097664888448
+          ],
+          [
+            0.4937730806336428,
+            0.5121097664888448
+          ],
+          [
+            0.4937730806336428,
+            0.5116118815922601
+          ],
+          [
+            0.49345490106691914,
+            0.5111139966956755
+          ],
+          [
+            0.4937730806336428,
+            0.5116118815922601
+          ],
+          [
+            0.49186400323330115,
+            0.5111139966956755
+          ],
+          [
+            0.49345490106691914,
+            0.5111139966956755
+          ],
+          [
+            0.49409126020036637,
+            0.5111139966956755
+          ],
+          [
+            0.4947276193338136,
+            0.5116118815922601
+          ],
+          [
+            0.49536397846726077,
+            0.5116118815922601
+          ],
+          [
+            0.49440943976708995,
+            0.5116118815922601
+          ],
+          [
+            0.4937730806336428,
+            0.5116118815922601
+          ],
+          [
+            0.4937730806336428,
+            0.5111139966956755
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.5071366224360341,
+            0.7550775960221363
+          ],
+          [
+            0.49981849240139126,
+            0.7570691356084749
+          ],
+          [
+            0.5014093902350093,
+            0.7610522147811517
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.520181984671702,
+            0.7436262434006903
+          ],
+          [
+            0.5208183438051492,
+            0.744124128297275
+          ],
+          [
+            0.5109547772367175,
+            0.7515924017460442
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "bench",
+      "possible_names": [
+        "bench"
+      ],
+      "box": [
+        0.3578125,
+        0.5501222493887531,
+        0.6609375,
+        0.78239608801956
+      ]
+    }
+  ],
+  "scene": "A serene outdoor setting features a wooden bench surrounded by lush greenery and overlooking a vast body of water under a clear sky with soft light casting gentle shadows on the grassy area",
+  "overall_past": "Before the current scene, the individual likely arrived at this secluded spot after a quiet walk through the surrounding greenery, perhaps following a trail that winds down from a nearby path or hillside. They may have been seeking a moment of peace away from daily distractions, choosing this vantage point for its unobstructed view of the sea and the calming presence of nature. The hat and plaid shirt suggest they prepared for a leisurely outing, possibly bringing a small bag or jacket, which could now be resting nearby. As they sat down on the wooden bench, they paused to take in the stillness—the gentle rustle of leaves, the distant sound of waves, and the soft light of the sky—settling into a reflective state, letting the serenity of the environment settle in.",
+  "overall_past_clean": "The figure moved steadily along a narrow, overgrown path, feet brushing against damp earth and scattered leaves, eyes fixed ahead as the terrain dipped toward the water’s edge, the air growing cooler and heavier with the scent of salt and pine, until the trees parted and the vast expanse of the sea came into view, prompting a deliberate pause before continuing forward.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual may slowly rise from the bench, taking one final look at the horizon as the sun begins to dip lower in the sky, casting a golden hue across the water. They might adjust their hat, gather their belongings if any, and quietly walk along the grassy path back toward the shore, leaving behind a moment of stillness that mirrors the calm they’ve just experienced. The gentle rustle of leaves and distant lap of waves would accompany their departure, as nature continues its quiet rhythm, unchanged by the brief pause of human presence.",
+  "overall_future_clean": "The figure moves with deliberate calm, stepping onto the path as the light deepens into amber, the air thick with the hush of settling dusk, and the earth carries the quiet echo of departure, already beginning to reclaim the stillness left behind.",
+  "future_scene_ok": true
+}

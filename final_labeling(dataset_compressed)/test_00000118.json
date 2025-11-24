@@ -1,0 +1,708 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/test/test_00000118.jpg",
+  "image_id": "test_00000118",
+  "width": 428,
+  "height": 640,
+  "split": "test",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 118,
+  "annotations": {
+    "objects": "[{'id': 455, 'bbox_human': [119, 401, 5, 340], 'bbox_object': [132, 399, 240, 438], 'connection': 1, 'invis': 0}, {'id': 458, 'bbox_human': [103, 410, 1, 336], 'bbox_object': [121, 404, 238, 447], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('skateboard', 'flip'), ('skateboard', 'jump')]",
+    "negative_captions": "[('skateboard', 'carry'), ('skateboard', 'grind'), ('skateboard', 'hold'), ('skateboard', 'pick_up'), ('skateboard', 'sit_on'), ('skateboard', 'stand_on'), ('skateboard', 'no_interaction')]",
+    "ambiguous_captions": "[('skateboard', 'ride')]",
+    "positive_objects": "[454, 457]",
+    "negative_objects": "[453, 455, 456, 458, 460, 461, 462]",
+    "ambiguous_objects": "[459]",
+    "size": "[428, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "teenager",
+        "gender": "male",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a red shirt, grey pants, and red sneakers with white laces.",
+        "clothing": [
+          {
+            "possible_names": [
+              "shirt",
+              "tee",
+              "t-shirt",
+              "top"
+            ],
+            "name": "t shirt",
+            "type": "top",
+            "color": [
+              "red"
+            ]
+          },
+          {
+            "possible_names": [
+              "pants",
+              "jeans"
+            ],
+            "name": "jeans",
+            "type": "bottom",
+            "color": [
+              "grey"
+            ]
+          },
+          {
+            "possible_names": [
+              "sneaker",
+              "shoe",
+              "footwear"
+            ],
+            "name": "sneaker",
+            "type": "footwear",
+            "color": [
+              "red",
+              "white"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "skateboard"
+            ],
+            "name": "skateboard",
+            "position": "foot"
+          }
+        ],
+        "description": "The person is a teenager performing a skateboard trick. They are wearing a red t-shirt, grey jeans, and red sneakers with white laces. The skateboard is positioned under their feet, suggesting they are in the middle of a jump or trick.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": true,
+        "story": "A teenager is performing a skateboard trick, possibly an ollie, over a set of stairs. The scene suggests an urban environment where skateboarding is a common activity. The individual appears to be skilled and confident in their movement.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is performing a skateboard trick mid-air over a set of stairs, demonstrating skill and control as they manipulate the board beneath them. Their body posture suggests focus and determination, likely aiming to land successfully on the ground after clearing the obstacle. The red sneakers and casual attire indicate a relaxed yet purposeful approach to the activity, possibly engaging in this for leisure, practice, or as part of a social gathering with other skateboarders. The surrounding environment, including the brick wall and greenery, adds an urban backdrop to the scene, enhancing the sense of a typical skateboarding setting where such tricks are commonly performed.",
+        "intention": "The individual is motivated to demonstrate skill and mastery by executing a challenging skateboard trick while maintaining control and focus during the maneuver",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "foot",
+                "flip"
+              ],
+              [
+                "foot",
+                "jump"
+              ]
+            ],
+            "negative_action": [
+              "carry",
+              "grind",
+              "hold",
+              "pick up",
+              "sit on",
+              "stand on",
+              "no interaction"
+            ],
+            "position": "foot"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.2833274006843567,
+        0.0005990028148517013,
+        0.9316174387931824,
+        0.5249870419502258
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3200635712280452,
+            0.04731985209509735
+          ],
+          [
+            0.32859242816580414,
+            0.03686311812036567
+          ],
+          [
+            0.8019439882114295,
+            0.009295364914255
+          ],
+          [
+            0.8914969860578993,
+            0.11766515337965555
+          ],
+          [
+            0.8900755099016064,
+            0.22318310530649285
+          ],
+          [
+            0.40393066444934217,
+            0.07964066619881324
+          ],
+          [
+            0.5602930416415909,
+            0.14808474312432937
+          ],
+          [
+            0.51054137617133,
+            0.4180586021083096
+          ],
+          [
+            0.6100447071118518,
+            0.08724556363498173
+          ],
+          [
+            0.7834647981796184,
+            0.0891467879940238
+          ],
+          [
+            0.6214165163621973,
+            0.28782473351392485
+          ],
+          [
+            0.6868044195516829,
+            0.02450515978659191
+          ],
+          [
+            0.736556085021944,
+            0.018801486709465597
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.777778893554446,
+            0.016900262350423433
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.8900755099016064,
+            0.22793616620409823
+          ],
+          [
+            0.8673318914009156,
+            0.23078800274266134
+          ],
+          [
+            0.8474312252128111,
+            0.23078800274266134
+          ],
+          [
+            0.8403238444313451,
+            0.2355410636402667
+          ],
+          [
+            0.836059415962466,
+            0.24029412453787197
+          ],
+          [
+            0.863067462932036,
+            0.23363983928122453
+          ],
+          [
+            0.8502741775253974,
+            0.2440965732559562
+          ],
+          [
+            0.8445882729002249,
+            0.2517014706921247
+          ],
+          [
+            0.8403238444313451,
+            0.257405143769251
+          ],
+          [
+            0.8787037006512608,
+            0.24029412453787197
+          ],
+          [
+            0.8659104152446222,
+            0.2517014706921247
+          ],
+          [
+            0.8573815583068634,
+            0.2593063681282931
+          ],
+          [
+            0.8531171298379837,
+            0.26405942902589835
+          ],
+          [
+            0.8914969860578993,
+            0.24694840979451932
+          ],
+          [
+            0.8829681291201404,
+            0.257405143769251
+          ],
+          [
+            0.8744392721823816,
+            0.26405942902589835
+          ],
+          [
+            0.8673318914009156,
+            0.2697631021030248
+          ],
+          [
+            0.9042902714645378,
+            0.2517014706921247
+          ],
+          [
+            0.9000258429956587,
+            0.26120759248733527
+          ],
+          [
+            0.8914969860578993,
+            0.26691126556446154
+          ],
+          [
+            0.8843896052764338,
+            0.27166432646206684
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.736556085021944,
+            0.019752098888986637
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.753613798897462,
+            0.023554547607070875
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.7763574173981527,
+            -0.10382748444875083
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.71239099036496,
+            0.3334541181309356
+          ],
+          [
+            0.7081265618960806,
+            0.32014554761764075
+          ],
+          [
+            0.5887225647674543,
+            0.3058863649248249
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.5958299455489202,
+            0.4741447207000521
+          ],
+          [
+            0.5375494231409002,
+            0.47699655723861517
+          ],
+          [
+            0.4792689007328802,
+            0.43326839698064656
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "skateboard",
+      "possible_names": [
+        "skateboard"
+      ],
+      "box": [
+        0.308411214953271,
+        0.375,
+        0.9322429906542056,
+        0.684375
+      ]
+    }
+  ],
+  "scene": "A skateboarder is captured mid-air performing a trick over steps in an outdoor setting with greenery and brick structures in the background creating a dynamic urban atmosphere with muted colors and shadows adding depth to the scene",
+  "overall_past": "Before the current scene, the individual likely approached the set of stairs with focused intent, assessing the gap and timing their run. They accelerated down a nearby path or ramp, building momentum to launch off the edge of the first step, using the momentum and precise control to lift the skateboard into the air. The body’s slight lean and the positioning of the hands suggest they were already in motion, preparing to execute the trick mid-flight—possibly a kickflip or ollie—while maintaining balance and spatial awareness. The surrounding urban environment, with its brick walls and greenery, indicates a familiar skate spot, implying this was part of a routine session or a deliberate attempt to perfect the maneuver.",
+  "overall_past_clean": "The individual sprinted forward with purpose, driving powerfully down the incline to gain speed, then launched off the edge with controlled precision, using the momentum to propel upward and initiate the trick midair.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual is likely to land the trick smoothly on the ground, maintaining balance and control as they roll forward to absorb the impact. The focused posture and precise board manipulation suggest a high level of skill, increasing the probability of a successful landing. Following the landing, they may pause briefly to check their board or adjust their stance, then continue skating, possibly attempting another trick or joining others nearby in a casual session, reinforcing the social and recreational nature of the urban skateboarding environment.",
+  "overall_future_clean": "The individual rolls forward with controlled momentum, stabilizes instantly upon landing, glances briefly at the board to confirm alignment, then seamlessly transitions into a smooth glide, weaving through the space with purposeful rhythm before joining a group in a fluid exchange of movements, the shared energy of the moment pulsing through the urban landscape.",
+  "future_scene_ok": false
+}

@@ -1,0 +1,667 @@
+{
+  "video_path": "./ref_datasets/part2/6485292005.mp4",
+  "start_time": 0.0,
+  "end_time": 3.04,
+  "image_path": "./019920.jpg",
+  "represents_multiple_types": false,
+  "cross_video_duplicate": false,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/6485292005.mp4",
+      "start_time": 0.0,
+      "end_time": 3.04,
+      "image_path": "./ref_datasets/extracted_frames/person_-8185296995871342031_1_6485292005.mp4_0.00_3.04.jpg",
+      "type": "person"
+    }
+  ],
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "female",
+        "emotion": "unknown",
+        "clothing_description": "The person is wearing a semi-sheer black top with short sleeves. The top has text printed on it, including phrases like 'integrity' and 'love is love.' She also appears to be wearing blue jeans with a yellow tag visible at the waistband.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "top",
+                "shirt",
+                "blouse"
+              ],
+              "name": "top",
+              "type": "top",
+              "color": [
+                "black",
+                "transparent"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "belt"
+              ],
+              "name": "belt",
+              "type": "accessory",
+              "color": [
+                "black"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "jeans",
+                "pants"
+              ],
+              "name": "jeans",
+              "type": "bottom",
+              "color": [
+                "blue"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ],
+          "from_model": "internvl"
+        },
+        "objects": [],
+        "description": "The person is an adult female standing in the foreground. She is wearing a semi-sheer black top with short sleeves and blue jeans. The top features various text prints, including 'integrity' and 'love is love.' There are also temporary tattoos on her arms with the phrases 'I DON'T CARE' and 'love is love.' Her emotion appears neutral, and there are no additional objects relevant to her.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible, so their emotion cannot be determined.",
+        "meaningful": true,
+        "story": "The person appears to be expressing personal beliefs or values through their tattoos. The phrases 'I DON'T CARE,' 'Love is Love,' and 'integrity' suggest themes of individuality, acceptance, and moral principles. This could indicate a story of someone who is confident in their identity and values.",
+        "race": "unknown",
+        "text": "I DON'T CARE, Love is Love, integrity",
+        "text_relationship": "The text on the person's body seems to reflect their personal philosophy or stance on certain issues. 'I DON'T CARE' might indicate a disregard for societal norms or expectations, 'Love is Love' suggests support for equality and acceptance in relationships, and 'integrity' implies a commitment to being honest and morally upright.",
+        "behaviour": "The person is standing with their hand on their hip, displaying tattoos on their arm and torso through a sheer black top. The tattoos include phrases such as \"I DON'T CARE\" on the arm and \"love is love\" on the torso, suggesting a bold expression of personal beliefs and attitudes. Their posture and the visible tattoos indicate confidence and a desire to communicate their values openly, possibly advocating for acceptance and individuality. The person's stance and attire suggest they are comfortable in their own skin, embracing self-expression and possibly challenging societal norms.",
+        "intention": "The intention is to assert individuality and promote acceptance through visible self expression challenging societal norms",
+        "intention_ok": true
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.07109994441270828,
+        0.006846368312835693,
+        0.9967379570007324,
+        0.9848002791404724
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.47234604930546537,
+            -0.005146525949459675
+          ],
+          [
+            0.14557011371519832,
+            0.49243905779658376
+          ],
+          [
+            0.31500948772496645,
+            0.9785418973023347
+          ],
+          [
+            0.95847568188111,
+            0.025474125357989118
+          ],
+          [
+            0.15363865533471108,
+            0.48095631355629076
+          ],
+          [
+            0.32711230015423565,
+            0.9402660831680231
+          ],
+          [
+            0.5994255798127915,
+            0.9364385017545923
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.9282186508079369,
+            0.9249557575142994
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.32912943555911384,
+            0.9785418973023347
+          ],
+          [
+            0.33921511258350484,
+            0.9479212459948854
+          ],
+          [
+            0.34324938339326116,
+            0.9249557575142994
+          ],
+          [
+            0.34526651879813935,
+            0.9019902690337124
+          ],
+          [
+            0.34526651879813935,
+            0.8866799433799878
+          ],
+          [
+            0.3412322479883829,
+            0.9364385017545923
+          ],
+          [
+            0.3371979771786266,
+            0.92878333892773
+          ],
+          [
+            0.3412322479883829,
+            0.9096454318605747
+          ],
+          [
+            0.34526651879813935,
+            0.8866799433799878
+          ],
+          [
+            0.3371979771786266,
+            0.9364385017545923
+          ],
+          [
+            0.3371979771786266,
+            0.9326109203411612
+          ],
+          [
+            0.34324938339326116,
+            0.9173005946874366
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3351808417737484,
+            0.92878333892773
+          ],
+          [
+            0.33921511258350484,
+            0.92878333892773
+          ],
+          [
+            0.3472836542030176,
+            0.92878333892773
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3371979771786266,
+            0.9211281761008677
+          ],
+          [
+            0.34324938339326116,
+            0.9134730132740054
+          ],
+          [
+            0.3493007896078957,
+            0.9211281761008677
+          ],
+          [
+            0.3493007896078957,
+            0.92878333892773
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "019920",
+  "objects": [],
+  "mask_file": "./person_labeling/./019920.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A person wearing a sheer black top with visible tattoos and text on their skin stands against a dark green background with a denim belt and yellow tag noticeable on their waistline",
+  "overall_past": "Before the current scene, the individual likely spent time preparing for a moment of self-expression—perhaps choosing their outfit deliberately to highlight their identity, selecting the sheer black top and denim belt to create a striking visual contrast, and positioning themselves in front of the dark green backdrop to emphasize the tattoos. They may have been reflecting on personal values, possibly after a meaningful conversation or experience related to acceptance and individuality, which inspired them to wear the visible messages like \"I DON'T CARE\" and \"love is love.\" The yellow tag on the belt suggests the clothing might have been recently acquired or intentionally kept as a symbol of authenticity, perhaps from a thrifted or handmade source. This moment captures the culmination of a personal journey toward embracing and proudly displaying their truth, possibly in anticipation of being seen, photographed, or engaging with others in a space that values openness and defiance of conformity.",
+  "overall_past_clean": "A deliberate act of self-assertion unfolded through careful selection of symbols and setting, rooted in a transformative internal shift toward unapologetic authenticity, where every choice was a declaration of identity and resistance against conformity.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual might begin to walk forward, their movement deliberate and unapologetic, drawing attention not just from onlookers but also from those who recognize the messages in their tattoos. The yellow tag on the denim belt could catch the light as they shift, symbolizing a small but noticeable detail that stands out—perhaps hinting at a personal story or a statement about identity and visibility. As they move through the space, their presence could inspire others to pause, reflect, or even engage in conversation, sparking a quiet moment of connection or challenge to prevailing norms. The scene suggests a turning point: a moment where self-expression becomes a catalyst for dialogue, and the boldness of the individual’s appearance invites a broader conversation about acceptance, authenticity, and the power of visible identity.",
+  "overall_future_clean": "The air shifts as heads turn, whispers ripple through the crowd, and a collective stillness gives way to hesitant steps forward—someone begins to speak, then another, until the space hums with voices no longer afraid to be heard, the weight of silence broken by the undeniable force of presence.",
+  "future_scene_ok": true
+}

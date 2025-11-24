@@ -1,0 +1,1121 @@
+{
+  "video_path": "./ref_datasets/part2/6324861000.mp4",
+  "start_time": 0.0,
+  "end_time": 6.005999999999999,
+  "image_path": "./004228.jpg",
+  "represents_multiple_types": true,
+  "original_detections": [
+    {
+      "video_path": "./ref_datasets/part2/6324861000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.005999999999999,
+      "image_path": "./ref_datasets/extracted_frames/person_8720903378334313549_1_6324861000.mp4_0.00_6.01.jpg",
+      "type": "person"
+    },
+    {
+      "video_path": "./ref_datasets/part2/6324861000.mp4",
+      "start_time": 0.0,
+      "end_time": 6.005999999999999,
+      "image_path": "./ref_datasets/extracted_frames/face_8720903378334313549_1_6324861000.mp4_0.00_6.01.jpg",
+      "type": "face"
+    }
+  ],
+  "cross_video_duplicate": false,
+  "types": [
+    "person",
+    "face"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": 0,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a brown blazer over a white dress shirt paired with a dark blue tie. The attire suggests a formal or professional setting.",
+        "clothing": [
+          {
+            "possible_names": [
+              "brown blazer",
+              "brown jacket"
+            ],
+            "name": "blazer",
+            "type": "top",
+            "color": [
+              "brown"
+            ]
+          },
+          {
+            "possible_names": [
+              "white dress shirt",
+              "white shirt"
+            ],
+            "name": "dress shirt",
+            "type": "top",
+            "color": [
+              "white"
+            ]
+          },
+          {
+            "possible_names": [
+              "dark blue tie",
+              "blue necktie"
+            ],
+            "name": "tie",
+            "type": "accessory",
+            "color": [
+              "dark blue"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "laptop",
+              "computer"
+            ],
+            "name": "laptop",
+            "position": "body"
+          }
+        ],
+        "description": "An adult male appears in the foreground, dressed in a formal outfit consisting of a brown blazer, a white dress shirt, and a dark blue tie. His expression is neutral, and he seems to be engaged in an activity involving a laptop placed on a desk in front of him. The setting includes educational materials and a whiteboard with scientific illustrations and text in the background.",
+        "blurry": false,
+        "face_seen": true,
+        "emotion_description": "The person appears to have a neutral expression, suggesting they are engaged in a professional activity without showing strong emotions.",
+        "meaningful": true,
+        "story": "The person seems to be involved in an educational or instructional setting, possibly teaching or explaining a scientific concept related to water droplets and candles as indicated by the whiteboard behind them.",
+        "race": "white",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is seated at a desk with a laptop open in front of them, suggesting they might be engaged in an online session or presentation. They are gesturing with their right hand extended towards the camera, possibly to emphasize a point or invite interaction from viewers. The whiteboard behind them contains a diagram related to a candle experiment, indicating that the individual could be explaining a scientific concept, likely aiming to educate or engage an audience on the topic. Their attire, a formal suit and tie, implies a professional setting, perhaps a classroom or a virtual lecture environment where they are actively communicating and teaching.",
+        "intention": "The individual is actively teaching a scientific concept through visual aids and direct engagement to educate and connect with their audience",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relevant": true,
+          "relationship": {
+            "standalone": true,
+            "position": "standalone",
+            "action": [
+              [
+                "standalone",
+                "looking at"
+              ]
+            ]
+          },
+          "object": 0
+        }
+      ],
+      "facex_detailing": {
+        "landmarks": [
+          [
+            0.28716850375372266,
+            0.2928452029957303
+          ],
+          [
+            0.29142263910127064,
+            0.31491766063762566
+          ],
+          [
+            0.2980115902802301,
+            0.33652412856795955
+          ],
+          [
+            0.3062839141913823,
+            0.35723184187497414
+          ],
+          [
+            0.31569122568009395,
+            0.37697980252227614
+          ],
+          [
+            0.3326059008401538,
+            0.39588376206478904
+          ],
+          [
+            0.35395928129317267,
+            0.40961581367467126
+          ],
+          [
+            0.3745608167042808,
+            0.4215322172003133
+          ],
+          [
+            0.3993498338593377,
+            0.4251112973051412
+          ],
+          [
+            0.42953327326547536,
+            0.4229524386248418
+          ],
+          [
+            0.4591322781547668,
+            0.4123093616749559
+          ],
+          [
+            0.4877781270042298,
+            0.39888166588331975
+          ],
+          [
+            0.5126068130372063,
+            0.3798312277932252
+          ],
+          [
+            0.5255391968621148,
+            0.3574243316160781
+          ],
+          [
+            0.5286513718347702,
+            0.33142069226929116
+          ],
+          [
+            0.5297543415947567,
+            0.3053232265636325
+          ],
+          [
+            0.5332185540880475,
+            0.27746290372950694
+          ],
+          [
+            0.29638206656016997,
+            0.27735397158456704
+          ],
+          [
+            0.30782528907533674,
+            0.2632450781895646
+          ],
+          [
+            0.3271271584525941,
+            0.2626070569668498
+          ],
+          [
+            0.3472793668035477,
+            0.26421403903514146
+          ],
+          [
+            0.36615550253126355,
+            0.2704550778094147
+          ],
+          [
+            0.3958419716547406,
+            0.26847385088247916
+          ],
+          [
+            0.4181404957695613,
+            0.2605961834479656
+          ],
+          [
+            0.44097356720576214,
+            0.25747566406082895
+          ],
+          [
+            0.4629515708438933,
+            0.2594549036451749
+          ],
+          [
+            0.4850046017813305,
+            0.2702509911065655
+          ],
+          [
+            0.3783767370950608,
+            0.29457109852560925
+          ],
+          [
+            0.3782733368495154,
+            0.30822338880971073
+          ],
+          [
+            0.3792798791612898,
+            0.32247215940483975
+          ],
+          [
+            0.3779324431267995,
+            0.3381464047490486
+          ],
+          [
+            0.36568390055308264,
+            0.35022055669022456
+          ],
+          [
+            0.3739879950644478,
+            0.35320745826299704
+          ],
+          [
+            0.3838317592938741,
+            0.3556013090535998
+          ],
+          [
+            0.39478772273139345,
+            0.3517280031261699
+          ],
+          [
+            0.40437339203698297,
+            0.3506690914875695
+          ],
+          [
+            0.32184176539617876,
+            0.2987782284484378
+          ],
+          [
+            0.33189359789802914,
+            0.295993223041296
+          ],
+          [
+            0.3464280136047848,
+            0.29557820048981476
+          ],
+          [
+            0.35971822871102227,
+            0.30036989658006596
+          ],
+          [
+            0.34510702348890754,
+            0.3011707807758025
+          ],
+          [
+            0.3328492387892708,
+            0.30015910941043067
+          ],
+          [
+            0.4154138784559946,
+            0.2963108013783183
+          ],
+          [
+            0.42559915762099004,
+            0.2918891276632037
+          ],
+          [
+            0.4385412526509119,
+            0.29058701683368005
+          ],
+          [
+            0.45446270988101056,
+            0.291347886555429
+          ],
+          [
+            0.44170515310196645,
+            0.29582659353369045
+          ],
+          [
+            0.42775432249856365,
+            0.297003536471831
+          ],
+          [
+            0.357338235491798,
+            0.3764904900320939
+          ],
+          [
+            0.36727121349364994,
+            0.37503412969942607
+          ],
+          [
+            0.3777592008076017,
+            0.3725562058921371
+          ],
+          [
+            0.3876321620411343,
+            0.37387923090053454
+          ],
+          [
+            0.3965708444988917,
+            0.3722202111833862
+          ],
+          [
+            0.41221350393598044,
+            0.3758054168628795
+          ],
+          [
+            0.4315656915543572,
+            0.3772654247869338
+          ],
+          [
+            0.4107937916876777,
+            0.38242821374109814
+          ],
+          [
+            0.39614324721079025,
+            0.38498955637748755
+          ],
+          [
+            0.3864199348858425,
+            0.3862325326140438
+          ],
+          [
+            0.378310609620715,
+            0.3854454854769366
+          ],
+          [
+            0.3677092699777512,
+            0.38188266094241824
+          ],
+          [
+            0.3623331164556836,
+            0.3777394332523857
+          ],
+          [
+            0.3785282876756456,
+            0.3782617326559765
+          ],
+          [
+            0.38748809137041607,
+            0.37974774949252604
+          ],
+          [
+            0.3957716605019948,
+            0.37922592586172477
+          ],
+          [
+            0.4256507563212561,
+            0.37779232332749024
+          ],
+          [
+            0.39471682839923433,
+            0.3784630638414196
+          ],
+          [
+            0.3861236924216861,
+            0.37818648125976323
+          ],
+          [
+            0.3760163818086897,
+            0.37647498776870114
+          ]
+        ],
+        "visibility": [
+          0.9969889521598816,
+          4.878183062828612e-06,
+          3.4568496953824024e-09,
+          1.329716154554821e-15,
+          0.9735272526741028,
+          0.9545537829399109,
+          5.02528659859097e-16,
+          2.711322394491388e-15,
+          0.5119109749794006,
+          2.426850604156372e-12,
+          2.0855156143695375e-11,
+          1.5994554855916499e-12,
+          6.625601976784079e-12,
+          2.034915855611552e-12,
+          2.8487022446900892e-15,
+          4.825365117819681e-16,
+          6.043694597513902e-14,
+          3.420017903859457e-13,
+          6.032802838014384e-13,
+          3.7245485423045496e-14,
+          4.87649678774817e-22,
+          1.735999266362351e-21,
+          0.012140649370849133,
+          8.894007752502375e-10,
+          1.2544963465859686e-15,
+          1.4826497234804448e-12,
+          4.493373489822261e-05,
+          1.6416352721648764e-08,
+          6.575303994858783e-13
+        ],
+        "headpose": {
+          "pitch": -9.794598845277713,
+          "yaw": 10.565693051626303,
+          "roll": -4.476082510297816
+        },
+        "attributes": {
+          "5 oClock Shadow": 0.04321780800819397,
+          "Arched Eyebrows": 0.03505294397473335,
+          "Attractive": 0.2650870978832245,
+          "Bags Under Eyes": 0.3841923177242279,
+          "Bald": 7.333155735977925e-06,
+          "Bangs": 0.0004536086053121835,
+          "Big Lips": 0.03341921418905258,
+          "Big Nose": 0.20565035939216614,
+          "Black Hair": 0.4996790587902069,
+          "Blond Hair": 0.00016837652947288007,
+          "Blurry": 4.6649478463223204e-05,
+          "Brown Hair": 0.0540868416428566,
+          "Bushy Eyebrows": 0.11025700718164444,
+          "Chubby": 0.21189863979816437,
+          "Double Chin": 0.0524459145963192,
+          "Eyeglasses": 5.4514992370968685e-05,
+          "Goatee": 4.4053540477762e-05,
+          "Gray Hair": 0.0006916825659573078,
+          "Heavy Makeup": 0.0015766090946272016,
+          "High Cheekbones": 0.18806001543998718,
+          "Male": 0.9981231093406677,
+          "Mouth Slightly Open": 0.0005388213321566582,
+          "Mustache": 3.123064016108401e-05,
+          "Narrow Eyes": 0.17686855792999268,
+          "No Beard": 0.9956887364387512,
+          "Oval Face": 0.3479585349559784,
+          "Pale Skin": 0.002638324396684766,
+          "Pointy Nose": 0.02007625252008438,
+          "Receding Hairline": 0.007739023305475712,
+          "Rosy Cheeks": 0.0024950657971203327,
+          "Sideburns": 2.47548523475416e-05,
+          "Smiling": 0.05791478231549263,
+          "Straight Hair": 0.8744460344314575,
+          "Wavy Hair": 0.007727829739451408,
+          "Wearing Earrings": 0.0016308081103488803,
+          "Wearing Hat": 0.00016164348926395178,
+          "Wearing Lipstick": 0.001089584082365036,
+          "Wearing Necklace": 3.203864980605431e-05,
+          "Wearing Necktie": 0.892150342464447,
+          "Young": 0.9101974368095398
+        },
+        "age": [
+          0.07965882122516632,
+          0.881726086139679,
+          0.11448364704847336,
+          0.48065850138664246,
+          0.8041202425956726,
+          0.0729769617319107,
+          0.0025467313826084137,
+          1.015173074847553e-05
+        ],
+        "race": [
+          0.8996119499206543,
+          0.003611348569393158,
+          0.9674220085144043,
+          0.0812346562743187,
+          0.7319806218147278
+        ],
+        "gender": [
+          0.9924561977386475,
+          0.00951402448117733
+        ]
+      },
+      "deepface_detailing": {
+        "emotion": {
+          "angry": 3.792451322078705,
+          "disgust": 0.0007238652870000806,
+          "fear": 21.903295814990997,
+          "happy": 54.8003613948822,
+          "sad": 1.9836090505123138,
+          "surprise": 0.12468303320929408,
+          "neutral": 17.3948734998703
+        },
+        "dominant_emotion": "happy",
+        "region": {
+          "x": 0,
+          "y": 0,
+          "w": 535,
+          "h": 744,
+          "left_eye": null,
+          "right_eye": null
+        },
+        "face_confidence": 0.0,
+        "age": 39,
+        "gender": {
+          "Woman": 0.6622308865189552,
+          "Man": 99.33777451515198
+        },
+        "dominant_gender": "Man",
+        "race": {
+          "asian": 0.008492140193009801,
+          "indian": 0.0026984891940661547,
+          "black": 7.518519523303084e-05,
+          "white": 98.47863334672053,
+          "middle eastern": 0.556728875952497,
+          "latino hispanic": 0.9533650036615129
+        },
+        "dominant_race": "white"
+      }
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.0001343968033324927,
+        0.16809183359146118,
+        1.0,
+        0.7096738219261169
+      ]
+    ],
+    "face_boxes": [
+      [
+        0.2823343873023987,
+        0.2235695868730545,
+        0.5306169986724854,
+        0.41770145297050476
+      ]
+    ],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.46230157546274814,
+            0.44233197321370243
+          ],
+          [
+            0.20840716058408237,
+            0.44779664534330366
+          ],
+          [
+            0.02473886045909013,
+            0.5716625469475984
+          ],
+          [
+            0.0009700216193852476,
+            0.5668050606101751
+          ],
+          [
+            0.7161959903414139,
+            0.4368673010841012
+          ],
+          [
+            0.9344371469605224,
+            0.5522326015979051
+          ],
+          [
+            0.873934648095819,
+            0.6020218365564942
+          ],
+          [
+            0.30564331947378415,
+            0.8023931479752063
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6600150985384751,
+            0.8023931479752063
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3402161759679004,
+            0.30207205522060393
+          ],
+          [
+            0.4439347454502489,
+            0.29842894046753643
+          ],
+          [
+            0.2883568912267261,
+            0.31421577106416226
+          ],
+          [
+            0.5390101008090684,
+            0.30571516997367143
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.8760954516267013,
+            0.6020218365564942
+          ],
+          [
+            0.8112713457002334,
+            0.5765200332850218
+          ],
+          [
+            0.7918241139222931,
+            0.5510182300135493
+          ],
+          [
+            0.7983065245149399,
+            0.5328026562482119
+          ],
+          [
+            0.815592952761998,
+            0.5145870824828744
+          ],
+          [
+            0.824236166885527,
+            0.5983787218034268
+          ],
+          [
+            0.8004673280458221,
+            0.61780866715312
+          ],
+          [
+            0.7702160786134704,
+            0.6275236398279667
+          ],
+          [
+            0.733482418588472,
+            0.6372386125028133
+          ],
+          [
+            0.8307185774781738,
+            0.6311667545810342
+          ],
+          [
+            0.7961457209840576,
+            0.6518110715150833
+          ],
+          [
+            0.7507688468355301,
+            0.6651691589429974
+          ],
+          [
+            0.7053919726870026,
+            0.6785272463709116
+          ],
+          [
+            0.8285577739472916,
+            0.6505966999307274
+          ],
+          [
+            0.7896633103914108,
+            0.668812273696065
+          ],
+          [
+            0.7464472397737656,
+            0.6821703611239791
+          ],
+          [
+            0.7032311691561204,
+            0.6930997053831816
+          ],
+          [
+            0.824236166885527,
+            0.6639547873586417
+          ],
+          [
+            0.7853417033296463,
+            0.6785272463709116
+          ],
+          [
+            0.7486080433046478,
+            0.6918853337988258
+          ],
+          [
+            0.7118743832796494,
+            0.7016003064736724
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            0.28403528416496154,
+            0.29842894046753643
+          ],
+          [
+            0.2861960876958438,
+            0.31785888581722976
+          ],
+          [
+            0.29051769475760836,
+            0.33728883116692304
+          ],
+          [
+            0.2991609088811374,
+            0.3555044049322605
+          ],
+          [
+            0.31212573006643096,
+            0.373719978697598
+          ],
+          [
+            0.3315729618443713,
+            0.3907211808785796
+          ],
+          [
+            0.35534180068407617,
+            0.4052936398908496
+          ],
+          [
+            0.38559305011642786,
+            0.41500861256569627
+          ],
+          [
+            0.42016590661054404,
+            0.41622298415005204
+          ],
+          [
+            0.45257795957377794,
+            0.41015112622827293
+          ],
+          [
+            0.48066840547524736,
+            0.39922178196907043
+          ],
+          [
+            0.5044372443149523,
+            0.38343495137244465
+          ],
+          [
+            0.5195628690311281,
+            0.366433749191463
+          ],
+          [
+            0.5303668866855394,
+            0.34821817542612554
+          ],
+          [
+            0.5325276902164217,
+            0.3275738584920764
+          ],
+          [
+            0.5325276902164217,
+            0.3081439131423831
+          ],
+          [
+            0.5325276902164217,
+            0.287499596208334
+          ],
+          [
+            0.2970001053502551,
+            0.287499596208334
+          ],
+          [
+            0.31212573006643096,
+            0.28264210987091065
+          ],
+          [
+            0.3272513547826068,
+            0.28264210987091065
+          ],
+          [
+            0.34453778302966487,
+            0.28264210987091065
+          ],
+          [
+            0.361824211276723,
+            0.2850708530396223
+          ],
+          [
+            0.40720108542525046,
+            0.2814277382865548
+          ],
+          [
+            0.4244875136723086,
+            0.2777846235334873
+          ],
+          [
+            0.4439347454502489,
+            0.27535588036477565
+          ],
+          [
+            0.4633819772281893,
+            0.27535588036477565
+          ],
+          [
+            0.48282920900612963,
+            0.27899899511784315
+          ],
+          [
+            0.38775385364731013,
+            0.30328642680495976
+          ],
+          [
+            0.38775385364731013,
+            0.31421577106416226
+          ],
+          [
+            0.38775385364731013,
+            0.32635948690772054
+          ],
+          [
+            0.38775385364731013,
+            0.3385032027512789
+          ],
+          [
+            0.36614581833848747,
+            0.3494325470104814
+          ],
+          [
+            0.37911063952378105,
+            0.35186129017919304
+          ],
+          [
+            0.3920754607090746,
+            0.35186129017919304
+          ],
+          [
+            0.4050402818943682,
+            0.3506469185948372
+          ],
+          [
+            0.42016590661054404,
+            0.3494325470104814
+          ],
+          [
+            0.3186081406590777,
+            0.3045007983893156
+          ],
+          [
+            0.33373376537525357,
+            0.29964331205189226
+          ],
+          [
+            0.3510201936223117,
+            0.29964331205189226
+          ],
+          [
+            0.36398501480760526,
+            0.30571516997367143
+          ],
+          [
+            0.3488593900914294,
+            0.3081439131423831
+          ],
+          [
+            0.33373376537525357,
+            0.3081439131423831
+          ],
+          [
+            0.41800510307966177,
+            0.30328642680495976
+          ],
+          [
+            0.43096992426495534,
+            0.29600019729882476
+          ],
+          [
+            0.4504171560428957,
+            0.29478582571446893
+          ],
+          [
+            0.4677035842899538,
+            0.29964331205189226
+          ],
+          [
+            0.45257795957377794,
+            0.3045007983893156
+          ],
+          [
+            0.4352915313267199,
+            0.30571516997367143
+          ],
+          [
+            0.35534180068407617,
+            0.37614872186630965
+          ],
+          [
+            0.36830662186936974,
+            0.37250560711324215
+          ],
+          [
+            0.3834322465855456,
+            0.3712912355288863
+          ],
+          [
+            0.3942362642399569,
+            0.3712912355288863
+          ],
+          [
+            0.4028794783634859,
+            0.3700768639445305
+          ],
+          [
+            0.4223267101414263,
+            0.3712912355288863
+          ],
+          [
+            0.4439347454502489,
+            0.3749343502819538
+          ],
+          [
+            0.42880912073407307,
+            0.37979183661937715
+          ],
+          [
+            0.4136834960178973,
+            0.38343495137244465
+          ],
+          [
+            0.39639706777083916,
+            0.38586369454115627
+          ],
+          [
+            0.3812714430546633,
+            0.3846493229568005
+          ],
+          [
+            0.36614581833848747,
+            0.381006208203733
+          ],
+          [
+            0.3596634077458407,
+            0.37614872186630965
+          ],
+          [
+            0.37694983599289883,
+            0.37614872186630965
+          ],
+          [
+            0.3942362642399569,
+            0.37614872186630965
+          ],
+          [
+            0.4158442995487795,
+            0.37614872186630965
+          ],
+          [
+            0.43745233485760215,
+            0.3749343502819538
+          ],
+          [
+            0.4158442995487795,
+            0.37614872186630965
+          ],
+          [
+            0.3942362642399569,
+            0.3773630934506655
+          ],
+          [
+            0.37694983599289883,
+            0.3773630934506655
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "new_filename": "004228",
+  "objects": [
+    {
+      "box": [
+        0.0005227923393249512,
+        0.6125717163085938,
+        0.545844554901123,
+        0.9364174604415894
+      ],
+      "name": "laptop",
+      "possible_names": [
+        "laptop"
+      ]
+    }
+  ],
+  "mask_file": "./person_labeling/./004228.jpg_masks.pkl",
+  "hoi_processed": true,
+  "scene": "A man sits at a wooden desk with an open laptop and some papers while behind him a whiteboard displays a scientific diagram involving water droplets and a candle with red annotations asking why the candle goes out",
+  "overall_past": "Before the current scene, the individual likely conducted a live demonstration of the candle-in-a-jar experiment, where a burning candle is placed under an inverted glass or jar, and the flame eventually goes out. They may have explained the role of oxygen in combustion, showing how the candle consumes oxygen inside the enclosed space, causing the flame to extinguish once the oxygen level drops too low. After the demonstration, they set up the whiteboard with a detailed diagram of the process, including water droplets (indicating condensation from combustion byproducts) and a red-annotated question asking why the candle goes out—likely to prompt discussion or reflection. The open laptop suggests they were preparing or recording the explanation, possibly for a virtual class or educational video, and the formal attire indicates this was part of a structured teaching session.",
+  "overall_past_clean": "The demonstration began with the ignition of a candle placed within a confined space, its flame steadily consuming the available oxygen while visibly dimming as the gas composition shifted, followed by the gradual formation of moisture on the enclosure's inner surface due to the chemical byproducts of combustion, all preceding the deliberate setup of a visual aid to explore the underlying scientific principles.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual is likely to begin explaining the scientific principle behind why the candle goes out in the diagram—specifically, how the combustion process is extinguished when water vapor or a change in air composition (such as oxygen depletion) occurs in a closed system. They may point to the red annotations on the whiteboard, walk through the steps of the experiment, and use the laptop to display a simulation or video demonstrating the reaction. This would lead to a deeper discussion on the chemistry of combustion, the role of oxygen, and the effects of condensation or pressure changes, ultimately aiming to clarify the concept for the audience.",
+  "overall_future_clean": "The individual confidently transitions into a detailed explanation, using precise gestures to highlight key stages of the combustion process, while the screen displays a dynamic simulation that visually confirms the depletion of oxygen and the subsequent extinguishing of the flame, prompting the audience to engage with the underlying chemical principles through a series of follow-up questions and real-time demonstrations.",
+  "future_scene_ok": true
+}

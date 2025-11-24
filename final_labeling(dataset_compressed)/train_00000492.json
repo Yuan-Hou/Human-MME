@@ -1,0 +1,731 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00000492.jpg",
+  "image_id": "train_00000492",
+  "width": 427,
+  "height": 640,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 492,
+  "annotations": {
+    "objects": "[{'id': 370, 'bbox_human': [48, 183, 65, 446], 'bbox_object': [28, 107, 171, 329], 'connection': 1, 'invis': 0}, {'id': 372, 'bbox_human': [50, 183, 73, 437], 'bbox_object': [32, 102, 155, 322], 'connection': 1, 'invis': 0}, {'id': 373, 'bbox_human': [50, 179, 82, 436], 'bbox_object': [31, 102, 172, 327], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('kite', 'carry'), ('kite', 'hold'), ('kite', 'inspect')]",
+    "negative_captions": "[('kite', 'assemble'), ('kite', 'fly'), ('kite', 'launch'), ('kite', 'pull'), ('kite', 'no_interaction')]",
+    "ambiguous_captions": "[]",
+    "positive_objects": "[369, 371, 372]",
+    "negative_objects": "[368, 370, 373, 374, 375]",
+    "ambiguous_objects": "[]",
+    "size": "[427, 640, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": true,
+        "age": "child",
+        "gender": "male",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a short-sleeved t-shirt, pants, and sandals.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shirt",
+                "t-shirt",
+                "tee"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "white",
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "pants",
+                "trousers",
+                "jeans"
+              ],
+              "name": "pants",
+              "type": "bottom",
+              "color": [
+                "brown"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "shoes",
+                "sneakers"
+              ],
+              "name": "shoes",
+              "type": "footwear",
+              "color": [
+                "black",
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "kite"
+            ],
+            "name": "kite",
+            "position": "hand"
+          }
+        ],
+        "description": "The person is a child standing on grass, wearing a two-toned short-sleeved t-shirt (white and gray), gray pants, and black sandals. The child is holding an orange, white, and green kite in one hand.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The child appears to be focused on holding an object, possibly a kite, suggesting a neutral emotional state as there are no visible facial expressions.",
+        "meaningful": true,
+        "story": "A young boy stands outdoors on a grassy field, holding what seems to be a kite with colors resembling those of the Indian flag. He might be preparing to fly the kite or has just finished flying it. The scene suggests a playful and peaceful moment, possibly during a celebration or a casual day out.",
+        "race": "asian",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "A young boy stands on a grassy field holding an Indian flag, his body slightly turned as if he is either preparing to wave it or has just finished doing so. He appears focused on the flag, suggesting a sense of pride or participation in a patriotic event. His casual attire indicates that this might be a relaxed outdoor gathering where children are encouraged to express national spirit. The way he holds the flag close to him could imply a personal connection or significance to the moment, possibly motivated by the celebration of a national holiday or a community event fostering unity and cultural identity.",
+        "intention": "The individual is expressing pride and participation in a patriotic event through the deliberate and personal display of the national flag",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "hand",
+                "carry"
+              ],
+              [
+                "hand",
+                "hold"
+              ],
+              [
+                "hand",
+                "inspect"
+              ]
+            ],
+            "negative_action": [
+              "assemble",
+              "fly",
+              "launch",
+              "pull",
+              "no interaction"
+            ],
+            "position": "hand"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.1324208527803421,
+        0.12010736763477325,
+        0.4193943440914154,
+        0.6863284111022949
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.335178382479521,
+            0.2728973797056824
+          ],
+          [
+            0.389554320649185,
+            0.26692742652570206
+          ],
+          [
+            0.34550292770160906,
+            0.29264414791638654
+          ],
+          [
+            0.27254280813218656,
+            0.27703042421489954
+          ],
+          [
+            0.2808024443098569,
+            0.27886733288566273
+          ],
+          [
+            0.21747856694771672,
+            0.35050677104542655
+          ],
+          [
+            0.15828450767441155,
+            0.32019777797783416
+          ],
+          [
+            0.3606455940273383,
+            0.41847239186366403
+          ],
+          [
+            0.3565157759385031,
+            0.5213392774264017
+          ],
+          [
+            0.3620222000569501,
+            0.6196138913122317
+          ],
+          [
+            0.29456850460597445,
+            0.43684147857129574
+          ],
+          [
+            0.29594511063558615,
+            0.5351160924571255
+          ],
+          [
+            0.30420474681325677,
+            0.6434937040321529
+          ],
+          [
+            0.26565977798412777,
+            0.20447253171975407
+          ],
+          [
+            0.26565977798412777,
+            0.20447253171975407
+          ],
+          [
+            0.3633988060865617,
+            0.19896180570746455
+          ],
+          [
+            0.30282814078364495,
+            0.20906480339666214
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.15828450767441155,
+            0.32111623231321573
+          ],
+          [
+            0.15966111370402322,
+            0.31468705196554464
+          ],
+          [
+            0.15828450767441155,
+            0.3082578716178735
+          ],
+          [
+            0.15140147752635283,
+            0.30642096294711035
+          ],
+          [
+            0.14451844737829403,
+            0.30642096294711035
+          ],
+          [
+            0.14038862928945886,
+            0.3036655999409656
+          ],
+          [
+            0.1390120232598471,
+            0.30550250861172873
+          ],
+          [
+            0.14176523531907056,
+            0.3091763259532551
+          ],
+          [
+            0.14589505340790582,
+            0.31101323462401825
+          ],
+          [
+            0.13212899311178833,
+            0.3100947802886367
+          ],
+          [
+            0.13212899311178833,
+            0.3119316889593999
+          ],
+          [
+            0.13763541723023534,
+            0.313768597630163
+          ],
+          [
+            0.14451844737829403,
+            0.3165239606363078
+          ],
+          [
+            0.12799917502295316,
+            0.3165239606363078
+          ],
+          [
+            0.12799917502295316,
+            0.3174424149716894
+          ],
+          [
+            0.1335055991414001,
+            0.31927932364245254
+          ],
+          [
+            0.1390120232598471,
+            0.32111623231321573
+          ],
+          [
+            0.1252459629637296,
+            0.3238715953193605
+          ],
+          [
+            0.1252459629637296,
+            0.3238715953193605
+          ],
+          [
+            0.12799917502295316,
+            0.32479004965474206
+          ],
+          [
+            0.1335055991414001,
+            0.3257085039901237
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.26290656592490436,
+            0.28070424155642587
+          ],
+          [
+            0.2574001418064573,
+            0.27886733288566273
+          ],
+          [
+            0.2505171116583987,
+            0.27519351554413635
+          ],
+          [
+            0.23950426342150452,
+            0.2742750612087548
+          ],
+          [
+            0.2284914151846106,
+            0.27519351554413635
+          ],
+          [
+            0.24088086945111634,
+            0.2650905178549389
+          ],
+          [
+            0.2284914151846106,
+            0.2678458808610837
+          ],
+          [
+            0.22436159709577538,
+            0.2742750612087548
+          ],
+          [
+            0.22298499106616368,
+            0.27886733288566273
+          ],
+          [
+            0.23950426342150452,
+            0.26692742652570206
+          ],
+          [
+            0.22573820312538723,
+            0.2696827895318468
+          ],
+          [
+            0.22436159709577538,
+            0.27611196987951797
+          ],
+          [
+            0.22298499106616368,
+            0.28070424155642587
+          ],
+          [
+            0.23812765739189293,
+            0.2696827895318468
+          ],
+          [
+            0.2271148091549988,
+            0.27151969820261
+          ],
+          [
+            0.22573820312538723,
+            0.27703042421489954
+          ],
+          [
+            0.22573820312538723,
+            0.28070424155642587
+          ],
+          [
+            0.23812765739189293,
+            0.2733566068733732
+          ],
+          [
+            0.22986802121422245,
+            0.2742750612087548
+          ],
+          [
+            0.22573820312538723,
+            0.2779488785502811
+          ],
+          [
+            0.22573820312538723,
+            0.2797857872210443
+          ]
+        ],
+        "dw_face": [
+          [
+            0.2684129900433512,
+            0.2099832577320436
+          ],
+          [
+            0.26703638401373964,
+            0.2118201664028069
+          ],
+          [
+            0.2684129900433512,
+            0.21549398374433312
+          ],
+          [
+            0.26978959607296304,
+            0.2200862554212412
+          ],
+          [
+            0.27391941416179827,
+            0.2237600727627674
+          ],
+          [
+            0.2780492322506335,
+            0.22743389010429382
+          ],
+          [
+            0.2835556563690805,
+            0.2283523444396754
+          ],
+          [
+            0.2849322623986923,
+            0.23294461611658335
+          ],
+          [
+            0.2904386865171392,
+            0.23478152478734654
+          ],
+          [
+            0.29319189857636263,
+            0.23294461611658335
+          ],
+          [
+            0.29594511063558615,
+            0.22927079877505702
+          ],
+          [
+            0.29594511063558615,
+            0.22651543576891217
+          ],
+          [
+            0.29456850460597445,
+            0.2237600727627674
+          ],
+          [
+            0.29594511063558615,
+            0.21916780108585954
+          ],
+          [
+            0.29594511063558615,
+            0.21457552940895167
+          ],
+          [
+            0.29594511063558615,
+            0.20906480339666214
+          ],
+          [
+            0.29319189857636263,
+            0.20447253171975407
+          ],
+          [
+            0.26152995989529254,
+            0.20539098605513573
+          ],
+          [
+            0.26290656592490436,
+            0.20539098605513573
+          ],
+          [
+            0.26428317195451595,
+            0.20447253171975407
+          ],
+          [
+            0.26290656592490436,
+            0.20447253171975407
+          ],
+          [
+            0.26290656592490436,
+            0.20447253171975407
+          ],
+          [
+            0.26290656592490436,
+            0.20447253171975407
+          ],
+          [
+            0.26428317195451595,
+            0.20355407738437262
+          ],
+          [
+            0.26565977798412777,
+            0.20355407738437262
+          ],
+          [
+            0.26703638401373964,
+            0.20355407738437262
+          ],
+          [
+            0.2684129900433512,
+            0.20355407738437262
+          ],
+          [
+            0.26428317195451595,
+            0.20906480339666214
+          ],
+          [
+            0.26428317195451595,
+            0.21090171206742525
+          ],
+          [
+            0.26428317195451595,
+            0.21273862073818836
+          ],
+          [
+            0.26428317195451595,
+            0.21457552940895167
+          ],
+          [
+            0.26703638401373964,
+            0.21824934675047789
+          ],
+          [
+            0.2684129900433512,
+            0.21824934675047789
+          ],
+          [
+            0.26978959607296304,
+            0.21824934675047789
+          ],
+          [
+            0.27116620210257475,
+            0.21824934675047789
+          ],
+          [
+            0.27116620210257475,
+            0.21733089241509643
+          ],
+          [
+            0.26565977798412777,
+            0.20906480339666214
+          ],
+          [
+            0.26565977798412777,
+            0.20906480339666214
+          ],
+          [
+            0.26565977798412777,
+            0.20906480339666214
+          ],
+          [
+            0.26428317195451595,
+            0.2081463490612805
+          ],
+          [
+            0.26428317195451595,
+            0.2081463490612805
+          ],
+          [
+            0.26428317195451595,
+            0.2081463490612805
+          ],
+          [
+            0.26565977798412777,
+            0.20906480339666214
+          ],
+          [
+            0.26565977798412777,
+            0.2081463490612805
+          ],
+          [
+            0.26565977798412777,
+            0.2081463490612805
+          ],
+          [
+            0.26565977798412777,
+            0.2081463490612805
+          ],
+          [
+            0.26703638401373964,
+            0.2081463490612805
+          ],
+          [
+            0.26565977798412777,
+            0.20906480339666214
+          ],
+          [
+            0.2766726262210217,
+            0.2255969814335307
+          ],
+          [
+            0.27254280813218656,
+            0.22467852709814906
+          ],
+          [
+            0.27254280813218656,
+            0.2237600727627674
+          ],
+          [
+            0.27254280813218656,
+            0.22467852709814906
+          ],
+          [
+            0.27391941416179827,
+            0.22467852709814906
+          ],
+          [
+            0.2766726262210217,
+            0.2255969814335307
+          ],
+          [
+            0.27942583828024536,
+            0.22743389010429382
+          ],
+          [
+            0.27942583828024536,
+            0.22743389010429382
+          ],
+          [
+            0.27942583828024536,
+            0.22743389010429382
+          ],
+          [
+            0.27942583828024536,
+            0.2283523444396754
+          ],
+          [
+            0.2780492322506335,
+            0.22743389010429382
+          ],
+          [
+            0.2780492322506335,
+            0.22651543576891217
+          ],
+          [
+            0.2766726262210217,
+            0.2255969814335307
+          ],
+          [
+            0.2752960201914101,
+            0.22467852709814906
+          ],
+          [
+            0.2752960201914101,
+            0.22467852709814906
+          ],
+          [
+            0.2766726262210217,
+            0.2255969814335307
+          ],
+          [
+            0.27942583828024536,
+            0.22743389010429382
+          ],
+          [
+            0.2780492322506335,
+            0.22743389010429382
+          ],
+          [
+            0.2780492322506335,
+            0.22743389010429382
+          ],
+          [
+            0.2780492322506335,
+            0.22651543576891217
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.24088086945111634,
+            0.6563520647274951
+          ],
+          [
+            0.2505171116583987,
+            0.6646181537459294
+          ],
+          [
+            0.3289836553462682,
+            0.6563520647274951
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.3165942010797625,
+            0.6315537976721922
+          ],
+          [
+            0.32623044328704454,
+            0.6269615259952843
+          ],
+          [
+            0.37165844226423234,
+            0.6324722520075738
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "kite",
+      "possible_names": [
+        "kite"
+      ],
+      "box": [
+        0.06557377049180328,
+        0.2671875,
+        0.2505854800936768,
+        0.5140625
+      ]
+    },
+    {
+      "name": "kite",
+      "possible_names": [
+        "kite"
+      ],
+      "box": [
+        0.07494145199063232,
+        0.2421875,
+        0.2388758782201405,
+        0.503125
+      ]
+    }
+  ],
+  "scene": "A child stands on a grassy field holding an Indian flag with vibrant orange white and green colors against a monochrome background suggesting a moment of national pride or celebration in an outdoor setting",
+  "overall_past": "Before this moment, the child likely participated in a school or community event celebrating a national occasion such as Independence Day or Republic Day. He may have been given the flag during a ceremony, possibly after reciting a patriotic poem or taking part in a parade, which built up to this quiet, proud stance. The focused expression and the way he holds the flag close suggest he has just completed a meaningful act—perhaps receiving the flag from a teacher or official, or finishing a performance—leading to this heartfelt, personal display of national pride.",
+  "overall_past_clean": "The individual had just completed a ceremonial procession, moving with deliberate steps through a crowd of onlookers, their voice rising in unison with others during a patriotic recitation, before being formally presented with a symbolic emblem by an authority figure in a moment of quiet reverence.",
+  "past_scene_ok": false,
+  "overall_future": "After the current scene, the child is likely to raise the Indian flag higher into the air, perhaps joining other children or community members in a synchronized wave or salute, as the sound of patriotic music swells or a national anthem begins to play. This moment would mark the peak of a collective celebration, reinforcing a shared sense of identity and unity among the participants.",
+  "overall_future_clean": "The air vibrates with a unified roar as countless hands rise in unison, the flag soaring higher in a wave of collective pride, the anthem swelling into a thunderous crescendo that echoes through the crowd like a living pulse of national spirit.",
+  "future_scene_ok": false
+}

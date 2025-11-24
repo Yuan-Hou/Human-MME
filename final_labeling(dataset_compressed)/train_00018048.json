@@ -1,0 +1,691 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00018048.jpg",
+  "image_id": "train_00018048",
+  "width": 640,
+  "height": 416,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 18048,
+  "annotations": {
+    "objects": "[{'id': 245, 'bbox_human': [151, 538, 9, 410], 'bbox_object': [65, 635, 36, 414], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('bench', 'lie_on')]",
+    "negative_captions": "[('bench', 'sit_on'), ('bench', 'no_interaction')]",
+    "ambiguous_captions": "[('bench', 'inspect')]",
+    "positive_objects": "[244]",
+    "negative_objects": "[245, 246]",
+    "ambiguous_objects": "[243]",
+    "size": "[640, 416, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "child",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing a short-sleeved shirt and shorts, both appear to be light in color.",
+        "clothing": {
+          "vague": false,
+          "clothing": [
+            {
+              "possible_names": [
+                "shorts",
+                "trousers"
+              ],
+              "name": "shorts",
+              "type": "bottom",
+              "color": [
+                "gray"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            },
+            {
+              "possible_names": [
+                "t-shirt",
+                "shirt"
+              ],
+              "name": "t-shirt",
+              "type": "top",
+              "color": [
+                "white"
+              ],
+              "belonging_confident": true,
+              "existence_confident": true
+            }
+          ]
+        },
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bench"
+            ],
+            "name": "bench",
+            "position": "body"
+          }
+        ],
+        "description": "An adult is lying on a bench with their head resting on their arm. They are wearing a light-colored shirt and shorts, and their feet are bare. The person appears to be sleeping or resting.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The child appears to be resting or sleeping, with no visible expression indicating strong emotions.",
+        "meaningful": true,
+        "story": "A young child is seen lying down on a bench outdoors, possibly taking a nap or resting during playtime. The child's relaxed posture suggests they are comfortable and at ease in their environment.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is lying on a bench with their legs bent and feet resting on the seat, suggesting they might be taking a rest or possibly feeling unwell. Their head is tilted back against the backrest, indicating relaxation or exhaustion. The individual's posture and positioning imply a moment of pause, perhaps due to fatigue or simply enjoying a moment of solitude in an outdoor setting. The absence of shoes could suggest comfort or a desire to feel more at ease in their environment.",
+        "intention": "The individual is seeking comfort and relaxation in a quiet outdoor moment prioritizing physical ease and mental respite",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "foot",
+                "lie on"
+              ]
+            ],
+            "negative_action": [
+              "sit on",
+              "no interaction"
+            ],
+            "position": "foot"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.243920236825943,
+        0.033089492470026016,
+        0.8237468600273132,
+        0.9637542366981506
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.2842387537161509,
+            0.6962857590271876
+          ],
+          [
+            0.4474711410701275,
+            0.4566609977911679
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.280500607440869,
+            0.698202757117076
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.45743953113754576,
+            0.6406928144204312
+          ],
+          [
+            0.6281482110420862,
+            0.6790327762181942
+          ],
+          [
+            0.74652284309268,
+            0.6196058354316611
+          ],
+          [
+            0.5035433351993561,
+            0.09626535689219445
+          ],
+          [
+            0.6281482110420862,
+            0.713538741836181
+          ],
+          [
+            0.43002645845214527,
+            0.4010680531844116
+          ],
+          [
+            0.4474711410701275,
+            0.3838150703754181
+          ],
+          [
+            0.43251855596899985,
+            0.39340006082485873
+          ],
+          [
+            0.4586855798959732,
+            0.3838150703754181
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.2655480223397414,
+            0.6790327762181942
+          ],
+          [
+            0.2655480223397414,
+            0.7557126998137207
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.2717782661318779,
+            0.7020367532968521
+          ],
+          [
+            0.2792545586824417,
+            0.7576296979036085
+          ],
+          [
+            0.2829927049577236,
+            0.7767996788024902
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.2829927049577236,
+            0.7192897361058456
+          ],
+          [
+            0.2904689975082874,
+            0.7729656826227141
+          ],
+          [
+            0.29545319254199665,
+            0.7825506730721548
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_face": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.6568073324859143,
+            0.7787166768923786
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "bench",
+      "possible_names": [
+        "bench"
+      ],
+      "box": [
+        0.1015625,
+        0.08653846153846154,
+        0.9921875,
+        0.9951923076923077
+      ]
+    }
+  ],
+  "scene": "A black and white photograph captures an individual resting on a wooden bench with metal supports in an outdoor setting suggesting a moment of tranquility amidst nature",
+  "overall_past": "Before this moment of stillness, the individual likely walked through a natural outdoor space—perhaps a park or forest trail—possibly for exercise, reflection, or escape from daily routines. The absence of shoes suggests they may have removed them earlier, perhaps to feel the ground beneath their feet or to relax after a long walk. The bent legs and head tilted back indicate a buildup of physical or mental fatigue, implying the rest was not planned but rather a natural response to exhaustion. It is plausible that they had been walking for some time, perhaps following a path that led them to this quiet, secluded bench, where they finally paused to catch their breath and reconnect with the surroundings.",
+  "overall_past_clean": "The individual moved steadily along a winding path, feet pressing into earth and stone, breath deepening with each step as the rhythm of motion carried them deeper into the quiet embrace of nature, until the body’s demand for release overtook will, and they surrendered to the need to stop.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the individual may slowly sit up, stretch their limbs, and take a few deep breaths, feeling refreshed by the quiet moment in nature. They might then reach for a nearby water bottle, sip some water, and glance around the surroundings—perhaps noticing birds, rustling leaves, or distant sunlight filtering through trees—before deciding whether to continue their walk or remain seated a little longer, savoring the peace.",
+  "overall_future_clean": "The individual rises with deliberate calm, limbs unfolding like branches after stillness, breath deepening as if drawing in the earth’s quiet pulse, then pauses—eyes tracing the subtle dance of light and shadow, ears tuning to the hush between sounds—before stepping forward with purpose, each footfall a quiet commitment to the path ahead.",
+  "future_scene_ok": true
+}

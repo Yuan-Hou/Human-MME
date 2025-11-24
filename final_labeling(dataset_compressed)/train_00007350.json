@@ -1,0 +1,739 @@
+{
+  "image_path": "./ref_datasets/hico_det/images/train/train_00007350.jpg",
+  "image_id": "train_00007350",
+  "width": 640,
+  "height": 480,
+  "split": "train",
+  "source": "zhimeng/hico_det",
+  "dataset_index": 7350,
+  "annotations": {
+    "objects": "[{'id': 147, 'bbox_human': [138, 299, 73, 337], 'bbox_object': [57, 482, 185, 432], 'connection': 1, 'invis': 0}, {'id': 149, 'bbox_human': [145, 297, 74, 332], 'bbox_object': [64, 478, 161, 434], 'connection': 1, 'invis': 0}, {'id': 154, 'bbox_human': [137, 302, 70, 332], 'bbox_object': [41, 486, 160, 443], 'connection': 1, 'invis': 0}, {'id': 156, 'bbox_human': [142, 295, 66, 333], 'bbox_object': [54, 479, 163, 435], 'connection': 1, 'invis': 0}]",
+    "positive_captions": "[('motorcycle', 'hold'), ('motorcycle', 'jump'), ('motorcycle', 'ride'), ('motorcycle', 'straddle')]",
+    "negative_captions": "[('motorcycle', 'hop_on'), ('motorcycle', 'park'), ('motorcycle', 'push'), ('motorcycle', 'race'), ('motorcycle', 'turn'), ('motorcycle', 'walk'), ('motorcycle', 'wash'), ('motorcycle', 'no_interaction')]",
+    "ambiguous_captions": "[('motorcycle', 'inspect'), ('motorcycle', 'sit_on')]",
+    "positive_objects": "[146, 148, 153, 155]",
+    "negative_objects": "[149, 150, 151, 152, 156, 157, 158, 159]",
+    "ambiguous_objects": "[147, 154]",
+    "size": "[640, 480, 3]"
+  },
+  "types": [
+    "person"
+  ],
+  "persons": [
+    {
+      "body_box": 0,
+      "skeleton": 0,
+      "face_box": null,
+      "qwen_detailing": {
+        "background": false,
+        "age": "adult",
+        "gender": "unknown",
+        "emotion": "neutral",
+        "clothing_description": "The person is wearing motocross gear suitable for dirt biking. This includes a jacket, pants, gloves, boots, and a helmet with a face shield.",
+        "clothing": [
+          {
+            "possible_names": [
+              "jacket",
+              "motocross jacket"
+            ],
+            "name": "jacket",
+            "type": "top",
+            "color": [
+              "dark gray",
+              "black"
+            ]
+          },
+          {
+            "possible_names": [
+              "pants",
+              "riding pants"
+            ],
+            "name": "pants",
+            "type": "bottom",
+            "color": [
+              "dark gray",
+              "black"
+            ]
+          },
+          {
+            "possible_names": [
+              "gloves",
+              "riding gloves"
+            ],
+            "name": "gloves",
+            "type": "handwear",
+            "color": [
+              "black"
+            ]
+          },
+          {
+            "possible_names": [
+              "boots",
+              "riding boots"
+            ],
+            "name": "boots",
+            "type": "footwear",
+            "color": [
+              "black"
+            ]
+          },
+          {
+            "possible_names": [
+              "helmet",
+              "motocross helmet"
+            ],
+            "name": "helmet",
+            "type": "headwear",
+            "color": [
+              "blue",
+              "black"
+            ]
+          }
+        ],
+        "objects": [
+          {
+            "standalone": false,
+            "possible_names": [
+              "bike",
+              "motorcycle"
+            ],
+            "name": "bike",
+            "position": "body"
+          }
+        ],
+        "description": "The person is an adult male wearing a dark gray and black motocross jacket, riding pants, black gloves, black boots, and a blue and black helmet with a face shield. He is riding a dirt bike in mid-air. The clothing and posture suggest the person is engaged in an intense activity, typical of motocross racing or stunt riding.",
+        "blurry": false,
+        "face_seen": false,
+        "emotion_description": "The person's face is not visible due to the helmet, so their emotional state cannot be determined.",
+        "meaningful": true,
+        "story": "The person appears to be engaged in motocross racing, performing a jump mid-air. The scene suggests an action-packed moment during a race or practice session, highlighting skill and control over the motorcycle.",
+        "race": "unknown",
+        "text": "no_text",
+        "text_relationship": "no_text",
+        "behaviour": "The person is performing an impressive aerial stunt on a motocross bike, demonstrating skill and control as they soar through the air against a clear blue sky. Their body leans forward, gripping the handlebars tightly, suggesting a focus on maintaining balance and direction during this high-speed maneuver. The rider's protective gear, including a helmet and padded clothing, indicates a commitment to safety while engaging in this thrilling and potentially dangerous activity. The sense of adventure and adrenaline likely motivates the individual to push their limits and showcase their abilities in this dynamic sport.",
+        "intention": "The individual is driven by a desire to demonstrate mastery and push physical boundaries through high-risk athletic performance",
+        "intention_ok": true
+      },
+      "hoi": [
+        {
+          "relationship": {
+            "action": [
+              [
+                "body",
+                "hold"
+              ],
+              [
+                "body",
+                "jump"
+              ],
+              [
+                "body",
+                "ride"
+              ],
+              [
+                "body",
+                "straddle"
+              ]
+            ],
+            "negative_action": [
+              "hop on",
+              "park",
+              "push",
+              "race",
+              "turn",
+              "walk",
+              "wash",
+              "no interaction"
+            ],
+            "position": "body"
+          },
+          "object": 0
+        }
+      ]
+    }
+  ],
+  "detect_results": {
+    "body_boxes": [
+      [
+        0.22737236320972443,
+        0.15879185497760773,
+        0.47055545449256897,
+        0.7002202868461609
+      ]
+    ],
+    "face_boxes": [],
+    "skeletons": [
+      {
+        "dw_body": [
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            0.3306860787483553,
+            0.25832755871944957
+          ],
+          [
+            0.32561417284111177,
+            0.24480247630013352
+          ],
+          [
+            0.3715994530667862,
+            0.29439444517095886
+          ],
+          [
+            0.4263760368650159,
+            0.33046133162246805
+          ],
+          [
+            0.3357579846555988,
+            0.27185264113876556
+          ],
+          [
+            0.3715994530667862,
+            0.3728399232029915
+          ],
+          [
+            0.4378723569214344,
+            0.43776031881570815
+          ],
+          [
+            0.26339879371225833,
+            0.4098084818157885
+          ],
+          [
+            0.35739811652650433,
+            0.4702205166220665
+          ],
+          [
+            0.33913925526042776,
+            0.6424398994280232
+          ],
+          [
+            0.27692387613157426,
+            0.4143168426222271
+          ],
+          [
+            0.3675419283409914,
+            0.53243589575092
+          ],
+          [
+            0.3709231989458203,
+            0.6271114726861318
+          ],
+          [
+            0.39053456845382845,
+            0.22947404955824216
+          ],
+          [
+            0.3932395849376917,
+            0.23398241036468073
+          ],
+          [
+            0.3722757071877519,
+            0.2123422784937753
+          ],
+          [
+            0.35469310004264115,
+            0.21144060633248749
+          ]
+        ],
+        "dw_hand_1": [
+          [
+            0.4432823898891608,
+            0.44317035178343456
+          ],
+          [
+            0.45004493109881877,
+            0.44497369610600995
+          ],
+          [
+            0.45680747230847685,
+            0.44587536826729773
+          ],
+          [
+            0.46018874291330575,
+            0.45128540123502414
+          ],
+          [
+            0.46154125115523736,
+            0.45759710636403833
+          ],
+          [
+            0.46424626763910054,
+            0.44136700746085916
+          ],
+          [
+            0.46762753824392955,
+            0.44767871258987313
+          ],
+          [
+            0.4669512841229637,
+            0.45308874555759954
+          ],
+          [
+            0.46424626763910054,
+            0.4557937620414627
+          ],
+          [
+            0.46289375939716904,
+            0.44587536826729773
+          ],
+          [
+            0.46492252176006643,
+            0.4521870733963119
+          ],
+          [
+            0.46289375939716904,
+            0.4557937620414627
+          ],
+          [
+            0.46086499703427153,
+            0.45759710636403833
+          ],
+          [
+            0.46018874291330575,
+            0.44948205691244875
+          ],
+          [
+            0.46154125115523736,
+            0.4557937620414627
+          ],
+          [
+            0.4595124887923399,
+            0.4584987785253259
+          ],
+          [
+            0.4574837264294425,
+            0.4594004506866137
+          ],
+          [
+            0.45680747230847685,
+            0.45308874555759954
+          ],
+          [
+            0.45815998055040835,
+            0.4584987785253259
+          ],
+          [
+            0.45680747230847685,
+            0.4612037950091891
+          ],
+          [
+            0.45477870994557934,
+            0.4621054671704769
+          ]
+        ],
+        "dw_hand_2": [
+          [
+            0.4297573074698448,
+            0.33587136459019445
+          ],
+          [
+            0.43516734043757116,
+            0.35029811917079823
+          ],
+          [
+            0.44260613576819496,
+            0.3620198572675387
+          ],
+          [
+            0.44666366049398987,
+            0.37103657888041597
+          ],
+          [
+            0.44869242285688715,
+            0.37734828400943016
+          ],
+          [
+            0.45274994758268206,
+            0.3584131686223878
+          ],
+          [
+            0.45410245582461356,
+            0.37103657888041597
+          ],
+          [
+            0.45207369346171616,
+            0.3764466118481424
+          ],
+          [
+            0.45004493109881877,
+            0.38095497265458106
+          ],
+          [
+            0.45004493109881877,
+            0.3566098242998123
+          ],
+          [
+            0.449368676977853,
+            0.3692332345578406
+          ],
+          [
+            0.445987406373024,
+            0.374643267525567
+          ],
+          [
+            0.4432823898891608,
+            0.3764466118481424
+          ],
+          [
+            0.44666366049398987,
+            0.35390480781594913
+          ],
+          [
+            0.44531115225205814,
+            0.3656265459126896
+          ],
+          [
+            0.4419298816472292,
+            0.3701349067191283
+          ],
+          [
+            0.4385486110424003,
+            0.3728399232029915
+          ],
+          [
+            0.44260613576819496,
+            0.35029811917079823
+          ],
+          [
+            0.44125362752626335,
+            0.3602165129449632
+          ],
+          [
+            0.4385486110424003,
+            0.3638232015901142
+          ],
+          [
+            0.4365198486795028,
+            0.3665282180739774
+          ]
+        ],
+        "dw_face": [
+          [
+            0.37633323191354673,
+            0.21955565578407718
+          ],
+          [
+            0.3743044695506493,
+            0.22406401659051578
+          ],
+          [
+            0.3715994530667862,
+            0.22767070523566676
+          ],
+          [
+            0.3709231989458203,
+            0.23127739388081756
+          ],
+          [
+            0.37024694482485454,
+            0.23668742684854394
+          ],
+          [
+            0.37024694482485454,
+            0.24029411549369495
+          ],
+          [
+            0.37024694482485454,
+            0.24570414846142133
+          ],
+          [
+            0.3709231989458203,
+            0.24931083710657234
+          ],
+          [
+            0.3729519613087177,
+            0.2547208700742987
+          ],
+          [
+            0.37633323191354673,
+            0.2574258865581619
+          ],
+          [
+            0.3790382483974099,
+            0.2556225422355863
+          ],
+          [
+            0.3817432648812731,
+            0.25201585359043555
+          ],
+          [
+            0.3830957731232047,
+            0.24840916494528453
+          ],
+          [
+            0.3871532978489995,
+            0.24570414846142133
+          ],
+          [
+            0.3891820602118969,
+            0.24209745981627032
+          ],
+          [
+            0.39053456845382845,
+            0.23758909900983174
+          ],
+          [
+            0.39256333081672584,
+            0.23308073820339317
+          ],
+          [
+            0.38782955196996527,
+            0.22316234442922797
+          ],
+          [
+            0.3891820602118969,
+            0.22316234442922797
+          ],
+          [
+            0.39053456845382845,
+            0.2249656887518036
+          ],
+          [
+            0.3912108225747943,
+            0.22586736091309115
+          ],
+          [
+            0.3918870766957602,
+            0.22767070523566676
+          ],
+          [
+            0.3918870766957602,
+            0.22857237739695435
+          ],
+          [
+            0.39256333081672584,
+            0.22857237739695435
+          ],
+          [
+            0.39256333081672584,
+            0.22857237739695435
+          ],
+          [
+            0.3932395849376917,
+            0.22767070523566676
+          ],
+          [
+            0.3932395849376917,
+            0.22676903307437896
+          ],
+          [
+            0.39053456845382845,
+            0.23217906604210536
+          ],
+          [
+            0.3898583143328628,
+            0.23668742684854394
+          ],
+          [
+            0.3898583143328628,
+            0.23939244333240714
+          ],
+          [
+            0.3898583143328628,
+            0.24209745981627032
+          ],
+          [
+            0.3851245354861021,
+            0.24029411549369495
+          ],
+          [
+            0.38444828136513626,
+            0.24119578765498276
+          ],
+          [
+            0.385800789607068,
+            0.24209745981627032
+          ],
+          [
+            0.3885058060909311,
+            0.24390080413884593
+          ],
+          [
+            0.3891820602118969,
+            0.24480247630013352
+          ],
+          [
+            0.38782955196996527,
+            0.22857237739695435
+          ],
+          [
+            0.3885058060909311,
+            0.22857237739695435
+          ],
+          [
+            0.3891820602118969,
+            0.22947404955824216
+          ],
+          [
+            0.3891820602118969,
+            0.22947404955824216
+          ],
+          [
+            0.3885058060909311,
+            0.22947404955824216
+          ],
+          [
+            0.3885058060909311,
+            0.22857237739695435
+          ],
+          [
+            0.3918870766957602,
+            0.23127739388081756
+          ],
+          [
+            0.3918870766957602,
+            0.23217906604210536
+          ],
+          [
+            0.3912108225747943,
+            0.23127739388081756
+          ],
+          [
+            0.3912108225747943,
+            0.23037572171952997
+          ],
+          [
+            0.3912108225747943,
+            0.23037572171952997
+          ],
+          [
+            0.3912108225747943,
+            0.23037572171952997
+          ],
+          [
+            0.3797145025183758,
+            0.24660582062270914
+          ],
+          [
+            0.3817432648812731,
+            0.24660582062270914
+          ],
+          [
+            0.3830957731232047,
+            0.24660582062270914
+          ],
+          [
+            0.3837720272441706,
+            0.24660582062270914
+          ],
+          [
+            0.3837720272441706,
+            0.24750749278399672
+          ],
+          [
+            0.3830957731232047,
+            0.24840916494528453
+          ],
+          [
+            0.3824195190022389,
+            0.24931083710657234
+          ],
+          [
+            0.3817432648812731,
+            0.25021250926785993
+          ],
+          [
+            0.3817432648812731,
+            0.25021250926785993
+          ],
+          [
+            0.38039075663934147,
+            0.25021250926785993
+          ],
+          [
+            0.38039075663934147,
+            0.24840916494528453
+          ],
+          [
+            0.3797145025183758,
+            0.24750749278399672
+          ],
+          [
+            0.3797145025183758,
+            0.24660582062270914
+          ],
+          [
+            0.3810670107603073,
+            0.24660582062270914
+          ],
+          [
+            0.3824195190022389,
+            0.24750749278399672
+          ],
+          [
+            0.3824195190022389,
+            0.24840916494528453
+          ],
+          [
+            0.3824195190022389,
+            0.24931083710657234
+          ],
+          [
+            0.3817432648812731,
+            0.25021250926785993
+          ],
+          [
+            0.38039075663934147,
+            0.24931083710657234
+          ],
+          [
+            0.3797145025183758,
+            0.24840916494528453
+          ]
+        ],
+        "dw_foot_1": [
+          [
+            0.41758473329246043,
+            0.6316198334925703
+          ],
+          [
+            -1.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            -1.0
+          ]
+        ],
+        "dw_foot_2": [
+          [
+            0.39594460142155496,
+            0.6460465880731742
+          ],
+          [
+            0.3837720272441706,
+            0.660473342653778
+          ],
+          [
+            0.3242616645991802,
+            0.6649817034602166
+          ]
+        ]
+      }
+    ]
+  },
+  "objects": [
+    {
+      "name": "motorcycle",
+      "possible_names": [
+        "motorcycle"
+      ],
+      "box": [
+        0.0890625,
+        0.3854166666666667,
+        0.753125,
+        0.9
+      ]
+    }
+  ],
+  "scene": "A motocross bike soars through the air against a vivid blue sky with trees visible at the bottom of the frame showcasing an adventurous outdoor activity with dynamic motion and bold colors",
+  "overall_past": "Before the current scene, the rider likely accelerated rapidly down a steep dirt ramp or jump, building enough speed and momentum to launch the motocross bike into the air. The approach would have involved precise timing and control, with the rider leaning into the takeoff to maximize lift and stability, setting up the dynamic aerial maneuver captured in the image.",
+  "overall_past_clean": "The rider surged forward with explosive force, tires biting into the packed earth as they raced down the incline, leaning hard into the ramp’s edge to harness every ounce of speed and momentum, launching into the air with controlled precision.",
+  "past_scene_ok": true,
+  "overall_future": "After the current scene, the rider is likely to land smoothly on the other side of the jump, with the bike's rear wheel touching down first to absorb the impact, followed by the front wheel, maintaining momentum and control. The terrain below appears to be a prepared motocross track with packed dirt and small bumps, suggesting the rider will immediately accelerate to navigate the next section of the course, possibly approaching another jump or a tight turn, continuing the high-octane flow of the race.",
+  "overall_future_clean": "The bike surges forward with precision, rear tire gripping the packed surface as momentum carries it into the next phase of the course, swiftly approaching a sharp turn that demands immediate throttle control and lean angle adjustment to maintain speed and trajectory.",
+  "future_scene_ok": true
+}
