@@ -3,7 +3,7 @@
 </p>
 
 
-Official repository for "Human-MME: A Holistic Evaluation Benchmark for Human-Centric Multimodal Large Language Models"
+... repository for "..."
 
 # Overview
 
@@ -17,7 +17,7 @@ To run the benchmark, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Yuan-Hou/Human-MME.git
+git clone ....
 cd Human-MME
 ```
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 3. Prepare the datasets:
 
-Download the datasets from [Human-MME_data.zip](https://huggingface.co/datasets/Yuanhou/Human-MME/blob/main/Human-MME_data.zip) and extract them into the root directory to maintain the following structure:
+Download the datasets from [Human-MME_data.zip](...) and extract them into the root directory to maintain the following structure:
 ```
 Human-MME/
 ├── final_qa/

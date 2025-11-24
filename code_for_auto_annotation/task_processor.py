@@ -879,14 +879,14 @@ class HoiUnifyTask(BaseTask):
         return data
 
 
-class WoXunSiTask(BaseTask):
+class AbstractTask(BaseTask):
     """WoXunSi........"""
 
     def __init__(self):
         super().__init__(
-            task_name="woxunsi_detailing",
+            task_name="abstract_labeling",
             data_dir="./abstract_final_labeling/emotion",
-            progress_file_prefix="woxunsi_detailing_progress"
+            progress_file_prefix="abstract_labeling_progress"
         )
     
     def get_progress_filename(self, shard_index: int = 0, shard_count: int = 1) -> str:
@@ -1236,7 +1236,7 @@ AVAILABLE_TASKS = {
     'remove_color': ColorRemovalTask,
     'clothing_correction': ClothingCorrectionTask,
     'hoi_unify': HoiUnifyTask,
-    "woxunsi": WoXunSiTask,
+    "abstract_labeling": AbstractTask,
     'example': ExampleTask,
 }
 
