@@ -4,6 +4,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2509.26165-b31b1b.svg)](https://www.arxiv.org/abs/2509.26165)
 [![HuggingFace Datasets](https://img.shields.io/badge/HuggingFace-Yuanhou%2FHuman--MME-yellow.svg?logo=huggingface)](https://huggingface.co/datasets/Yuanhou/Human-MME)
+[![EVAL TOOL](https://img.shields.io/badge/EVAL_TOOL-Documentation-blue.svg)](./EVAL_TOOLKIT.md)
 
 Official repository for "Human-MME: A Holistic Evaluation Benchmark for Human-Centric Multimodal Large Language Models"
 
